@@ -13,9 +13,9 @@ const articles = [
 
 export function Blog() {
   return (
-    <section className="section blog-section" id="blog"><Container>
-      <div className="blog-heading"><SectionHeader eyebrow="بینش و تجربه" title="آخرین مقالات" description="جدیدترین مطالب و آموزش‌های دیجیتال مارکتینگ" /><Button href="#" variant="ghost" icon={<ArrowLeft size={18} />}>مشاهده همه مقالات</Button></div>
-      <div className="articles-grid">{articles.map((article) => <ArticleCard key={article.title} {...article} />)}</div>
+    <section className="relative py-32 max-md:py-20" id="blog"><Container>
+      <div className="flex items-end justify-between gap-8 max-sm:items-start"><SectionHeader eyebrow="بینش و تجربه" title="آخرین مقالات" description="جدیدترین مطالب و آموزش‌های دیجیتال مارکتینگ" /><Button className="max-sm:hidden" href="#" variant="ghost" icon={<ArrowLeft size={18} />}>مشاهده همه مقالات</Button></div>
+      <div className="mt-14 grid grid-cols-4 gap-5 max-xl:grid-cols-2 max-md:grid-cols-1">{articles.map((article) => <ArticleCard key={article.title} {...article} />)}</div>
     </Container></section>
   );
 }

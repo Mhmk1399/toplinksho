@@ -14,10 +14,10 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section className="section portfolio-section" id="portfolio"><AmbientBackground variant="portfolio" /><Container>
-      <div className="portfolio-heading"><SectionHeader eyebrow="کارهایی که نتیجه ساختند" title="نمونه کارهای ما" description="نتایجی که برای مشتریان خود خلق کرده‌ایم" /><div className="portfolio-controls"><button aria-label="پروژه قبلی"><ArrowRight /></button><button aria-label="پروژه بعدی"><ArrowLeft /></button></div></div>
-      <div className="portfolio-grid">{projects.map((project) => <PortfolioCard key={project.name} {...project} />)}</div>
-      <div className="section-action"><Button href="#contact" variant="secondary" icon={<ArrowLeft size={18} />}>مشاهده همه نمونه کارها</Button></div>
+    <section className="relative py-32 max-md:py-20" id="portfolio"><AmbientBackground variant="portfolio" /><Container>
+      <div className="flex items-end justify-between gap-8 max-sm:items-start"><SectionHeader eyebrow="کارهایی که نتیجه ساختند" title="نمونه کارهای ما" description="نتایجی که برای مشتریان خود خلق کرده‌ایم" /><div className="flex gap-2 max-sm:hidden"><button className="grid size-11 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10" aria-label="پروژه قبلی"><ArrowRight /></button><button className="grid size-11 place-items-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10" aria-label="پروژه بعدی"><ArrowLeft /></button></div></div>
+      <div className="mt-14 grid auto-rows-[minmax(140px,auto)] grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">{projects.map((project) => <PortfolioCard key={project.name} {...project} />)}</div>
+      <div className="mt-10 text-center"><Button href="#contact" variant="secondary" icon={<ArrowLeft size={18} />}>مشاهده همه نمونه کارها</Button></div>
     </Container></section>
   );
 }

@@ -24,8 +24,8 @@ export function Statistics() {
     return () => observer.disconnect();
   }, []);
   return (
-    <section className="stats-section"><Container><div ref={ref}>
-      <GlassCard className="stats-card" padding="none" radius="xl">
+    <section className="py-10"><Container><div ref={ref}>
+      <GlassCard className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1" padding="none" radius="xl">
         {metrics.map(({ end, suffix, label, icon: Icon }) => <Metric key={label} end={end} suffix={suffix} label={label} icon={<Icon size={22} />} active={active} />)}
       </GlassCard>
     </div></Container></section>

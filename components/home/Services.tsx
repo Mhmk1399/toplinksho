@@ -14,11 +14,11 @@ const services = [
 
 export function Services() {
   return (
-    <section className="section services-section" id="services">
+    <section className="relative py-32 max-md:py-20" id="services">
       <AmbientBackground variant="service" />
       <Container>
         <SectionHeader eyebrow="آنچه انجام می‌دهیم" title="خدمات ما" description="راهکارهای جامع دیجیتال مارکتینگ برای رشد کسب و کار شما" />
-        <div className="services-grid">
+        <div className="mt-14 grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">
           {services.map((service, index) => <ServiceCard key={service.title} {...service} number={index + 1} />)}
         </div>
       </Container>
