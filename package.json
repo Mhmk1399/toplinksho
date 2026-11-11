@@ -6,22 +6,42 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "admin:hash-password": "node scripts/generate-admin-password.mjs",
+    "test:backend": "node scripts/backend-test.mjs",
+    "test:e2e": "playwright test",
+    "assets:generate": "node scripts/generate-pwa.mjs",
+    "prebuild": "npm run assets:generate",
+    "test:seo": "node --conditions=react-server --import ./scripts/register-aliases.mjs scripts/seo-test.mjs"
+  },
+  "engines": {
+    "node": ">=22.18.0"
   },
   "dependencies": {
     "@fontsource-variable/vazirmatn": "^5.3.0",
+    "lenis": "^1.3.27",
     "lucide-react": "^1.39.0",
-    "next": "16.3.2",
+    "mongoose": "^9.12.1",
+    "next": "^16.4.6",
+    "nodemailer": "^10.5.0",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^24.19.2",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/smtp-server": "^3.5.13",
     "eslint": "^9",
-    "eslint-config-next": "16.3.2",
+    "eslint-config-next": "^16.4.6",
+    "mongodb-memory-server": "^11.3.0",
+    "sharp": "^0.35.5",
+    "smtp-server": "^3.21.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

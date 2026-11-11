@@ -14,7 +14,10 @@ export function Container<T extends ElementType = "div">({
 }: ContainerProps<T>) {
   const Tag = as ?? "div";
   return (
-    <Tag className={`relative z-[1] mx-auto w-[min(calc(100%-4rem),80rem)] max-md:w-[min(calc(100%-2rem),80rem)] ${className}`} {...props}>
+    <Tag
+      className={`relative z-[1] mx-auto w-[min(calc(100%-4rem),80rem)] max-md:w-[min(calc(100%-2rem),80rem)] ${className}`}
+      {...props}
+    >
       {children}
     </Tag>
   );

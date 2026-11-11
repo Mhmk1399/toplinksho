@@ -10,6 +10,30 @@
       "noPlaceholderLinks": true
     },
     {
+      "route": "/about-us",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
       "route": "/services/web-design",
       "status": 200,
       "h1": 1,
@@ -43,6 +67,38 @@
     },
     {
       "route": "/services/campaigns",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/graphic-design",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/content-production",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/seo",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/online-advertising",
       "status": 200,
       "h1": 1,
       "persianRTL": true,

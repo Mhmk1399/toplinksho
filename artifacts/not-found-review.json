@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "width": 1440,
+      "status": 404,
+      "noOverflow": true,
+      "reducedMotion": true,
+      "artBelowText": null,
+      "noindex": true
+    },
+    {
+      "width": 390,
+      "status": 404,
+      "noOverflow": true,
+      "reducedMotion": true,
+      "artBelowText": true,
+      "noindex": true
+    },
+    {
+      "width": 320,
+      "status": 404,
+      "noOverflow": true,
+      "reducedMotion": true,
+      "artBelowText": true,
+      "noindex": true
+    }
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "artifacts/not-found-desktop.png",
+    "artifacts/not-found-mobile.png"
+  ],
+  "keyboardRecovery": true,
+  "servicesRecovery": true,
+  "unknownServiceStatus": 404,
+  "accessibilityViolations": 0,
+  "animationRunning": true
+}

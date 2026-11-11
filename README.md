@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TopLinkSho
 
-## Getting Started
+سایت فارسی و راست‌به‌چپ تاپ لینک شو با Next.js، Tailwind CSS، فرم مشاوره، بک‌اند و پنل پیگیری درخواست‌ها.
 
-First, run the development server:
+## راه‌اندازی
 
-```bash
+Node.js نسخهٔ 22.18 یا جدیدتر لازم است.
+
+```powershell
+npm install
+Copy-Item .env.example .env.local
+npm run admin:hash-password
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+تنظیمات ورود مدیر و ایمیل را در فایل محیط وارد کنید. [راهنمای کامل راه‌اندازی](SETUP.md) شامل همهٔ متغیرها، نیازمندی میزبانی، پایگاه داده و تست‌ها است. اطلاعات محرمانه را در مخزن قرار ندهید.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## مسیرها
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` — صفحهٔ اصلی
+- `/about-us` — درباره ما
+- `/services` — خدمات
+- `/contact` — تماس و فرم مشاوره
+- `/services/[slug]` — نه صفحهٔ جزئیات خدمات
+- `/admin` — مدیریت درخواست‌ها
+- `/admin/settings` — وضعیت و بررسی اتصال ایمیل
 
-## Learn More
+درخواست‌ها و حساب‌های کاربران با Mongoose در MongoDB ذخیره می‌شوند. `MONGODB_URI` را فقط در محیط سرور تنظیم کنید. اعلان SMTP مستقل از ثبت درخواست است. نشست‌ها و محدودیت درخواست‌ها نیز در MongoDB مشترک نگهداری می‌شوند.
 
-To learn more about Next.js, take a look at the following resources:
+## بررسی
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```powershell
+npm run lint
+npx tsc --noEmit
+npm run build
+node scripts/smoke-test.mjs
+npm run test:backend
+npm run test:seo
+npm run test:e2e
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+تست‌های بک‌اند از MongoDB موقت و SMTP با TLS محلی و اطلاعات ساختگی استفاده می‌کنند؛ ایمیل واقعی ارسال نمی‌شود. تست مرورگر از Chrome نصب‌شده استفاده می‌کند. گزارش‌ها در `artifacts` ذخیره می‌شوند.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+هویت بصری، نگاشت رنگ‌ها و قرارداد رفتار در [DESIGN.md](DESIGN.md) و [UX-CONTRACT.md](UX-CONTRACT.md) ثبت شده‌اند. سئو و PWA از دادهٔ مشترک صفحات ساخته می‌شوند. برای دامنهٔ نهایی HTTPS، `APP_URL` و `SITE_INDEXABLE=true` را پیش از build تنظیم کنید؛ پیش‌نمایش به‌طور پیش‌فرض noindex است. نصب PWA، کش فایل‌های عمومی و صفحهٔ آفلاین در build تولید فعال‌اند. [راهنمای راه‌اندازی](SETUP.md) جزئیات را توضیح می‌دهد.

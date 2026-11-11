@@ -1,10 +1,25 @@
+import { pageMetadata } from "@/lib/seo";
+import { PageStructuredData } from "@/components/shared/PageStructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpLeft, Check, ChevronLeft, Plus } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { buttonClasses } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { getService, services } from "@/lib/services";
+import { PageHero } from "@/components/shared/PageHero";
+
+const heroTitles: Record<string, [string, string, string]> = {
+  "web-design": ["طراحی سایت،", "تجربهٔ بهتر،", "مسیر رشد."],
+  "social-media": ["محتوای درست،", "ارتباط واقعی،", "برند ماندگار."],
+  branding: ["هویت روشن،", "تصویر منسجم،", "برند شما."],
+  "google-ads": ["در لحظهٔ", "جست‌وجو،", "دیده شوید."],
+  campaigns: ["یک ایده،", "یک کمپین،", "یک مسیر روشن."],
+  "graphic-design": ["تصویر برند،", "زبان خلاق،", "طراحی ماندگار."],
+  "content-production": ["روایت شما،", "محتوای تازه،", "ارتباط بیشتر."],
+  seo: ["جست‌وجوی بهتر،", "مسیر روشن‌تر،", "حضور مؤثر."],
+  "online-advertising": ["مخاطب درست،", "پیام مناسب،", "تبلیغ هدفمند."],
+};
 
 type ServicePageProps = { params: Promise<{ slug: string }> };
 
@@ -18,16 +33,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const { slug } = await params;
   const service = getService(slug);
   if (!service) notFound();
-  return {
-    title: service.title,
-    description: service.description,
-    openGraph: {
-      title: `${service.title} | تاپ لینک شو`,
-      description: service.description,
-      locale: "fa_IR",
-      type: "website",
-    },
-  };
+  return pageMetadata(`/services/${slug}`);
 }
 
 export default async function ServicePage({ params }: ServicePageProps) {
@@ -36,33 +42,18 @@ export default async function ServicePage({ params }: ServicePageProps) {
   if (!service) notFound();
 
   return (
-    <main id="main-content" className="relative overflow-hidden pb-16 pt-36 sm:pt-44">
-      <div aria-hidden="true" className="pointer-events-none absolute -right-60 top-0 size-[650px] rounded-full bg-violet-600/[.08] blur-[120px]" />
+    <main id="main-content" className="pb-16">
+      <PageStructuredData path={`/services/${slug}`} />
+      <PageHero eyebrow={service.title} title={<>{heroTitles[slug][0]}<br />{heroTitles[slug][1]}<br /><span className="gradient-text">{heroTitles[slug][2]}</span></>} description={service.description} image="/images/hero-services.webp" imageAlt="المان سه‌بعدی خدمات دیجیتال مارکتینگ با رنگ‌های لوگوی تاپ لینک شو" note="از نیاز واقعی شروع کنیم." detail="طراحی. اجرا. بهبود." coordinate="A CLEAR PATH FOR YOUR BRAND" secondary={{ label: "جزئیات همکاری", href: "#scope" }} footnote="دامنهٔ روشن، اجرای هماهنگ و ارزیابی نتیجه" />
       <Container>
-        <nav aria-label="مسیر صفحه" className="mb-12 flex flex-wrap items-center gap-2 text-xs text-slate-400 sm:text-sm">
+        <nav aria-label="مسیر صفحه" className="mt-10 mb-12 flex flex-wrap items-center gap-2 text-xs text-slate-400 sm:text-sm">
           <Link href="/" className="transition hover:text-white">خانه</Link>
           <ChevronLeft aria-hidden="true" size={14} />
-          <Link href="/#services" className="transition hover:text-white">خدمات</Link>
+          <Link href="/services" className="transition hover:text-white">خدمات</Link>
           <ChevronLeft aria-hidden="true" size={14} />
           <span aria-current="page" className="text-slate-200">{service.title}</span>
         </nav>
-        <section aria-labelledby="service-title" className="grid items-center gap-10 pb-20 lg:grid-cols-[1.3fr_1fr] lg:gap-20 lg:pb-28">
-          <div>
-            <p className="mb-6 flex items-center gap-3 text-sm text-violet-300"><span className="h-px w-8 bg-violet-400" />{service.eyebrow}</p>
-            <h1 id="service-title" className="max-w-3xl text-4xl font-bold leading-[1.6] tracking-tight sm:text-5xl lg:text-6xl">{service.title}</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-slate-300">{service.description}</p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Button href="/#contact" size="lg" icon={<ArrowUpLeft aria-hidden="true" size={19} />}>درباره پروژه‌تان بگویید</Button>
-              <Button href="#scope" variant="secondary" size="lg">جزئیات همکاری</Button>
-            </div>
-          </div>
-          <aside aria-label="این خدمت برای چه کسب‌وکاری مناسب است" className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(145deg,rgba(139,92,246,.12),rgba(15,23,42,.6))] p-7 sm:p-10">
-            <div className="mb-10 flex items-center justify-between"><span className="text-xs tracking-[.2em] text-slate-400" dir="ltr">TOPLINKSHO / SERVICES</span><span className="text-3xl font-light text-violet-300">{service.number}</span></div>
-            <h2 className="text-xl font-semibold">آیا این خدمت برای شماست؟</h2>
-            <p className="mt-4 leading-8 text-slate-300">{service.fit}</p>
-            <div className="mt-8 border-t border-white/10 pt-5 text-sm leading-7 text-slate-400">شروع همکاری با شناخت مسئله و مشخص کردن دامنه کار.</div>
-          </aside>
-        </section>
+        <section className="mb-12 grid gap-5 rounded-3xl border border-white/10 bg-panel/70 p-6 md:grid-cols-[.6fr_1.4fr] md:p-8"><h2 className="text-xl font-semibold">این خدمت برای چه کسب‌وکاری مناسب است؟</h2><p className="text-sm leading-9 text-muted">{service.fit}</p></section>
 
         <section id="scope" aria-labelledby="scope-title" className="scroll-mt-32 border-t border-white/10 py-16 sm:py-20">
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
@@ -88,7 +79,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </section>
 
         <section aria-labelledby="start-title" className="rounded-[28px] border border-violet-400/20 bg-[linear-gradient(120deg,rgba(139,92,246,.12),rgba(236,72,153,.04))] p-7 sm:p-12">
-          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center"><div><p className="mb-3 text-sm text-pink-300">قدم بعدی</p><h2 id="start-title" className="text-2xl font-bold leading-relaxed sm:text-3xl">از مسئله شما شروع کنیم.</h2><p className="mt-4 max-w-xl text-sm leading-8 text-slate-300">درباره کسب‌وکار، هدف و نیازتان بگویید تا مسیر و دامنه مناسب همکاری را بررسی کنیم.</p></div><Button href="/#contact" size="lg" icon={<ArrowLeft aria-hidden="true" size={18} />}>شروع گفت‌وگو</Button></div>
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center"><div><p className="mb-3 text-sm text-pink-300">قدم بعدی</p><h2 id="start-title" className="text-2xl font-bold leading-relaxed sm:text-3xl">از مسئله شما شروع کنیم.</h2><p className="mt-4 max-w-xl text-sm leading-8 text-slate-300">درباره کسب‌وکار، هدف و نیازتان بگویید تا مسیر و دامنه مناسب همکاری را بررسی کنیم.</p></div><Link href="/contact#consultation" className={buttonClasses({ size: "lg" })}>شروع گفت‌وگو<ArrowLeft aria-hidden="true" size={18} /></Link></div>
         </section>
 
         <nav aria-label="سایر خدمات" className="mt-16"><h2 className="mb-6 text-lg font-semibold">مسیرهای دیگر همکاری</h2><div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">{services.filter((item) => item.slug !== service.slug).map((item) => <Link key={item.slug} href={`/services/${item.slug}`} className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 p-5 text-sm leading-7 text-slate-300 transition hover:border-violet-400/40 hover:bg-violet-400/5 hover:text-white">{item.title}<ArrowUpLeft aria-hidden="true" size={18} className="shrink-0 text-violet-300" /></Link>)}</div></nav>

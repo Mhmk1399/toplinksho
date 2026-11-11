@@ -1,0 +1,44 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": [
+    "app",
+    "components",
+    "lib"
+  ],
+  "locale": "fa-IR",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": [
+    "Select/Listbox",
+    "Form",
+    "Scrollbar",
+    "CRUD",
+    "Toast",
+    "Date"
+  ],
+  "ownership": {
+    "Select/Listbox": "native",
+    "Date": "typed"
+  },
+  "requiredCommands": [
+    "lint",
+    "typecheck",
+    "build",
+    "backend",
+    "e2e",
+    "smoke",
+    "seo"
+  ],
+  "commands": {
+    "lint": "npm run lint",
+    "typecheck": "npx tsc --noEmit",
+    "build": "npm run build",
+    "backend": "npm run test:backend",
+    "e2e": "npm run test:e2e",
+    "smoke": "node scripts/smoke-test.mjs",
+    "seo": "npm run test:seo"
+  },
+  "evidence": {
+    "crudFullFlow": "tests/site.spec.ts",
+    "failurePaths": "scripts/backend-test.mjs"
+  }
+}

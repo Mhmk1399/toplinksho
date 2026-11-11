@@ -1,4 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpLeft } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-export function Portfolio(){return <section className="section-space" id="portfolio"><Container><div className="section-heading"><div><span className="eyebrow">از ایده تا تجربه / ۰۳</span><h2>برای تصویر بزرگ‌تر<br /><span className="muted">طراحی می‌کنیم.</span></h2></div><p>تصویرهای زیر کانسپت نمایشی هستند، نه پروژه مشتری. نمونه‌کارهای تأییدشده پیش از انتشار نهایی جایگزین می‌شوند.</p></div><div className="showcase-grid"><article className="showcase showcase-web"><div className="concept-label">کانسپت نمایشی / تجربه وب</div><div className="browser-art" dir="ltr" aria-hidden="true"><div className="browser-toolbar"><span/><span/><span/><i>yourbrand.design</i></div><div className="browser-content"><small>MADE TO STAND OUT</small><strong>Ideas into<br /><em>experience.</em></strong><span className="mock-button">Explore the possibilities ↗</span><div className="mock-orb"/></div><div className="browser-cards"><span>Discover.</span><span>Connect.</span><span>Grow.</span></div></div><div className="showcase-caption"><div><span>طراحی رابط و تجربه کاربری</span><h3>یک حضور دیجیتال به‌یادماندنی</h3></div><Link href="/services/web-design" aria-label="راهکار طراحی سایت"><ArrowUpLeft/></Link></div></article><article className="showcase showcase-brand"><div className="concept-label">کانسپت نمایشی / هویت برند</div><div className="brand-art" dir="ltr" aria-hidden="true"><span className="brand-card back">MAKE<br />A MARK.</span><span className="brand-card front"><b>n.</b><span>NOT JUST SEEN.<br />REMEMBERED.</span></span><div className="color-swatches"><i/><i/><i/><i/></div></div><div className="showcase-caption"><div><span>استراتژی و هویت بصری</span><h3>برندی که شناخته می‌شود</h3></div><Link href="/services/branding" aria-label="راهکار برندینگ"><ArrowUpLeft/></Link></div></article></div></Container></section>}
+import { SectionIntro } from "@/components/shared/SectionIntro";
+
+const projects = [
+  { title: "طراحی لوگو آرین سیما", category: "دیجیتال مارکتینگ · شبکه‌های اجتماعی", image: "/images/portfolio-aryan.webp" },
+  { title: "کارت ویزیت سفید", category: "طراحی وب‌سایت", image: "/images/portfolio-card.webp" },
+  { title: "کار سریع پروژه‌ها", category: "تولید محتوا · دیجیتال مارکتینگ", image: "/images/portfolio-creative.webp" },
+  { title: "نمایش پوسترها", category: "برندینگ · تولید محتوا", image: "/images/portfolio-posters.webp" },
+];
+
+export function Portfolio() {
+  return <section className="section-space" id="portfolio"><Container>
+    <SectionIntro eyebrow="آخرین پروژه‌ها" title={<>از ایده تا تصویری<br /><span className="gradient-text">که دیده می‌شود.</span></>} description="نمونه‌هایی از پروژه‌های معرفی‌شدهٔ تاپ لینک شو؛ از هویت بصری و اقلام چاپی تا حضور دیجیتال برند." />
+    <div className="grid gap-5 sm:grid-cols-2">{projects.map(project => <article key={project.title} className="group overflow-hidden rounded-3xl border border-white/10 bg-panel">
+      <div className="relative aspect-[1.35] overflow-hidden bg-white/3"><Image src={project.image} alt={project.title} fill sizes="(max-width: 639px) 95vw, (max-width: 1440px) 46vw, 640px" className="object-cover transition-transform duration-500 group-hover:scale-[1.025]" /></div>
+      <div className="p-6"><p className="text-xs text-muted">{project.category}</p><h3 className="mt-3 text-xl font-semibold">{project.title}</h3></div>
+    </article>)}</div>
+    <div className="mt-8 flex justify-end"><Link className="text-link" href="/contact#consultation">برای پروژهٔ شما از کجا شروع کنیم؟<ArrowUpLeft size={18} aria-hidden="true" /></Link></div>
+  </Container></section>;
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "private pages and endpoints reject unauthenticated access",
+    "same-origin, server validation, honeypot and body-size limits",
+    "password login, hashed expiring sessions, secure cookies and authenticated TLS SMTP",
+    "durable submission, Persian telephone normalization, idempotency and one email notification",
+    "private status/notes, optimistic concurrency, normalized search and literal MongoDB search",
+    "SMTP failure preserves the lead; explicit retry succeeds without re-sending sent mail",
+    "bounded server pagination, totals, empty search and page clamping",
+    "login brute-force limits with retry guidance",
+    "database user roles, suspension and session-version revocation",
+    "server restart preserves data; missing SMTP never blocks consultation storage",
+    "logout and credential rotation invalidate sessions"
+  ],
+  "realEmailSent": false,
+  "smtp": "local TLS server with isolated credentials",
+  "database": "isolated local MongoDB process"
+}
