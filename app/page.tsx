@@ -3,27 +3,5 @@ import { CTASection } from "@/components/home/CTASection";
 import { Hero } from "@/components/home/Hero";
 import { Portfolio } from "@/components/home/Portfolio";
 import { Services } from "@/components/home/Services";
-import { Statistics } from "@/components/home/Statistics";
 import { WhyUs } from "@/components/home/WhyUs";
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
-import { FloatingContact } from "@/components/shared/FloatingContact";
-
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main className="overflow-hidden">
-        <Hero />
-        <Services />
-        <WhyUs />
-        <Statistics />
-        <Portfolio />
-        <CTASection />
-        <Blog />
-      </main>
-      <Footer />
-      <FloatingContact />
-    </>
-  );
-}
+export default function Home(){return <main id="main-content"><Hero/><Services/><WhyUs/><Portfolio/><Blog/><CTASection/></main>}

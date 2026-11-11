@@ -46,9 +46,10 @@ export function Button(props: LinkButtonProps | NativeButtonProps) {
     return <Link href={props.href} className={classes}>{content}</Link>;
   }
 
-  const { loading, ...buttonProps } = props as NativeButtonProps;
+  const { loading, children: _children, className: _className, variant: _variant, size: _size, icon: _icon, iconPosition: _iconPosition, href: _href, ...buttonProps } = props as NativeButtonProps;
+  void _children; void _className; void _variant; void _size; void _icon; void _iconPosition; void _href;
   return (
-    <button className={classes} disabled={buttonProps.disabled || loading} {...buttonProps}>
+    <button {...buttonProps} className={classes} disabled={buttonProps.disabled || loading}>
       {content}
     </button>
   );

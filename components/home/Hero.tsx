@@ -1,49 +1,26 @@
 import Image from "next/image";
-import { AmbientBackground } from "@/components/shared/AmbientBackground";
+import { ArrowLeft, ArrowDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function Hero() {
-  return (
-    <section className="relative flex min-h-[780px] items-center overflow-hidden pb-24 pt-40 max-md:min-h-0 max-md:pb-20 max-md:pt-32" id="top">
-      <AmbientBackground variant="hero" />
-      <Container className="grid grid-cols-2 items-center gap-12 max-md:grid-cols-1">
-        <div className="relative z-10 max-w-[650px] max-md:text-center">
-          <span className="mb-5 inline-flex items-center gap-2 text-sm font-semibold text-[#d8caff] before:h-px before:w-5 before:bg-[#ff3d9a] before:shadow-[0_0_12px_#f02b78]">
-            آژانس دیجیتال مارکتینگ
-          </span>
-          <h1 className="text-[clamp(42px,5.4vw,76px)] leading-[1.32] font-[850] tracking-[-.02em]">
-            راهکارهای خلاقانه
-            <br />
-            برای <span className="bg-[linear-gradient(135deg,#3157ff,#8b3dff_45%,#f02b78)] bg-clip-text text-transparent">رشد برند شما</span>
-          </h1>
-          <p className="mt-6 max-w-[610px] text-lg leading-9 text-white/65 max-md:mx-auto max-md:text-base">
-            ما در تاپ لینک شو با ترکیب استراتژی، خلاقیت و تکنولوژی، کمپین‌هایی
-            طراحی می‌کنیم که برند شما را در ذهن مخاطب ماندگار می‌کند.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3 max-md:justify-center">
-            <Button href="#services" size="lg">
-              مشاهده خدمات
-            </Button>
-            <Button href="#contact" size="lg" variant="secondary">
-              مشاوره رایگان
-            </Button>
-          </div>
-        </div>
-
-        <div className="relative min-h-[540px] max-md:order-first max-md:min-h-[340px]">
-          <div className="absolute inset-0 drop-shadow-[0_35px_55px_rgba(49,87,255,.25)] before:absolute before:inset-[18%] before:rounded-full before:bg-violet-600/20 before:blur-[70px]">
-            <Image
-              src="/images/toplinksho-hero-3d.png"
-              alt="موشک سفید در کنار کره دیجیتال، نماد رشد برند"
-              fill
-              priority
-              sizes="(max-width: 768px) 90vw, 50vw"
-              className="object-contain"
-            />
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
+  return <section className="hero-stage" id="top"><Container>
+    <div className="hero-grid">
+      <div className="hero-copy">
+        <span className="eyebrow"><span className="status-dot" /> استراتژی، خلاقیت، تکنولوژی</span>
+        <h1>دیده شوید.<br />متفاوت بمانید.<br /><span className="gradient-text">رشد کنید.</span></h1>
+        <p className="hero-description">از اولین جست‌وجو تا انتخاب برند شما؛<br />مسیر دیجیتال کسب‌وکارتان را با هم می‌سازیم.</p>
+        <div className="hero-actions"><Button href="/#contact" size="lg" icon={<ArrowLeft size={18} />}>درباره پروژه‌تان صحبت کنیم</Button><a className="text-link" href="#services">کشف راهکارها <ArrowDown size={16} /></a></div>
+        <div className="hero-footnote"><Sparkles size={16} /><span>یک مسیر یکپارچه؛ از ایده تا اجرا و بهینه‌سازی</span></div>
+      </div>
+      <div className="hero-art">
+        <span className="orbit orbit-one" /><span className="orbit orbit-two" />
+        <span className="art-coordinate" dir="ltr">BUILT FOR YOUR NEXT CHAPTER</span>
+        <Image src="/images/toplinksho-hero-3d.png" alt="موشک و کره دیجیتال؛ تصویر مفهومی رشد" fill priority sizes="(max-width: 768px) 90vw, 48vw" className="hero-image" />
+        <div className="art-note"><span className="status-dot" /><div><strong>رشد، اتفاقی نیست.</strong><span>استراتژی روشن. اجرای هماهنگ.</span></div></div>
+        <span className="art-number" dir="ltr">01 / NEXT LEVEL</span>
+      </div>
+    </div>
+    <div className="capability-strip"><span>از یک ایده،<br /><strong>تا یک تجربه کامل.</strong></span><span>استراتژی و کمپین</span><span>هویت برند</span><span>توسعه وب</span><span>شبکه‌های اجتماعی</span><span dir="ltr">Google Ads</span></div>
+  </Container></section>;
 }

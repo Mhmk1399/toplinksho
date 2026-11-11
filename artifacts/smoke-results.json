@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/web-design",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/social-media",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/branding",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/google-ads",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/campaigns",
+      "status": 200,
+      "h1": 1,
+      "persianRTL": true,
+      "noindex": true,
+      "noPlaceholderLinks": true
+    },
+    {
+      "route": "/services/unknown-service",
+      "status": 404
+    }
+  ],
+  "limits": "HTTP and server-rendered HTML checks only. Browser visual, mobile interaction, performance and accessibility audits not run."
+}

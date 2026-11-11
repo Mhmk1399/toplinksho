@@ -1,21 +1,3 @@
-import { ArrowLeft, BarChart2, Layers3, Search, Smartphone } from "lucide-react";
-import { ArticleCard } from "@/components/shared/ContentCards";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-
-const articles = [
-  { title: "۱۰ راهکار افزایش تعامل در اینستاگرام", excerpt: "روش‌های عملی برای ساختن یک جامعه فعال و وفادار در شبکه‌های اجتماعی.", category: "شبکه‌های اجتماعی", date: "۱۸ مرداد ۱۴۰۵", icon: Smartphone, visual: "social" },
-  { title: "نکات طلایی برای بهینه‌سازی کمپین‌های Google Ads", excerpt: "چطور بودجه تبلیغات را هوشمندانه‌تر خرج کنیم و بازده بیشتری بگیریم.", category: "تبلیغات گوگل", date: "۱۲ مرداد ۱۴۰۵", icon: BarChart2, visual: "ads" },
-  { title: "چگونه یک برند ماندگار بسازیم؟", excerpt: "از استراتژی تا هویت بصری؛ مسیر تبدیل شدن به یک نام به‌یادماندنی.", category: "برندینگ", date: "۴ مرداد ۱۴۰۵", icon: Layers3, visual: "brand" },
-  { title: "ویژگی‌های یک سایت موفق در سال 2026", excerpt: "اصول تجربه کاربری، سرعت و سئویی که وب‌سایت شما به آن‌ها نیاز دارد.", category: "طراحی سایت", date: "۲۸ تیر ۱۴۰۵", icon: Search, visual: "web" },
-];
-
-export function Blog() {
-  return (
-    <section className="relative py-32 max-md:py-20" id="blog"><Container>
-      <div className="flex items-end justify-between gap-8 max-sm:items-start"><SectionHeader eyebrow="بینش و تجربه" title="آخرین مقالات" description="جدیدترین مطالب و آموزش‌های دیجیتال مارکتینگ" /><Button className="max-sm:hidden" href="#" variant="ghost" icon={<ArrowLeft size={18} />}>مشاهده همه مقالات</Button></div>
-      <div className="mt-14 grid grid-cols-4 gap-5 max-xl:grid-cols-2 max-md:grid-cols-1">{articles.map((article) => <ArticleCard key={article.title} {...article} />)}</div>
-    </Container></section>
-  );
-}
+const faqs=[{question:"برای شروع همکاری چه اطلاعاتی لازم است؟",answer:"کافی است درباره کسب‌وکار، مسئله‌ای که می‌خواهید حل کنید و هدف اصلی پروژه صحبت کنیم. اگر سایت، شبکه اجتماعی یا بریف دارید، در گفت‌وگوی اولیه آن را معرفی کنید."},{question:"آیا می‌توان فقط یک خدمت را انتخاب کرد؟",answer:"بله. پروژه می‌تواند روی یک نیاز مشخص مثل طراحی سایت یا یک کمپین تمرکز کند. دامنه نهایی و وابستگی‌های آن پیش از شروع مشخص می‌شود."},{question:"هزینه و زمان پروژه چگونه مشخص می‌شود؟",answer:"پس از روشن شدن دامنه کار، پیچیدگی، خروجی‌های مورد انتظار و منابع لازم، پیشنهاد متناسب با پروژه آماده می‌شود. این نسخه نمایشی قیمت یا زمان قطعی اعلام نمی‌کند."},{question:"موفقیت پروژه را چطور ارزیابی می‌کنیم؟",answer:"معیار ارزیابی باید به هدف کسب‌وکار مرتبط باشد. بسته به پروژه می‌توان کیفیت درخواست‌های ورودی، عملکرد سایت، تعامل یا نتایج کمپین را بررسی کرد؛ بدون وعده رشد تضمینی."}];
+export function Blog(){return <section className="section-space" id="blog"><Container><div className="faq-layout"><div><span className="eyebrow">قبل از شروع / ۰۴</span><h2>سؤال خوب،<br /><span className="muted">شروع خوب.</span></h2><p className="section-description">چند پاسخ برای اینکه با تصویر روشن‌تری وارد گفت‌وگو شویم.</p></div><div className="faq-list">{faqs.map(item=><details key={item.question}><summary>{item.question}<span aria-hidden="true">+</span></summary><p>{item.answer}</p></details>)}</div></div></Container></section>}
