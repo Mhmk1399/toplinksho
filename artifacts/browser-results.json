@@ -102,7 +102,7 @@
       "env": {
         "APP_URL": "http://127.0.0.1:3196",
         "ADMIN_EMAIL": "admin@toplinksho.invalid",
-        "ADMIN_PASSWORD_HASH": "scrypt:6e2f890f9b262725f56ccf07824a7621:648afd7ece313ee61eb37a8ee27973752a46e7b38f7c94cdc09cefb974459c31a95690b29c71ba8d1690c26fbecd3751833fdd417f1815f9606d7f255b4f3697",
+        "ADMIN_PASSWORD_HASH": "scrypt:7b3ca4a8b10dc5359bef2b7541fe7cb9:d5cb42d799cf04474c67e57b4cbc31fbda83703dffc66803e2fe4de9f3eb54c4ac08a57f86bc205d3fd6c86e32d4b05925751ea72966d9e36fd7464445d922f0",
         "SITE_INDEXABLE": "false",
         "TRUST_PROXY": "true",
         "SMTP_HOST": "",
@@ -136,12 +136,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9060,
+                  "duration": 9467,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:19:57.173Z",
+                  "startTime": "2026-11-12T13:21:57.103Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -151,7 +151,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-c6ffa120846ba51d7a1b",
           "file": "site.spec.ts",
-          "line": 24,
+          "line": 26,
           "column": 1
         },
         {
@@ -170,12 +170,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3592,
+                  "duration": 1689,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:06.817Z",
+                  "startTime": "2026-11-12T13:22:06.937Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -185,7 +185,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-c697f735dedaa5a3dfdf",
           "file": "site.spec.ts",
-          "line": 53,
+          "line": 55,
           "column": 1
         },
         {
@@ -204,12 +204,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6360,
+                  "duration": 4282,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:10.505Z",
+                  "startTime": "2026-11-12T13:22:08.658Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -219,7 +219,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-69ec689fc1ca3c2e8579",
           "file": "site.spec.ts",
-          "line": 70,
+          "line": 72,
           "column": 1
         },
         {
@@ -238,12 +238,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6876,
+                  "duration": 4347,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:16.948Z",
+                  "startTime": "2026-11-12T13:22:12.966Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -253,7 +253,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-8a139adb4030fdd9d673",
           "file": "site.spec.ts",
-          "line": 83,
+          "line": 85,
           "column": 1
         },
         {
@@ -272,12 +272,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2444,
+                  "duration": 1964,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:23.869Z",
+                  "startTime": "2026-11-12T13:22:17.340Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -287,7 +287,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-953bc213afc965c21908",
           "file": "site.spec.ts",
-          "line": 106,
+          "line": 108,
           "column": 1
         },
         {
@@ -306,12 +306,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2539,
+                  "duration": 2451,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:26.338Z",
+                  "startTime": "2026-11-12T13:22:19.331Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -321,7 +321,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-73d61c8a1b6559ac1038",
           "file": "site.spec.ts",
-          "line": 127,
+          "line": 129,
           "column": 1
         },
         {
@@ -340,12 +340,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2164,
+                  "duration": 2284,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:28.900Z",
+                  "startTime": "2026-11-12T13:22:21.803Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -355,7 +355,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-730401d44cdccf4f2402",
           "file": "site.spec.ts",
-          "line": 153,
+          "line": 155,
           "column": 1
         },
         {
@@ -374,12 +374,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1992,
+                  "duration": 2462,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:31.088Z",
+                  "startTime": "2026-11-12T13:22:24.112Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -389,7 +389,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-5e976c1065b8923e8c74",
           "file": "site.spec.ts",
-          "line": 178,
+          "line": 180,
           "column": 1
         },
         {
@@ -408,12 +408,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1188,
+                  "duration": 1338,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:33.098Z",
+                  "startTime": "2026-11-12T13:22:26.601Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -423,7 +423,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-88c17689cefad89d0e79",
           "file": "site.spec.ts",
-          "line": 201,
+          "line": 203,
           "column": 1
         },
         {
@@ -442,12 +442,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4711,
+                  "duration": 4496,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:34.307Z",
+                  "startTime": "2026-11-12T13:22:27.965Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -457,7 +457,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-f600c4e5e6248761f792",
           "file": "site.spec.ts",
-          "line": 215,
+          "line": 217,
           "column": 1
         },
         {
@@ -476,12 +476,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1141,
+                  "duration": 1191,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:39.041Z",
+                  "startTime": "2026-11-12T13:22:32.489Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -491,7 +491,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-798dd31d33724917c538",
           "file": "site.spec.ts",
-          "line": 228,
+          "line": 230,
           "column": 1
         },
         {
@@ -510,12 +510,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3315,
+                  "duration": 4015,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:40.204Z",
+                  "startTime": "2026-11-12T13:22:33.705Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -525,7 +525,7 @@
           ],
           "id": "5c02723ad68c2a0d50c5-6e1cba15cd2cd2157b84",
           "file": "site.spec.ts",
-          "line": 236,
+          "line": 238,
           "column": 1
         },
         {
@@ -544,12 +544,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2730,
+                  "duration": 3508,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-11T15:20:43.539Z",
+                  "startTime": "2026-11-12T13:22:37.748Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -559,7 +559,415 @@
           ],
           "id": "5c02723ad68c2a0d50c5-e431a290b1b218400fe9",
           "file": "site.spec.ts",
-          "line": 270,
+          "line": 272,
+          "column": 1
+        },
+        {
+          "title": "localized homepage follows the source order and works without JavaScript",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:22:41.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-d9319c28e0c140a9f5b1",
+          "file": "site.spec.ts",
+          "line": 300,
+          "column": 1
+        },
+        {
+          "title": "service navigation supports keyboard, direct links and mobile categories",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:22:43.861Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-bd331cf31e1fbe57c33b",
+          "file": "site.spec.ts",
+          "line": 329,
+          "column": 1
+        },
+        {
+          "title": "service search has no-results, clear and noindex states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:22:47.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-7e50fe173036ffa5c4e5",
+          "file": "site.spec.ts",
+          "line": 354,
+          "column": 1
+        },
+        {
+          "title": "deep service, pricing and public navigation pages stay accessible on small phones",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8609,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:22:50.110Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-d6d0a57257bceab636e1",
+          "file": "site.spec.ts",
+          "line": 369,
+          "column": 1
+        },
+        {
+          "title": "breadcrumbs clear the navbar, precede the hero and scroll horizontally on phones",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2137,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:22:58.740Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-9d64f14054aae1ec7cd1",
+          "file": "site.spec.ts",
+          "line": 382,
+          "column": 1
+        },
+        {
+          "title": "service cards have bounded lazy images and service-specific headings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1838,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:00.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-76dd643b1924805c22e3",
+          "file": "site.spec.ts",
+          "line": 409,
+          "column": 1
+        },
+        {
+          "title": "reference cards share their frame and keep subservice controls independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:02.755Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-e45c7e1c9274c3eb54c8",
+          "file": "site.spec.ts",
+          "line": 443,
+          "column": 1
+        },
+        {
+          "title": "mobile card rails allow keyboard access and desktop cards remain a grid",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2140,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:04.065Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-39480afe498a49d86301",
+          "file": "site.spec.ts",
+          "line": 461,
+          "column": 1
+        },
+        {
+          "title": "neon hero decoration stays static, bounded and independent of image loading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2545,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:06.231Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-9504ebd397f880bc35d4",
+          "file": "site.spec.ts",
+          "line": 480,
+          "column": 1
+        },
+        {
+          "title": "desktop menu keeps four columns together and supports quick keyboard access",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:08.798Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-abc469f0d80d2999b565",
+          "file": "site.spec.ts",
+          "line": 501,
+          "column": 1
+        },
+        {
+          "title": "mobile menu remains usable in a short viewport and releases its scroll lock",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2277,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:10.998Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-4d63e1e9695c17689042",
+          "file": "site.spec.ts",
+          "line": 527,
+          "column": 1
+        },
+        {
+          "title": "menu artwork loads on demand without service prefetch or continuous effects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-12T13:23:13.299Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5c02723ad68c2a0d50c5-ef591635890a8e50e71c",
+          "file": "site.spec.ts",
+          "line": 551,
           "column": 1
         }
       ]
@@ -567,9 +975,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-11T15:19:47.109Z",
-    "duration": 60234.924,
-    "expected": 13,
+    "startTime": "2026-11-12T13:21:52.606Z",
+    "duration": 83281.727,
+    "expected": 25,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

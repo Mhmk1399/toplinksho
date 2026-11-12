@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-11-12T11:19:37.609Z",
+  "mode": "built-in image_gen",
+  "heroExportsManifest": "artifacts/transparent-hero-exports.json",
+  "entries": [
+    {
+      "id": "development",
+      "input": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-4122ee1c-352f-4a75-b9e2-d85e109d208c.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-b20e2ae4-2a66-46cd-b027-0becca899249.png",
+      "path": "public/images/services/development.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied existing TopLinkSho service illustration. Primary request: remove ONLY the opaque dark navy studio background and the studio ground/floor/reflection beneath the sculpture; deliver the same isolated sculpture as a PNG with REAL alpha transparency. Preserve its exact arrangement, perspective, complete object silhouette, glass/chrome shapes, blue-magenta-lavender colors, glossy materials, sharp edge details and internal reflections. Preserve every foreground component and the physical base/platform if present; do not crop the sculpture. Background and empty spaces between components must be transparent, not painted navy, white, black or a checkerboard. Keep soft semi-transparent edge highlights with clean antialiasing, without a rectangular haze or opaque halo. Keep dark navy where it is an actual material reflection inside an object. Center the full sculpture on a landscape 3:2 canvas with about 8% transparent padding. No new objects, no text, no watermark, no floor, no background glow sheet, no UI/card frame.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    },
+    {
+      "id": "design",
+      "input": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-259dc4ec-eb61-4c18-97f3-2ef4804f9ae7.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-80d06c77-dc40-4bcd-a717-0e75e358cea6.png",
+      "path": "public/images/services/design.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied existing TopLinkSho service illustration. Primary request: remove ONLY the opaque dark navy studio background and the studio ground/floor/reflection beneath the sculpture; deliver the same isolated sculpture as a PNG with REAL alpha transparency. Preserve its exact arrangement, perspective, complete object silhouette, glass/chrome shapes, blue-magenta-lavender colors, glossy materials, sharp edge details and internal reflections. Preserve every foreground component and the physical base/platform if present; do not crop the sculpture. Background and empty spaces between components must be transparent, not painted navy, white, black or a checkerboard. Keep soft semi-transparent edge highlights with clean antialiasing, without a rectangular haze or opaque halo. Keep dark navy where it is an actual material reflection inside an object. Center the full sculpture on a landscape 3:2 canvas with about 8% transparent padding. No new objects, no text, no watermark, no floor, no background glow sheet, no UI/card frame.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    },
+    {
+      "id": "growth",
+      "input": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-61c4daea-23cc-4e31-9a86-443fd111334e.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-49ca6b64-27ec-460a-b0a2-61adf10f05c7.png",
+      "path": "public/images/services/growth.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied existing TopLinkSho service illustration. Primary request: remove ONLY the opaque dark navy studio background and the studio ground/floor/reflection beneath the sculpture; deliver the same isolated sculpture as a PNG with REAL alpha transparency. Preserve its exact arrangement, perspective, complete object silhouette, glass/chrome shapes, blue-magenta-lavender colors, glossy materials, sharp edge details and internal reflections. Preserve every foreground component and the physical base/platform if present; do not crop the sculpture. Background and empty spaces between components must be transparent, not painted navy, white, black or a checkerboard. Keep soft semi-transparent edge highlights with clean antialiasing, without a rectangular haze or opaque halo. Keep dark navy where it is an actual material reflection inside an object. Center the full sculpture on a landscape 3:2 canvas with about 8% transparent padding. No new objects, no text, no watermark, no floor, no background glow sheet, no UI/card frame.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    },
+    {
+      "id": "automation",
+      "input": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-fe50b283-d753-4728-a7c8-ec143cbd3e1b.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-0cb829e7-871f-4486-a9ba-41dd9f9eb595.png",
+      "path": "public/images/services/automation.png",
+      "prompt": "Use case: background-extraction. Edit target: the supplied existing TopLinkSho service illustration. Primary request: remove ONLY the opaque dark navy studio background and the studio ground/floor/reflection beneath the sculpture; deliver the same isolated sculpture as a PNG with REAL alpha transparency. Preserve its exact arrangement, perspective, complete object silhouette, glass/chrome shapes, blue-magenta-lavender colors, glossy materials, sharp edge details and internal reflections. Preserve every foreground component and the physical base/platform if present; do not crop the sculpture. Background and empty spaces between components must be transparent, not painted navy, white, black or a checkerboard. Keep soft semi-transparent edge highlights with clean antialiasing, without a rectangular haze or opaque halo. Keep dark navy where it is an actual material reflection inside an object. Center the full sculpture on a landscape 3:2 canvas with about 8% transparent padding. No new objects, no text, no watermark, no floor, no background glow sheet, no UI/card frame.",
+      "tool": "built-in image_gen",
+      "transparent": true
+    }
+  ]
+}

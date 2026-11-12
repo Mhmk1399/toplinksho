@@ -3,16 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "node scripts/dev.mjs",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "admin:hash-password": "node scripts/generate-admin-password.mjs",
     "test:backend": "node scripts/backend-test.mjs",
     "test:e2e": "playwright test",
-    "assets:generate": "node scripts/generate-pwa.mjs",
+    "test:artwork": "node scripts/artwork-audit.mjs",
+    "assets:generate": "npm run theme:generate && node --import ./scripts/register-aliases.mjs scripts/generate-pwa.mjs",
     "prebuild": "npm run assets:generate",
-    "test:seo": "node --conditions=react-server --import ./scripts/register-aliases.mjs scripts/seo-test.mjs"
+    "test:seo": "node --conditions=react-server --import ./scripts/register-aliases.mjs scripts/seo-test.mjs",
+    "theme:generate": "node scripts/generate-theme.mjs",
+    "predev": "npm run theme:generate",
+    "test:migration": "node --import ./scripts/register-aliases.mjs scripts/site-migration-test.mjs"
   },
   "engines": {
     "node": ">=22.18.0"

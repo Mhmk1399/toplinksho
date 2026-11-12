@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "label": "صفحه اصلی",
+      "href": "/"
+    },
+    {
+      "label": "خدمات ما",
+      "href": "/services"
+    },
+    {
+      "label": "وبلاگ",
+      "href": "/blog"
+    },
+    {
+      "label": "تعرفه‌ها",
+      "href": "/pricing"
+    },
+    {
+      "label": "درباره ما",
+      "href": "/about-us"
+    },
+    {
+      "label": "تماس با ما",
+      "href": "/contact"
+    }
+  ],
+  "groups": [
+    {
+      "id": "development",
+      "title": "توسعه",
+      "menuTitle": "توسعه",
+      "menuDescription": "وب، اپلیکیشن و فروشگاه اینترنتی",
+      "description": "از سایت و اپلیکیشن تا اتصال سامانه‌ها و خودکارسازی فرایندها.",
+      "path": "/services/development",
+      "image": "/images/hero-services.png",
+      "items": [
+        {
+          "title": "توسعه وب",
+          "description": "وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+          "path": "/services/development/web-development",
+          "summary": "سایت اختصاصی، پنل و اتصال سامانه‌ها"
+        },
+        {
+          "title": "توسعه اپلیکیشن",
+          "description": "اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+          "path": "/services/development/app-development",
+          "summary": "اپلیکیشن موبایل و ابزار تحت وب"
+        },
+        {
+          "title": "توسعه فروشگاه اینترنتی",
+          "description": "مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+          "path": "/services/development/e-commerce-development",
+          "summary": "فروشگاه، سفارش و تجربهٔ خرید"
+        },
+        {
+          "title": "هوش مصنوعی و اتوماسیون",
+          "description": "کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+          "path": "/services/development/ai-automation",
+          "summary": "دستیار هوشمند و خودکارسازی فرایند"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "طراحی",
+      "menuTitle": "طراحی",
+      "menuDescription": "تجربهٔ کاربری و هویت برند",
+      "description": "تجربه‌ای روشن و هویتی منسجم برای ارتباط بهتر با مخاطب.",
+      "path": "/services/design",
+      "image": "/images/hero-services.png",
+      "items": [
+        {
+          "title": "طراحی سایت",
+          "description": "ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+          "path": "/services/design/web-design",
+          "summary": "سایت شرکتی، خدماتی و لندینگ"
+        },
+        {
+          "title": "طراحی رابط و تجربه کاربری",
+          "description": "یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+          "path": "/services/design/ui-designs",
+          "summary": "تجربهٔ کاربر و رابط محصول دیجیتال"
+        },
+        {
+          "title": "هویت برند",
+          "description": "جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+          "path": "/services/design/brand-identity",
+          "summary": "استراتژی، لوگو و هویت بصری"
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "title": "رشد و امنیت",
+      "menuTitle": "سئو و بهینه‌سازی",
+      "menuDescription": "سئو، شبکه‌های اجتماعی و امنیت",
+      "description": "حضور هدفمند در جست‌وجو و شبکه‌های اجتماعی، با زیرساختی قابل مراقبت.",
+      "path": "/services/growth",
+      "image": "/images/hero-services.png",
+      "items": [
+        {
+          "title": "سئو و بهینه‌سازی",
+          "description": "زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+          "path": "/services/growth/seo",
+          "summary": "سئوی فنی، محتوا و جست‌وجوی محلی"
+        },
+        {
+          "title": "بازاریابی شبکه‌های اجتماعی",
+          "description": "با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+          "path": "/services/growth/social-media-marketing",
+          "summary": "استراتژی محتوا و کمپین شبکه‌های اجتماعی"
+        },
+        {
+          "title": "امنیت وب و سامانه‌ها",
+          "description": "نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+          "path": "/services/growth/security",
+          "summary": "ارزیابی، حفاظت و پایش وب‌سایت"
+        }
+      ]
+    }
+  ]
+}

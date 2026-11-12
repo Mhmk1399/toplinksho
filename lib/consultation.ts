@@ -1,4 +1,4 @@
-export const consultationSubjects = ["طراحی سایت", "شبکه‌های اجتماعی", "طراحی کمپین تبلیغاتی", "تبلیغات گوگل ادز", "برندینگ", "طراحی گرافیکی", "تولید محتوا", "تدوین ویدیو", "بهینه‌سازی سئو", "تبلیغات آنلاین", "مشاوره و انتخاب مسیر"] as const;
+export const consultationSubjects = ["طراحی سایت", "شبکه‌های اجتماعی", "طراحی کمپین تبلیغاتی", "تبلیغات گوگل ادز", "برندینگ", "طراحی گرافیکی", "تولید محتوا", "تدوین ویدیو", "بهینه‌سازی سئو", "تبلیغات آنلاین", "مشاوره و انتخاب مسیر", "هوش مصنوعی و اتوماسیون", "امنیت وب‌سایت", "توسعه نرم‌افزار اختصاصی", "توسعه وب", "توسعه اپلیکیشن", "توسعه فروشگاه اینترنتی", "طراحی رابط و تجربه کاربری"] as const;
 export type ConsultationField = "name" | "phone" | "subject" | "description" | "website";
 export type ConsultationValues = Record<ConsultationField, string>;
 export type FieldErrors = Partial<Record<ConsultationField, string>>;

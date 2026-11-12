@@ -47,7 +47,7 @@ The reference is an illuminated chrome-and-glass digital sculpture over a navy n
 
 Public routes are Persian marketing pages. `/admin` is a compact application for reviewing consultation requests. Both use Persian RTL and local Vazirmatn. The current user supplied the content and authorized the backend, admin panel and SMTP integration; conflicting names and statistics must remain unpublished until resolved.
 
-Runtime CSS in `app/globals.css` remains the canonical token source. This document mirrors accepted values. The inline Tailwind theme maps these into semantic utilities: `bg-ink`, `bg-panel`, `text-muted`, `text-accent`, `text-brand-pink` and `text-brand-blue`.
+`theme/theme.json` owns semantic colors. `scripts/generate-theme.mjs` derives the shared Tailwind palettes and legacy paint values into `theme/generated.css` and the offline CSS. `app/globals.css` owns geometry and interaction styles, consumes those variables, and contains no independent palette. This document mirrors the accepted default theme. The inline Tailwind theme maps these into semantic utilities: `bg-ink`, `bg-panel`, `text-muted`, `text-accent`, `text-brand-pink` and `text-brand-blue`.
 
 ## Colors
 
@@ -59,13 +59,21 @@ Local Vazirmatn handles Persian and Latin. Heavy headings, generous paragraph li
 
 ## Layout
 
-`Container` owns the 80rem maximum and gutters. `PageHero` owns the homepage's grid, type rhythm, actions, artwork area and capability strip. Every main public page uses it. Below 768px, centered text precedes the artwork, exactly as on the existing homepage. New section layouts primarily use Tailwind.
+`Container` owns the 80rem maximum and gutters. `PageHero` owns the homepage's grid, type rhythm, actions, artwork area and capability strip. Every main public page uses it. Service groups and specialisms use shared `PublicFrame`, `ServiceDirectory`, `ServicePage` and `ContentBlocks` driven by JSON. The desktop service disclosure and mobile native dialog expose the same three groups and ten service families. Query-based public service search works without client JavaScript. The homepage follows chetahNova's active content order: hero/core services, AI tools, one consultation form, process, FAQ and compact contact. Persian copy in `content/home.fa.json` is concise; source snapshots remain separate. Homepage cards use static glass reflections rather than per-card blur, and only the hero has ambient motion. Homepage section titles use 24–36px with 32px/48px section padding on phone/desktop, preserving the larger shared hero. Below 768px, centered text precedes the artwork, exactly as on the existing homepage. New section layouts primarily use Tailwind.
 
 The admin inbox uses server pagination, URL-based status/page filters, a semantic desktop table and mobile cards. Sensitive search text stays in memory. The document scrolls naturally.
 
 ## Elevation & Depth
 
-One glass shell per major surface; static lighting on the footer. Low-performance mode removes backdrop blur; touch devices use a smaller blur. Generated images are compressed transparent WebP files.
+One glass shell per major surface; static lighting on the footer. Low-performance mode removes backdrop blur; touch devices use a smaller blur. Foreground artwork is supplied as real transparent PNG files. Next image optimization handles responsive transfer while preserving alpha.
+
+`ServiceMenu` follows the owner's latest navigation reference: one dark glass sheet, three compact illustrated service columns and one growth/security feature in a single row. The sheet contains service, pricing, case proposal and consultation shortcuts; the public service catalog owns search. Phones use a native dialog with a sticky logo/close header, three illustrated category disclosures and a sticky consultation action. Transparent PNG artwork is reused with responsive lazy loading, without foreground image masks or blend modes. Static gradients create the glass effect; the menu, columns and backdrop use no backdrop blur or animation loops. Labels and destinations live in `content/navigation.fa.json`, with icons in `NavigationIcon` and colors in the shared theme.
+
+`FeatureCard` owns the complete public content card, following the owner's earlier card reference: a luminous blue-to-pink rounded outer frame, floating artwork over softly faded blue/pink lighting and a subtle grid, and a separate glass text panel with a category pill and short gradient rule. `CardVisual` supplies its image stage; optional foreground and background images are props. `components/ui/feature-card.css` owns the shared reference styling: soft radial-gradient lighting behind the alpha image, a bright blue/pink lower rim, and a diagonal reflection on the separate rounded text panel. Four local blue/pink glass illustrations in `public/images/services` load lazily. Individual cards use static gradients and modest shadows without backdrop blur or animation loops. Functional panels and admin cards share the quieter `neon-surface` treatment through the same palette.
+
+The reference's vertical image-over-text composition is retained on phones. `CardGrid` uses a native horizontal rail for repeated mobile cards, with a visible scrollbar, partial next card, localized swipe cue and keyboard focus; desktop uses a grid. This keeps pages compact without shrinking the illustration into a side thumbnail. Mobile heroes use bounded 640px transparent PNG sources through Next image-optimized picture sources, eager high-priority loading and a preloaded Persian font; desktop heroes retain the original artwork.
+
+`Breadcrumbs` appears before the hero, below the fixed navbar with a safe-area offset. The mobile trail stays on one line and scrolls horizontally with touch and keyboard. The owner explicitly requested hiding only this trail's scrollbar; all other surfaces keep the global scrollbar baseline. Forced-colors mode restores the trail scrollbar. Service section headings name the actual service, and JSON introductions explain domain-specific scope instead of repeating generic marketing copy.
 
 ## Shapes
 
@@ -76,6 +84,8 @@ One glass shell per major surface; static lighting on the footer. Low-performanc
 Shared owners: `Button`, `FormControls`, `PageHero`, `HeroArt`, `ContactForm`, `ConsultationSection`, `ServiceCatalog` and `AdminRequestForm`. Forms use a platform-owned native select, visible labels, associated errors, first-error focus and stable loading buttons.
 
 Hero motion animates transforms on few layers. IntersectionObserver pauses offscreen art, visibility changes pause background tabs, and reduced-motion/low-performance modes stop decoration. Lenis has no idle animation loop. Admin pages use native scrolling.
+
+All page heroes follow the owner's neon reference through `PageHero`: restrained blue/pink ambient light, fine orbital trails around the existing artwork, and a dotted wave at the bottom. The owner's removal of the outer hero frame is retained. `HeroBackdrop` and the artwork render on the server with CSS/SVG geometry; the scene adds no background-image requests, particle library, canvas, animated filters or animation loop. `HeroMotion` is the small client wrapper that retains visibility/motion observation for the foreground only. Mobile places centered copy before the artwork with a smaller title scale; breadcrumbs remain above inner-page heroes. The original optimized high-priority hero image and local font delivery are retained.
 
 ## Do's and Don'ts
 

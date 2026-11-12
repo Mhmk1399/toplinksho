@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "source": "public/images/hero-home.webp",
+      "file": "public/images/hero-home.png",
+      "mobileSource": "public/images/hero-home-mobile.webp",
+      "mobile": "public/images/hero-home-mobile.png",
+      "operation": "Lossless PNG export of existing desktop/mobile alpha; transparent desktop padding, original bounded mobile pixels"
+    },
+    {
+      "source": "public/images/hero-about.webp",
+      "file": "public/images/hero-about.png",
+      "mobileSource": "public/images/hero-about-mobile.webp",
+      "mobile": "public/images/hero-about-mobile.png",
+      "operation": "Lossless PNG export of existing desktop/mobile alpha; transparent desktop padding, original bounded mobile pixels"
+    },
+    {
+      "source": "public/images/hero-services.webp",
+      "file": "public/images/hero-services.png",
+      "mobileSource": "public/images/hero-services-mobile.webp",
+      "mobile": "public/images/hero-services-mobile.png",
+      "operation": "Lossless PNG export of existing desktop/mobile alpha; transparent desktop padding, original bounded mobile pixels"
+    },
+    {
+      "source": "public/images/hero-contact.webp",
+      "file": "public/images/hero-contact.png",
+      "mobileSource": "public/images/hero-contact-mobile.webp",
+      "mobile": "public/images/hero-contact-mobile.png",
+      "operation": "Lossless PNG export of existing desktop/mobile alpha; transparent desktop padding, original bounded mobile pixels"
+    },
+    {
+      "source": "public/images/hero-404.webp",
+      "file": "public/images/hero-404.png",
+      "mobileSource": "public/images/hero-404-mobile.webp",
+      "mobile": "public/images/hero-404-mobile.png",
+      "operation": "Lossless PNG export of existing desktop/mobile alpha; transparent desktop padding, original bounded mobile pixels"
+    }
+  ]
+}

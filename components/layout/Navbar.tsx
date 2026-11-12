@@ -1,131 +1,64 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { Menu, X, ArrowUpLeft } from "lucide-react";
+import { Menu, X, ArrowUpLeft, ChevronDown, ChevronLeft, MessageCircle } from "lucide-react";
+import { DesktopServiceMenu, MobileServiceMenu } from "@/components/layout/ServiceMenu";
+import { NavigationIcon } from "@/components/layout/NavigationIcon";
 import { Brand } from "@/components/shared/Brand";
 import { Container } from "@/components/ui/Container";
 import { navigation } from "@/lib/site";
+
 export function Navbar() {
-  const pathname = usePathname();
-  const header = useRef<HTMLElement>(null);
-  const dialog = useRef<HTMLDialogElement>(null);
-  const trigger = useRef<HTMLButtonElement>(null);
-  function close() {
-    dialog.current?.close();
-    document.body.style.overflow = "";
-    trigger.current?.focus();
-  }
-  function open() {
-    dialog.current?.showModal();
-    document.body.style.overflow = "hidden";
-  }
-  useEffect(() => {
-    const updateScroll = () => {
-      const scrolled = String(window.scrollY > 24);
-      if (header.current && header.current.dataset.scrolled !== scrolled) {
-        header.current.dataset.scrolled = scrolled;
-      }
-    };
-    updateScroll();
-    window.addEventListener("scroll", updateScroll, { passive: true });
-    const media = window.matchMedia("(min-width: 1024px)");
-    const reset = () => {
-      if (media.matches) {
-        dialog.current?.close();
-        document.body.style.overflow = "";
-      }
-    };
-    media.addEventListener("change", reset);
-    return () => {
-      window.removeEventListener("scroll", updateScroll);
-      media.removeEventListener("change", reset);
-      document.body.style.overflow = "";
-    };
-  }, []);
-  return (
-    <header className="site-header" ref={header}>
-      <Container>
-        <nav
-          className="nav-shell"
-          aria-label="ناوبری اصلی"
-          onPointerMove={(event) => {
-            if (
-              event.pointerType !== "mouse" ||
-              document.documentElement.dataset.performance === "reduced" ||
-              window.matchMedia("(prefers-reduced-motion: reduce)").matches
-            ) {
-              return;
-            }
-            const bounds = event.currentTarget.getBoundingClientRect();
-            event.currentTarget.style.setProperty(
-              "--glass-x",
-              `${event.clientX - bounds.left}px`,
-            );
-            event.currentTarget.style.setProperty(
-              "--glass-y",
-              `${event.clientY - bounds.top}px`,
-            );
-          }}
-          onPointerLeave={(event) => {
-            event.currentTarget.style.removeProperty("--glass-x");
-            event.currentTarget.style.removeProperty("--glass-y");
-          }}
-        >
-          <Brand />
-          <div className="desktop-nav">
-            {navigation.map(({ label, href }) => (
-              <Link href={href} key={href} aria-current={pathname === href ? "page" : undefined}>
-                {label}
-              </Link>
-            ))}
-          </div>
-          <Link className="nav-cta" href="/contact#consultation">
-            مشاوره رایگان <ArrowUpLeft size={17} />
-          </Link>
-          <button
-            className="mobile-menu-trigger"
-            onClick={open}
-            ref={trigger}
-            aria-label="باز کردن منو"
-            aria-haspopup="dialog"
-            aria-controls="mobile-navigation"
-          >
-            <Menu />
-          </button>
-        </nav>
-      </Container>
-      <dialog
-        id="mobile-navigation"
-        className="mobile-menu"
-        data-lenis-prevent
-        ref={dialog}
-        aria-label="منوی اصلی"
-        onClose={() => {
-          document.body.style.overflow = "";
-        }}
-        onClick={(event) => {
-          if (event.target === event.currentTarget) close();
-        }}
-      >
-        <div className="mobile-menu-top">
-          <Brand />
-          <button onClick={close} aria-label="بستن منو">
-            <X />
-          </button>
-        </div>
-        <nav aria-label="ناوبری موبایل">
-          {navigation.map(({ label, href }) => (
-            <Link href={href} key={href} onClick={close} aria-current={pathname === href ? "page" : undefined}>
-              {label}
-              <ArrowUpLeft size={20} />
-            </Link>
-          ))}
-          <Link href="/contact#consultation" onClick={close}>
-            مشاوره رایگان <ArrowUpLeft size={20} />
-          </Link>
-        </nav>
-      </dialog>
-    </header>
-  );
+ const pathname=usePathname();
+ const header=useRef<HTMLElement>(null),dialog=useRef<HTMLDialogElement>(null),trigger=useRef<HTMLButtonElement>(null);
+ const services=useRef<HTMLDetailsElement>(null);
+ function close(){ dialog.current?.close();document.body.style.overflow="";trigger.current?.focus(); }
+ function closeServices(){ if(services.current)services.current.open=false; }
+ function openMobile(){
+  const menu=dialog.current;if(!menu)return;
+  menu.querySelector<HTMLDetailsElement>(".mobile-services")?.setAttribute("open","");
+  menu.showModal();document.body.style.overflow="hidden";
+ }
+ useEffect(()=>{
+  const scroll=()=>{const value=String(window.scrollY>24);if(header.current&&header.current.dataset.scrolled!==value)header.current.dataset.scrolled=value;};
+  const outside=(event:PointerEvent)=>{if(services.current?.open&&!services.current.contains(event.target as Node))closeServices();};
+  const media=window.matchMedia("(min-width: 1200px)");
+  const resize=()=>{if(media.matches){dialog.current?.close();document.body.style.overflow="";}else closeServices();};
+  const shortcut=(event:KeyboardEvent)=>{
+   if(event.key.toLowerCase()!=="k"||!(event.ctrlKey||event.metaKey)||event.altKey)return;
+   if((event.target as HTMLElement).closest("input,textarea,select,[contenteditable=true]"))return;
+   if(!media.matches)return;
+   event.preventDefault();if(services.current){services.current.open=true;services.current.querySelector<HTMLAnchorElement>(".service-menu-group")?.focus();}
+  };
+  scroll();window.addEventListener("scroll",scroll,{passive:true});document.addEventListener("pointerdown",outside);
+  document.addEventListener("keydown",shortcut);media.addEventListener("change",resize);
+  return()=>{window.removeEventListener("scroll",scroll);document.removeEventListener("pointerdown",outside);document.removeEventListener("keydown",shortcut);media.removeEventListener("change",resize);document.body.style.overflow="";};
+ },[]);
+ return <header className="site-header" ref={header}><Container>
+  <nav className="nav-shell" aria-label="ناوبری اصلی">
+   <Brand />
+   <div className="desktop-nav">{navigation.map(item=>item.href==="/services"?<div key={item.href} className="nav-services-item" data-current={pathname==="/services"||pathname.startsWith("/services/")}>
+    <details ref={services} className="service-disclosure" onKeyDown={event=>{if(event.key==="Escape"&&services.current?.open){event.preventDefault();closeServices();services.current.querySelector("summary")?.focus();}}} onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))closeServices();}}>
+     <summary aria-label="باز کردن فهرست خدمات" className="service-disclosure-trigger"><span>{item.label}</span><ChevronDown size={15} aria-hidden="true" /></summary>
+     <DesktopServiceMenu onNavigate={closeServices} />
+    </details>
+   </div>:<Link href={item.href} key={item.href} prefetch={false} aria-current={pathname===item.href?"page":undefined}>{item.label}</Link>)}</div>
+   <Link className="nav-cta" href="/contact#consultation" prefetch={false}>مشاوره رایگان<ArrowUpLeft size={17} aria-hidden="true" /></Link>
+   <button type="button" className="mobile-menu-trigger" ref={trigger} onClick={openMobile} aria-label="باز کردن منو" aria-haspopup="dialog" aria-controls="mobile-navigation"><Menu aria-hidden="true" /></button>
+  </nav>
+ </Container>
+ <dialog ref={dialog} id="mobile-navigation" className="mobile-menu service-mobile-menu" data-lenis-prevent aria-label="منوی اصلی" onClose={()=>{document.body.style.overflow="";}}
+  onClick={event=>{
+   if(!dialog.current?.open)return;
+   if(event.target===event.currentTarget){
+    const box=event.currentTarget.getBoundingClientRect();
+    if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)close();
+   }else if((event.target as HTMLElement).closest("a"))close();
+  }}>
+  <div className="mobile-menu-top"><Brand /><button type="button" onClick={close} aria-label="بستن منو"><X size={20} aria-hidden="true" /></button></div>
+  <nav aria-label="ناوبری موبایل">{navigation.map(item=>item.href==="/services"?<MobileServiceMenu key={item.href} onNavigate={close} />:<Link className="mobile-primary-link" href={item.href} key={item.href} prefetch={false} onClick={close} aria-current={pathname===item.href?"page":undefined}><NavigationIcon path={item.href} /><span>{item.label}</span><ChevronLeft size={14} aria-hidden="true" /></Link>)}</nav>
+  <div className="mobile-menu-footer"><Link href="/contact#consultation" prefetch={false} onClick={close} className="service-menu-button"><MessageCircle size={17} aria-hidden="true" />مشاوره رایگان</Link></div>
+ </dialog></header>;
 }

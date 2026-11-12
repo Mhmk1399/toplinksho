@@ -1,0 +1,276 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "path": "/",
+      "width": 1440,
+      "file": "artifacts/hero-neon-home-1440.png",
+      "overflow": false,
+      "heroHeight": 858,
+      "scenery": {
+        "x": 0,
+        "y": 0,
+        "width": 1430,
+        "height": 858,
+        "top": 0,
+        "right": 1430,
+        "bottom": 858,
+        "left": 0
+      },
+      "copyBottom": 767.5,
+      "artTop": 128,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 817
+    },
+    {
+      "path": "/about-us",
+      "width": 1440,
+      "file": "artifacts/hero-neon-about-1440.png",
+      "overflow": false,
+      "heroHeight": 750,
+      "scenery": {
+        "x": 0,
+        "y": 165,
+        "width": 1430,
+        "height": 750,
+        "top": 165,
+        "right": 1430,
+        "bottom": 915,
+        "left": 0
+      },
+      "copyBottom": 729.703125,
+      "artTop": 185,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 818
+    },
+    {
+      "path": "/services",
+      "width": 1440,
+      "file": "artifacts/hero-neon-services-1440.png",
+      "overflow": false,
+      "heroHeight": 750,
+      "scenery": {
+        "x": 0,
+        "y": 165,
+        "width": 1430,
+        "height": 750,
+        "top": 165,
+        "right": 1430,
+        "bottom": 915,
+        "left": 0
+      },
+      "copyBottom": 767.234375,
+      "artTop": 185,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    },
+    {
+      "path": "/contact",
+      "width": 1440,
+      "file": "artifacts/hero-neon-contact-1440.png",
+      "overflow": false,
+      "heroHeight": 750,
+      "scenery": {
+        "x": 0,
+        "y": 165,
+        "width": 1430,
+        "height": 750,
+        "top": 165,
+        "right": 1430,
+        "bottom": 915,
+        "left": 0
+      },
+      "copyBottom": 729.703125,
+      "artTop": 185,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "file": "artifacts/hero-neon-home-390.png",
+      "overflow": false,
+      "heroHeight": 852.453125,
+      "scenery": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 852.453125,
+        "top": 0,
+        "right": 390,
+        "bottom": 852.453125,
+        "left": 0
+      },
+      "copyBottom": 447.453125,
+      "artTop": 457.453125,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 817
+    },
+    {
+      "path": "/about-us",
+      "width": 390,
+      "file": "artifacts/hero-neon-about-390.png",
+      "overflow": false,
+      "heroHeight": 638.984375,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 390,
+        "height": 638.984375,
+        "top": 144,
+        "right": 390,
+        "bottom": 782.984375,
+        "left": 0
+      },
+      "copyBottom": 377.984375,
+      "artTop": 387.984375,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 818
+    },
+    {
+      "path": "/services",
+      "width": 390,
+      "file": "artifacts/hero-neon-services-390.png",
+      "overflow": false,
+      "heroHeight": 684.21875,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 390,
+        "height": 684.21875,
+        "top": 144,
+        "right": 390,
+        "bottom": 828.21875,
+        "left": 0
+      },
+      "copyBottom": 423.21875,
+      "artTop": 433.21875,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    },
+    {
+      "path": "/contact",
+      "width": 390,
+      "file": "artifacts/hero-neon-contact-390.png",
+      "overflow": false,
+      "heroHeight": 638.984375,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 390,
+        "height": 638.984375,
+        "top": 144,
+        "right": 390,
+        "bottom": 782.984375,
+        "left": 0
+      },
+      "copyBottom": 377.984375,
+      "artTop": 387.984375,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "file": "artifacts/hero-neon-home-320.png",
+      "overflow": false,
+      "heroHeight": 817.53125,
+      "scenery": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 817.53125,
+        "top": 0,
+        "right": 320,
+        "bottom": 817.53125,
+        "left": 0
+      },
+      "copyBottom": 457.53125,
+      "artTop": 467.53125,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 817
+    },
+    {
+      "path": "/about-us",
+      "width": 320,
+      "file": "artifacts/hero-neon-about-320.png",
+      "overflow": false,
+      "heroHeight": 589.34375,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 320,
+        "height": 589.34375,
+        "top": 144,
+        "right": 320,
+        "bottom": 733.34375,
+        "left": 0
+      },
+      "copyBottom": 373.34375,
+      "artTop": 383.34375,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 818
+    },
+    {
+      "path": "/services",
+      "width": 320,
+      "file": "artifacts/hero-neon-services-320.png",
+      "overflow": false,
+      "heroHeight": 629.9375,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 320,
+        "height": 629.9375,
+        "top": 144,
+        "right": 320,
+        "bottom": 773.9375,
+        "left": 0
+      },
+      "copyBottom": 413.9375,
+      "artTop": 423.9375,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    },
+    {
+      "path": "/contact",
+      "width": 320,
+      "file": "artifacts/hero-neon-contact-320.png",
+      "overflow": false,
+      "heroHeight": 629.9375,
+      "scenery": {
+        "x": 0,
+        "y": 144,
+        "width": 320,
+        "height": 629.9375,
+        "top": 144,
+        "right": 320,
+        "bottom": 773.9375,
+        "left": 0
+      },
+      "copyBottom": 413.9375,
+      "artTop": 423.9375,
+      "buttonClear": true,
+      "sceneElements": 30,
+      "backgroundGzipBytes": 820
+    }
+  ],
+  "reduced": {
+    "motion": "none",
+    "flareShadow": "none",
+    "scroll": "native"
+  },
+  "pageErrors": [],
+  "limits": "Local Chrome and simulated constrained device checks; no physical-device benchmark."
+}

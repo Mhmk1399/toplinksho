@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "sourceServiceRoutes": 47,
+  "publicRoutes": 61,
+  "primaryNavigation": 6,
+  "serviceGroups": 3,
+  "verifiedPaintUses": 213,
+  "theme": "theme/theme.json",
+  "sourceCodeExecuted": false
+}

@@ -1,5 +1,7 @@
 import { ChartNoAxesCombined, Globe2, Waypoints } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { FeatureCard } from "@/components/ui/FeatureCard";
+import { CardGrid } from "@/components/ui/CardGrid";
 import { SectionIntro } from "@/components/shared/SectionIntro";
 
 const benefits = [
@@ -11,6 +13,6 @@ const benefits = [
 export function Growth() {
   return <section className="section-space border-y border-white/5 bg-panel/30"><Container>
     <SectionIntro eyebrow="رشد کسب‌وکار" title={<>برند شدن سخت نیست؛<br /><span className="gradient-text">مسیر درست می‌خواهد.</span></>} description="چگونه با دیجیتال مارکتینگ کسب‌وکار خود را رونق دهیم؟ از شناخت بازار و مخاطب شروع می‌کنیم و با محتوا، طراحی و تبلیغات ادامه می‌دهیم." />
-    <div className="grid gap-7 md:grid-cols-3">{benefits.map(({ icon: Icon, title, text }) => <article key={title} className="border-t border-white/15 pt-7"><Icon size={26} className="mb-6 text-accent" strokeWidth={1.5} aria-hidden="true" /><h3 className="mb-3 text-xl font-semibold">{title}</h3><p className="text-sm leading-8 text-muted">{text}</p></article>)}</div>
+    <CardGrid label="مزیت‌های دیجیتال مارکتینگ" mobileScroll>{benefits.map(({icon:Icon,title,text})=><FeatureCard key={title} title={title} description={text} visual="growth" category="دیجیتال مارکتینگ" icon={<Icon size={18} />} />)}</CardGrid>
   </Container></section>;
 }

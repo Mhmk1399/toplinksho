@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-11-12T08:21:08.404Z",
+  "entries": [
+    {
+      "id": "development",
+      "subject": "A beautifully arranged miniature digital product studio: one rounded frosted-glass desktop browser with abstract modular interface panels, a slim upright smartphone, and one small polished chrome connector linking them. No graphs. Emphasize web and app development with elegant clear glass hardware.",
+      "prompt": "Use case: stylized-concept. Asset type: a premium service-card illustration for the Persian TopLinkSho agency website. A beautifully arranged miniature digital product studio: one rounded frosted-glass desktop browser with abstract modular interface panels, a slim upright smartphone, and one small polished chrome connector linking them. No graphs. Emphasize web and app development with elegant clear glass hardware. Style: high-end restrained 3D product photography, tactile thick liquid glass, brushed chrome, polished edges, subtle reflections. Palette: dark navy #080a16, cobalt blue #343db5, magenta #f51b7e, lavender #c2a1ff. Wide landscape composition 3:2, a single centered coherent object cluster with generous negative space at every edge, all objects fully inside frame. Background: seamless very dark navy studio background, soft diffuse grounding shadow. Lighting: soft lavender rim and controlled magenta highlights; readable silhouette at small thumbnail sizes. No text, letters, logos, watermark, people, charts with labels, or extra clutter. Matches a chrome and blue-pink glass brand; elegant and minimal, no noisy particles.",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-4122ee1c-352f-4a75-b9e2-d85e109d208c.png",
+      "path": "public/images/services/development.webp",
+      "tool": "built-in image_gen",
+      "transparent": false,
+      "metadata": {
+        "format": "webp",
+        "mediaType": "image/webp",
+        "width": 640,
+        "height": 427,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 640,
+          "height": 427
+        }
+      }
+    },
+    {
+      "id": "design",
+      "subject": "A sculptural digital design workbench: three floating layered rounded interface frames, a bold polished chrome cursor arrow, and two glossy cobalt and magenta geometric brand shapes arranged with precise composition. Convey web design, UI UX and visual identity.",
+      "prompt": "Use case: stylized-concept. Asset type: a premium service-card illustration for the Persian TopLinkSho agency website. A sculptural digital design workbench: three floating layered rounded interface frames, a bold polished chrome cursor arrow, and two glossy cobalt and magenta geometric brand shapes arranged with precise composition. Convey web design, UI UX and visual identity. Style: high-end restrained 3D product photography, tactile thick liquid glass, brushed chrome, polished edges, subtle reflections. Palette: dark navy #080a16, cobalt blue #343db5, magenta #f51b7e, lavender #c2a1ff. Wide landscape composition 3:2, a single centered coherent object cluster with generous negative space at every edge, all objects fully inside frame. Background: seamless very dark navy studio background, soft diffuse grounding shadow. Lighting: soft lavender rim and controlled magenta highlights; readable silhouette at small thumbnail sizes. No text, letters, logos, watermark, people, charts with labels, or extra clutter. Matches a chrome and blue-pink glass brand; elegant and minimal, no noisy particles.",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-259dc4ec-eb61-4c18-97f3-2ef4804f9ae7.png",
+      "path": "public/images/services/design.webp",
+      "tool": "built-in image_gen",
+      "transparent": false,
+      "metadata": {
+        "format": "webp",
+        "mediaType": "image/webp",
+        "width": 640,
+        "height": 427,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 640,
+          "height": 427
+        }
+      }
+    },
+    {
+      "id": "growth",
+      "subject": "A refined digital growth composition: a thick transparent glass magnifying lens framing a small web search panel, with three simple rising translucent blue blocks and one elegant magenta path connecting them. Search, content discovery and sustainable business growth. No numeric metrics.",
+      "prompt": "Use case: stylized-concept. Asset type: a premium service-card illustration for the Persian TopLinkSho agency website. A refined digital growth composition: a thick transparent glass magnifying lens framing a small web search panel, with three simple rising translucent blue blocks and one elegant magenta path connecting them. Search, content discovery and sustainable business growth. No numeric metrics. Style: high-end restrained 3D product photography, tactile thick liquid glass, brushed chrome, polished edges, subtle reflections. Palette: dark navy #080a16, cobalt blue #343db5, magenta #f51b7e, lavender #c2a1ff. Wide landscape composition 3:2, a single centered coherent object cluster with generous negative space at every edge, all objects fully inside frame. Background: seamless very dark navy studio background, soft diffuse grounding shadow. Lighting: soft lavender rim and controlled magenta highlights; readable silhouette at small thumbnail sizes. No text, letters, logos, watermark, people, charts with labels, or extra clutter. Matches a chrome and blue-pink glass brand; elegant and minimal, no noisy particles.",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-61c4daea-23cc-4e31-9a86-443fd111334e.png",
+      "path": "public/images/services/growth.webp",
+      "tool": "built-in image_gen",
+      "transparent": false,
+      "metadata": {
+        "format": "webp",
+        "mediaType": "image/webp",
+        "width": 640,
+        "height": 427,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 640,
+          "height": 427
+        }
+      }
+    },
+    {
+      "id": "automation",
+      "subject": "A premium approachable AI automation sculpture: a central thick frosted glass microchip with a soft cobalt luminous core, three tiny floating glass workflow modules joined by smooth chrome connectors, and a single magenta spark. Human-friendly intelligent workflow, no robot faces.",
+      "prompt": "Use case: stylized-concept. Asset type: a premium service-card illustration for the Persian TopLinkSho agency website. A premium approachable AI automation sculpture: a central thick frosted glass microchip with a soft cobalt luminous core, three tiny floating glass workflow modules joined by smooth chrome connectors, and a single magenta spark. Human-friendly intelligent workflow, no robot faces. Style: high-end restrained 3D product photography, tactile thick liquid glass, brushed chrome, polished edges, subtle reflections. Palette: dark navy #080a16, cobalt blue #343db5, magenta #f51b7e, lavender #c2a1ff. Wide landscape composition 3:2, a single centered coherent object cluster with generous negative space at every edge, all objects fully inside frame. Background: seamless very dark navy studio background, soft diffuse grounding shadow. Lighting: soft lavender rim and controlled magenta highlights; readable silhouette at small thumbnail sizes. No text, letters, logos, watermark, people, charts with labels, or extra clutter. Matches a chrome and blue-pink glass brand; elegant and minimal, no noisy particles.",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-fe50b283-d753-4728-a7c8-ec143cbd3e1b.png",
+      "path": "public/images/services/automation.webp",
+      "tool": "built-in image_gen",
+      "transparent": false,
+      "metadata": {
+        "format": "webp",
+        "mediaType": "image/webp",
+        "width": 640,
+        "height": 427,
+        "space": "srgb",
+        "channels": 3,
+        "depth": "uchar",
+        "isProgressive": false,
+        "isPalette": false,
+        "hasProfile": false,
+        "hasAlpha": false,
+        "autoOrient": {
+          "width": 640,
+          "height": 427
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const port = 3198;
 const server = spawn(process.execPath, ['node_modules/next/dist/bin/next', 'start', '-p', String(port), '-H', '127.0.0.1'], { stdio: ['ignore', 'pipe', 'pipe'] });
@@ -15,7 +15,9 @@ try {
     await new Promise(resolve=>setTimeout(resolve,250));
   }
   assert(ready, `Server did not start: ${logs}`);
-  const routes = ['/', '/about-us', '/services', '/contact', '/services/web-design','/services/social-media','/services/branding','/services/google-ads','/services/campaigns', '/services/graphic-design', '/services/content-production', '/services/seo', '/services/online-advertising'];
+  const serviceData=JSON.parse(await readFile("content/services.fa.json","utf8"));
+  const mainData=JSON.parse(await readFile("content/pages.fa.json","utf8"));
+  const routes=["/",...serviceData.pages.map(page=>page.path),...mainData.pages.map(page=>page.path),"/services/campaigns","/services/google-ads","/services/graphic-design","/services/content-production","/services/online-advertising"];
   for(const route of routes) {
     const response = await fetch(base + route);
     const html = await response.text();
@@ -33,7 +35,7 @@ try {
     if(route==='/') {
       assert.match(html,/tel:\+989122191549/);
       assert.match(html,/mailto:Info@TopLinkSho.com/);
-      for(const id of ['top','services','about','portfolio','blog','contact']) assert(html.includes(`id="${id}"`),`Missing ${id}`);
+      for(const id of ['top','services','ai-solutions','consultation','process','faq','contact']) assert(html.includes(`id="${id}"`),`Missing ${id}`);
     }
     results.push({route,status:response.status,h1:1,persianRTL:true,noindex:true,noPlaceholderLinks:true});
   }

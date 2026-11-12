@@ -1,24 +1,19 @@
 import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
-import { ArrowLeft } from "lucide-react";
-import { GlassCard } from "@/components/ui/GlassCard";
+import { FeatureCard } from "@/components/ui/FeatureCard";
+import { visualFor, type VisualKey } from "@/lib/visuals";
 
-export function ServiceCard({ icon: Icon, number, title, label, description, color, href }: { href: string; icon: LucideIcon; number: number; title: string; label?: string; description: string; color: string }) {
-  const accents: Record<string, string> = { pink: "from-pink-500/25 text-pink-300", purple: "from-violet-500/25 text-violet-300", blue: "from-blue-500/25 text-blue-300", cyan: "from-cyan-500/25 text-cyan-300", rose: "from-rose-500/25 text-rose-300" };
-  return <GlassCard className="group flex min-h-[290px] flex-col overflow-hidden" hover glow padding="lg"><span className="absolute left-6 top-5 text-sm font-semibold text-white/25">۰{number}</span><span className={`mb-7 grid size-14 place-items-center rounded-2xl bg-gradient-to-br to-transparent ${accents[color]}`}><Icon size={25} strokeWidth={1.7} /></span><div><h3 className="text-xl font-bold">{title}</h3>{label ? <span className="mt-1 inline-block text-xs text-white/40" dir="ltr">{label}</span> : null}<p className="mt-3 leading-7 text-white/60">{description}</p></div><a className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-white/55 transition group-hover:text-white" href={href}>بیشتر بدانید <ArrowLeft size={16} /></a></GlassCard>;
+export function ServiceCard({ icon: Icon, title, label, description, href }: { href: string; icon: LucideIcon; number: number; title: string; label?: string; description: string; color: string }) {
+ return <FeatureCard title={title} description={description} href={href} category={label || "خدمات"} icon={<Icon size={18} />} />;
 }
-
 export function MetricCard({ icon, value, label }: { icon: ReactNode; value: string; label: string }) {
-  return <div className="flex items-center justify-center gap-4 border-l border-white/10 px-6 last:border-0 max-md:border-b max-md:border-l-0 max-md:py-6 max-md:last:border-b-0"><span className="grid size-11 place-items-center rounded-xl bg-violet-500/15 text-violet-300">{icon}</span><div><strong className="text-3xl font-extrabold" dir="ltr">{value}</strong><p className="mt-1 text-sm text-white/50">{label}</p></div></div>;
+ return <div className="neon-surface flex items-center justify-center gap-4 p-6"><span className="grid size-11 place-items-center rounded-xl bg-accent/10 text-accent">{icon}</span><div><strong className="text-3xl font-extrabold" dir="ltr">{value}</strong><p className="mt-1 text-sm text-muted">{label}</p></div></div>;
 }
-
 export function PortfolioCard({ name, category, result, visual, size }: { name: string; category: string; result: string; visual: string; size: string }) {
-  const art: Record<string, string> = { cosmetic: "from-fuchsia-950 via-pink-700 to-orange-300", food: "from-orange-950 via-red-700 to-amber-300", commerce: "from-slate-950 via-blue-800 to-cyan-400", fashion: "from-purple-950 via-violet-700 to-pink-400" };
-  const dimensions: Record<string, string> = { wide: "md:col-span-2 min-h-[360px]", tall: "md:row-span-2 min-h-[520px]", standard: "min-h-[300px]" };
-  return <article className={`group relative isolate overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br ${art[visual]} ${dimensions[size]}`}><div className="absolute inset-0 opacity-70 transition duration-500 group-hover:scale-105" aria-hidden="true"><span className="absolute left-[12%] top-[14%] size-40 rounded-full border-[28px] border-white/15" /><i className="absolute bottom-[22%] right-[18%] h-28 w-20 rotate-12 rounded-[40%] bg-white/20 shadow-2xl" /><b className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,.3),transparent_32%)]" /></div><div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#050817] via-[#050817]/75 to-transparent p-7 pt-24"><span className="text-sm text-white/65">{category}</span><h3 className="mt-2 text-2xl font-bold">{name}</h3><p className="mt-2 text-sm text-white/65">{result}</p></div></article>;
+ const images: Record<string,VisualKey>={cosmetic:"design",food:"design",commerce:"development",fashion:"design"};
+ return <FeatureCard title={name} description={result} category={category} visual={images[visual] || "design"} className={size==="wide"?"md:col-span-2":""} />;
 }
-
 export function ArticleCard({ title, excerpt, category, date, icon: Icon, visual, href }: { href: string; title: string; excerpt: string; category: string; date: string; icon: LucideIcon; visual: string }) {
-  const visuals: Record<string, string> = { social: "from-pink-600 to-violet-800", ads: "from-blue-600 to-cyan-800", brand: "from-violet-600 to-fuchsia-900", web: "from-cyan-600 to-blue-900" };
-  return <article className="group overflow-hidden rounded-[22px] border border-white/10 bg-white/[.035] transition duration-200 hover:-translate-y-1 hover:border-white/20"><div className={`relative grid h-48 place-items-center overflow-hidden bg-gradient-to-br ${visuals[visual]}`}><span className="relative z-10 grid size-20 place-items-center rounded-3xl border border-white/20 bg-white/10 text-white backdrop-blur-md"><Icon size={36} strokeWidth={1.35} /></span><i className="absolute -right-8 -top-10 size-36 rounded-full border-[25px] border-white/10" /><b className="absolute -bottom-16 -left-10 size-44 rounded-full bg-white/10 blur-xl" /></div><div className="p-6"><div className="flex justify-between gap-4 text-xs text-white/45"><span className="text-pink-300">{category}</span><time>{date}</time></div><h3 className="mt-4 text-lg font-bold leading-7">{title}</h3><p className="mt-3 leading-7 text-white/55">{excerpt}</p><a className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition group-hover:text-pink-300" href={href}>مطالعه مقاله <ArrowLeft size={16} /></a></div></article>;
+ return <FeatureCard title={title} description={excerpt} category={category} href={href} visual={visualFor(visual)}
+  icon={<Icon size={18} />} linkLabel="مطالعهٔ مقاله" footer={<time className="text-xs text-muted">{date}</time>} />;
 }

@@ -1,0 +1,202 @@
+/* Static light and real transparent artwork; shared by every public content card. */
+.neon-surface.feature-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow:
+    0 0 14px color-mix(in srgb, var(--brand-blue) 26%, transparent),
+    inset 0 0 12px color-mix(in srgb, var(--accent) 9%, transparent);
+}
+.feature-card .feature-card-art {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.85;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 22px 22px 0 0;
+  background: transparent;
+}
+.feature-card-art .card-visual-grid {
+  inset: 0 6% 8%;
+  opacity: .18;
+  background-size: 34px 34px;
+  mask-image: linear-gradient(to bottom, transparent, var(--text) 22%, transparent 94%);
+}
+.feature-card-art .card-visual-image {
+  padding: 3px 19px 0;
+  z-index: 1;
+}
+.feature-card-art .card-visual-background {
+  z-index: -1;
+  object-fit: cover;
+  opacity: .5;
+}
+.feature-card-art .card-visual-icon {
+  inset-inline-start: 5px;
+  top: 5px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  background: linear-gradient(140deg, color-mix(in srgb, var(--accent) 12%, transparent), transparent), var(--background);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--accent) 24%, transparent);
+}
+.feature-art-wave {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.feature-art-wave--blue {
+  background: radial-gradient(ellipse at -6% 78%, color-mix(in srgb, var(--card-cool) 60%, transparent), color-mix(in srgb, var(--brand-blue) 24%, transparent) 29%, transparent 65%);
+}
+.feature-art-wave--pink {
+  background: radial-gradient(ellipse at 106% 78%, color-mix(in srgb, var(--card-hot) 64%, transparent), color-mix(in srgb, var(--card-hot) 24%, transparent) 28%, transparent 65%);
+}
+.feature-card-panel {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin-top: -6px;
+  padding: 22px 20px 21px;
+  border: 1px solid transparent;
+  border-radius: 29px;
+  background:
+    radial-gradient(ellipse at -2% 107%, color-mix(in srgb, var(--card-cool) 92%, transparent), transparent 35%) padding-box,
+    radial-gradient(ellipse at 103% 108%, color-mix(in srgb, var(--card-hot) 92%, transparent), transparent 45%) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--brand-blue) 54%, var(--surface)), color-mix(in srgb, var(--surface) 90%, var(--brand-blue)) 56%, color-mix(in srgb, var(--card-hot) 22%, var(--surface))) padding-box,
+    linear-gradient(128deg, var(--card-cool), color-mix(in srgb, var(--accent) 48%, transparent) 36%, color-mix(in srgb, var(--accent) 18%, transparent) 62%, var(--card-hot)) border-box;
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--text) 29%, transparent),
+    inset 0 -1px 3px color-mix(in srgb, var(--accent) 55%, transparent),
+    0 7px 14px color-mix(in srgb, var(--brand-blue) 22%, transparent);
+}
+.feature-card-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  clip-path: ellipse(100% 90% at -25% -30%);
+  background: linear-gradient(147deg, color-mix(in srgb, var(--text) 14%, transparent), transparent 62%);
+}
+.feature-card-heading {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.feature-card-title {
+  margin: 0;
+  min-width: 0;
+  color: var(--text);
+  font-size: clamp(16px, 1.5vw, 22px);
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -.55px;
+  overflow-wrap: anywhere;
+}
+.feature-card-category {
+  flex-shrink: 0;
+  max-width: 40%;
+  margin-top: 2px;
+  padding: 4px;
+  border: 1px solid color-mix(in srgb, var(--accent) 46%, transparent);
+  border-radius: 24px;
+  color: var(--text);
+  background: linear-gradient(115deg, color-mix(in srgb, var(--brand-blue) 35%, transparent), color-mix(in srgb, var(--card-hot) 20%, transparent));
+  box-shadow: inset 0 0 10px color-mix(in srgb, var(--accent) 11%, transparent);
+  font-size: 10px;
+  font-weight: 650;
+  line-height: 1.9;
+}
+.feature-card-rule {
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin-top: 11px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--brand-blue), var(--card-hot), var(--accent));
+}
+.feature-card-description {
+  position: relative;
+  margin: 13px 0 0;
+  color: color-mix(in srgb, var(--text) 87%, var(--accent));
+  font-size: 13px;
+  line-height: 2.1;
+}
+.feature-card-extra,
+.feature-card-footer {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+  margin-top: 16px;
+}
+.feature-card-extra :is(details, summary, a, button, input, select, textarea),
+.feature-card-footer :is(a, button) { pointer-events: auto; }
+.feature-card-hint {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 16px;
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1.9;
+}
+.feature-card-cover-link {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-radius: inherit;
+}
+.neon-surface.feature-card--linked:hover {
+  box-shadow: 0 0 18px color-mix(in srgb, var(--brand-blue) 33%, transparent), inset 0 0 14px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.feature-card:focus-within { outline: 2px solid var(--accent); outline-offset: 4px; }
+.feature-card .feature-card-cover-link:focus-visible { outline: 0; }
+.feature-card--compact .feature-card-art { aspect-ratio: 2.1; }
+.feature-card--compact .feature-card-title { font-size: 18px; }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+.card-grid-wrap { min-width: 0; }
+.card-grid-cue { display: none; }
+@media (max-width: 1023px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 639px) {
+  .card-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .card-grid.card-grid--rail {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 6px;
+    padding: 8px 6px 16px;
+  }
+  .card-grid.card-grid--rail > * { flex: 0 0 88%; width: 88%; max-width: 340px; min-width: 0; scroll-snap-align: start; }
+  .card-grid-cue { display: block; margin-bottom: 8px; color: var(--muted); font-size: 10px; line-height: 1.9; }
+  .neon-surface.feature-card { padding: 9px; border-radius: 28px; }
+  .feature-card-panel { padding: 18px 17px 20px; border-radius: 25px; }
+  .feature-card-title { font-size: 20px; }
+  .feature-card-category { padding: 4px 8px; font-size: 9px; }
+  .feature-card-description { font-size: 12px; line-height: 2.05; }
+}
+html[data-performance="reduced"] .neon-surface.feature-card,
+html[data-performance="reduced"] .feature-card-panel { box-shadow: none; }
+@media (forced-colors: active) {
+  .neon-surface.feature-card, .feature-card-panel, .feature-card-category { background: Canvas; border-color: CanvasText; box-shadow: none; }
+  .feature-card :is(.feature-card-title, .feature-card-description, .feature-card-category, .feature-card-hint) { color: CanvasText; }
+  .feature-card-panel::before, .feature-art-wave, .feature-card-art .card-visual-grid { display: none; }
+}

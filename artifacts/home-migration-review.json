@@ -1,0 +1,55 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "mainHeight": 3675,
+      "overflow": false,
+      "canvas": 0,
+      "sections": [
+        "top",
+        "services",
+        "ai-solutions",
+        "consultation",
+        "process",
+        "faq",
+        "contact"
+      ],
+      "htmlBytes": 107139
+    },
+    {
+      "width": 390,
+      "mainHeight": 5613,
+      "overflow": false,
+      "canvas": 0,
+      "sections": [
+        "top",
+        "services",
+        "ai-solutions",
+        "consultation",
+        "process",
+        "faq",
+        "contact"
+      ],
+      "htmlBytes": 107139
+    },
+    {
+      "width": 320,
+      "mainHeight": 5849,
+      "overflow": false,
+      "canvas": 0,
+      "sections": [
+        "top",
+        "services",
+        "ai-solutions",
+        "consultation",
+        "process",
+        "faq",
+        "contact"
+      ],
+      "htmlBytes": 107139
+    }
+  ],
+  "runtimeErrors": [],
+  "accessibility": [],
+  "passed": true
+}

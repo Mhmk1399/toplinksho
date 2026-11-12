@@ -1,0 +1,21 @@
+{
+  "name": "TopLinkSho",
+  "mode": "dark",
+  "colors": {
+    "background": "#080a16",
+    "surface": "#111422",
+    "text": "#f5f4fa",
+    "muted": "#a3a4b8",
+    "accent": "#c2a1ff",
+    "blue": "#343db5",
+    "pink": "#f51b7e",
+    "actionPink": "#bc155f",
+    "success": "#34d399",
+    "danger": "#fb7185",
+    "warning": "#fbbf24",
+    "info": "#38bdf8",
+    "shadow": "#000000",
+    "onPrimary": "#ffffff"
+  },
+  "notes": "Edit these semantic colors, then run npm run theme:generate (or npm run dev / npm run build). Interface tones and legacy paint values are generated from this palette. Raster artwork and the logo retain their original colors."
+}

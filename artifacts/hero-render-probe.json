@@ -1,0 +1,61 @@
+{
+  "mode": "Chrome mobile, 4x applied CPU, local network, diagnostic CSS overrides only",
+  "results": [
+    {
+      "name": "current",
+      "long": [
+        {
+          "t": 978.2000000029802,
+          "d": 277
+        }
+      ],
+      "lcp": 1604,
+      "total": 4880
+    },
+    {
+      "name": "no-hero-scenery",
+      "long": [
+        {
+          "t": 953.9000000059605,
+          "d": 295
+        },
+        {
+          "t": 1261,
+          "d": 183
+        }
+      ],
+      "lcp": 900,
+      "total": 4343.20000000298
+    },
+    {
+      "name": "simple-glass",
+      "long": [
+        {
+          "t": 771.8999999910593,
+          "d": 224
+        },
+        {
+          "t": 997.5999999940395,
+          "d": 359
+        }
+      ],
+      "lcp": 1360,
+      "total": 4486.0999999940395
+    },
+    {
+      "name": "current-repeat",
+      "long": [
+        {
+          "t": 829.2999999970198,
+          "d": 171
+        },
+        {
+          "t": 1001.5999999940395,
+          "d": 305
+        }
+      ],
+      "lcp": 1436,
+      "total": 4463.699999988079
+    }
+  ]
+}

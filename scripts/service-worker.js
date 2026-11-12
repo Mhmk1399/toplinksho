@@ -5,7 +5,7 @@ const SHELL = PREFIX + "shell-" + VERSION;
 const PAGES = PREFIX + "pages-" + VERSION;
 const ASSETS = PREFIX + "assets-" + VERSION;
 const PUBLIC_ROUTES = new Set(__PUBLIC_ROUTES__);
-const CORE = ["/offline.html", "/images/logo.webp", "/icons/icon-192.png", "/icons/icon-512.png"];
+const CORE = ["/theme.css", "/offline.html", "/images/logo.webp", "/icons/icon-192.png", "/icons/icon-512.png"];
 self.addEventListener("install", event => {
   // An update waits for existing tabs to close; never interrupt an unsaved form.
   event.waitUntil(caches.open(SHELL).then(cache => cache.addAll(CORE)));
@@ -45,11 +45,11 @@ self.addEventListener("fetch", event => {
     })());
     return;
   }
-  const cacheable = url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/fonts/") || url.pathname.startsWith("/icons/") || url.pathname.startsWith("/images/") || url.pathname === "/_next/image";
+  const cacheable = CORE.includes(url.pathname) || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/fonts/") || url.pathname.startsWith("/icons/") || url.pathname.startsWith("/images/") || url.pathname === "/_next/image";
   if (!cacheable) return;
   event.respondWith((async () => {
     const cache = await caches.open(ASSETS);
-    const cached = await cache.match(request);
+    const cached = await cache.match(request) || await (await caches.open(SHELL)).match(request);
     if (cached) return cached;
     const response = await fetch(request);
     event.waitUntil(store(ASSETS, request, response.clone(), 100));

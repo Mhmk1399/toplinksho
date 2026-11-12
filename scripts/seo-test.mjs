@@ -31,10 +31,11 @@ for (const [index, item] of cases.entries()) {
     assert(!titles.has(metadata.title.absolute)); titles.add(metadata.title.absolute);
     count++;
   }
-  assert.equal(urls.size, 13);
+  assert.equal(urls.size, seo.publicPages.length);
 }
 process.env.APP_URL = "https://toplinksho.com"; process.env.SITE_INDEXABLE = "true"; process.env.VERCEL_ENV = "";
-const { publicPages } = await import("../lib/seo.ts");
+const { publicPages, pageMetadata } = await import("../lib/seo.ts");
+const home = JSON.parse(await (await import("node:fs/promises")).readFile("content/home.fa.json", "utf8"));
 const { pageStructuredData } = await import("../lib/structured-data.ts");
 for (const page of publicPages) {
   const graph = pageStructuredData(page.path);
@@ -43,17 +44,23 @@ for (const page of publicPages) {
   assert(nodes.some(node => node["@type"] === "ProfessionalService"));
   assert(nodes.some(node => node["@type"] === "WebSite"));
   assert(!JSON.stringify(graph).includes("aggregateRating"));
+  if (page.kind === "home") {
+    assert.equal(pageMetadata("/").title.absolute, home.seo.title);
+    assert.equal(pageMetadata("/").description, home.seo.description);
+    assert.deepEqual(nodes.find(node => node["@type"] === "FAQPage").mainEntity.map(item => ({ question: item.name, answer: item.acceptedAnswer.text })), home.faq.items.map(item => ({ question: item.question, answer: item.answer })));
+    assert.deepEqual(nodes.find(node => node["@type"] === "OfferCatalog").itemListElement.map(item => item.itemOffered.name), home.services.items.map(item => item.title));
+  }
   if (page.kind === "service") {
-    const { getService } = await import("../lib/services.ts");
-    const service = getService(page.slug);
+    const { findServicePage } = await import("../lib/page-registry.ts");
+    const service = findServicePage(page.path);
     assert.deepEqual(nodes.find(node => node["@type"] === "FAQPage").mainEntity.map(item => item.name), service.faq.map(faq => faq.question));
   }
-  const image = await sharp("public/social/" + (page.slug || page.kind) + ".png").metadata();
+  const image = await sharp("public/social/" + page.socialId + ".png").metadata();
   assert.equal(image.width, 1200); assert.equal(image.height, 630);
 }
 const { default: robots } = await import("../app/robots.ts");
 const { default: sitemap } = await import("../app/sitemap.ts");
-assert.equal(sitemap().length, 13);
+assert.equal(sitemap().length, publicPages.length);
 assert(sitemap().every(item => !item.url.includes("/admin") && !item.lastModified));
 assert(robots().rules.disallow.includes("/admin"));
 const { default: manifest } = await import("../app/manifest.ts");
@@ -62,5 +69,5 @@ for (const icon of manifest().icons) {
   const metadata = await sharp("public" + icon.src).metadata();
   assert.equal(metadata.width + "x" + metadata.height, icon.sizes);
 }
-await writeFile("artifacts/seo-results.json", JSON.stringify({ passed: true, metadataChecks: count, publicGraphs: 13, socialCards: 13, indexingModes: cases.length, productionSitemap: 13, forgedRatings: false }, null, 2));
-console.log("PASS SEO: 65 page/mode combinations, 13 graphs/social images, production sitemap/robots and PWA icons");
+await writeFile("artifacts/seo-results.json", JSON.stringify({ passed: true, metadataChecks: count, publicGraphs: publicPages.length, socialCards: publicPages.length, indexingModes: cases.length, productionSitemap: publicPages.length, forgedRatings: false }, null, 2));
+console.log("PASS SEO: "+count+" page/mode combinations, "+publicPages.length+" graphs/social images, production sitemap/robots and PWA icons");

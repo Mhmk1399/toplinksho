@@ -20,7 +20,7 @@ export default async function SettingsPage() {
         </p>
       </div>
       <div className="grid gap-6 lg:grid-cols-2">
-        <section className="rounded-3xl border border-white/10 bg-panel/70 p-7">
+        <section className="neon-surface p-7">
           <Mail size={26} className="mb-6 text-accent" aria-hidden="true" />
           <h2 className="text-xl font-semibold">اعلان ایمیلی درخواست‌ها</h2>
           <p className="mt-4 text-sm leading-8 text-muted">
@@ -57,7 +57,7 @@ export default async function SettingsPage() {
             <VerifyMailButton />
           </div>
         </section>
-        <section className="rounded-3xl border border-white/10 bg-panel/70 p-7">
+        <section className="neon-surface p-7">
           <LockKeyhole
             size={26}
             className="mb-6 text-accent"

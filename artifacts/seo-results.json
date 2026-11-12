@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "metadataChecks": 65,
-  "publicGraphs": 13,
-  "socialCards": 13,
+  "metadataChecks": 305,
+  "publicGraphs": 61,
+  "socialCards": 61,
   "indexingModes": 5,
-  "productionSitemap": 13,
+  "productionSitemap": 61,
   "forgedRatings": false
 }

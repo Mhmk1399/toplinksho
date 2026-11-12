@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "desktop": true,
+      "menu": {
+        "x": 88,
+        "y": 107,
+        "width": 1254,
+        "height": 513,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": false,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [
+          126,
+          126,
+          126,
+          126
+        ],
+        "imageBytes": 34510
+      },
+      "accessibilityViolations": 0
+    },
+    {
+      "viewport": {
+        "width": 1200,
+        "height": 800
+      },
+      "desktop": true,
+      "menu": {
+        "x": 45,
+        "y": 107,
+        "width": 1100,
+        "height": 513,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": false,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [
+          126,
+          126,
+          126,
+          126
+        ],
+        "imageBytes": 34510
+      },
+      "accessibilityViolations": 0
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 600
+      },
+      "desktop": true,
+      "menu": {
+        "x": 45,
+        "y": 107,
+        "width": 1180,
+        "height": 470,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": true,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [
+          126,
+          126,
+          126,
+          126
+        ],
+        "imageBytes": 34510
+      },
+      "accessibilityViolations": 0
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "desktop": false,
+      "menu": {
+        "x": 297,
+        "y": 12,
+        "width": 420,
+        "height": 720,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": true,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [],
+        "imageBytes": 13534
+      },
+      "accessibilityViolations": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "desktop": false,
+      "menu": {
+        "x": 12,
+        "y": 12,
+        "width": 356,
+        "height": 726.796875,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": false,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [],
+        "imageBytes": 13534
+      },
+      "accessibilityViolations": 0
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "desktop": false,
+      "menu": {
+        "x": 12,
+        "y": 12,
+        "width": 286,
+        "height": 520,
+        "withinViewport": true,
+        "documentOverflow": false,
+        "menuOverflow": false,
+        "scrollable": true,
+        "blur": "none",
+        "animatedElements": 0,
+        "columns": [],
+        "imageBytes": 13534
+      },
+      "accessibilityViolations": 0
+    }
+  ],
+  "screenshots": [
+    "artifacts/mega-menu-1440x1000.png",
+    "artifacts/mega-menu-1200x800.png",
+    "artifacts/mega-menu-1280x600.png",
+    "artifacts/mega-menu-1024x768.png",
+    "artifacts/mega-menu-1024x768-expanded.png",
+    "artifacts/mega-menu-390x844.png",
+    "artifacts/mega-menu-390x844-expanded.png",
+    "artifacts/mega-menu-320x568.png",
+    "artifacts/mega-menu-320x568-expanded.png"
+  ],
+  "fallback": {
+    "mode": "reduced",
+    "blur": "none",
+    "animatedElements": 0
+  },
+  "pageErrors": [],
+  "limits": "Local Chrome checks with reduced motion and a simulated constrained-device capability fallback; physical devices were not profiled."
+}

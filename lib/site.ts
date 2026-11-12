@@ -1,3 +1,4 @@
+import nav from "@/content/navigation.fa.json";
 export const site = {
   name: "تاپ لینک شو",
   phone: "+989122191549",
@@ -7,12 +8,8 @@ export const site = {
   linkedin: "https://www.linkedin.com/company/toplinksho",
 };
 
-export const navigation = [
-  { label: "صفحه اصلی", href: "/" },
-  { label: "درباره ما", href: "/about-us" },
-  { label: "خدمات ما", href: "/services" },
-  { label: "تماس با ما", href: "/contact" },
-];
+export const navigation = nav.items;
+export const serviceNavigation = nav.groups;
 
 export const serviceCatalog = [
   { slug: "campaigns", title: "طراحی کمپین تبلیغاتی", description: "طراحی استراتژی کمپین‌های تبلیغاتی در فضای آنلاین؛ اجرا و مدیریت کمپین از شناخت مخاطب تا ارزیابی نتیجه.", tag: "استراتژی و اجرا", icon: "campaign" },

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "screenshots": [
+    "artifacts/home-graphic-desktop.png",
+    "artifacts/home-graphic-mobile.png",
+    "artifacts/services-directory-desktop.png",
+    "artifacts/services-menu-desktop.png",
+    "artifacts/service-booking-desktop.png",
+    "artifacts/services-directory-mobile.png",
+    "artifacts/services-menu-mobile.png",
+    "artifacts/service-booking-mobile.png",
+    "artifacts/pricing-mobile.png",
+    "artifacts/service-design-tablet.png",
+    "artifacts/reference-card-desktop.png",
+    "artifacts/reference-card-mobile.png"
+  ],
+  "measurements": [
+    {
+      "path": "/",
+      "width": 1440,
+      "pageHeight": 4855,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "pageHeight": 6763,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/services",
+      "width": 1440,
+      "pageHeight": 4953,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "width": 1440,
+      "pageHeight": 3944,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/services",
+      "width": 390,
+      "pageHeight": 5000,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "width": 320,
+      "pageHeight": 5453,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/pricing",
+      "width": 390,
+      "pageHeight": 4238,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    },
+    {
+      "path": "/services/design/ui-designs/design-systems",
+      "width": 1024,
+      "pageHeight": 3823,
+      "overflow": false,
+      "background": "rgb(8, 10, 22)",
+      "blur": "none"
+    }
+  ],
+  "pageErrors": [],
+  "openMenuA11yViolations": 0,
+  "limits": "Chrome screenshots and automated checks; physical low-end devices were not profiled."
+}

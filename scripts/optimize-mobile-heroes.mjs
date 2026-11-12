@@ -1,0 +1,1 @@
+import sharp from "sharp";import {stat}from"node:fs/promises";for(const name of ["home","about","services","contact","404"]){const target="public/images/hero-"+name+"-mobile.webp";await sharp("public/images/hero-"+name+".webp").resize({width:640}).webp({quality:60,alphaQuality:80,effort:6}).toFile(target);console.log(name,(await stat(target)).size);}

@@ -1,3 +1,4 @@
+import theme from "@/theme/theme.json";
 import type { Metadata, Viewport } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -5,7 +6,7 @@ import { SiteFrame } from "@/components/layout/SiteFrame";
 import { siteOrigin } from "@/lib/seo";
 import "lenis/dist/lenis.css";
 import "./globals.css";
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0b0c14", colorScheme: "dark" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: theme.colors.background, colorScheme: theme.mode as "dark" | "light" };
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
   applicationName: "TopLinkSho",
@@ -29,6 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
+      <head>
+        <link rel="preload" href="/fonts/vazirmatn-arabic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/vazirmatn-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
       <body>
         <a className="skip-link" href="#main-content">
           رفتن به محتوای اصلی

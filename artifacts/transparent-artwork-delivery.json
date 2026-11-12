@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "source": "/_next/image?url=%2Fimages%2Fhero-home-mobile.png&w=640&q=75",
+      "deliveredFormat": "webp",
+      "width": 640,
+      "height": 960,
+      "hasAlpha": true,
+      "encodedBytes": 79480,
+      "heroDownloads": 1
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "source": "/_next/image?url=%2Fimages%2Fhero-home-mobile.png&w=1080&q=75",
+      "deliveredFormat": "webp",
+      "width": 640,
+      "height": 960,
+      "hasAlpha": true,
+      "encodedBytes": 79480,
+      "heroDownloads": 1
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "source": "/_next/image?url=%2Fimages%2Fhero-home.png&w=750&q=75",
+      "deliveredFormat": "webp",
+      "width": 750,
+      "height": 1122,
+      "hasAlpha": true,
+      "encodedBytes": 138734,
+      "heroDownloads": 1
+    }
+  ],
+  "limits": "Local image-transfer and alpha checks, including DPR 3; this is not a network/CPU performance score."
+}

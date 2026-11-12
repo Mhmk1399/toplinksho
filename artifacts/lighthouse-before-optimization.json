@@ -1,0 +1,253 @@
+{
+  "lighthouse": "13.6.0",
+  "mode": "mobile simulated throttling, local production build",
+  "indexing": "Preview intentionally remains noindex; is-crawlable is expected to fail.",
+  "results": [
+    {
+      "path": "/",
+      "scores": {
+        "performance": 79,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1249.3379,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3949.3379000000004,
+          "display": "3.9 s"
+        },
+        "total-blocking-time": {
+          "value": 370.33105,
+          "display": "370 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.03315378408052177,
+          "display": "0.033"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "details": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.51,
+          "details": "3.9 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "details": "2.2 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.71,
+          "details": "370 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.23,
+          "details": "360 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.88,
+          "details": "4.0 s"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ],
+      "file": "artifacts/lighthouse-home-mobile.json"
+    },
+    {
+      "path": "/services",
+      "scores": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1221.5337999999997,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3505.3007,
+          "display": "3.5 s"
+        },
+        "total-blocking-time": {
+          "value": 148.5,
+          "display": "150 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "details": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.64,
+          "details": "3.5 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.95,
+          "details": "150 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.42,
+          "details": "270 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.91,
+          "details": "3.6 s"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ],
+      "file": "artifacts/lighthouse-services-mobile.json"
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1225.7552999999998,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3399.1329499999997,
+          "display": "3.4 s"
+        },
+        "total-blocking-time": {
+          "value": 119.12234999999987,
+          "display": "120 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "details": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.67,
+          "details": "3.4 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.97,
+          "details": "120 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.51,
+          "details": "250 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.92,
+          "details": "3.5 s"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0
+        },
+        {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ],
+      "file": "artifacts/lighthouse-booking-mobile.json"
+    }
+  ]
+}

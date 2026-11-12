@@ -26,7 +26,8 @@
     "backend",
     "e2e",
     "smoke",
-    "seo"
+    "seo",
+    "migration"
   ],
   "commands": {
     "lint": "npm run lint",
@@ -35,7 +36,8 @@
     "backend": "npm run test:backend",
     "e2e": "npm run test:e2e",
     "smoke": "node scripts/smoke-test.mjs",
-    "seo": "npm run test:seo"
+    "seo": "npm run test:seo",
+    "migration": "npm run test:migration"
   },
   "evidence": {
     "crudFullFlow": "tests/site.spec.ts",

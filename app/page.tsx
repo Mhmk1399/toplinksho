@@ -1,16 +1,12 @@
+import content from "@/content/home.fa.json";
 import { pageMetadata } from "@/lib/seo";
 import { PageStructuredData } from "@/components/shared/PageStructuredData";
-import { Blog } from "@/components/home/Blog";
-import { CTASection } from "@/components/home/CTASection";
 import { Hero } from "@/components/home/Hero";
-import { Portfolio } from "@/components/home/Portfolio";
-import { Services } from "@/components/home/Services";
-import { WhyUs } from "@/components/home/WhyUs";
-import { Growth } from "@/components/home/Growth";
-import { Expertise } from "@/components/home/Expertise";
-import { Testimonials } from "@/components/home/Testimonials";
-import { TeamExpertise } from "@/components/shared/TeamExpertise";
+import { AISolutions } from "@/components/home/AISolutions";
 import { ConsultationSection } from "@/components/shared/ConsultationSection";
+import { Process } from "@/components/home/Process";
+import { HomeFAQ } from "@/components/home/HomeFAQ";
+import { HomeContact } from "@/components/home/HomeContact";
 
 export const metadata = pageMetadata("/");
 
@@ -18,16 +14,10 @@ export default function Home() {
   return <main id="main-content">
     <PageStructuredData path="/" />
     <Hero />
-    <ConsultationSection />
-    <Services />
-    <Growth />
-    <Expertise />
-    <WhyUs />
-    <Testimonials />
-    <Portfolio />
-    <TeamExpertise />
-    <Blog />
-    <ConsultationSection id="consultation-final" closing />
-    <CTASection />
+    <AISolutions />
+    <ConsultationSection content={content.consultation} compact />
+    <Process />
+    <HomeFAQ />
+    <HomeContact />
   </main>;
 }

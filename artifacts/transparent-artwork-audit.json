@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "file": "public/images/services/development.png",
+      "format": "png",
+      "width": 1032,
+      "height": 691,
+      "alpha": true,
+      "bytes": 509498,
+      "transparentFraction": 0.5091149777314082,
+      "visibleFraction": 0.4608013888421454,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/services/design.png",
+      "format": "png",
+      "width": 1032,
+      "height": 691,
+      "alpha": true,
+      "bytes": 470344,
+      "transparentFraction": 0.5860327690460966,
+      "visibleFraction": 0.4013198487755079,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/services/growth.png",
+      "format": "png",
+      "width": 1032,
+      "height": 691,
+      "alpha": true,
+      "bytes": 503560,
+      "transparentFraction": 0.6519312534356455,
+      "visibleFraction": 0.26731144616834385,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/services/automation.png",
+      "format": "png",
+      "width": 1032,
+      "height": 691,
+      "alpha": true,
+      "bytes": 440748,
+      "transparentFraction": 0.6357346391590661,
+      "visibleFraction": 0.263996398882644,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-home.png",
+      "format": "png",
+      "width": 968,
+      "height": 1448,
+      "alpha": true,
+      "bytes": 1286254,
+      "transparentFraction": 0.6148014074699786,
+      "visibleFraction": 0.35642136774576505,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-home-mobile.png",
+      "format": "png",
+      "width": 640,
+      "height": 960,
+      "alpha": true,
+      "bytes": 616957,
+      "transparentFraction": 0.6252734375,
+      "visibleFraction": 0.3627392578125,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-about.png",
+      "format": "png",
+      "width": 968,
+      "height": 968,
+      "alpha": true,
+      "bytes": 1129654,
+      "transparentFraction": 0.538250887917492,
+      "visibleFraction": 0.398835035175193,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-about-mobile.png",
+      "format": "png",
+      "width": 640,
+      "height": 640,
+      "alpha": true,
+      "bytes": 543235,
+      "transparentFraction": 0.5763671875,
+      "visibleFraction": 0.4074365234375,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-services.png",
+      "format": "png",
+      "width": 968,
+      "height": 968,
+      "alpha": true,
+      "bytes": 1019852,
+      "transparentFraction": 0.507537693805068,
+      "visibleFraction": 0.4517909893449901,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-services-mobile.png",
+      "format": "png",
+      "width": 640,
+      "height": 640,
+      "alpha": true,
+      "bytes": 505675,
+      "transparentFraction": 0.5275927734375,
+      "visibleFraction": 0.46091552734375,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-contact.png",
+      "format": "png",
+      "width": 968,
+      "height": 968,
+      "alpha": true,
+      "bytes": 868174,
+      "transparentFraction": 0.5135492794208046,
+      "visibleFraction": 0.4411231729390069,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-contact-mobile.png",
+      "format": "png",
+      "width": 640,
+      "height": 640,
+      "alpha": true,
+      "bytes": 408656,
+      "transparentFraction": 0.5433203125,
+      "visibleFraction": 0.449482421875,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-404.png",
+      "format": "png",
+      "width": 968,
+      "height": 968,
+      "alpha": true,
+      "bytes": 707423,
+      "transparentFraction": 0.7003566610887234,
+      "visibleFraction": 0.26604654736698313,
+      "transparentBorderFraction": 1
+    },
+    {
+      "file": "public/images/hero-404-mobile.png",
+      "format": "png",
+      "width": 640,
+      "height": 640,
+      "alpha": true,
+      "bytes": 360164,
+      "transparentFraction": 0.71166259765625,
+      "visibleFraction": 0.2722412109375,
+      "transparentBorderFraction": 1
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "completedAt": "2026-11-12T10:36:35.271Z",
+  "background": {
+    "compressedMarkupBytes": 820,
+    "newImageRequests": 0,
+    "newRuntimeLibraries": 0,
+    "animation": "Foreground transform only; background remains static"
+  },
+  "verification": {
+    "browserPassed": 22,
+    "browserFailed": 0,
+    "heroScreenshots": 12,
+    "heroAccessibilityViolations": 0,
+    "constrainedDevice": {
+      "motion": "none",
+      "flareShadow": "none",
+      "scroll": "native"
+    }
+  },
+  "before": [
+    {
+      "path": "/",
+      "scores": {
+        "performance": 63,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1640.3438,
+          "display": "1.6 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3823.6875999999993,
+          "display": "3.8 s"
+        },
+        "total-blocking-time": {
+          "value": 1354.8280999999995,
+          "display": "1,350 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02013947731865458,
+          "display": "0.02"
+        }
+      }
+    },
+    {
+      "path": "/services",
+      "scores": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1218.2593,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3638.5185999999994,
+          "display": "3.6 s"
+        },
+        "total-blocking-time": {
+          "value": 94.5,
+          "display": "90 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0004570899416062983,
+          "display": "0"
+        }
+      }
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1224.2496,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3482.4992,
+          "display": "3.5 s"
+        },
+        "total-blocking-time": {
+          "value": 84,
+          "display": "80 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02222357523267758,
+          "display": "0.022"
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "path": "/",
+      "scores": {
+        "performance": 59,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1240.2271,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3877.56775,
+          "display": "3.9 s"
+        },
+        "total-blocking-time": {
+          "value": 2439.88645,
+          "display": "2,440 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        }
+      }
+    },
+    {
+      "path": "/services",
+      "scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1221.1154,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3699.7885000000006,
+          "display": "3.7 s"
+        },
+        "total-blocking-time": {
+          "value": 394.44230000000016,
+          "display": "390 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        }
+      }
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "scores": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1223.594,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3552.8835,
+          "display": "3.6 s"
+        },
+        "total-blocking-time": {
+          "value": 132.1015,
+          "display": "130 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Lighthouse laboratory results are not physical-device or field measurements.",
+    "Initial loading on slow mobile networks still needs improvement, especially the homepage.",
+    "Preview intentionally remains noindex."
+  ]
+}

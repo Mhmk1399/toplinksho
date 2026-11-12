@@ -4,6 +4,7 @@ import { ArrowDown, ArrowLeft, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { buttonClasses } from "@/components/ui/Button";
 import { HeroArt } from "@/components/shared/HeroArt";
+import { HeroBackdrop } from "@/components/shared/HeroBackdrop";
 
 type PageHeroProps = {
   eyebrow: string;
@@ -41,7 +42,8 @@ export function PageHero({
   ],
 }: PageHeroProps) {
   return (
-    <section className="hero-stage" id="top">
+    <section className="hero-stage hero-stage--neon" id="top">
+      <HeroBackdrop id={"hero-" + image.replace(/[^a-z0-9]/gi, "-")} />
       <Container>
         <div className="hero-grid">
           <div className="hero-copy">

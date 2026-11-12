@@ -1,5 +1,7 @@
 import { Compass, Palette, Clapperboard, Check } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { FeatureCard } from "@/components/ui/FeatureCard";
+import { CardGrid } from "@/components/ui/CardGrid";
 import { SectionIntro } from "@/components/shared/SectionIntro";
 
 const areas = [
@@ -11,9 +13,9 @@ const areas = [
 export function TeamExpertise() {
   return <section className="section-space" id="team"><Container>
     <SectionIntro eyebrow="تیم تاپ لینک شو" title={<>تخصص‌های متفاوت؛<br /><span className="gradient-text">یک هدف مشترک.</span></>} description="تیم‌های استراتژی، طراحی، تولید محتوا و تبلیغات کنار هم کار می‌کنند تا اجزای حضور دیجیتال برند شما هماهنگ پیش بروند." />
-    <div className="grid gap-5 md:grid-cols-3">{areas.map(({ icon: Icon, title, subtitle, text, skills }) => <article key={title} className="overflow-hidden rounded-3xl border border-white/10 bg-panel">
-      <div className="relative grid h-40 place-items-center overflow-hidden border-b border-white/5 bg-linear-to-br from-brand-blue/20 via-transparent to-brand-pink/10"><span aria-hidden="true" className="absolute size-44 rounded-full border border-accent/15" /><span aria-hidden="true" className="absolute size-28 rotate-45 rounded-3xl border border-accent/20" /><Icon size={52} strokeWidth={1.1} aria-hidden="true" className="text-accent" /></div>
-      <div className="p-6"><p className="mb-2 text-xs text-accent">{subtitle}</p><h3 className="text-lg font-semibold">{title}</h3><p className="mt-4 text-sm leading-8 text-muted">{text}</p><ul className="mt-5 space-y-3 border-t border-white/5 pt-5">{skills.map(skill => <li className="flex items-center gap-2 text-xs text-muted" key={skill}><Check size={14} className="text-accent" aria-hidden="true" />{skill}</li>)}</ul></div>
-    </article>)}</div>
+    <CardGrid label="تخصص‌های تیم" mobileScroll>{areas.map(({icon:Icon,title,subtitle,text,skills},index)=><FeatureCard key={title}
+      title={title} description={text} category={subtitle} visual={(["growth","design","automation"] as const)[index]} icon={<Icon size={18} />}>
+      <ul className="space-y-3">{skills.map(skill=><li key={skill} className="flex items-center gap-2 text-xs leading-7 text-muted"><Check size={14} className="shrink-0 text-accent" aria-hidden="true" />{skill}</li>)}</ul>
+    </FeatureCard>)}</CardGrid>
   </Container></section>;
 }

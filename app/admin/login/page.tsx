@@ -45,7 +45,7 @@ export default async function LoginPage({
               ویژهٔ مدیریت تاپ لینک شو
             </p>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-panel p-6 sm:p-9">
+          <div className="neon-surface p-6 sm:p-9">
             <h2 className="mb-2 text-2xl font-semibold">ورود به مدیریت</h2>
             <p className="mb-8 text-sm leading-7 text-muted">
               با ایمیل و رمز عبور مدیریت وارد شوید.
