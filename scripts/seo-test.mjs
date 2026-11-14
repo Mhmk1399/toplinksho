@@ -60,8 +60,9 @@ for (const page of publicPages) {
 }
 const { default: robots } = await import("../app/robots.ts");
 const { default: sitemap } = await import("../app/sitemap.ts");
-assert.equal(sitemap().length, publicPages.length);
-assert(sitemap().every(item => !item.url.includes("/admin") && !item.lastModified));
+const sitemapEntries = await sitemap();
+assert.equal(sitemapEntries.length, publicPages.length);
+assert(sitemapEntries.every(item => !item.url.includes("/admin") && !item.lastModified));
 assert(robots().rules.disallow.includes("/admin"));
 const { default: manifest } = await import("../app/manifest.ts");
 assert.equal(manifest().display, "standalone"); assert.equal(manifest().dir, "rtl");

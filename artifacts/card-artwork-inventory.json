@@ -1,0 +1,1943 @@
+{
+  "entries": [
+    {
+      "key": "route:/services",
+      "title": "خدمات طراحی، توسعه و رشد",
+      "description": "از ساخت سایت و اپلیکیشن تا طراحی تجربه، سئو و امنیت؛ راهکاری متناسب با مسئلهٔ کسب‌وکار شما.",
+      "context": "/services",
+      "file": "/images/cards/8395521fb736c627.png"
+    },
+    {
+      "key": "route:/services/development",
+      "title": "توسعه",
+      "description": "از سایت و اپلیکیشن تا اتصال سامانه‌ها و خودکارسازی فرایندها.",
+      "context": "/services/development",
+      "file": "/images/cards/b8837be6d2806b6e.png"
+    },
+    {
+      "key": "route:/services/design",
+      "title": "طراحی",
+      "description": "تجربه‌ای روشن و هویتی منسجم برای ارتباط بهتر با مخاطب.",
+      "context": "/services/design",
+      "file": "/images/cards/2a30b426b8c86241.png"
+    },
+    {
+      "key": "route:/services/growth",
+      "title": "رشد و امنیت",
+      "description": "حضور هدفمند در جست‌وجو و شبکه‌های اجتماعی، با زیرساختی قابل مراقبت.",
+      "context": "/services/growth",
+      "file": "/images/cards/2b148131a5087a8f.png"
+    },
+    {
+      "key": "route:/services/development/web-development",
+      "title": "توسعه وب",
+      "description": "وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/a30945b8a02f7920.png"
+    },
+    {
+      "key": "fit:/services/development/web-development",
+      "title": "کاربرد و مخاطب توسعه وب",
+      "description": "کسب‌وکارهایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/88e20dca21692a93.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development:0",
+      "title": "معماری صفحات و جریان‌های اصلی",
+      "description": "توسعه وب؛ وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/0fdc9608b5d45c5a.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development:1",
+      "title": "توسعهٔ رابط واکنش‌گرا و بخش‌های اختصاصی",
+      "description": "توسعه وب؛ وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/9d3a27fc4050ddf5.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development:2",
+      "title": "اتصال فرم‌ها، داده‌ها و سرویس‌های مورد توافق",
+      "description": "توسعه وب؛ وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/d4ae6125686bbade.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development:3",
+      "title": "آزمون مسیرهای اصلی و راهنمای تحویل",
+      "description": "توسعه وب؛ وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/fc9a6020f3cff05d.png"
+    },
+    {
+      "key": "route:/services/development/web-development/service-business-websites",
+      "title": "سایت کسب‌وکارهای خدماتی",
+      "description": "سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/8fe9342c788316cb.png"
+    },
+    {
+      "key": "fit:/services/development/web-development/service-business-websites",
+      "title": "کاربرد و مخاطب سایت کسب‌وکارهای خدماتی",
+      "description": "این راهکار برای تیم‌هایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/7d932b60d940f690.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/service-business-websites:0",
+      "title": "نقشهٔ صفحات خدمات و معرفی کسب‌وکار",
+      "description": "سایت کسب‌وکارهای خدماتی؛ سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/c37e0a2791cf62f5.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/service-business-websites:1",
+      "title": "ساختار فرم درخواست و راه‌های ارتباطی",
+      "description": "سایت کسب‌وکارهای خدماتی؛ سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/e660caaabb8a58a2.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/service-business-websites:2",
+      "title": "نسخهٔ واکنش‌گرا با دسترسی آسان به اطلاعات",
+      "description": "سایت کسب‌وکارهای خدماتی؛ سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/741ca229ea9ba647.png"
+    },
+    {
+      "key": "route:/services/development/web-development/custom-web-applications",
+      "title": "وب‌اپلیکیشن اختصاصی",
+      "description": "وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/fc19b1f2ea587a5c.png"
+    },
+    {
+      "key": "fit:/services/development/web-development/custom-web-applications",
+      "title": "کاربرد و مخاطب وب‌اپلیکیشن اختصاصی",
+      "description": "این راهکار برای تیم‌هایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/ea2871acf36dabc9.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/custom-web-applications:0",
+      "title": "نقشهٔ نقش‌ها، دسترسی‌ها و جریان اطلاعات",
+      "description": "وب‌اپلیکیشن اختصاصی؛ وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/38184cdbc82db5a8.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/custom-web-applications:1",
+      "title": "داشبورد و امکانات اختصاصی مورد توافق",
+      "description": "وب‌اپلیکیشن اختصاصی؛ وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/ecb4fad0f68b8db4.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/custom-web-applications:2",
+      "title": "اتصال رابط به پایگاه داده و سرویس‌های لازم",
+      "description": "وب‌اپلیکیشن اختصاصی؛ وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/2be4915fc23edc71.png"
+    },
+    {
+      "key": "route:/services/development/web-development/booking-system-development",
+      "title": "توسعه سامانه رزرو",
+      "description": "رزرو زمان، ظرفیت یا خدمت را با قواعد واقعی کسب‌وکارتان هماهنگ می‌کنیم تا پیگیری درخواست‌ها پراکنده نباشد.",
+      "context": "/services/development/web-development/booking-system-development",
+      "file": "/images/cards/3049b8f82775c444.png"
+    },
+    {
+      "key": "fit:/services/development/web-development/booking-system-development",
+      "title": "کاربرد و مخاطب توسعه سامانه رزرو",
+      "description": "این راهکار برای تیم‌هایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/web-development/booking-system-development",
+      "file": "/images/cards/2da0b1071425c89f.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/booking-system-development:0",
+      "title": "تعریف قواعد زمان‌بندی، ظرفیت و لغو",
+      "description": "توسعه سامانه رزرو؛ رزرو زمان، ظرفیت یا خدمت را با قواعد واقعی کسب‌وکارتان هماهنگ می‌کنیم تا پیگیری درخواست‌ها پراکنده نباشد.",
+      "context": "/services/development/web-development/booking-system-development",
+      "file": "/images/cards/296f975472316ec5.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/booking-system-development:1",
+      "title": "مسیر ثبت رزرو و تأیید برای مشتری",
+      "description": "توسعه سامانه رزرو؛ رزرو زمان، ظرفیت یا خدمت را با قواعد واقعی کسب‌وکارتان هماهنگ می‌کنیم تا پیگیری درخواست‌ها پراکنده نباشد.",
+      "context": "/services/development/web-development/booking-system-development",
+      "file": "/images/cards/388059ef4bbbe6f2.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/booking-system-development:2",
+      "title": "پنل مدیریت رزرو و یادآوری‌های مورد توافق",
+      "description": "توسعه سامانه رزرو؛ رزرو زمان، ظرفیت یا خدمت را با قواعد واقعی کسب‌وکارتان هماهنگ می‌کنیم تا پیگیری درخواست‌ها پراکنده نباشد.",
+      "context": "/services/development/web-development/booking-system-development",
+      "file": "/images/cards/bb67ef1c001a275e.png"
+    },
+    {
+      "key": "route:/services/development/web-development/api-system-integrations",
+      "title": "اتصال API و سامانه‌ها",
+      "description": "اطلاعات را میان سایت، CRM، ابزارهای مالی یا سرویس‌های دیگر با قرارداد روشن داده و سطح دسترسی مناسب منتقل می‌کنیم.",
+      "context": "/services/development/web-development/api-system-integrations",
+      "file": "/images/cards/d8ffff0ab61a567c.png"
+    },
+    {
+      "key": "fit:/services/development/web-development/api-system-integrations",
+      "title": "کاربرد و مخاطب اتصال API و سامانه‌ها",
+      "description": "این راهکار برای تیم‌هایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/web-development/api-system-integrations",
+      "file": "/images/cards/3a2bab8432a8b129.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/api-system-integrations:0",
+      "title": "نقشهٔ داده و قرارداد اتصال بین سامانه‌ها",
+      "description": "اتصال API و سامانه‌ها؛ اطلاعات را میان سایت، CRM، ابزارهای مالی یا سرویس‌های دیگر با قرارداد روشن داده و سطح دسترسی مناسب منتقل می‌کنیم.",
+      "context": "/services/development/web-development/api-system-integrations",
+      "file": "/images/cards/4ff70d68f100d18c.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/api-system-integrations:1",
+      "title": "پیاده‌سازی احراز هویت و گردش تبادل اطلاعات",
+      "description": "اتصال API و سامانه‌ها؛ اطلاعات را میان سایت، CRM، ابزارهای مالی یا سرویس‌های دیگر با قرارداد روشن داده و سطح دسترسی مناسب منتقل می‌کنیم.",
+      "context": "/services/development/web-development/api-system-integrations",
+      "file": "/images/cards/d70f38ede99b7854.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/api-system-integrations:2",
+      "title": "ثبت خطاها و سناریوهای تلاش مجدد",
+      "description": "اتصال API و سامانه‌ها؛ اطلاعات را میان سایت، CRM، ابزارهای مالی یا سرویس‌های دیگر با قرارداد روشن داده و سطح دسترسی مناسب منتقل می‌کنیم.",
+      "context": "/services/development/web-development/api-system-integrations",
+      "file": "/images/cards/032b8b337d6912f1.png"
+    },
+    {
+      "key": "route:/services/development/web-development/website-performance-optimization",
+      "title": "بهینه‌سازی سرعت سایت",
+      "description": "منابع کندی را در بارگذاری صفحه و مسیرهای اصلی استفاده شناسایی می‌کنیم و اصلاحات را براساس اثرشان اولویت می‌دهیم.",
+      "context": "/services/development/web-development/website-performance-optimization",
+      "file": "/images/cards/e17b34dbd73b532f.png"
+    },
+    {
+      "key": "fit:/services/development/web-development/website-performance-optimization",
+      "title": "کاربرد و مخاطب بهینه‌سازی سرعت سایت",
+      "description": "این راهکار برای تیم‌هایی که به یک سایت یا سامانهٔ اختصاصی متصل به فرایندهای خود نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/web-development/website-performance-optimization",
+      "file": "/images/cards/a681b91979669497.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/website-performance-optimization:0",
+      "title": "گزارش وضعیت اولیه در صفحات منتخب",
+      "description": "بهینه‌سازی سرعت سایت؛ منابع کندی را در بارگذاری صفحه و مسیرهای اصلی استفاده شناسایی می‌کنیم و اصلاحات را براساس اثرشان اولویت می‌دهیم.",
+      "context": "/services/development/web-development/website-performance-optimization",
+      "file": "/images/cards/f1ccefae65c9883b.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/website-performance-optimization:1",
+      "title": "اصلاحات تصویر، فونت و کدهای مورد توافق",
+      "description": "بهینه‌سازی سرعت سایت؛ منابع کندی را در بارگذاری صفحه و مسیرهای اصلی استفاده شناسایی می‌کنیم و اصلاحات را براساس اثرشان اولویت می‌دهیم.",
+      "context": "/services/development/web-development/website-performance-optimization",
+      "file": "/images/cards/3a90cd846c2d4eeb.png"
+    },
+    {
+      "key": "deliverable:/services/development/web-development/website-performance-optimization:2",
+      "title": "مقایسهٔ نتایج و راهنمای حفظ عملکرد",
+      "description": "بهینه‌سازی سرعت سایت؛ منابع کندی را در بارگذاری صفحه و مسیرهای اصلی استفاده شناسایی می‌کنیم و اصلاحات را براساس اثرشان اولویت می‌دهیم.",
+      "context": "/services/development/web-development/website-performance-optimization",
+      "file": "/images/cards/743b4cdc297db522.png"
+    },
+    {
+      "key": "route:/services/development/app-development",
+      "title": "توسعه اپلیکیشن",
+      "description": "اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/f4d13a06281a3714.png"
+    },
+    {
+      "key": "fit:/services/development/app-development",
+      "title": "کاربرد و مخاطب توسعه اپلیکیشن",
+      "description": "تیم‌هایی که سرویس دیجیتال، محصول جدید یا بهبود اپلیکیشن فعلی را دنبال می‌کنند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/79742ed0dc4c7256.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development:0",
+      "title": "تعریف امکانات ضروری نسخهٔ نخست",
+      "description": "توسعه اپلیکیشن؛ اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/fab2a0c2774dc501.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development:1",
+      "title": "طراحی جریان‌ها و نقش‌های کاربران",
+      "description": "توسعه اپلیکیشن؛ اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/18fc5863197c7132.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development:2",
+      "title": "توسعه و اتصال به سرویس‌های پشتیبان",
+      "description": "توسعه اپلیکیشن؛ اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/487ab21bf952b222.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development:3",
+      "title": "آزمون سناریوهای استفاده و برنامهٔ انتشار",
+      "description": "توسعه اپلیکیشن؛ اپلیکیشن وب یا موبایل را براساس کارهایی می‌سازیم که کاربران واقعاً باید انجام دهند.",
+      "context": "/services/development/app-development",
+      "file": "/images/cards/94b20005e93fff49.png"
+    },
+    {
+      "key": "route:/services/development/app-development/mobile-app-development",
+      "title": "توسعه اپلیکیشن موبایل",
+      "description": "یک محصول موبایل را از امکانات ضروری و سناریوهای واقعی شروع می‌کنیم و برای اجرا و تحویل آن برنامه می‌چینیم.",
+      "context": "/services/development/app-development/mobile-app-development",
+      "file": "/images/cards/5e4ec28041b91e0a.png"
+    },
+    {
+      "key": "fit:/services/development/app-development/mobile-app-development",
+      "title": "کاربرد و مخاطب توسعه اپلیکیشن موبایل",
+      "description": "این راهکار برای تیم‌هایی که سرویس دیجیتال، محصول جدید یا بهبود اپلیکیشن فعلی را دنبال می‌کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/app-development/mobile-app-development",
+      "file": "/images/cards/2831f0fc3d79a382.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/mobile-app-development:0",
+      "title": "دامنهٔ نسخهٔ اولیه و سیستم‌عامل‌های هدف",
+      "description": "توسعه اپلیکیشن موبایل؛ یک محصول موبایل را از امکانات ضروری و سناریوهای واقعی شروع می‌کنیم و برای اجرا و تحویل آن برنامه می‌چینیم.",
+      "context": "/services/development/app-development/mobile-app-development",
+      "file": "/images/cards/45aabc000ac3cf03.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/mobile-app-development:1",
+      "title": "رابط و جریان‌های اصلی استفاده",
+      "description": "توسعه اپلیکیشن موبایل؛ یک محصول موبایل را از امکانات ضروری و سناریوهای واقعی شروع می‌کنیم و برای اجرا و تحویل آن برنامه می‌چینیم.",
+      "context": "/services/development/app-development/mobile-app-development",
+      "file": "/images/cards/3cb886b78727182b.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/mobile-app-development:2",
+      "title": "اتصال به بک‌اند، آزمون و برنامهٔ انتشار",
+      "description": "توسعه اپلیکیشن موبایل؛ یک محصول موبایل را از امکانات ضروری و سناریوهای واقعی شروع می‌کنیم و برای اجرا و تحویل آن برنامه می‌چینیم.",
+      "context": "/services/development/app-development/mobile-app-development",
+      "file": "/images/cards/e0f44d5fbdc06164.png"
+    },
+    {
+      "key": "route:/services/development/app-development/app-modernization",
+      "title": "نوسازی اپلیکیشن",
+      "description": "بخش‌های محدودکنندهٔ اپلیکیشن موجود را بررسی می‌کنیم تا مسیر بهبود تجربه، نگهداری و امکانات آینده مشخص شود.",
+      "context": "/services/development/app-development/app-modernization",
+      "file": "/images/cards/1c421481c08e04ed.png"
+    },
+    {
+      "key": "fit:/services/development/app-development/app-modernization",
+      "title": "کاربرد و مخاطب نوسازی اپلیکیشن",
+      "description": "این راهکار برای تیم‌هایی که سرویس دیجیتال، محصول جدید یا بهبود اپلیکیشن فعلی را دنبال می‌کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/app-development/app-modernization",
+      "file": "/images/cards/f6614238e89e364f.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/app-modernization:0",
+      "title": "گزارش معماری و محدودیت‌های فعلی",
+      "description": "نوسازی اپلیکیشن؛ بخش‌های محدودکنندهٔ اپلیکیشن موجود را بررسی می‌کنیم تا مسیر بهبود تجربه، نگهداری و امکانات آینده مشخص شود.",
+      "context": "/services/development/app-development/app-modernization",
+      "file": "/images/cards/1550c6b84928c67c.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/app-modernization:1",
+      "title": "برنامهٔ بازسازی یا بهبود تدریجی",
+      "description": "نوسازی اپلیکیشن؛ بخش‌های محدودکنندهٔ اپلیکیشن موجود را بررسی می‌کنیم تا مسیر بهبود تجربه، نگهداری و امکانات آینده مشخص شود.",
+      "context": "/services/development/app-development/app-modernization",
+      "file": "/images/cards/ad6cea03997f9a32.png"
+    },
+    {
+      "key": "deliverable:/services/development/app-development/app-modernization:2",
+      "title": "نسخهٔ اصلاح‌شده همراه با آزمون مسیرهای اصلی",
+      "description": "نوسازی اپلیکیشن؛ بخش‌های محدودکنندهٔ اپلیکیشن موجود را بررسی می‌کنیم تا مسیر بهبود تجربه، نگهداری و امکانات آینده مشخص شود.",
+      "context": "/services/development/app-development/app-modernization",
+      "file": "/images/cards/19dacf770c2c6d31.png"
+    },
+    {
+      "key": "route:/services/development/e-commerce-development",
+      "title": "توسعه فروشگاه اینترنتی",
+      "description": "مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/441ff648bfbac7e9.png"
+    },
+    {
+      "key": "fit:/services/development/e-commerce-development",
+      "title": "کاربرد و مخاطب توسعه فروشگاه اینترنتی",
+      "description": "فروشگاه‌هایی با نیازهای اختصاصی در محصول، موجودی، سفارش یا اتصال به سامانه‌های دیگر.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/2ede51e42a50ffbc.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development:0",
+      "title": "ساختار محصولات و دسته‌بندی‌ها",
+      "description": "توسعه فروشگاه اینترنتی؛ مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/d90c60318f84ad18.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development:1",
+      "title": "پیاده‌سازی سبد و گردش ثبت سفارش",
+      "description": "توسعه فروشگاه اینترنتی؛ مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/aa6ee8e233332a4f.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development:2",
+      "title": "اتصال پرداخت، موجودی یا ارسال طبق توافق",
+      "description": "توسعه فروشگاه اینترنتی؛ مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/7d1ae1351c457642.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development:3",
+      "title": "آزمون تجربهٔ خرید در موبایل و دسکتاپ",
+      "description": "توسعه فروشگاه اینترنتی؛ مسیر خرید را از پیدا کردن محصول تا ثبت سفارش، متناسب با شیوهٔ فروش شما پیاده می‌کنیم.",
+      "context": "/services/development/e-commerce-development",
+      "file": "/images/cards/e866f8f3eda3bbf7.png"
+    },
+    {
+      "key": "route:/services/development/e-commerce-development/custom-e-commerce-development",
+      "title": "فروشگاه اینترنتی اختصاصی",
+      "description": "فروشگاهی متناسب با مدل محصول، شیوهٔ قیمت‌گذاری و گردش سفارش شما طراحی و توسعه می‌دهیم.",
+      "context": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "file": "/images/cards/81348f38794ce4fe.png"
+    },
+    {
+      "key": "fit:/services/development/e-commerce-development/custom-e-commerce-development",
+      "title": "کاربرد و مخاطب فروشگاه اینترنتی اختصاصی",
+      "description": "این راهکار برای فروشگاه‌هایی با نیازهای اختصاصی در محصول، موجودی، سفارش یا اتصال به سامانه‌های دیگر. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "file": "/images/cards/515674e78b8e5d07.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:0",
+      "title": "مدل محصولات، ویژگی‌ها و موجودی",
+      "description": "فروشگاه اینترنتی اختصاصی؛ فروشگاهی متناسب با مدل محصول، شیوهٔ قیمت‌گذاری و گردش سفارش شما طراحی و توسعه می‌دهیم.",
+      "context": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "file": "/images/cards/9b680644e621003b.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:1",
+      "title": "سبد خرید و مسیر ثبت سفارش متناسب با فروش",
+      "description": "فروشگاه اینترنتی اختصاصی؛ فروشگاهی متناسب با مدل محصول، شیوهٔ قیمت‌گذاری و گردش سفارش شما طراحی و توسعه می‌دهیم.",
+      "context": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "file": "/images/cards/610e68e8cf4a638d.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:2",
+      "title": "امکانات مدیریت سفارش و اتصال‌های توافق‌شده",
+      "description": "فروشگاه اینترنتی اختصاصی؛ فروشگاهی متناسب با مدل محصول، شیوهٔ قیمت‌گذاری و گردش سفارش شما طراحی و توسعه می‌دهیم.",
+      "context": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "file": "/images/cards/51f811f002b586c7.png"
+    },
+    {
+      "key": "route:/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "title": "بازطراحی و انتقال فروشگاه",
+      "description": "انتقال فروشگاه را با توجه به داده‌های محصول، سفارش‌ها و آدرس‌های مهم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "file": "/images/cards/7f2a430e2291f704.png"
+    },
+    {
+      "key": "fit:/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "title": "کاربرد و مخاطب بازطراحی و انتقال فروشگاه",
+      "description": "این راهکار برای فروشگاه‌هایی با نیازهای اختصاصی در محصول، موجودی، سفارش یا اتصال به سامانه‌های دیگر. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "file": "/images/cards/c5da2e47da9a0e81.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:0",
+      "title": "فهرست داده‌ها و آدرس‌های قابل انتقال",
+      "description": "بازطراحی و انتقال فروشگاه؛ انتقال فروشگاه را با توجه به داده‌های محصول، سفارش‌ها و آدرس‌های مهم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "file": "/images/cards/f2a3783f4be76cd8.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:1",
+      "title": "برنامهٔ مهاجرت، آزمون و بازگشت احتمالی",
+      "description": "بازطراحی و انتقال فروشگاه؛ انتقال فروشگاه را با توجه به داده‌های محصول، سفارش‌ها و آدرس‌های مهم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "file": "/images/cards/34034fabe90d48a2.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:2",
+      "title": "بررسی مسیر خرید پس از انتقال",
+      "description": "بازطراحی و انتقال فروشگاه؛ انتقال فروشگاه را با توجه به داده‌های محصول، سفارش‌ها و آدرس‌های مهم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "file": "/images/cards/4e9c1f2c126d99ae.png"
+    },
+    {
+      "key": "route:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "title": "بهینه‌سازی خرید و پرداخت",
+      "description": "ابهام‌ها و اصطکاک مسیر انتخاب محصول تا تکمیل سفارش را بررسی می‌کنیم؛ در کنار مشکلات عملکردی صفحات فروشگاه.",
+      "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "file": "/images/cards/678a5e8a15202db9.png"
+    },
+    {
+      "key": "fit:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "title": "کاربرد و مخاطب بهینه‌سازی خرید و پرداخت",
+      "description": "این راهکار برای فروشگاه‌هایی با نیازهای اختصاصی در محصول، موجودی، سفارش یا اتصال به سامانه‌های دیگر. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "file": "/images/cards/8e4406ba7da164f4.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:0",
+      "title": "مرور تجربهٔ سبد و تکمیل سفارش",
+      "description": "بهینه‌سازی خرید و پرداخت؛ ابهام‌ها و اصطکاک مسیر انتخاب محصول تا تکمیل سفارش را بررسی می‌کنیم؛ در کنار مشکلات عملکردی صفحات فروشگاه.",
+      "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "file": "/images/cards/377f7b9cfcd9f21e.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:1",
+      "title": "فهرست اصلاحات تجربه و عملکرد",
+      "description": "بهینه‌سازی خرید و پرداخت؛ ابهام‌ها و اصطکاک مسیر انتخاب محصول تا تکمیل سفارش را بررسی می‌کنیم؛ در کنار مشکلات عملکردی صفحات فروشگاه.",
+      "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "file": "/images/cards/c71d8422d40c3c4e.png"
+    },
+    {
+      "key": "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:2",
+      "title": "آزمون سناریوهای خرید در دستگاه‌های اصلی",
+      "description": "بهینه‌سازی خرید و پرداخت؛ ابهام‌ها و اصطکاک مسیر انتخاب محصول تا تکمیل سفارش را بررسی می‌کنیم؛ در کنار مشکلات عملکردی صفحات فروشگاه.",
+      "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "file": "/images/cards/1dc44b84f062c7fc.png"
+    },
+    {
+      "key": "route:/services/development/ai-automation",
+      "title": "هوش مصنوعی و اتوماسیون",
+      "description": "کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/5e84f95316178f00.png"
+    },
+    {
+      "key": "fit:/services/development/ai-automation",
+      "title": "کاربرد و مخاطب هوش مصنوعی و اتوماسیون",
+      "description": "کسب‌وکارهایی که می‌خواهند ورود اطلاعات، پاسخ‌گویی یا هماهنگی بین ابزارها را ساده‌تر کنند.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/4efd1363ecda2f37.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation:0",
+      "title": "بررسی داده‌ها و فرایند فعلی",
+      "description": "هوش مصنوعی و اتوماسیون؛ کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/f7ebf7932e003221.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation:1",
+      "title": "طراحی جریان خودکار و نقاط کنترل انسانی",
+      "description": "هوش مصنوعی و اتوماسیون؛ کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/1fef89c3dda2788f.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation:2",
+      "title": "ساخت ابزار یا اتصال سرویس‌های مورد نیاز",
+      "description": "هوش مصنوعی و اتوماسیون؛ کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/0420ab66f131c35a.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation:3",
+      "title": "آزمون کیفیت خروجی و مستندات استفاده",
+      "description": "هوش مصنوعی و اتوماسیون؛ کارهای تکراری را به جریان‌های قابل پیگیری تبدیل می‌کنیم؛ با ابزارهایی متناسب با داده و ظرفیت تیم شما.",
+      "context": "/services/development/ai-automation",
+      "file": "/images/cards/c6e50ba9597c68cf.png"
+    },
+    {
+      "key": "route:/services/development/ai-automation/ai-workflow-automation",
+      "title": "اتوماسیون فرایندهای کاری",
+      "description": "مراحل تکراری بین ابزارها را به یک گردش کار مشخص تبدیل می‌کنیم؛ با ثبت نتیجه و امکان مداخلهٔ انسانی.",
+      "context": "/services/development/ai-automation/ai-workflow-automation",
+      "file": "/images/cards/c1c556fdf17f2a03.png"
+    },
+    {
+      "key": "fit:/services/development/ai-automation/ai-workflow-automation",
+      "title": "کاربرد و مخاطب اتوماسیون فرایندهای کاری",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند ورود اطلاعات، پاسخ‌گویی یا هماهنگی بین ابزارها را ساده‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/ai-automation/ai-workflow-automation",
+      "file": "/images/cards/8af14968bfc2fbd8.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-workflow-automation:0",
+      "title": "نقشهٔ جریان کار و نقاط تصمیم‌گیری",
+      "description": "اتوماسیون فرایندهای کاری؛ مراحل تکراری بین ابزارها را به یک گردش کار مشخص تبدیل می‌کنیم؛ با ثبت نتیجه و امکان مداخلهٔ انسانی.",
+      "context": "/services/development/ai-automation/ai-workflow-automation",
+      "file": "/images/cards/7ff5931b0572be6e.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-workflow-automation:1",
+      "title": "اتصال ابزارها و قواعد اجرای خودکار",
+      "description": "اتوماسیون فرایندهای کاری؛ مراحل تکراری بین ابزارها را به یک گردش کار مشخص تبدیل می‌کنیم؛ با ثبت نتیجه و امکان مداخلهٔ انسانی.",
+      "context": "/services/development/ai-automation/ai-workflow-automation",
+      "file": "/images/cards/f75d7bc7738b5027.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-workflow-automation:2",
+      "title": "ثبت نتیجه، خطا و مسیر ارجاع به تیم",
+      "description": "اتوماسیون فرایندهای کاری؛ مراحل تکراری بین ابزارها را به یک گردش کار مشخص تبدیل می‌کنیم؛ با ثبت نتیجه و امکان مداخلهٔ انسانی.",
+      "context": "/services/development/ai-automation/ai-workflow-automation",
+      "file": "/images/cards/0b58f2995e43ca16.png"
+    },
+    {
+      "key": "route:/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "title": "دستیار هوشمند و پایگاه دانش",
+      "description": "دسترسی به اطلاعات تأییدشده را برای تیم یا مشتری ساده‌تر می‌کنیم؛ با پاسخ‌هایی که به منابع مشخص متکی باشند.",
+      "context": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "file": "/images/cards/1d0bf8460e72e2e4.png"
+    },
+    {
+      "key": "fit:/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "title": "کاربرد و مخاطب دستیار هوشمند و پایگاه دانش",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند ورود اطلاعات، پاسخ‌گویی یا هماهنگی بین ابزارها را ساده‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "file": "/images/cards/b0599c5b66b66768.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:0",
+      "title": "ساختار منابع دانش و سطح دسترسی",
+      "description": "دستیار هوشمند و پایگاه دانش؛ دسترسی به اطلاعات تأییدشده را برای تیم یا مشتری ساده‌تر می‌کنیم؛ با پاسخ‌هایی که به منابع مشخص متکی باشند.",
+      "context": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "file": "/images/cards/a6d5a291f61a1d2d.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:1",
+      "title": "دستیار پاسخ‌گویی متصل به داده‌های مجاز",
+      "description": "دستیار هوشمند و پایگاه دانش؛ دسترسی به اطلاعات تأییدشده را برای تیم یا مشتری ساده‌تر می‌کنیم؛ با پاسخ‌هایی که به منابع مشخص متکی باشند.",
+      "context": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "file": "/images/cards/3b7bfb825892ae15.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:2",
+      "title": "آزمون پاسخ‌ها و مسیر ارجاع موارد نامطمئن",
+      "description": "دستیار هوشمند و پایگاه دانش؛ دسترسی به اطلاعات تأییدشده را برای تیم یا مشتری ساده‌تر می‌کنیم؛ با پاسخ‌هایی که به منابع مشخص متکی باشند.",
+      "context": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "file": "/images/cards/e081d2d8bf0abad3.png"
+    },
+    {
+      "key": "route:/services/development/ai-automation/ai-document-processing",
+      "title": "پردازش هوشمند اسناد",
+      "description": "اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/40c890684b7d5044.png"
+    },
+    {
+      "key": "fit:/services/development/ai-automation/ai-document-processing",
+      "title": "کاربرد و مخاطب پردازش هوشمند اسناد",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند ورود اطلاعات، پاسخ‌گویی یا هماهنگی بین ابزارها را ساده‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/1d787e5fe5c7b5c9.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-document-processing:0",
+      "title": "تعریف نوع سند و فیلدهای قابل استخراج",
+      "description": "پردازش هوشمند اسناد؛ اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/3889f07067dbc213.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-document-processing:1",
+      "title": "جریان پردازش و کنترل موارد ناقص",
+      "description": "پردازش هوشمند اسناد؛ اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/226965176cfd3bdf.png"
+    },
+    {
+      "key": "deliverable:/services/development/ai-automation/ai-document-processing:2",
+      "title": "خروجی ساخت‌یافته و مسیر بازبینی انسانی",
+      "description": "پردازش هوشمند اسناد؛ اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/eff85ff0c8431145.png"
+    },
+    {
+      "key": "route:/services/design/web-design",
+      "title": "طراحی سایت",
+      "description": "ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/a5ccc173bd281ac9.png"
+    },
+    {
+      "key": "fit:/services/design/web-design",
+      "title": "کاربرد و مخاطب طراحی سایت",
+      "description": "برندهایی که سایت تازه می‌خواهند یا تجربهٔ سایت فعلی‌شان نیاز به بازنگری دارد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/e8cdc2caa6dede3b.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design:0",
+      "title": "نقشهٔ صفحات و اولویت محتوا",
+      "description": "طراحی سایت؛ ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/679623f9c489703b.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design:1",
+      "title": "طراحی مسیرهای کاربر و وایرفریم",
+      "description": "طراحی سایت؛ ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/7d4c7907fded037f.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design:2",
+      "title": "رابط هماهنگ با هویت برند در اندازه‌های اصلی",
+      "description": "طراحی سایت؛ ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/ef2908ec3b3cba59.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design:3",
+      "title": "مشخصات طراحی و هماهنگی برای توسعه",
+      "description": "طراحی سایت؛ ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/5c1757b3fd999096.png"
+    },
+    {
+      "key": "route:/services/design/web-design/business-websites",
+      "title": "طراحی سایت شرکتی",
+      "description": "ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/3b2bb8cdc4026243.png"
+    },
+    {
+      "key": "fit:/services/design/web-design/business-websites",
+      "title": "کاربرد و مخاطب طراحی سایت شرکتی",
+      "description": "این راهکار برای برندهایی که سایت تازه می‌خواهند یا تجربهٔ سایت فعلی‌شان نیاز به بازنگری دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/3758e680e9186dbc.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/business-websites:0",
+      "title": "نقشهٔ محتوای معرفی، خدمات و تماس",
+      "description": "طراحی سایت شرکتی؛ ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/3a3d6333c1a263cb.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/business-websites:1",
+      "title": "طراحی صفحات کلیدی در اندازه‌های اصلی",
+      "description": "طراحی سایت شرکتی؛ ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/28ec0b4304907d43.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/business-websites:2",
+      "title": "الگوی هماهنگ اجزای رابط و راهنمای تحویل",
+      "description": "طراحی سایت شرکتی؛ ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/9fc5288490c19776.png"
+    },
+    {
+      "key": "route:/services/design/web-design/landing-page-design",
+      "title": "طراحی لندینگ پیج",
+      "description": "یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/025b124391cad8d3.png"
+    },
+    {
+      "key": "fit:/services/design/web-design/landing-page-design",
+      "title": "کاربرد و مخاطب طراحی لندینگ پیج",
+      "description": "این راهکار برای برندهایی که سایت تازه می‌خواهند یا تجربهٔ سایت فعلی‌شان نیاز به بازنگری دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/d57f52455731c1fc.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/landing-page-design:0",
+      "title": "ساختار پیام، مزیت و پاسخ به ابهام‌ها",
+      "description": "طراحی لندینگ پیج؛ یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/d74f34ca8cc77b38.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/landing-page-design:1",
+      "title": "طراحی دعوت به اقدام و فرم مرتبط",
+      "description": "طراحی لندینگ پیج؛ یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/7ca4477cb94371c6.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/landing-page-design:2",
+      "title": "نسخهٔ واکنش‌گرا و طرح ارزیابی عملکرد",
+      "description": "طراحی لندینگ پیج؛ یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/7265f9ee99766178.png"
+    },
+    {
+      "key": "route:/services/design/web-design/website-redesign",
+      "title": "بازطراحی سایت",
+      "description": "طراحی موجود را با نیاز امروز مخاطب و کسب‌وکار مقایسه می‌کنیم و مسیر بازطراحی را با توجه به محتوای ارزشمند فعلی می‌چینیم.",
+      "context": "/services/design/web-design/website-redesign",
+      "file": "/images/cards/206f037075d5eff0.png"
+    },
+    {
+      "key": "fit:/services/design/web-design/website-redesign",
+      "title": "کاربرد و مخاطب بازطراحی سایت",
+      "description": "این راهکار برای برندهایی که سایت تازه می‌خواهند یا تجربهٔ سایت فعلی‌شان نیاز به بازنگری دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/web-design/website-redesign",
+      "file": "/images/cards/54c45fc313d39777.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/website-redesign:0",
+      "title": "مرور تجربه و مشکلات سایت فعلی",
+      "description": "بازطراحی سایت؛ طراحی موجود را با نیاز امروز مخاطب و کسب‌وکار مقایسه می‌کنیم و مسیر بازطراحی را با توجه به محتوای ارزشمند فعلی می‌چینیم.",
+      "context": "/services/design/web-design/website-redesign",
+      "file": "/images/cards/36d2233e37d9dfa9.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/website-redesign:1",
+      "title": "ساختار و رابط بازطراحی‌شده",
+      "description": "بازطراحی سایت؛ طراحی موجود را با نیاز امروز مخاطب و کسب‌وکار مقایسه می‌کنیم و مسیر بازطراحی را با توجه به محتوای ارزشمند فعلی می‌چینیم.",
+      "context": "/services/design/web-design/website-redesign",
+      "file": "/images/cards/97c47465b1f0713a.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/website-redesign:2",
+      "title": "برنامهٔ حفظ آدرس‌ها و محتوای مهم",
+      "description": "بازطراحی سایت؛ طراحی موجود را با نیاز امروز مخاطب و کسب‌وکار مقایسه می‌کنیم و مسیر بازطراحی را با توجه به محتوای ارزشمند فعلی می‌چینیم.",
+      "context": "/services/design/web-design/website-redesign",
+      "file": "/images/cards/d9d618cff4ed24b0.png"
+    },
+    {
+      "key": "route:/services/design/web-design/nextjs-websites",
+      "title": "طراحی و توسعه سایت با Next.js",
+      "description": "سایتی متناسب با نیاز محتوایی و امکانات اختصاصی شما، با معماری مناسب برای رندر، مدیریت داده و نگهداری طراحی می‌کنیم.",
+      "context": "/services/design/web-design/nextjs-websites",
+      "file": "/images/cards/6891fd424ca35908.png"
+    },
+    {
+      "key": "fit:/services/design/web-design/nextjs-websites",
+      "title": "کاربرد و مخاطب طراحی و توسعه سایت با Next.js",
+      "description": "این راهکار برای برندهایی که سایت تازه می‌خواهند یا تجربهٔ سایت فعلی‌شان نیاز به بازنگری دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/web-design/nextjs-websites",
+      "file": "/images/cards/6642f49b5b93ccb7.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/nextjs-websites:0",
+      "title": "انتخاب ساختار صفحات و روش تأمین محتوا",
+      "description": "طراحی و توسعه سایت با Next.js؛ سایتی متناسب با نیاز محتوایی و امکانات اختصاصی شما، با معماری مناسب برای رندر، مدیریت داده و نگهداری طراحی می‌کنیم.",
+      "context": "/services/design/web-design/nextjs-websites",
+      "file": "/images/cards/6d6b88a9be133695.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/nextjs-websites:1",
+      "title": "رابط واکنش‌گرا و توسعهٔ امکانات توافق‌شده",
+      "description": "طراحی و توسعه سایت با Next.js؛ سایتی متناسب با نیاز محتوایی و امکانات اختصاصی شما، با معماری مناسب برای رندر، مدیریت داده و نگهداری طراحی می‌کنیم.",
+      "context": "/services/design/web-design/nextjs-websites",
+      "file": "/images/cards/b6c6a706e6563dfc.png"
+    },
+    {
+      "key": "deliverable:/services/design/web-design/nextjs-websites:2",
+      "title": "بررسی سئو، عملکرد و نیازهای میزبانی",
+      "description": "طراحی و توسعه سایت با Next.js؛ سایتی متناسب با نیاز محتوایی و امکانات اختصاصی شما، با معماری مناسب برای رندر، مدیریت داده و نگهداری طراحی می‌کنیم.",
+      "context": "/services/design/web-design/nextjs-websites",
+      "file": "/images/cards/116e0339a10279b1.png"
+    },
+    {
+      "key": "route:/services/design/ui-designs",
+      "title": "طراحی رابط و تجربه کاربری",
+      "description": "یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/3ec9d0400255adb1.png"
+    },
+    {
+      "key": "fit:/services/design/ui-designs",
+      "title": "کاربرد و مخاطب طراحی رابط و تجربه کاربری",
+      "description": "محصولات وب و موبایلی که با مسیرهای پیچیده، رابط ناهماهنگ یا ابهام در استفاده روبه‌رو هستند.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/33e3b5e39f8f269d.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs:0",
+      "title": "بررسی نیازها و سناریوهای اصلی",
+      "description": "طراحی رابط و تجربه کاربری؛ یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/98fdecab24da9a01.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs:1",
+      "title": "طراحی جریان‌ها و معماری اطلاعات",
+      "description": "طراحی رابط و تجربه کاربری؛ یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/a390a762a9237583.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs:2",
+      "title": "نمونهٔ تعاملی و اجزای رابط",
+      "description": "طراحی رابط و تجربه کاربری؛ یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/a2e054d9f6524027.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs:3",
+      "title": "ثبت وضعیت‌های تعاملی و راهنمای توسعه",
+      "description": "طراحی رابط و تجربه کاربری؛ یک تجربهٔ دیجیتال قابل فهم، از شناخت نیاز کاربر و روشن بودن ساختار شروع می‌شود.",
+      "context": "/services/design/ui-designs",
+      "file": "/images/cards/22b3012a2202e4b4.png"
+    },
+    {
+      "key": "route:/services/design/ui-designs/web-app-ui-ux-design",
+      "title": "طراحی تجربه وب‌اپلیکیشن",
+      "description": "مسیرهای پرتکرار وب‌اپلیکیشن را روشن می‌کنیم تا کاربر میان داده‌ها، فرم‌ها و اقدام‌های اصلی سردرگم نشود.",
+      "context": "/services/design/ui-designs/web-app-ui-ux-design",
+      "file": "/images/cards/f9dec5fb493a6019.png"
+    },
+    {
+      "key": "fit:/services/design/ui-designs/web-app-ui-ux-design",
+      "title": "کاربرد و مخاطب طراحی تجربه وب‌اپلیکیشن",
+      "description": "این راهکار برای محصولات وب و موبایلی که با مسیرهای پیچیده، رابط ناهماهنگ یا ابهام در استفاده روبه‌رو هستند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/ui-designs/web-app-ui-ux-design",
+      "file": "/images/cards/5e702468032422a9.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/web-app-ui-ux-design:0",
+      "title": "نقشهٔ وظایف، نقش‌ها و مسیرهای اصلی",
+      "description": "طراحی تجربه وب‌اپلیکیشن؛ مسیرهای پرتکرار وب‌اپلیکیشن را روشن می‌کنیم تا کاربر میان داده‌ها، فرم‌ها و اقدام‌های اصلی سردرگم نشود.",
+      "context": "/services/design/ui-designs/web-app-ui-ux-design",
+      "file": "/images/cards/646c7ed3ed0a9d32.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/web-app-ui-ux-design:1",
+      "title": "وایرفریم و نمونهٔ تعاملی داشبوردها",
+      "description": "طراحی تجربه وب‌اپلیکیشن؛ مسیرهای پرتکرار وب‌اپلیکیشن را روشن می‌کنیم تا کاربر میان داده‌ها، فرم‌ها و اقدام‌های اصلی سردرگم نشود.",
+      "context": "/services/design/ui-designs/web-app-ui-ux-design",
+      "file": "/images/cards/69733563757ecbd7.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/web-app-ui-ux-design:2",
+      "title": "طراحی وضعیت‌های خطا، خالی و بارگذاری",
+      "description": "طراحی تجربه وب‌اپلیکیشن؛ مسیرهای پرتکرار وب‌اپلیکیشن را روشن می‌کنیم تا کاربر میان داده‌ها، فرم‌ها و اقدام‌های اصلی سردرگم نشود.",
+      "context": "/services/design/ui-designs/web-app-ui-ux-design",
+      "file": "/images/cards/78617e18c4d8124a.png"
+    },
+    {
+      "key": "route:/services/design/ui-designs/mobile-app-ui-ux-design",
+      "title": "طراحی رابط اپلیکیشن موبایل",
+      "description": "تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/eb26b901c1fd2a75.png"
+    },
+    {
+      "key": "fit:/services/design/ui-designs/mobile-app-ui-ux-design",
+      "title": "کاربرد و مخاطب طراحی رابط اپلیکیشن موبایل",
+      "description": "این راهکار برای محصولات وب و موبایلی که با مسیرهای پیچیده، رابط ناهماهنگ یا ابهام در استفاده روبه‌رو هستند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/f2857382238e21d3.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:0",
+      "title": "جریان‌های اصلی استفاده در موبایل",
+      "description": "طراحی رابط اپلیکیشن موبایل؛ تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/bcba53a2ca486d20.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:1",
+      "title": "صفحات و وضعیت‌های تعاملی مورد توافق",
+      "description": "طراحی رابط اپلیکیشن موبایل؛ تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/509ae7411edb25f6.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:2",
+      "title": "نمونهٔ تعاملی و مشخصات تحویل به توسعه",
+      "description": "طراحی رابط اپلیکیشن موبایل؛ تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/e352e204645e5c2a.png"
+    },
+    {
+      "key": "route:/services/design/ui-designs/ux-audit",
+      "title": "ارزیابی تجربه کاربری",
+      "description": "مشکلات قابل مشاهدهٔ تجربه را در مسیرهای مشخص بررسی می‌کنیم و پیشنهادهای اصلاح را با اولویت اجرایی ارائه می‌دهیم.",
+      "context": "/services/design/ui-designs/ux-audit",
+      "file": "/images/cards/cec76e187c49a476.png"
+    },
+    {
+      "key": "fit:/services/design/ui-designs/ux-audit",
+      "title": "کاربرد و مخاطب ارزیابی تجربه کاربری",
+      "description": "این راهکار برای محصولات وب و موبایلی که با مسیرهای پیچیده، رابط ناهماهنگ یا ابهام در استفاده روبه‌رو هستند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/ui-designs/ux-audit",
+      "file": "/images/cards/4f25d1efb4e1d72e.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/ux-audit:0",
+      "title": "تعریف سناریوها و مسیرهای ارزیابی",
+      "description": "ارزیابی تجربه کاربری؛ مشکلات قابل مشاهدهٔ تجربه را در مسیرهای مشخص بررسی می‌کنیم و پیشنهادهای اصلاح را با اولویت اجرایی ارائه می‌دهیم.",
+      "context": "/services/design/ui-designs/ux-audit",
+      "file": "/images/cards/2fc44d88a8585afd.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/ux-audit:1",
+      "title": "گزارش مشکلات همراه با شواهد",
+      "description": "ارزیابی تجربه کاربری؛ مشکلات قابل مشاهدهٔ تجربه را در مسیرهای مشخص بررسی می‌کنیم و پیشنهادهای اصلاح را با اولویت اجرایی ارائه می‌دهیم.",
+      "context": "/services/design/ui-designs/ux-audit",
+      "file": "/images/cards/993fb88b92a342f8.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/ux-audit:2",
+      "title": "فهرست اصلاحات اولویت‌دار و پیشنهاد طراحی",
+      "description": "ارزیابی تجربه کاربری؛ مشکلات قابل مشاهدهٔ تجربه را در مسیرهای مشخص بررسی می‌کنیم و پیشنهادهای اصلاح را با اولویت اجرایی ارائه می‌دهیم.",
+      "context": "/services/design/ui-designs/ux-audit",
+      "file": "/images/cards/d252ead717897d1d.png"
+    },
+    {
+      "key": "route:/services/design/ui-designs/design-systems",
+      "title": "طراحی سیستم دیزاین",
+      "description": "رنگ، تایپوگرافی، اجزا و رفتارهای مشترک را به یک سیستم قابل استفاده برای تیم طراحی و توسعه تبدیل می‌کنیم.",
+      "context": "/services/design/ui-designs/design-systems",
+      "file": "/images/cards/3422176349721517.png"
+    },
+    {
+      "key": "fit:/services/design/ui-designs/design-systems",
+      "title": "کاربرد و مخاطب طراحی سیستم دیزاین",
+      "description": "این راهکار برای محصولات وب و موبایلی که با مسیرهای پیچیده، رابط ناهماهنگ یا ابهام در استفاده روبه‌رو هستند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/ui-designs/design-systems",
+      "file": "/images/cards/e363032f9c4cc1f1.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/design-systems:0",
+      "title": "توکن‌های طراحی و اصول کاربرد",
+      "description": "طراحی سیستم دیزاین؛ رنگ، تایپوگرافی، اجزا و رفتارهای مشترک را به یک سیستم قابل استفاده برای تیم طراحی و توسعه تبدیل می‌کنیم.",
+      "context": "/services/design/ui-designs/design-systems",
+      "file": "/images/cards/433c7aaea725b3f9.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/design-systems:1",
+      "title": "اجزای اصلی همراه با حالت‌های تعاملی",
+      "description": "طراحی سیستم دیزاین؛ رنگ، تایپوگرافی، اجزا و رفتارهای مشترک را به یک سیستم قابل استفاده برای تیم طراحی و توسعه تبدیل می‌کنیم.",
+      "context": "/services/design/ui-designs/design-systems",
+      "file": "/images/cards/2b87eb345918018f.png"
+    },
+    {
+      "key": "deliverable:/services/design/ui-designs/design-systems:2",
+      "title": "راهنمای توسعه و نگهداری سیستم",
+      "description": "طراحی سیستم دیزاین؛ رنگ، تایپوگرافی، اجزا و رفتارهای مشترک را به یک سیستم قابل استفاده برای تیم طراحی و توسعه تبدیل می‌کنیم.",
+      "context": "/services/design/ui-designs/design-systems",
+      "file": "/images/cards/6938082d195e9edc.png"
+    },
+    {
+      "key": "route:/services/design/brand-identity",
+      "title": "هویت برند",
+      "description": "جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/30eb7cdfb8f7aafc.png"
+    },
+    {
+      "key": "fit:/services/design/brand-identity",
+      "title": "کاربرد و مخاطب هویت برند",
+      "description": "برندهای تازه و کسب‌وکارهایی که میان کیفیت کار و تصویری که نشان می‌دهند فاصله وجود دارد.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/f36efd471e9a4bd1.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity:0",
+      "title": "جمع‌بندی مخاطب و ارزش پیشنهادی",
+      "description": "هویت برند؛ جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/d5c9670cd5283a83.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity:1",
+      "title": "تعریف جهت‌گیری پیام و هویت بصری",
+      "description": "هویت برند؛ جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/e8f8ff966a48e326.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity:2",
+      "title": "طراحی اجزای هویت در دامنهٔ توافق‌شده",
+      "description": "هویت برند؛ جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/32bcde31cab89ea2.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity:3",
+      "title": "فایل‌ها و راهنمای کاربرد برند",
+      "description": "هویت برند؛ جایگاه، پیام و زبان بصری را هماهنگ می‌کنیم تا برند در نقاط تماس مختلف، یکدست دیده شود.",
+      "context": "/services/design/brand-identity",
+      "file": "/images/cards/330957fcd4f929e3.png"
+    },
+    {
+      "key": "route:/services/design/brand-identity/brand-strategy",
+      "title": "استراتژی برند",
+      "description": "برای روشن‌شدن مخاطب، ارزش پیشنهادی و پیام برند، تصویر فعلی و اهداف کسب‌وکار را بررسی می‌کنیم.",
+      "context": "/services/design/brand-identity/brand-strategy",
+      "file": "/images/cards/d95be9ae8da57cfd.png"
+    },
+    {
+      "key": "fit:/services/design/brand-identity/brand-strategy",
+      "title": "کاربرد و مخاطب استراتژی برند",
+      "description": "این راهکار برای برندهای تازه و کسب‌وکارهایی که میان کیفیت کار و تصویری که نشان می‌دهند فاصله وجود دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/brand-identity/brand-strategy",
+      "file": "/images/cards/3dda07274b7bbf3d.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-strategy:0",
+      "title": "جمع‌بندی مخاطب و زمینهٔ رقابتی",
+      "description": "استراتژی برند؛ برای روشن‌شدن مخاطب، ارزش پیشنهادی و پیام برند، تصویر فعلی و اهداف کسب‌وکار را بررسی می‌کنیم.",
+      "context": "/services/design/brand-identity/brand-strategy",
+      "file": "/images/cards/2ebbf666e199fd79.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-strategy:1",
+      "title": "جایگاه و پیام‌های اصلی برند",
+      "description": "استراتژی برند؛ برای روشن‌شدن مخاطب، ارزش پیشنهادی و پیام برند، تصویر فعلی و اهداف کسب‌وکار را بررسی می‌کنیم.",
+      "context": "/services/design/brand-identity/brand-strategy",
+      "file": "/images/cards/1cb8219ddeacf8b4.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-strategy:2",
+      "title": "چارچوب لحن و اولویت نقاط تماس",
+      "description": "استراتژی برند؛ برای روشن‌شدن مخاطب، ارزش پیشنهادی و پیام برند، تصویر فعلی و اهداف کسب‌وکار را بررسی می‌کنیم.",
+      "context": "/services/design/brand-identity/brand-strategy",
+      "file": "/images/cards/076542536a21b9f7.png"
+    },
+    {
+      "key": "route:/services/design/brand-identity/logo-and-visual-identity",
+      "title": "طراحی لوگو و هویت بصری",
+      "description": "نشانه و عناصر بصری را در یک زبان هماهنگ طراحی می‌کنیم که در کاربردهای واقعی برند قابل استفاده باشد.",
+      "context": "/services/design/brand-identity/logo-and-visual-identity",
+      "file": "/images/cards/99e147072d81d92a.png"
+    },
+    {
+      "key": "fit:/services/design/brand-identity/logo-and-visual-identity",
+      "title": "کاربرد و مخاطب طراحی لوگو و هویت بصری",
+      "description": "این راهکار برای برندهای تازه و کسب‌وکارهایی که میان کیفیت کار و تصویری که نشان می‌دهند فاصله وجود دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/brand-identity/logo-and-visual-identity",
+      "file": "/images/cards/72a8b85f7e561912.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/logo-and-visual-identity:0",
+      "title": "جهت‌گیری بصری و اتودهای مورد توافق",
+      "description": "طراحی لوگو و هویت بصری؛ نشانه و عناصر بصری را در یک زبان هماهنگ طراحی می‌کنیم که در کاربردهای واقعی برند قابل استفاده باشد.",
+      "context": "/services/design/brand-identity/logo-and-visual-identity",
+      "file": "/images/cards/c25dd27198ba48de.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/logo-and-visual-identity:1",
+      "title": "نشانه، رنگ و تایپوگرافی منتخب",
+      "description": "طراحی لوگو و هویت بصری؛ نشانه و عناصر بصری را در یک زبان هماهنگ طراحی می‌کنیم که در کاربردهای واقعی برند قابل استفاده باشد.",
+      "context": "/services/design/brand-identity/logo-and-visual-identity",
+      "file": "/images/cards/efbc8c4056a39d4b.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/logo-and-visual-identity:2",
+      "title": "فایل‌های نهایی و نمونهٔ کاربرد",
+      "description": "طراحی لوگو و هویت بصری؛ نشانه و عناصر بصری را در یک زبان هماهنگ طراحی می‌کنیم که در کاربردهای واقعی برند قابل استفاده باشد.",
+      "context": "/services/design/brand-identity/logo-and-visual-identity",
+      "file": "/images/cards/638318063a6b3140.png"
+    },
+    {
+      "key": "route:/services/design/brand-identity/brand-guidelines",
+      "title": "راهنمای هویت برند",
+      "description": "نحوهٔ استفاده از اجزای برند را مستند می‌کنیم تا خروجی تیم‌ها و همکاران یکدست بماند.",
+      "context": "/services/design/brand-identity/brand-guidelines",
+      "file": "/images/cards/a293d4892fb4e31b.png"
+    },
+    {
+      "key": "fit:/services/design/brand-identity/brand-guidelines",
+      "title": "کاربرد و مخاطب راهنمای هویت برند",
+      "description": "این راهکار برای برندهای تازه و کسب‌وکارهایی که میان کیفیت کار و تصویری که نشان می‌دهند فاصله وجود دارد. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/design/brand-identity/brand-guidelines",
+      "file": "/images/cards/5f486adf9f0beb03.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-guidelines:0",
+      "title": "قواعد کاربرد نشانه، رنگ و تایپوگرافی",
+      "description": "راهنمای هویت برند؛ نحوهٔ استفاده از اجزای برند را مستند می‌کنیم تا خروجی تیم‌ها و همکاران یکدست بماند.",
+      "context": "/services/design/brand-identity/brand-guidelines",
+      "file": "/images/cards/4372cb6627336e1d.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-guidelines:1",
+      "title": "نمونه‌های درست و نادرست استفاده",
+      "description": "راهنمای هویت برند؛ نحوهٔ استفاده از اجزای برند را مستند می‌کنیم تا خروجی تیم‌ها و همکاران یکدست بماند.",
+      "context": "/services/design/brand-identity/brand-guidelines",
+      "file": "/images/cards/54f8252835eda17e.png"
+    },
+    {
+      "key": "deliverable:/services/design/brand-identity/brand-guidelines:2",
+      "title": "فایل راهنما و الگوهای توافق‌شده",
+      "description": "راهنمای هویت برند؛ نحوهٔ استفاده از اجزای برند را مستند می‌کنیم تا خروجی تیم‌ها و همکاران یکدست بماند.",
+      "context": "/services/design/brand-identity/brand-guidelines",
+      "file": "/images/cards/3792a712de518ed7.png"
+    },
+    {
+      "key": "route:/services/growth/seo",
+      "title": "سئو و بهینه‌سازی",
+      "description": "زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/45553c3ea3a3d922.png"
+    },
+    {
+      "key": "fit:/services/growth/seo",
+      "title": "کاربرد و مخاطب سئو و بهینه‌سازی",
+      "description": "سایت‌هایی که به شناخت موانع فنی، ساختار محتوای روشن یا برنامهٔ رشد جست‌وجویی نیاز دارند.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/b27917422160c4c4.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo:0",
+      "title": "بررسی فنی و ساختار صفحات",
+      "description": "سئو و بهینه‌سازی؛ زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/0a7601cc2138e9b5.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo:1",
+      "title": "تحقیق موضوع و کلمات کلیدی مرتبط",
+      "description": "سئو و بهینه‌سازی؛ زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/9985fe0330a6d462.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo:2",
+      "title": "برنامهٔ اصلاح محتوا و پیوندهای داخلی",
+      "description": "سئو و بهینه‌سازی؛ زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/cca42c5ae2c50376.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo:3",
+      "title": "شاخص‌های ارزیابی و اولویت اقدامات",
+      "description": "سئو و بهینه‌سازی؛ زیرساخت فنی و محتوای سایت را برای پاسخ بهتر به نیاز جست‌وجوگران بررسی و بهینه می‌کنیم.",
+      "context": "/services/growth/seo",
+      "file": "/images/cards/80b37c35342200b6.png"
+    },
+    {
+      "key": "route:/services/growth/seo/technical-seo",
+      "title": "سئوی فنی",
+      "description": "موانع خزش، ایندکس، ساختار آدرس‌ها و عملکرد صفحات را بررسی می‌کنیم تا اولویت اصلاح زیرساخت روشن شود.",
+      "context": "/services/growth/seo/technical-seo",
+      "file": "/images/cards/7d891a290097e1ac.png"
+    },
+    {
+      "key": "fit:/services/growth/seo/technical-seo",
+      "title": "کاربرد و مخاطب سئوی فنی",
+      "description": "این راهکار برای سایت‌هایی که به شناخت موانع فنی، ساختار محتوای روشن یا برنامهٔ رشد جست‌وجویی نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/seo/technical-seo",
+      "file": "/images/cards/a155183525961557.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/technical-seo:0",
+      "title": "گزارش خزش و وضعیت ایندکس صفحات مهم",
+      "description": "سئوی فنی؛ موانع خزش، ایندکس، ساختار آدرس‌ها و عملکرد صفحات را بررسی می‌کنیم تا اولویت اصلاح زیرساخت روشن شود.",
+      "context": "/services/growth/seo/technical-seo",
+      "file": "/images/cards/b7461573a5ae9300.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/technical-seo:1",
+      "title": "بررسی آدرس‌های اصلی، ریدایرکت و دادهٔ ساختاریافته",
+      "description": "سئوی فنی؛ موانع خزش، ایندکس، ساختار آدرس‌ها و عملکرد صفحات را بررسی می‌کنیم تا اولویت اصلاح زیرساخت روشن شود.",
+      "context": "/services/growth/seo/technical-seo",
+      "file": "/images/cards/b6a2e3c67deec8ac.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/technical-seo:2",
+      "title": "فهرست اصلاحات فنی براساس اثر و امکان اجرا",
+      "description": "سئوی فنی؛ موانع خزش، ایندکس، ساختار آدرس‌ها و عملکرد صفحات را بررسی می‌کنیم تا اولویت اصلاح زیرساخت روشن شود.",
+      "context": "/services/growth/seo/technical-seo",
+      "file": "/images/cards/3b7d2b89a93da7a3.png"
+    },
+    {
+      "key": "route:/services/growth/seo/seo-content-strategy",
+      "title": "استراتژی محتوای سئو",
+      "description": "پرسش‌های مخاطب را به برنامهٔ محتوایی مشخص تبدیل می‌کنیم؛ با توجه به هدف جست‌وجو و ساختار خدمات شما.",
+      "context": "/services/growth/seo/seo-content-strategy",
+      "file": "/images/cards/70db6b34518a768c.png"
+    },
+    {
+      "key": "fit:/services/growth/seo/seo-content-strategy",
+      "title": "کاربرد و مخاطب استراتژی محتوای سئو",
+      "description": "این راهکار برای سایت‌هایی که به شناخت موانع فنی، ساختار محتوای روشن یا برنامهٔ رشد جست‌وجویی نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/seo/seo-content-strategy",
+      "file": "/images/cards/ccc0a3804b90283b.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/seo-content-strategy:0",
+      "title": "تحقیق موضوع و گروه‌بندی کلمات کلیدی",
+      "description": "استراتژی محتوای سئو؛ پرسش‌های مخاطب را به برنامهٔ محتوایی مشخص تبدیل می‌کنیم؛ با توجه به هدف جست‌وجو و ساختار خدمات شما.",
+      "context": "/services/growth/seo/seo-content-strategy",
+      "file": "/images/cards/62fbebb20958abce.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/seo-content-strategy:1",
+      "title": "نقشهٔ صفحات و پیشنهاد پیوندهای داخلی",
+      "description": "استراتژی محتوای سئو؛ پرسش‌های مخاطب را به برنامهٔ محتوایی مشخص تبدیل می‌کنیم؛ با توجه به هدف جست‌وجو و ساختار خدمات شما.",
+      "context": "/services/growth/seo/seo-content-strategy",
+      "file": "/images/cards/c1de09ffe2172106.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/seo-content-strategy:2",
+      "title": "بریف‌ها و اولویت‌های تولید یا اصلاح محتوا",
+      "description": "استراتژی محتوای سئو؛ پرسش‌های مخاطب را به برنامهٔ محتوایی مشخص تبدیل می‌کنیم؛ با توجه به هدف جست‌وجو و ساختار خدمات شما.",
+      "context": "/services/growth/seo/seo-content-strategy",
+      "file": "/images/cards/7fcde779e92c11db.png"
+    },
+    {
+      "key": "route:/services/growth/seo/local-seo",
+      "title": "سئوی محلی",
+      "description": "اطلاعات کسب‌وکار و صفحات مرتبط با موقعیت جغرافیایی را برای جست‌وجوهای محلی بررسی و هماهنگ می‌کنیم.",
+      "context": "/services/growth/seo/local-seo",
+      "file": "/images/cards/e522babc5a43be1a.png"
+    },
+    {
+      "key": "fit:/services/growth/seo/local-seo",
+      "title": "کاربرد و مخاطب سئوی محلی",
+      "description": "این راهکار برای سایت‌هایی که به شناخت موانع فنی، ساختار محتوای روشن یا برنامهٔ رشد جست‌وجویی نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/seo/local-seo",
+      "file": "/images/cards/2d0dbb50ca71e67d.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/local-seo:0",
+      "title": "مرور یکپارچگی اطلاعات تماس و موقعیت",
+      "description": "سئوی محلی؛ اطلاعات کسب‌وکار و صفحات مرتبط با موقعیت جغرافیایی را برای جست‌وجوهای محلی بررسی و هماهنگ می‌کنیم.",
+      "context": "/services/growth/seo/local-seo",
+      "file": "/images/cards/34284a8be6dbf529.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/local-seo:1",
+      "title": "برنامهٔ صفحات و محتوای محلی",
+      "description": "سئوی محلی؛ اطلاعات کسب‌وکار و صفحات مرتبط با موقعیت جغرافیایی را برای جست‌وجوهای محلی بررسی و هماهنگ می‌کنیم.",
+      "context": "/services/growth/seo/local-seo",
+      "file": "/images/cards/5d62cf6a483a8a56.png"
+    },
+    {
+      "key": "deliverable:/services/growth/seo/local-seo:2",
+      "title": "پیشنهاد اصلاح حضور در کانال‌های مرتبط",
+      "description": "سئوی محلی؛ اطلاعات کسب‌وکار و صفحات مرتبط با موقعیت جغرافیایی را برای جست‌وجوهای محلی بررسی و هماهنگ می‌کنیم.",
+      "context": "/services/growth/seo/local-seo",
+      "file": "/images/cards/42fadbf57aa5dcd4.png"
+    },
+    {
+      "key": "route:/services/growth/social-media-marketing",
+      "title": "بازاریابی شبکه‌های اجتماعی",
+      "description": "با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/a474572200a35b71.png"
+    },
+    {
+      "key": "fit:/services/growth/social-media-marketing",
+      "title": "کاربرد و مخاطب بازاریابی شبکه‌های اجتماعی",
+      "description": "برندهایی که برای ارتباط مستمر با مخاطب و اجرای کمپین، به برنامهٔ قابل اجرا نیاز دارند.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/632c9f9b2c55bc63.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing:0",
+      "title": "شناخت مخاطب و نقش کانال‌ها",
+      "description": "بازاریابی شبکه‌های اجتماعی؛ با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/b738bc584a2c2dfc.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing:1",
+      "title": "تدوین ستون‌های محتوایی و لحن",
+      "description": "بازاریابی شبکه‌های اجتماعی؛ با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/b092ac503f4ed108.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing:2",
+      "title": "تقویم انتشار و چارچوب کمپین",
+      "description": "بازاریابی شبکه‌های اجتماعی؛ با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/eacae3e7901a2c04.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing:3",
+      "title": "مرور عملکرد و اقدام‌های دورهٔ بعد",
+      "description": "بازاریابی شبکه‌های اجتماعی؛ با انتخاب کانال مناسب، برنامهٔ محتوا و پیام هماهنگ، حضور برند را از انتشار پراکنده به یک مسیر مشخص تبدیل می‌کنیم.",
+      "context": "/services/growth/social-media-marketing",
+      "file": "/images/cards/38024b6ba16da751.png"
+    },
+    {
+      "key": "route:/services/growth/social-media-marketing/social-media-strategy",
+      "title": "استراتژی شبکه‌های اجتماعی",
+      "description": "نقش هر شبکه، مخاطب و هدف حضور را مشخص می‌کنیم تا انتشار محتوا به مسیر کسب‌وکار متصل باشد.",
+      "context": "/services/growth/social-media-marketing/social-media-strategy",
+      "file": "/images/cards/5999657f2b94827e.png"
+    },
+    {
+      "key": "fit:/services/growth/social-media-marketing/social-media-strategy",
+      "title": "کاربرد و مخاطب استراتژی شبکه‌های اجتماعی",
+      "description": "این راهکار برای برندهایی که برای ارتباط مستمر با مخاطب و اجرای کمپین، به برنامهٔ قابل اجرا نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/social-media-marketing/social-media-strategy",
+      "file": "/images/cards/6b91d7a28aac434a.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-strategy:0",
+      "title": "بررسی وضعیت فعلی و کانال‌های مناسب",
+      "description": "استراتژی شبکه‌های اجتماعی؛ نقش هر شبکه، مخاطب و هدف حضور را مشخص می‌کنیم تا انتشار محتوا به مسیر کسب‌وکار متصل باشد.",
+      "context": "/services/growth/social-media-marketing/social-media-strategy",
+      "file": "/images/cards/bf67b3128404a284.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-strategy:1",
+      "title": "تعریف لحن و ستون‌های محتوا",
+      "description": "استراتژی شبکه‌های اجتماعی؛ نقش هر شبکه، مخاطب و هدف حضور را مشخص می‌کنیم تا انتشار محتوا به مسیر کسب‌وکار متصل باشد.",
+      "context": "/services/growth/social-media-marketing/social-media-strategy",
+      "file": "/images/cards/fa89504bc8e754a3.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-strategy:2",
+      "title": "شاخص‌ها و برنامهٔ اجرایی دورهٔ نخست",
+      "description": "استراتژی شبکه‌های اجتماعی؛ نقش هر شبکه، مخاطب و هدف حضور را مشخص می‌کنیم تا انتشار محتوا به مسیر کسب‌وکار متصل باشد.",
+      "context": "/services/growth/social-media-marketing/social-media-strategy",
+      "file": "/images/cards/902767f46e32be3c.png"
+    },
+    {
+      "key": "route:/services/growth/social-media-marketing/social-media-content-strategy",
+      "title": "استراتژی محتوای شبکه‌های اجتماعی",
+      "description": "موضوع‌ها، قالب‌ها و روند تولید را برای انتشار منظم و متناسب با ظرفیت تیم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "file": "/images/cards/cea757a0fef752c3.png"
+    },
+    {
+      "key": "fit:/services/growth/social-media-marketing/social-media-content-strategy",
+      "title": "کاربرد و مخاطب استراتژی محتوای شبکه‌های اجتماعی",
+      "description": "این راهکار برای برندهایی که برای ارتباط مستمر با مخاطب و اجرای کمپین، به برنامهٔ قابل اجرا نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "file": "/images/cards/c3ba4177340e26a6.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:0",
+      "title": "ساختار موضوعی و تقویم محتوایی",
+      "description": "استراتژی محتوای شبکه‌های اجتماعی؛ موضوع‌ها، قالب‌ها و روند تولید را برای انتشار منظم و متناسب با ظرفیت تیم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "file": "/images/cards/09d5d162c2558069.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:1",
+      "title": "بریف قالب‌ها و نمونهٔ مسیر تولید",
+      "description": "استراتژی محتوای شبکه‌های اجتماعی؛ موضوع‌ها، قالب‌ها و روند تولید را برای انتشار منظم و متناسب با ظرفیت تیم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "file": "/images/cards/c1e5f7310f1662c5.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:2",
+      "title": "روند تأیید و بازبینی محتوا",
+      "description": "استراتژی محتوای شبکه‌های اجتماعی؛ موضوع‌ها، قالب‌ها و روند تولید را برای انتشار منظم و متناسب با ظرفیت تیم برنامه‌ریزی می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "file": "/images/cards/6d5d3eb8f32272f5.png"
+    },
+    {
+      "key": "route:/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "title": "استراتژی کمپین شبکه‌های اجتماعی",
+      "description": "پیام، مخاطب و مراحل کمپین را کنار هم می‌چینیم و معیار ارزیابی را پیش از اجرا مشخص می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "file": "/images/cards/8d2bb71a0b44e874.png"
+    },
+    {
+      "key": "fit:/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "title": "کاربرد و مخاطب استراتژی کمپین شبکه‌های اجتماعی",
+      "description": "این راهکار برای برندهایی که برای ارتباط مستمر با مخاطب و اجرای کمپین، به برنامهٔ قابل اجرا نیاز دارند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "file": "/images/cards/ca7b263b417d0c83.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:0",
+      "title": "بریف هدف، پیشنهاد و مخاطب کمپین",
+      "description": "استراتژی کمپین شبکه‌های اجتماعی؛ پیام، مخاطب و مراحل کمپین را کنار هم می‌چینیم و معیار ارزیابی را پیش از اجرا مشخص می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "file": "/images/cards/3ebb89e84652e748.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:1",
+      "title": "نقشهٔ کانال‌ها و برنامهٔ انتشار",
+      "description": "استراتژی کمپین شبکه‌های اجتماعی؛ پیام، مخاطب و مراحل کمپین را کنار هم می‌چینیم و معیار ارزیابی را پیش از اجرا مشخص می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "file": "/images/cards/e19314967ec23e76.png"
+    },
+    {
+      "key": "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:2",
+      "title": "شاخص‌های ارزیابی و چارچوب گزارش",
+      "description": "استراتژی کمپین شبکه‌های اجتماعی؛ پیام، مخاطب و مراحل کمپین را کنار هم می‌چینیم و معیار ارزیابی را پیش از اجرا مشخص می‌کنیم.",
+      "context": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "file": "/images/cards/c0d76c1d0c9153c1.png"
+    },
+    {
+      "key": "route:/services/growth/security",
+      "title": "امنیت وب و سامانه‌ها",
+      "description": "نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/bfdec8803a9453ab.png"
+    },
+    {
+      "key": "fit:/services/growth/security",
+      "title": "کاربرد و مخاطب امنیت وب و سامانه‌ها",
+      "description": "کسب‌وکارهایی که می‌خواهند وضعیت دسترسی‌ها، تنظیمات و نگهداری زیرساخت خود را روشن‌تر کنند.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/891a91c7b2007621.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security:0",
+      "title": "تعریف دارایی‌ها و دامنهٔ بررسی مجاز",
+      "description": "امنیت وب و سامانه‌ها؛ نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/a49de0960d4e19cc.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security:1",
+      "title": "مرور دسترسی‌ها و تنظیمات مرتبط",
+      "description": "امنیت وب و سامانه‌ها؛ نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/e6e76b0c442cf88d.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security:2",
+      "title": "گزارش ریسک‌ها و اولویت اصلاح",
+      "description": "امنیت وب و سامانه‌ها؛ نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/917d455198cce944.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security:3",
+      "title": "برنامهٔ مراقبت و مسئولیت‌های نگهداری",
+      "description": "امنیت وب و سامانه‌ها؛ نقاط آسیب‌پذیر و نیازهای مراقبت از سایت را در یک دامنهٔ مشخص و با دسترسی مجاز بررسی می‌کنیم.",
+      "context": "/services/growth/security",
+      "file": "/images/cards/27b576b6c09c38b4.png"
+    },
+    {
+      "key": "route:/services/growth/security/website-security-audit",
+      "title": "ارزیابی امنیت وب‌سایت",
+      "description": "وضعیت امنیت سایت را فقط در محدودهٔ مجاز و توافق‌شده بررسی می‌کنیم و ریسک‌ها را با اولویت اصلاح گزارش می‌دهیم.",
+      "context": "/services/growth/security/website-security-audit",
+      "file": "/images/cards/f58b99c4648d0558.png"
+    },
+    {
+      "key": "fit:/services/growth/security/website-security-audit",
+      "title": "کاربرد و مخاطب ارزیابی امنیت وب‌سایت",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند وضعیت دسترسی‌ها، تنظیمات و نگهداری زیرساخت خود را روشن‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/security/website-security-audit",
+      "file": "/images/cards/dd59b6926feee5f8.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-security-audit:0",
+      "title": "دامنه و روش بررسی تأییدشده",
+      "description": "ارزیابی امنیت وب‌سایت؛ وضعیت امنیت سایت را فقط در محدودهٔ مجاز و توافق‌شده بررسی می‌کنیم و ریسک‌ها را با اولویت اصلاح گزارش می‌دهیم.",
+      "context": "/services/growth/security/website-security-audit",
+      "file": "/images/cards/b66b09d100cba982.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-security-audit:1",
+      "title": "گزارش یافته‌ها و شواهد قابل بازبینی",
+      "description": "ارزیابی امنیت وب‌سایت؛ وضعیت امنیت سایت را فقط در محدودهٔ مجاز و توافق‌شده بررسی می‌کنیم و ریسک‌ها را با اولویت اصلاح گزارش می‌دهیم.",
+      "context": "/services/growth/security/website-security-audit",
+      "file": "/images/cards/909ccf0c819bdf0c.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-security-audit:2",
+      "title": "اولویت اصلاح و برنامهٔ بررسی مجدد",
+      "description": "ارزیابی امنیت وب‌سایت؛ وضعیت امنیت سایت را فقط در محدودهٔ مجاز و توافق‌شده بررسی می‌کنیم و ریسک‌ها را با اولویت اصلاح گزارش می‌دهیم.",
+      "context": "/services/growth/security/website-security-audit",
+      "file": "/images/cards/6662e7f4883b35ee.png"
+    },
+    {
+      "key": "route:/services/growth/security/website-protection",
+      "title": "ایمن‌سازی وب‌سایت",
+      "description": "تنظیمات، دسترسی‌ها و روندهای نگهداری را برای کاهش ریسک‌های شناسایی‌شده بازبینی و اصلاح می‌کنیم.",
+      "context": "/services/growth/security/website-protection",
+      "file": "/images/cards/60ad0579e5b3fec9.png"
+    },
+    {
+      "key": "fit:/services/growth/security/website-protection",
+      "title": "کاربرد و مخاطب ایمن‌سازی وب‌سایت",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند وضعیت دسترسی‌ها، تنظیمات و نگهداری زیرساخت خود را روشن‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/security/website-protection",
+      "file": "/images/cards/213eb2e81c2ebce9.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-protection:0",
+      "title": "مرور دسترسی‌ها و تنظیمات مرتبط",
+      "description": "ایمن‌سازی وب‌سایت؛ تنظیمات، دسترسی‌ها و روندهای نگهداری را برای کاهش ریسک‌های شناسایی‌شده بازبینی و اصلاح می‌کنیم.",
+      "context": "/services/growth/security/website-protection",
+      "file": "/images/cards/dd92478e133b812a.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-protection:1",
+      "title": "اجرای اصلاحات توافق‌شده و ثبت تغییرات",
+      "description": "ایمن‌سازی وب‌سایت؛ تنظیمات، دسترسی‌ها و روندهای نگهداری را برای کاهش ریسک‌های شناسایی‌شده بازبینی و اصلاح می‌کنیم.",
+      "context": "/services/growth/security/website-protection",
+      "file": "/images/cards/eec3243a5d541248.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/website-protection:2",
+      "title": "راهنمای پشتیبان‌گیری و نگهداری",
+      "description": "ایمن‌سازی وب‌سایت؛ تنظیمات، دسترسی‌ها و روندهای نگهداری را برای کاهش ریسک‌های شناسایی‌شده بازبینی و اصلاح می‌کنیم.",
+      "context": "/services/growth/security/website-protection",
+      "file": "/images/cards/5468dc9214c2c590.png"
+    },
+    {
+      "key": "route:/services/growth/security/security-monitoring",
+      "title": "پایش امنیت سایت",
+      "description": "برای رویدادهای مهم، شیوهٔ هشدار و مسیر پیگیری مشخص می‌کنیم تا مراقبت از سایت قابل مدیریت باشد.",
+      "context": "/services/growth/security/security-monitoring",
+      "file": "/images/cards/e2ddf1470d71fd41.png"
+    },
+    {
+      "key": "fit:/services/growth/security/security-monitoring",
+      "title": "کاربرد و مخاطب پایش امنیت سایت",
+      "description": "این راهکار برای تیم‌هایی که می‌خواهند وضعیت دسترسی‌ها، تنظیمات و نگهداری زیرساخت خود را روشن‌تر کنند. انتخاب امکانات و روش اجرا پس از شناخت نیاز شما انجام می‌شود.",
+      "context": "/services/growth/security/security-monitoring",
+      "file": "/images/cards/2982d70da0cb8df4.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/security-monitoring:0",
+      "title": "تعیین رویدادها و حدود پایش",
+      "description": "پایش امنیت سایت؛ برای رویدادهای مهم، شیوهٔ هشدار و مسیر پیگیری مشخص می‌کنیم تا مراقبت از سایت قابل مدیریت باشد.",
+      "context": "/services/growth/security/security-monitoring",
+      "file": "/images/cards/6456691c0bb3179b.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/security-monitoring:1",
+      "title": "تنظیم هشدار و مسیر ارجاع رویداد",
+      "description": "پایش امنیت سایت؛ برای رویدادهای مهم، شیوهٔ هشدار و مسیر پیگیری مشخص می‌کنیم تا مراقبت از سایت قابل مدیریت باشد.",
+      "context": "/services/growth/security/security-monitoring",
+      "file": "/images/cards/b5429940d1686edc.png"
+    },
+    {
+      "key": "deliverable:/services/growth/security/security-monitoring:2",
+      "title": "گزارش دوره‌ای و مسئولیت پاسخ‌گویی",
+      "description": "پایش امنیت سایت؛ برای رویدادهای مهم، شیوهٔ هشدار و مسیر پیگیری مشخص می‌کنیم تا مراقبت از سایت قابل مدیریت باشد.",
+      "context": "/services/growth/security/security-monitoring",
+      "file": "/images/cards/9b3e3cc59d1ec60e.png"
+    },
+    {
+      "key": "route:/services/google-ads",
+      "title": "تبلیغات گوگل",
+      "description": "ارتباط با مخاطب در لحظه جست‌وجو؛ با ساختار هدفمند، صفحه فرود مرتبط و سنجش دقیق‌تر نتیجه.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/db2a805b41b625c8.png"
+    },
+    {
+      "key": "fit:/services/google-ads",
+      "title": "کاربرد و مخاطب تبلیغات گوگل",
+      "description": "برای کسب‌وکارهایی با تقاضای جست‌وجویی مشخص و صفحه مقصدی که بتواند نیاز مخاطب را پاسخ دهد.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/9332f299579a13ce.png"
+    },
+    {
+      "key": "deliverable:/services/google-ads:0",
+      "title": "پیشنهاد ساختار کمپین و کلیدواژه‌ها",
+      "description": "تبلیغات گوگل؛ ارتباط با مخاطب در لحظه جست‌وجو؛ با ساختار هدفمند، صفحه فرود مرتبط و سنجش دقیق‌تر نتیجه.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/5e22e43d3b6f4580.png"
+    },
+    {
+      "key": "deliverable:/services/google-ads:1",
+      "title": "متن آگهی و فهرست کلیدواژه‌های منفی اولیه",
+      "description": "تبلیغات گوگل؛ ارتباط با مخاطب در لحظه جست‌وجو؛ با ساختار هدفمند، صفحه فرود مرتبط و سنجش دقیق‌تر نتیجه.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/d8426951fa0ca312.png"
+    },
+    {
+      "key": "deliverable:/services/google-ads:2",
+      "title": "برنامه سنجش تبدیل با توجه به دسترسی‌ها",
+      "description": "تبلیغات گوگل؛ ارتباط با مخاطب در لحظه جست‌وجو؛ با ساختار هدفمند، صفحه فرود مرتبط و سنجش دقیق‌تر نتیجه.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/4832f3239556083e.png"
+    },
+    {
+      "key": "deliverable:/services/google-ads:3",
+      "title": "گزارش هزینه، عملکرد و تغییرات پیشنهادی",
+      "description": "تبلیغات گوگل؛ ارتباط با مخاطب در لحظه جست‌وجو؛ با ساختار هدفمند، صفحه فرود مرتبط و سنجش دقیق‌تر نتیجه.",
+      "context": "/services/google-ads",
+      "file": "/images/cards/728ace5f0637bc04.png"
+    },
+    {
+      "key": "route:/services/campaigns",
+      "title": "استراتژی و کمپین تبلیغاتی",
+      "description": "یک هدف مشخص، یک ایده مرکزی و کانال‌هایی هماهنگ؛ برای اجرای منظم‌تر و یادگیری از هر کمپین.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/aeb628558a68f3d2.png"
+    },
+    {
+      "key": "fit:/services/campaigns",
+      "title": "کاربرد و مخاطب استراتژی و کمپین تبلیغاتی",
+      "description": "برای معرفی محصول، فعال‌سازی یک پیشنهاد یا هماهنگ کردن چند کانال ارتباطی حول یک هدف مشخص.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/1b7f09f62702a2b3.png"
+    },
+    {
+      "key": "deliverable:/services/campaigns:0",
+      "title": "بریف کمپین و معیارهای ارزیابی",
+      "description": "استراتژی و کمپین تبلیغاتی؛ یک هدف مشخص، یک ایده مرکزی و کانال‌هایی هماهنگ؛ برای اجرای منظم‌تر و یادگیری از هر کمپین.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/884799ad618b193a.png"
+    },
+    {
+      "key": "deliverable:/services/campaigns:1",
+      "title": "ایده مرکزی و چارچوب پیام‌های تبلیغاتی",
+      "description": "استراتژی و کمپین تبلیغاتی؛ یک هدف مشخص، یک ایده مرکزی و کانال‌هایی هماهنگ؛ برای اجرای منظم‌تر و یادگیری از هر کمپین.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/cd4ee3d861483184.png"
+    },
+    {
+      "key": "deliverable:/services/campaigns:2",
+      "title": "برنامه اجرایی، مسئولیت‌ها و نیازهای تولید",
+      "description": "استراتژی و کمپین تبلیغاتی؛ یک هدف مشخص، یک ایده مرکزی و کانال‌هایی هماهنگ؛ برای اجرای منظم‌تر و یادگیری از هر کمپین.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/227c05fc0cfc94c7.png"
+    },
+    {
+      "key": "deliverable:/services/campaigns:3",
+      "title": "گزارش جمع‌بندی و پیشنهاد ادامه مسیر",
+      "description": "استراتژی و کمپین تبلیغاتی؛ یک هدف مشخص، یک ایده مرکزی و کانال‌هایی هماهنگ؛ برای اجرای منظم‌تر و یادگیری از هر کمپین.",
+      "context": "/services/campaigns",
+      "file": "/images/cards/49eab02c9ff8340c.png"
+    },
+    {
+      "key": "route:/services/graphic-design",
+      "title": "طراحی گرافیکی",
+      "description": "از پست تبلیغاتی و بنر دیجیتال تا کاتالوگ و بیلبورد؛ با زبان بصری هماهنگ با برند شما.",
+      "context": "/services/graphic-design",
+      "file": "/images/cards/231246dd32ccf476.png"
+    },
+    {
+      "key": "fit:/services/graphic-design",
+      "title": "کاربرد و مخاطب طراحی گرافیکی",
+      "description": "برای کسب‌وکارهایی که می‌خواهند حضور دیجیتال و ارتباط برندشان با مخاطب را هدفمندتر و منسجم‌تر کنند.",
+      "context": "/services/graphic-design",
+      "file": "/images/cards/a54a9d545b027dda.png"
+    },
+    {
+      "key": "deliverable:/services/graphic-design:0",
+      "title": "اتودهای بصری و مسیر طراحی",
+      "description": "طراحی گرافیکی؛ از پست تبلیغاتی و بنر دیجیتال تا کاتالوگ و بیلبورد؛ با زبان بصری هماهنگ با برند شما.",
+      "context": "/services/graphic-design",
+      "file": "/images/cards/09ff0719c597b703.png"
+    },
+    {
+      "key": "deliverable:/services/graphic-design:1",
+      "title": "فایل‌های نهایی برای رسانه‌های توافق‌شده",
+      "description": "طراحی گرافیکی؛ از پست تبلیغاتی و بنر دیجیتال تا کاتالوگ و بیلبورد؛ با زبان بصری هماهنگ با برند شما.",
+      "context": "/services/graphic-design",
+      "file": "/images/cards/71fa77c0ee61a965.png"
+    },
+    {
+      "key": "deliverable:/services/graphic-design:2",
+      "title": "راهنمای کاربرد و مشخصات فنی خروجی",
+      "description": "طراحی گرافیکی؛ از پست تبلیغاتی و بنر دیجیتال تا کاتالوگ و بیلبورد؛ با زبان بصری هماهنگ با برند شما.",
+      "context": "/services/graphic-design",
+      "file": "/images/cards/bfd734bb13b1db8e.png"
+    },
+    {
+      "key": "route:/services/content-production",
+      "title": "تولید محتوا و تدوین ویدیو",
+      "description": "تولید محتوای متن، عکس و ویدیو؛ از شبکه‌های اجتماعی و وبلاگ تا انیمیشن و تیزر تبلیغاتی.",
+      "context": "/services/content-production",
+      "file": "/images/cards/205e1882ff779e98.png"
+    },
+    {
+      "key": "fit:/services/content-production",
+      "title": "کاربرد و مخاطب تولید محتوا و تدوین ویدیو",
+      "description": "برای کسب‌وکارهایی که می‌خواهند حضور دیجیتال و ارتباط برندشان با مخاطب را هدفمندتر و منسجم‌تر کنند.",
+      "context": "/services/content-production",
+      "file": "/images/cards/59cb903304e73d8b.png"
+    },
+    {
+      "key": "deliverable:/services/content-production:0",
+      "title": "بریف و سناریوی محتوایی",
+      "description": "تولید محتوا و تدوین ویدیو؛ تولید محتوای متن، عکس و ویدیو؛ از شبکه‌های اجتماعی و وبلاگ تا انیمیشن و تیزر تبلیغاتی.",
+      "context": "/services/content-production",
+      "file": "/images/cards/5d95a2c3ea3b3b83.png"
+    },
+    {
+      "key": "deliverable:/services/content-production:1",
+      "title": "محتوای آمادهٔ انتشار مطابق دامنهٔ پروژه",
+      "description": "تولید محتوا و تدوین ویدیو؛ تولید محتوای متن، عکس و ویدیو؛ از شبکه‌های اجتماعی و وبلاگ تا انیمیشن و تیزر تبلیغاتی.",
+      "context": "/services/content-production",
+      "file": "/images/cards/8f43f23394b375b7.png"
+    },
+    {
+      "key": "deliverable:/services/content-production:2",
+      "title": "نسخه‌های متناسب با بسترهای انتشار",
+      "description": "تولید محتوا و تدوین ویدیو؛ تولید محتوای متن، عکس و ویدیو؛ از شبکه‌های اجتماعی و وبلاگ تا انیمیشن و تیزر تبلیغاتی.",
+      "context": "/services/content-production",
+      "file": "/images/cards/1cd1e106d639d6e1.png"
+    },
+    {
+      "key": "route:/services/online-advertising",
+      "title": "تبلیغات آنلاین",
+      "description": "حضور هدفمند در شبکه‌های اجتماعی، وب‌سایت‌ها و اپلیکیشن‌ها؛ با پیام، رسانه و برنامهٔ هماهنگ.",
+      "context": "/services/online-advertising",
+      "file": "/images/cards/31ebc3c21b596e6a.png"
+    },
+    {
+      "key": "fit:/services/online-advertising",
+      "title": "کاربرد و مخاطب تبلیغات آنلاین",
+      "description": "برای کسب‌وکارهایی که می‌خواهند حضور دیجیتال و ارتباط برندشان با مخاطب را هدفمندتر و منسجم‌تر کنند.",
+      "context": "/services/online-advertising",
+      "file": "/images/cards/4b9e17b2be7ff251.png"
+    },
+    {
+      "key": "deliverable:/services/online-advertising:0",
+      "title": "برنامهٔ رسانه و انتشار",
+      "description": "تبلیغات آنلاین؛ حضور هدفمند در شبکه‌های اجتماعی، وب‌سایت‌ها و اپلیکیشن‌ها؛ با پیام، رسانه و برنامهٔ هماهنگ.",
+      "context": "/services/online-advertising",
+      "file": "/images/cards/e39a622dfab50f30.png"
+    },
+    {
+      "key": "deliverable:/services/online-advertising:1",
+      "title": "محتوای تبلیغاتی مورد توافق",
+      "description": "تبلیغات آنلاین؛ حضور هدفمند در شبکه‌های اجتماعی، وب‌سایت‌ها و اپلیکیشن‌ها؛ با پیام، رسانه و برنامهٔ هماهنگ.",
+      "context": "/services/online-advertising",
+      "file": "/images/cards/9445b5a19c130964.png"
+    },
+    {
+      "key": "deliverable:/services/online-advertising:2",
+      "title": "گزارش اجرا، آموخته‌ها و اقدام بعدی",
+      "description": "تبلیغات آنلاین؛ حضور هدفمند در شبکه‌های اجتماعی، وب‌سایت‌ها و اپلیکیشن‌ها؛ با پیام، رسانه و برنامهٔ هماهنگ.",
+      "context": "/services/online-advertising",
+      "file": "/images/cards/3d2e19552734ed2b.png"
+    },
+    {
+      "key": "section:/about-us:0",
+      "title": "مسئله را پیش از ابزار انتخاب می‌کنیم",
+      "description": "نیاز مخاطب، محتوای موجود و محدودیت‌های اجرایی مبنای تصمیم‌گیری هستند. انتخاب فناوری و امکانات پس از روشن‌شدن این تصویر انجام می‌شود.",
+      "context": "/about-us",
+      "file": "/images/cards/41a9ef3c304521a1.png"
+    },
+    {
+      "key": "section:/about-us:1",
+      "title": "از طراحی تا اجرا، هماهنگ",
+      "description": "ساختار صفحات، تجربهٔ کاربر، توسعه و پایه‌های سئو جدا از هم تصمیم‌گیری نمی‌شوند؛ خروجی هر بخش به قدم بعدی متصل است.",
+      "context": "/about-us",
+      "file": "/images/cards/6d28d0597310bd89.png"
+    },
+    {
+      "key": "section:/about-us:2",
+      "title": "تحویل روشن و همکاری قابل پیگیری",
+      "description": "دامنهٔ کار، مسئولیت‌ها و روش بازخورد را پیش از شروع مشخص می‌کنیم. مستندات و نیازهای نگهداری هم بخشی از گفت‌وگوی تحویل هستند.",
+      "context": "/about-us",
+      "file": "/images/cards/3b046d539d24f179.png"
+    },
+    {
+      "key": "section:/pricing:0",
+      "title": "سایت و تجربهٔ دیجیتال",
+      "description": "برای معرفی خدمات یا فروش آنلاین؛ شامل شناخت نیاز، طراحی صفحات اصلی، توسعهٔ امکانات توافق‌شده و آزمون مسیرهای استفاده.",
+      "context": "/pricing",
+      "file": "/images/cards/bfed7cc884295798.png"
+    },
+    {
+      "key": "section:/pricing:1",
+      "title": "سئو و بهبود حضور",
+      "description": "برای شناخت مشکلات سایت و برنامه‌ریزی رشد جست‌وجویی؛ دامنهٔ بررسی و اولویت‌های اجرا متناسب با وضعیت فعلی مشخص می‌شوند.",
+      "context": "/pricing",
+      "file": "/images/cards/9e23cfc9ded91417.png"
+    },
+    {
+      "key": "section:/pricing:2",
+      "title": "ابزار هوشمند و راهکار اختصاصی",
+      "description": "برای خودکارسازی کارهای تکراری یا ساخت ابزار متصل به داده و فرایندهای کسب‌وکار شما.",
+      "context": "/pricing",
+      "file": "/images/cards/ac374e3d5ae5f31c.png"
+    },
+    {
+      "key": "route:/live-case-studies/success-van-hire",
+      "title": "طرح سامانه رزرو خودرو Success Van Hire",
+      "description": "پیشنهادی برای هماهنگی رزرو، وضعیت ناوگان، ارتباط با مشتری و مدیریت عملیات در یک کسب‌وکار اجارهٔ خودرو.",
+      "context": "/live-case-studies/success-van-hire",
+      "file": "/images/cards/393bcae356e41275.png"
+    },
+    {
+      "key": "section:/live-case-studies/success-van-hire:0",
+      "title": "مسئلهٔ کسب‌وکار",
+      "description": "هماهنگی ظرفیت ناوگان، رزروهای ورودی و ارتباط با مشتری به تصویری مشترک از اطلاعات نیاز دارد.",
+      "context": "/live-case-studies/success-van-hire",
+      "file": "/images/cards/5ad527634c8229a4.png"
+    },
+    {
+      "key": "section:/live-case-studies/success-van-hire:1",
+      "title": "راهکار پیشنهادی",
+      "description": "یک مسیر رزرو متصل به داشبورد عملیات؛ با وضعیت مشخص خودروها، پیگیری درخواست و ثبت اطلاعات مرتبط با مشتری.",
+      "context": "/live-case-studies/success-van-hire",
+      "file": "/images/cards/37353a95379d45e4.png"
+    },
+    {
+      "key": "section:/live-case-studies/success-van-hire:2",
+      "title": "مسیر بررسی و اجرا",
+      "description": "تعریف فرایند واقعی، مشخص‌کردن داده و نقش‌ها، نمونه‌سازی مسیر رزرو و سپس توسعهٔ مرحله‌ای و آزمون، مبنای پیشنهادی کار است.",
+      "context": "/live-case-studies/success-van-hire",
+      "file": "/images/cards/78b610adb09bd66f.png"
+    },
+    {
+      "key": "route:/live-case-studies/real-estate",
+      "title": "طرح پلتفرم یکپارچهٔ املاک اوج",
+      "description": "پیشنهادی برای هماهنگی فایل‌های ملک، تبلیغات، پیگیری فروش و اطلاعات مشاوران در یک پلتفرم.",
+      "context": "/live-case-studies/real-estate",
+      "file": "/images/cards/c2b290c0d1f045d9.png"
+    },
+    {
+      "key": "section:/live-case-studies/real-estate:0",
+      "title": "مسئلهٔ کسب‌وکار",
+      "description": "پراکندگی فایل‌ها، درخواست‌ها و پیگیری‌ها می‌تواند دسترسی تیم به آخرین وضعیت را دشوار کند.",
+      "context": "/live-case-studies/real-estate",
+      "file": "/images/cards/bff839d4d106d4f1.png"
+    },
+    {
+      "key": "section:/live-case-studies/real-estate:1",
+      "title": "راهکار پیشنهادی",
+      "description": "ساختار مشترک برای جست‌وجوی ملک، مدیریت آگهی، ثبت پیگیری فروش و مرور فعالیت‌های تیم.",
+      "context": "/live-case-studies/real-estate",
+      "file": "/images/cards/04482c78bf11c937.png"
+    },
+    {
+      "key": "section:/live-case-studies/real-estate:2",
+      "title": "دامنهٔ قابل بررسی",
+      "description": "قواعد دسترسی، ساختار فایل‌های موجود، نیازهای تیم فروش و اتصال‌های ضروری باید پیش از طراحی و توسعه روشن شوند.",
+      "context": "/live-case-studies/real-estate",
+      "file": "/images/cards/d75174d1b366f866.png"
+    },
+    {
+      "key": "ai:chatbot",
+      "title": "دستیار پشتیبانی مشتری",
+      "description": "پاسخ به پرسش‌های رایج از منابع تأییدشده و ارجاع موضوعات تخصصی به تیم شما.",
+      "context": "/",
+      "file": "/images/cards/ee65896069366611.png"
+    },
+    {
+      "key": "ai:lead",
+      "title": "ارزیابی سرنخ‌های فروش",
+      "description": "دسته‌بندی درخواست‌ها و کمک به اولویت‌بندی پیگیری مشتریان بالقوه.",
+      "context": "/",
+      "file": "/images/cards/9b881ff873391dd4.png"
+    },
+    {
+      "key": "ai:booking",
+      "title": "رزرو و پیگیری خودکار",
+      "description": "هماهنگی زمان‌ها، ثبت رزرو و ارسال یادآوری در یک جریان کاری مشخص.",
+      "context": "/",
+      "file": "/images/cards/86724924b4d550e0.png"
+    },
+    {
+      "key": "ai:analytics",
+      "title": "داشبورد تحلیل کسب‌وکار",
+      "description": "کنار هم قراردادن داده‌های عملکرد برای شناخت رفتار مشتری و تصمیم‌گیری آگاهانه.",
+      "context": "/",
+      "file": "/images/cards/a9d11574b1f464eb.png"
+    },
+    {
+      "key": "ai:content",
+      "title": "دستیار تولید محتوا",
+      "description": "آماده‌سازی پیش‌نویس متناسب با موضوع و کلمات کلیدی؛ با بازبینی و تأیید انسانی.",
+      "context": "/",
+      "file": "/images/cards/a21fab42b650e5b7.png"
+    },
+    {
+      "key": "ai:sales",
+      "title": "دستیار راهنمای خرید",
+      "description": "کمک به مخاطب برای شناخت خدمات و انتخاب قدم بعدی در مسیر خرید.",
+      "context": "/",
+      "file": "/images/cards/53752c1d9477c524.png"
+    },
+    {
+      "key": "menu:growth-security",
+      "title": "مسیر رشد و امنیت",
+      "description": "قطب‌نمای شیشه‌ای و سپر محافظ در مسیر رشد کسب‌وکار؛ تصویر ویژهٔ بخش معرفی مگامنو",
+      "context": "navigation",
+      "file": "/images/cards/598992f3ad0fc043.png"
+    }
+  ]
+}

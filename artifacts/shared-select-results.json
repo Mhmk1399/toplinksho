@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "browserTests": 38,
+  "canonicalOwner": "components/ui/Select.tsx",
+  "sharedShell": "components/ui/FieldShell.tsx",
+  "consumers": 9,
+  "popupOwner": "native browser/operating system",
+  "newClientBoundary": false,
+  "newDependencies": false,
+  "capabilities": [
+    "typed option and group arrays",
+    "single and multiple selection",
+    "controlled and default values",
+    "native onChange or typed onValueChange",
+    "labels, error/help and merged aria-describedby",
+    "loading, empty, disabled and required states",
+    "native form association, reset and no-JavaScript GET filters",
+    "RTL/LTR, refs, control and shell styles"
+  ],
+  "checks": [
+    "lint",
+    "TypeScript",
+    "production build",
+    "38 browser tests including accessibility and responsive layouts",
+    "11 backend checks",
+    "project SEO",
+    "310 SEO combinations",
+    "62 public route migration",
+    "public route smoke checks",
+    "strict UI audit: 0 findings",
+    "DESIGN.md lint"
+  ],
+  "visualReview": "artifacts/shared-select-visual-review.json",
+  "documentation": "README.md"
+}

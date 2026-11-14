@@ -11,7 +11,7 @@ export function pageStructuredData(path:string) {
  const breadcrumbs={"@type":"BreadcrumbList","@id":absoluteUrl(path+"#breadcrumbs"),itemListElement:trail.map((item,index)=>({"@type":"ListItem",position:index+1,name:item.title,item:absoluteUrl(item.path)}))};
  const org={"@type":"ProfessionalService","@id":orgId,name:site.name,alternateName:"TopLinkSho",url:absoluteUrl(),logo:{"@type":"ImageObject","@id":absoluteUrl("/#logo"),url:absoluteUrl("/images/logo.webp")},image:absoluteUrl(page.image),description:getSeoPage("/").description,telephone:site.phone,email:site.email,address:{"@type":"PostalAddress",streetAddress:"ستارخان، خیابان صحرایی، مرکز تجاری پارسیان",addressLocality:"تهران",addressCountry:"IR"},contactPoint:{"@type":"ContactPoint",telephone:site.phone,email:site.email,contactType:"customer service",availableLanguage:["fa"]},sameAs:[site.linkedin]};
  const graph:Record<string,unknown>[]=[org,{"@type":"WebSite","@id":websiteId,url:absoluteUrl(),name:site.name,alternateName:"TopLinkSho",inLanguage:"fa-IR",publisher:{"@id":orgId}},{
-  "@type":page.kind==="about"?"AboutPage":page.kind==="contact"?"ContactPage":["services","cases","blog"].includes(page.kind)?"CollectionPage":"WebPage",
+  "@type":page.kind==="about"?"AboutPage":page.kind==="contact"?"ContactPage":["services","cases","blog","portfolio"].includes(page.kind)?"CollectionPage":"WebPage",
   "@id":pageId,url:absoluteUrl(path),name:page.title,description:page.description,inLanguage:"fa-IR",isPartOf:{"@id":websiteId},about:{"@id":orgId},
   primaryImageOfPage:{"@type":"ImageObject",url:absoluteUrl(page.image)},...(path!=="/"?{breadcrumb:{"@id":breadcrumbs["@id"]}}:{}),
  },...(path!=="/"?[breadcrumbs]:[])];

@@ -1,0 +1,41 @@
+import assert from "node:assert/strict";
+import { randomUUID } from "node:crypto";
+import { writeFile } from "node:fs/promises";
+import { MongoMemoryServer } from "mongodb-memory-server";
+import mongoose from "mongoose";
+
+const mongo = await MongoMemoryServer.create({ binary: { version: process.env.MONGOMS_VERSION || "8.0.34" }, instance: { ip: "127.0.0.1" } });
+process.env.MONGODB_URI = mongo.getUri(); process.env.MONGODB_DB_NAME = "portfolio_seo_test";
+process.env.APP_URL = "https://toplinksho.test"; process.env.SITE_INDEXABLE = "true"; process.env.VERCEL_ENV = "";
+try {
+  const { default: connect } = await import("../lib/server/db.ts");
+  const { default: Project } = await import("../models/Project.ts");
+  const { emptyProject, validateProject } = await import("../lib/projects.ts");
+  const { projectMetadata, projectSchema } = await import("../lib/project-seo.ts");
+  const { servicePages } = await import("../lib/page-registry.ts");
+  const projectServices = servicePages.filter(page => page.path !== "/services");
+  const { default: sitemap } = await import("../app/sitemap.ts");
+  await connect(); await Project.init();
+  const owner = new mongoose.Types.ObjectId(), now = new Date();
+  const input = { ...emptyProject(), title: "پروژهٔ آزمون سئو", slug: "seo-project", summary: "معرفی روشن یک پروژهٔ آزمایشی برای بررسی تولید متادیتا و نقشهٔ سایت نمونه‌کارها.", solution: "نیاز کسب‌وکار و مسیر استفاده را بررسی کردیم و نسخهٔ قابل ارزیابی را به همراه راهنمای اجرا آماده کردیم.", services: [projectServices[0].path], coverId: "0123456789abcdef01234567", coverAlt: "نمای رابط پروژهٔ آزمایشی", status: "published" };
+  assert.deepEqual(validateProject(input, projectServices.map(item => item.path)).errors, {});
+  assert(validateProject({ ...input, website: "javascript:alert(1)" }, input.services).errors.website);
+  assert(validateProject({ ...input, services: ["/admin"] }, input.services).errors.services);
+  assert(validateProject({ ...input, coverId: "" }, input.services).errors.coverId);
+  assert(validateProject({ ...input, media: [{ id: input.coverId, alt: "ویدیو", caption: "", posterId: "", duration: 1, captions: "<script>unsafe</script>" }] }, input.services).errors.media);
+  await Project.create(["published", "draft", "archived"].map(status => ({ ...input, publicId: randomUUID(), slug: status + "-project", status, publishedAt: status === "published" ? now : null, createdBy: owner, updatedBy: owner })));
+  const entries = await sitemap();
+  assert(entries.some(entry => entry.url === "https://toplinksho.test/portfolio/published-project" && entry.lastModified));
+  assert(!entries.some(entry => /\/(draft|archived)-project$/.test(entry.url)));
+  const project = { ...input, id: randomUUID(), version: 1, createdAt: now.toISOString(), updatedAt: now.toISOString(), publishedAt: now.toISOString(), assets: [{ id: input.coverId, kind: "image", mime: "image/webp", name: "cover.webp", bytes: 100, width: 640, height: 400, uploadedAt: now.toISOString() }], faq: [{ question: "این پروژه چه خروجی داشت؟", answer: "رابط و راهنمای اجرای یک نمونهٔ آزمایشی." }] };
+  const metadata = projectMetadata(project);
+  assert.equal(metadata.robots.index, true);
+  assert.equal(metadata.alternates.canonical, "https://toplinksho.test/portfolio/seo-project");
+  assert.equal(metadata.openGraph.images[0].url, "https://toplinksho.test/media/projects/" + input.coverId);
+  const graph = projectSchema(project)["@graph"];
+  assert(graph.some(node => node["@type"] === "CreativeWork" && node.datePublished === now.toISOString()));
+  assert.deepEqual(graph.find(node => node["@type"] === "FAQPage").mainEntity.map(item => item.name), project.faq.map(item => item.question));
+  assert(!JSON.stringify(graph).includes("aggregateRating"));
+  await writeFile("artifacts/projects-seo-results.json", JSON.stringify({ passed: true, sitemapPublishedOnly: true, canonicalAndSocialImage: true, contentDerivedSchema: true, validation: true, realDatabase: "isolated MongoDB memory instance", productionWrites: false }, null, 2));
+  console.log("PASS project SEO: published-only MongoDB sitemap, canonical/social metadata, content-derived schema and validation");
+} finally { await mongoose.disconnect(); await mongo.stop(); }

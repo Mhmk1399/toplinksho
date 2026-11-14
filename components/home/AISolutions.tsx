@@ -11,7 +11,7 @@ const visuals = ["automation", "growth", "development", "growth", "design", "aut
 function solutionCard(item: (typeof content.ai.items)[number], index: number) {
   const Icon = icons[index] || Bot;
   return <FeatureCard key={item.id} title={item.title} description={item.description}
-    visual={visuals[index]} category="هوش مصنوعی" icon={<Icon size={18} />} />;
+    artworkKey={"ai:" + item.id} visual={visuals[index]} category="هوش مصنوعی" icon={<Icon size={18} />} />;
 }
 export function AISolutions() {
   const section = content.ai;

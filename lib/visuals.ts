@@ -1,4 +1,12 @@
 import visuals from "@/content/visuals.fa.json";
+import artwork from "@/content/card-artwork.fa.json";
+
+export type CardArtwork = { src: string; alt: string; title: string; context: string };
+const cards: Record<string, CardArtwork> = artwork;
+export function getCardArtwork({ artworkKey, path }: { artworkKey?: string; path?: string }) {
+ const key = artworkKey || (path?.startsWith("/") ? "route:" + path.split("#")[0].split("?")[0] : "");
+ return cards[key] ? { ...cards[key], key } : undefined;
+}
 
 export type VisualKey = keyof typeof visuals;
 export function visualFor(path = "", group?: string): VisualKey {

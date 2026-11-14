@@ -12,6 +12,7 @@ type PageHeroProps = {
   description: ReactNode;
   image: string;
   imageAlt: string;
+  imageUnoptimized?: boolean;
   note: string;
   detail: string;
   coordinate: string;
@@ -27,6 +28,7 @@ export function PageHero({
   description,
   image,
   imageAlt,
+  imageUnoptimized,
   note,
   detail,
   coordinate,
@@ -72,6 +74,7 @@ export function PageHero({
             </div>}
           </div>
           <HeroArt
+            unoptimized={imageUnoptimized}
             image={image}
             alt={imageAlt}
             note={note}

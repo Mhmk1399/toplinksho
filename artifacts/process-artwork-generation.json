@@ -1,0 +1,54 @@
+{
+  "tool": "image_gen",
+  "transparentBackground": true,
+  "assets": [
+    {
+      "key": "discovery",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-993bc884-095a-4539-8eb8-06904296b5c3.png",
+      "prompt": "Use case: stylized-concept. Create a small premium 3D website workflow icon: a single bullseye target with three concentric glossy glass rings, struck by a short cobalt and magenta arrow pointing upward right. A single isolated compact sculptural object, matching TopLinkSho's established chrome and liquid-glass artwork: deep cobalt blue, electric blue highlights, lavender and restrained hot magenta reflections, translucent glass, beautifully rounded edges, clean controlled rim lighting. A straight-on three-quarter view, bold readable silhouette, image should remain clear at 64px. Tight balanced square composition with generous clear transparent padding around the entire subject. No pedestal, no ground, no background, no environment, no floor, no scene glow outside the object, no extra floating objects, no words, no labels, no numbers. Actual PNG alpha transparency, not a checkerboard. This is a reusable decorative workflow icon, not a complete card or UI screenshot.",
+      "destination": "public/images/process/discovery.png",
+      "bytes": 22087,
+      "width": 256,
+      "height": 238,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 254
+    },
+    {
+      "key": "scope",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-3efb7391-bd31-46ea-9b85-c8349bb9c9f9.png",
+      "prompt": "Use case: stylized-concept. Create a small premium 3D website workflow icon: a simple floating stack of three thick rounded square glass layers, top layer cobalt blue and cyan, lower layers lavender and magenta. A single isolated compact sculptural object, matching TopLinkSho's established chrome and liquid-glass artwork: deep cobalt blue, electric blue highlights, lavender and restrained hot magenta reflections, translucent glass, beautifully rounded edges, clean controlled rim lighting. A straight-on three-quarter view, bold readable silhouette, image should remain clear at 64px. Tight balanced square composition with generous clear transparent padding around the entire subject. No pedestal, no ground, no background, no environment, no floor, no scene glow outside the object, no extra floating objects, no words, no labels, no numbers. Actual PNG alpha transparency, not a checkerboard. This is a reusable decorative workflow icon, not a complete card or UI screenshot.",
+      "destination": "public/images/process/scope.png",
+      "bytes": 20028,
+      "width": 237,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 253
+    },
+    {
+      "key": "build",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-15d806eb-af93-4acb-b779-703808353be2.png",
+      "prompt": "Use case: stylized-concept. Create a small premium 3D website workflow icon: one small rounded glass code editor window, three small chrome dots along its top edge and a luminous simple </> code symbol in its center. A single isolated compact sculptural object, matching TopLinkSho's established chrome and liquid-glass artwork: deep cobalt blue, electric blue highlights, lavender and restrained hot magenta reflections, translucent glass, beautifully rounded edges, clean controlled rim lighting. A straight-on three-quarter view, bold readable silhouette, image should remain clear at 64px. Tight balanced square composition with generous clear transparent padding around the entire subject. No pedestal, no ground, no background, no environment, no floor, no scene glow outside the object, no extra floating objects, no words, no labels, no numbers. Actual PNG alpha transparency, not a checkerboard. This is a reusable decorative workflow icon, not a complete card or UI screenshot.",
+      "destination": "public/images/process/build.png",
+      "bytes": 24429,
+      "width": 256,
+      "height": 240,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 254
+    },
+    {
+      "key": "verify",
+      "source": "C:\\Users\\H.Asus\\.codex\\generated_images\\01a1ca87-f200-7470-9348-cb7fcda65885\\exec-e77f68e9-e7bf-451e-b735-b9320b19d1af.png",
+      "prompt": "Use case: stylized-concept. Create a small premium 3D website workflow icon: one polished laboratory Erlenmeyer flask filled with glowing blue-magenta liquid beside a small chrome violet gear, a restrained quality-testing symbol. A single isolated compact sculptural object, matching TopLinkSho's established chrome and liquid-glass artwork: deep cobalt blue, electric blue highlights, lavender and restrained hot magenta reflections, translucent glass, beautifully rounded edges, clean controlled rim lighting. A straight-on three-quarter view, bold readable silhouette, image should remain clear at 64px. Tight balanced square composition with generous clear transparent padding around the entire subject. No pedestal, no ground, no background, no environment, no floor, no scene glow outside the object, no extra floating objects, no words, no labels, no numbers. Actual PNG alpha transparency, not a checkerboard. This is a reusable decorative workflow icon, not a complete card or UI screenshot.",
+      "destination": "public/images/process/verify.png",
+      "bytes": 18772,
+      "width": 222,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 254
+    }
+  ]
+}

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "admin:hash-password": "node scripts/generate-admin-password.mjs",
     "test:backend": "node scripts/backend-test.mjs",
+    "test:projects": "node --conditions=react-server --import ./scripts/register-aliases.mjs scripts/project-seo-test.mjs",
     "test:e2e": "playwright test",
     "test:artwork": "node scripts/artwork-audit.mjs",
     "assets:generate": "npm run theme:generate && node --import ./scripts/register-aliases.mjs scripts/generate-pwa.mjs",
@@ -30,7 +31,8 @@
     "nodemailer": "^10.5.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",
@@ -44,7 +46,6 @@
     "eslint": "^9",
     "eslint-config-next": "^16.4.6",
     "mongodb-memory-server": "^11.3.0",
-    "sharp": "^0.35.5",
     "smtp-server": "^3.21.4",
     "tailwindcss": "^4",
     "typescript": "^5"

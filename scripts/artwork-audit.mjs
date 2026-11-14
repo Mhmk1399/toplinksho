@@ -4,9 +4,11 @@ import sharp from "sharp";
 
 const inspect = process.argv.includes("--inspect");
 const visuals = JSON.parse(await readFile("content/visuals.fa.json", "utf8"));
+const cards = JSON.parse(await readFile("content/card-artwork.fa.json", "utf8"));
+const processIcons = ["discovery", "scope", "build", "verify"].map(key => `public/images/process/${key}.png`);
 const images = inspect
   ? (await readdir("public/images")).filter(file => /\.(png|webp)$/.test(file)).map(file => `public/images/${file}`)
-  : [...Object.values(visuals).map(image => `public${image.src}`), ...["home", "about", "services", "contact", "404"].flatMap(key => [`public/images/hero-${key}.png`, `public/images/hero-${key}-mobile.png`])];
+  : [...new Set([...Object.values(visuals), ...Object.values(cards)].map(image => `public${image.src}`)), ...["home", "about", "services", "contact", "404"].flatMap(key => [`public/images/hero-${key}.png`, `public/images/hero-${key}-mobile.png`]), ...processIcons];
 const results = [];
 for (const file of images) {
   const image = sharp(file);

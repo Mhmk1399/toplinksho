@@ -1,0 +1,24 @@
+import { Select } from "@/components/ui/Select";
+import Link from "next/link";
+import type { Metadata } from "next";
+import { FolderOpen, Plus } from "lucide-react";
+import { AdminShell } from "@/components/admin/AdminShell";
+import { requireAdmin } from "@/lib/server/auth";
+import { listProjects, projectServices } from "@/lib/server/projects";
+import { projectStatuses, type ProjectStatus } from "@/lib/projects";
+import { buttonClasses } from "@/components/ui/Button";
+export const metadata: Metadata = { title: "پروژه‌ها و نمونه‌کارها" };
+export const dynamic = "force-dynamic";
+export default async function AdminProjects({ searchParams }: { searchParams: Promise<{ status?: string; service?: string; page?: string }> }) {
+  const admin = await requireAdmin("/admin/projects"), query = await searchParams;
+  const status = query.status && Object.hasOwn(projectStatuses, query.status) ? query.status as ProjectStatus : undefined;
+  const service = projectServices.some(item => item.path === query.service) ? query.service : "";
+  const result = await listProjects({ admin: true, status, service, page: Number(query.page || 1) });
+  const pageUrl = (page: number) => "/admin/projects?" + new URLSearchParams({ ...(status ? { status } : {}), ...(service ? { service } : {}), page: String(page) });
+  return <AdminShell active="projects" email={admin.email}><div className="mb-8 flex flex-wrap items-start justify-between gap-5"><div><span className="mb-3 block text-xs text-accent">مدیریت محتوای سایت</span><h1 className="text-3xl font-bold">پروژه‌ها و نمونه‌کارها</h1><p className="mt-3 max-w-2xl text-sm leading-8 text-muted">جزئیات همکاری، تصاویر و ویدیوها را ثبت کنید؛ پیش‌نمایش را ببینید و پس از آماده شدن، پروژه را منتشر کنید.</p></div><Link href="/admin/projects/new" className={buttonClasses({ size: "sm" })}><Plus size={17} aria-hidden="true" />پروژهٔ جدید</Link></div>
+    <form noValidate method="get" action="/admin/projects" className="neon-surface mb-7 grid items-end gap-4 p-5 sm:grid-cols-[1fr_2fr_auto]"><Select key={"status:" + (status || "")} id="projects-status" name="status" label="وضعیت پروژه" defaultValue={status || ""} placeholder="همهٔ وضعیت‌ها" options={Object.entries(projectStatuses).map(([value, label]) => ({ value, label }))} /><Select key={"service:" + service} id="projects-service" name="service" label="خدمت مرتبط" defaultValue={service} placeholder="همهٔ خدمات" options={projectServices.map(item => ({ value: item.path, label: item.title }))} /><button type="submit" className={buttonClasses({ size: "sm", variant: "secondary" })}>اعمال فیلتر</button>{(status || service) && <Link href="/admin/projects" className="inline-flex min-h-11 items-center text-xs text-accent">پاک کردن فیلترها</Link>}</form>
+    <p className="mb-5 text-xs text-muted">{result.total.toLocaleString("fa-IR")} پروژه</p>
+    {result.items.length ? <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">{result.items.map(project => <li key={project.id} className="neon-surface flex min-w-0 flex-col p-5"><div className="mb-4 flex flex-wrap items-center justify-between gap-2"><span className={`rounded-full border border-line px-3 py-1 text-xs ${project.status === "published" ? "text-emerald-300" : project.status === "archived" ? "text-muted" : "text-accent"}`}>{projectStatuses[project.status]}</span>{project.featured && <span className="text-xs text-accent">ویژه</span>}</div><h2 className="break-words text-lg font-bold">{project.title}</h2><p className="mt-3 line-clamp-3 text-xs leading-7 text-muted">{project.summary || "معرفی پروژه هنوز کامل نشده است."}</p><p className="mt-4 text-xs text-muted">آخرین تغییر: {new Intl.DateTimeFormat("fa-IR", { dateStyle: "medium", timeZone: "Asia/Tehran" }).format(new Date(project.updatedAt))}</p><Link href={`/admin/projects/${project.id}`} className="mt-auto inline-flex min-h-11 items-center pt-4 text-sm text-accent">ویرایش {project.title}</Link></li>)}</ul> : <div className="neon-surface p-8"><FolderOpen size={30} aria-hidden="true" className="mb-5 text-accent" /><h2 className="text-lg font-bold">{status || service ? "پروژه‌ای با این فیلتر پیدا نشد." : "اولین پروژه را ثبت کنید."}</h2><p className="mt-3 text-sm leading-8 text-muted">پیش‌نویس‌ها تا زمانی که منتشر نکنید در سایت نمایش داده نمی‌شوند.</p></div>}
+    {result.pages > 1 && <nav aria-label="صفحه‌بندی پروژه‌های مدیریت" className="mt-7 flex flex-wrap items-center justify-center gap-4 text-sm">{result.page > 1 && <Link href={pageUrl(result.page - 1)} className={buttonClasses({ size: "sm", variant: "secondary" })}>قبل</Link>}<span>{result.page.toLocaleString("fa-IR")} از {result.pages.toLocaleString("fa-IR")}</span>{result.page < result.pages && <Link href={pageUrl(result.page + 1)} className={buttonClasses({ size: "sm", variant: "secondary" })}>بعد</Link>}</nav>}
+  </AdminShell>;
+}

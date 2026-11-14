@@ -90,7 +90,7 @@ export function MainPage({ page }: { page: MainPageData }) {
           <section id="plans" className="home-section scroll-mt-32">
             <Container>
               <CardGrid label="بسته‌های خدمات" mobileScroll>{page.sections.map((plan,index)=><FeatureCard key={plan.title} title={plan.title} description={plan.text}
-  visual={(["design","growth","automation"] as const)[index%3]} headingAs="h2" category={["طراحی","رشد","هوشمندسازی"][index%3]}
+  artworkKey={"section:" + page.path + ":" + index} visual={(["design","growth","automation"] as const)[index%3]} headingAs="h2" category={["طراحی","رشد","هوشمندسازی"][index%3]}
   href="#consultation" linkLabel="درخواست برآورد" footer={<p className="text-sm font-semibold text-accent">{plan.price||page.priceDisplay}</p>}>
   <ul className="space-y-3 text-sm leading-7">{plan.items?.map(item=><li key={item} className="border-t border-line pt-3">{item}</li>)}</ul>
  </FeatureCard>)}</CardGrid>
@@ -150,7 +150,7 @@ export function MainPage({ page }: { page: MainPageData }) {
           </Container>
         </section>
       ) : page.kind !== "faq" ? (
-        <EditorialSections sections={page.sections} id="approach" />
+        <EditorialSections sections={page.sections} id="approach" artworkContext={page.path} />
       ) : null}
       <FaqBlock
         items={page.faq}

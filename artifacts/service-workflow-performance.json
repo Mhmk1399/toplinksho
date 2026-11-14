@@ -1,0 +1,53 @@
+{
+  "width": 390,
+  "scrollMode": "native",
+  "performanceMode": "reduced",
+  "entrance": "static",
+  "activeWorkflowAnimations": 0,
+  "workflowElements": 60,
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3192/_next/image?url=%2Fimages%2Fprocess%2Fdiscovery.png&w=96&q=75",
+      "transferSize": 4408,
+      "encodedBodySize": 4108
+    },
+    {
+      "name": "http://127.0.0.1:3192/_next/image?url=%2Fimages%2Fprocess%2Fscope.png&w=96&q=75",
+      "transferSize": 4638,
+      "encodedBodySize": 4338
+    },
+    {
+      "name": "http://127.0.0.1:3192/_next/image?url=%2Fimages%2Fprocess%2Fbuild.png&w=96&q=75",
+      "transferSize": 4310,
+      "encodedBodySize": 4010
+    },
+    {
+      "name": "http://127.0.0.1:3192/_next/image?url=%2Fimages%2Fprocess%2Fverify.png&w=96&q=75",
+      "transferSize": 5206,
+      "encodedBodySize": 4906
+    }
+  ],
+  "overflow": false,
+  "backgroundGzipBytes": 694,
+  "initiallyRequestedIcons": 0,
+  "optimizedIconBodyBytes": 17362,
+  "entranceChunks": [
+    {
+      "file": ".next/static/chunks/app/services/page-93805710dea198fd.js",
+      "bytes": 3000,
+      "gzipBytes": 1354
+    },
+    {
+      "file": ".next/static/chunks/app/services/search/page-93805710dea198fd.js",
+      "bytes": 3000,
+      "gzipBytes": 1354
+    },
+    {
+      "file": ".next/static/chunks/app/services/[...slug]/page-ea14bf0f4973063a.js",
+      "bytes": 2995,
+      "gzipBytes": 1349
+    }
+  ],
+  "limits": "Local Chrome, simulated two-core/2GB device and 4x CPU slowdown; not a physical-device benchmark or a universal speed guarantee.",
+  "serviceOnlyEntrances": true
+}

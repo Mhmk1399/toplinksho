@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "browserTests": 32,
+  "checks": [
+    "lint",
+    "typecheck",
+    "production build",
+    "32 browser tests including accessibility and localized narrow layouts",
+    "11 backend checks with local MongoDB and SMTP",
+    "project SEO",
+    "310 SEO combinations",
+    "62 public route migration",
+    "62 route smoke checks",
+    "295 transparent PNG checks",
+    "strict UI audit (0 findings)",
+    "DESIGN.md lint"
+  ],
+  "screenshots": [
+    "artifacts/service-workflow-1440.png",
+    "artifacts/service-workflow-390.png"
+  ],
+  "motion": {
+    "durationMs": 420,
+    "translatePx": 14,
+    "maxConcurrent": 6,
+    "once": true,
+    "staticFallbacks": [
+      "reduced-motion",
+      "low CPU",
+      "low memory",
+      "Save-Data",
+      "2G",
+      "background tabs",
+      "adaptive scroll performance fallback"
+    ],
+    "serviceOnly": true
+  },
+  "images": {
+    "sourcePngs": 4,
+    "sourceBytes": 85316,
+    "optimizedMobileBodyBytesAtDpr1": 17362,
+    "initialRequests": 0
+  },
+  "limits": "Local Chrome, simulated two-core/2GB device and 4x CPU slowdown; not a physical-device benchmark or a universal speed guarantee."
+}

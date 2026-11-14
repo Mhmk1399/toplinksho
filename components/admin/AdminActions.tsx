@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 
 export function LogoutButton() {
   const router = useRouter();
-  const { drafts, clear } = useAdminState();
+  const { drafts, projectDrafts, projectUploads, clear } = useAdminState();
   const dialog = useRef<HTMLDialogElement>(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
@@ -23,7 +23,7 @@ export function LogoutButton() {
       router.refresh();
     } catch { setError("خروج انجام نشد. دوباره تلاش کنید."); setPending(false); }
   }
-  return <div><button type="button" onClick={() => { if (Object.values(drafts).some(draft => draft.unsaved)) dialog.current?.showModal(); else void logout(); }} disabled={pending} className="flex min-h-11 items-center gap-2 rounded-xl px-3 text-xs text-muted transition-colors hover:bg-white/5 hover:text-white disabled:cursor-wait disabled:opacity-50">{pending ? <LoaderCircle size={16} className="animate-spin" aria-hidden="true" /> : <LogOut size={16} aria-hidden="true" />}خروج</button>{error && <p className="text-xs text-rose-300" role="alert">{error}</p>}<dialog ref={dialog} aria-labelledby="logout-title" aria-describedby="logout-description" className="fixed inset-0 m-auto w-[min(calc(100%-2rem),28rem)] rounded-3xl border border-white/15 bg-panel p-6 text-white backdrop:bg-black/75"><h2 id="logout-title" className="text-xl font-bold">تغییرات ذخیره نشده</h2><p id="logout-description" className="mt-4 text-sm leading-8 text-muted">با خروج، پیش‌نویس‌هایی که ذخیره نکرده‌اید کنار گذاشته می‌شوند.</p><div className="mt-6 flex flex-wrap gap-3"><Button type="button" variant="secondary" onClick={() => dialog.current?.close()}>ادامهٔ ویرایش</Button><Button type="button" onClick={() => { dialog.current?.close(); void logout(); }}>خروج و کنارگذاشتن پیش‌نویس‌ها</Button></div></dialog></div>;
+  return <div><button type="button" onClick={() => { if ([...Object.values(drafts), ...Object.values(projectDrafts)].some(draft => draft.unsaved) || Object.values(projectUploads).some(Boolean)) dialog.current?.showModal(); else void logout(); }} disabled={pending} className="flex min-h-11 items-center gap-2 rounded-xl px-3 text-xs text-muted transition-colors hover:bg-white/5 hover:text-white disabled:cursor-wait disabled:opacity-50">{pending ? <LoaderCircle size={16} className="animate-spin" aria-hidden="true" /> : <LogOut size={16} aria-hidden="true" />}خروج</button>{error && <p className="text-xs text-rose-300" role="alert">{error}</p>}<dialog ref={dialog} aria-labelledby="logout-title" aria-describedby="logout-description" className="fixed inset-0 m-auto w-[min(calc(100%-2rem),28rem)] rounded-3xl border border-white/15 bg-panel p-6 text-white backdrop:bg-black/75"><h2 id="logout-title" className="text-xl font-bold">تغییرات ذخیره نشده</h2><p id="logout-description" className="mt-4 text-sm leading-8 text-muted">با خروج، پیش‌نویس‌هایی که ذخیره نکرده‌اید کنار گذاشته می‌شوند.</p><div className="mt-6 flex flex-wrap gap-3"><Button type="button" variant="secondary" onClick={() => dialog.current?.close()}>ادامهٔ ویرایش</Button><Button type="button" onClick={() => { dialog.current?.close(); void logout(); }}>خروج و کنارگذاشتن پیش‌نویس‌ها</Button></div></dialog></div>;
 }
 
 export function VerifyMailButton() {

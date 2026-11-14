@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "key": "route:/services/design/web-design",
+      "title": "طراحی سایت",
+      "description": "ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.",
+      "context": "/services/design/web-design",
+      "file": "/images/cards/a5ccc173bd281ac9.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-c9b0f579-1afb-468a-8835-a83b2059b521.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): طراحی سایت. What it explains: ساختار، محتوا و ظاهر سایت را با شناخت مخاطب طراحی می‌کنیم تا انتخاب قدم بعدی آسان باشد.. Page/domain context:  services design web-design. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/development/web-development",
+      "title": "توسعه وب",
+      "description": "وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.",
+      "context": "/services/development/web-development",
+      "file": "/images/cards/a30945b8a02f7920.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-612285b8-f4ad-4b63-a377-90f7fb9d9b41.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): توسعه وب. What it explains: وب‌سایتی فراتر از چند صفحه؛ بستری برای ارائهٔ خدمات، مدیریت اطلاعات و ارتباط با مشتری.. Page/domain context:  services development web-development. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/development/ai-automation/ai-document-processing",
+      "title": "پردازش هوشمند اسناد",
+      "description": "اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.",
+      "context": "/services/development/ai-automation/ai-document-processing",
+      "file": "/images/cards/40c890684b7d5044.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-31f83660-9da9-4f72-b71c-c919d6d6cacd.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): پردازش هوشمند اسناد. What it explains: اطلاعات مورد نیاز را از اسناد استخراج و برای بازبینی و استفاده در فرایندهای شما آماده می‌کنیم.. Page/domain context:  services development ai-automation ai-document-processing. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/design/web-design/business-websites",
+      "title": "طراحی سایت شرکتی",
+      "description": "ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.",
+      "context": "/services/design/web-design/business-websites",
+      "file": "/images/cards/3b2bb8cdc4026243.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-64293df0-f98c-42e0-9cb6-07e9112c7377.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): طراحی سایت شرکتی. What it explains: ساختار و ظاهر سایت شرکتی را برای معرفی قابل اعتماد کسب‌وکار و دسترسی روشن به خدمات طراحی می‌کنیم.. Page/domain context:  services design web-design business-websites. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/development/web-development/service-business-websites",
+      "title": "سایت کسب‌وکارهای خدماتی",
+      "description": "سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.",
+      "context": "/services/development/web-development/service-business-websites",
+      "file": "/images/cards/8fe9342c788316cb.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-cfd32ebc-9a9d-465d-b7d5-4372f1a2bcdf.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): سایت کسب‌وکارهای خدماتی. What it explains: سایتی برای معرفی روشن خدمات، پاسخ به پرسش‌های مشتری و دریافت درخواست همکاری؛ با مسیری کوتاه برای تماس.. Page/domain context:  services development web-development service-business-websites. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/design/web-design/landing-page-design",
+      "title": "طراحی لندینگ پیج",
+      "description": "یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.",
+      "context": "/services/design/web-design/landing-page-design",
+      "file": "/images/cards/025b124391cad8d3.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-97309fea-8ec6-4c84-a215-d8a5411f144c.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): طراحی لندینگ پیج. What it explains: یک صفحهٔ متمرکز برای یک پیشنهاد مشخص طراحی می‌کنیم تا مخاطب پیام را بفهمد و قدم بعدی را پیدا کند.. Page/domain context:  services design web-design landing-page-design. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/development/web-development/custom-web-applications",
+      "title": "وب‌اپلیکیشن اختصاصی",
+      "description": "وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.",
+      "context": "/services/development/web-development/custom-web-applications",
+      "file": "/images/cards/fc19b1f2ea587a5c.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-ca874357-ab7e-4c79-aff3-e45810688f4a.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): وب‌اپلیکیشن اختصاصی. What it explains: وقتی کار شما با صفحات عمومی تمام نمی‌شود، یک برنامهٔ تحت وب برای مدیریت فرایندها و داده‌های اختصاصی طراحی می‌کنیم.. Page/domain context:  services development web-development custom-web-applications. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "route:/services/design/ui-designs/mobile-app-ui-ux-design",
+      "title": "طراحی رابط اپلیکیشن موبایل",
+      "description": "تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.",
+      "context": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "file": "/images/cards/eb26b901c1fd2a75.png",
+      "source": "C:/Users/H.Asus/.codex/generated_images/01a1ca87-f200-7470-9348-cb7fcda65885/exec-1624a204-e8de-42fc-a9bd-cbd527d24305.png",
+      "prompt": "Use case: stylized-concept / style-transfer. Project asset: a distinct transparent PNG illustration for ONE TopLinkSho Persian website card. The provided image is STYLE REFERENCE ONLY: retain its premium tactile 3D liquid crystal glass, silver chrome bevels, deep cobalt #343db5, electric magenta #f51b7e and restrained lavender #c2a1ff rim lighting. Replace its entire object composition with the specific subject below. Each illustration must have a clear characteristic silhouette directly related to this card, not a generic monitor reused for unrelated topics. One coherent compact sculpture, 3:2 landscape canvas, nearly frontal three-quarter view, roughly 12 percent empty transparent padding around the complete object cluster, crisp legible shapes at 250px. A few substantial objects, polished dimensional materials. Card subject (Persian): طراحی رابط اپلیکیشن موبایل. What it explains: تجربه‌ای متناسب با صفحهٔ کوچک، تعامل لمسی و موقعیت استفاده طراحی می‌کنیم.. Page/domain context:  services design ui-designs mobile-app-ui-ux-design. Actual RGBA transparent background. No opaque background, no ground/floor, no checkerboard drawn into the image, no rectangular haze, no large glow outside the subject, no UI/card frame, no text/letters/numbers/logos/watermarks, no real human faces. Preserve colored glass and internal reflections while keeping surrounding empty space truly transparent. Interpret the Persian brief visually; never write it.",
+      "tool": "built-in image_gen"
+    }
+  ]
+}

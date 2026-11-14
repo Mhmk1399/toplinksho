@@ -10,7 +10,7 @@ import {
   Tags,
 } from "lucide-react";
 import { serviceNavigation } from "@/lib/site";
-import { getVisual, visualFor } from "@/lib/visuals";
+import { getMenuArtwork } from "@/lib/menu-artwork";
 import { NavigationIcon } from "@/components/layout/NavigationIcon";
 
 type CloseProps = { onNavigate: () => void };
@@ -22,7 +22,7 @@ function ServiceMenuImage({
   path: string;
   className?: string;
 }) {
-  const image = getVisual(visualFor(path));
+  const image = { src: getMenuArtwork(path) };
   return (
     <span className={`service-menu-art ${className}`} aria-hidden="true">
       <Image
@@ -89,7 +89,7 @@ export function DesktopServiceMenu({ onNavigate }: CloseProps) {
           );
         })}
         <aside className="service-menu-feature">
-          <ServiceMenuImage path="/services/growth" />
+          <ServiceMenuImage path="featured" />
           <p className="service-menu-feature-title">رشد و امنیت</p>
           <p className="service-menu-feature-copy">
             تحلیل، بهینه‌سازی و افزایش امنیت؛ برای حضوری هدفمند و قابل نگهداری.

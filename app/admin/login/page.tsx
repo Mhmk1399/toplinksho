@@ -16,7 +16,7 @@ export default async function LoginPage({
   const { next: requested } = await searchParams;
   const next =
     typeof requested === "string" &&
-    /^\/admin(?:\/settings|\/requests\/[\da-f-]{36})?(?:\?[^#]*)?$/.test(
+    /^\/admin(?:\/settings|\/requests\/[\da-f-]{36}|\/projects(?:\/new|\/[\da-f-]{36}(?:\/preview)?)?)?(?:\?[^#]*)?$/.test(
       requested,
     )
       ? requested

@@ -2,14 +2,7 @@
 
 import { useEffect } from "react";
 import type Lenis from "lenis";
-
-type PerformanceNavigator = Navigator & {
-  deviceMemory?: number;
-  connection?: EventTarget & {
-    saveData?: boolean;
-    effectiveType?: string;
-  };
-};
+import { constrainedDevice, type PerformanceNavigator } from "@/lib/device-capabilities";
 
 export function SmoothScroll() {
   useEffect(() => {
@@ -101,12 +94,7 @@ export function SmoothScroll() {
 
     function reconcile() {
       destroy();
-      const constrained =
-        performanceLimited ||
-        (device.hardwareConcurrency > 0 && device.hardwareConcurrency <= 4) ||
-        (device.deviceMemory !== undefined && device.deviceMemory <= 4) ||
-        device.connection?.saveData === true ||
-        ["slow-2g", "2g"].includes(device.connection?.effectiveType ?? "");
+      const constrained = performanceLimited || constrainedDevice(device);
 
       root.dataset.performance = constrained ? "reduced" : "standard";
       if (

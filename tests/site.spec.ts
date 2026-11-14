@@ -270,27 +270,33 @@ test("PWA registers, installs on request, serves public pages offline and exclud
 });
 
 test("every public route has distinct metadata, canonical and content-derived JSON-LD", async ({ page }) => {
-  // Metadata is prerendered with the owner's build-time APP_URL, including local previews.
-  // Independent SEO configuration tests cover production and preview origins.
+  // Static pages use build-time APP_URL. The test server deliberately overrides it;
+  // database pages and regenerated ISR pages use that server origin. Production
+  // configuration tests separately require the same configured origin throughout.
   const canonicalInBuild = readFileSync(".next/server/app/index.html","utf8").match(/<link[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
   expect(canonicalInBuild).toBeTruthy();
   const canonicalOrigin = new URL(canonicalInBuild!).origin;
-  const paths = [...routes, "/services/design/web-design", "/services/growth/seo"];
+  const paths = [...routes, "/portfolio", "/services/design/web-design", "/services/growth/seo"];
   const titles = new Set<string>();
   for (const path of paths) {
     await page.goto(path);
     const title = await page.title();
     expect(titles.has(title)).toBe(false); titles.add(title);
-    expect(new URL((await page.locator('link[rel="canonical"]').getAttribute("href"))!).href).toBe(canonicalOrigin + (path === "/" ? "/" : path));
+    const canonical = new URL((await page.locator('link[rel="canonical"]').getAttribute("href"))!);
+    expect(canonical.pathname).toBe(path);
+    const permittedOrigins = path === "/portfolio" ? [origin] : path.startsWith("/services") ? [canonicalOrigin, origin] : [canonicalOrigin];
+    expect(permittedOrigins).toContain(canonical.origin);
+    expect(canonical.search + canonical.hash).toBe("");
     await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content", "fa_IR");
     await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
-    const graph = await page.locator('script[type="application/ld+json"]').evaluate(element => JSON.parse(element.textContent || "{}"));
-    expect(graph["@context"]).toBe("https://schema.org");
-    expect(graph["@graph"].some((node: Record<string, unknown>) => node["@type"] === "WebSite")).toBe(true);
+    const graphs = await page.locator('script[type="application/ld+json"]').evaluateAll(elements => elements.map(element => JSON.parse(element.textContent || "{}")));
+    expect(graphs.every(graph => graph["@context"] === "https://schema.org")).toBe(true);
+    const nodes = graphs.flatMap(graph => graph["@graph"] || [graph]);
+    expect(nodes.some((node: Record<string, unknown>) => node["@type"] === "WebSite")).toBe(true);
     if (path.startsWith("/services/") && path.split("/").length > 3) {
-      const faq = graph["@graph"].find((node: Record<string, unknown>) => node["@type"] === "FAQPage");
+      const faq = nodes.find((node: Record<string, unknown>) => node["@type"] === "FAQPage");
       expect(faq.mainEntity).toHaveLength(await page.locator("#faq details").count());
-      expect(graph["@graph"].some((node: Record<string, unknown>) => node["@type"] === "Service")).toBe(true);
+      expect(nodes.some((node: Record<string, unknown>) => node["@type"] === "Service")).toBe(true);
     }
   }
   await page.goto("/admin/login");
@@ -428,7 +434,7 @@ test("service cards have bounded lazy images and service-specific headings", asy
     const style = getComputedStyle(image);
     return { url: image.currentSrc, mask: style.maskImage, blend: style.mixBlendMode, filter: style.filter };
   });
-  expect(new URL(artwork.url).searchParams.get("url")).toMatch(/\/images\/services\/.+\.png$/);
+  expect(new URL(artwork.url).searchParams.get("url")).toMatch(/\/images\/cards\/.+\.png$/);
   expect(artwork.mask).toBe("none");
   expect(artwork.blend).toBe("normal");
   expect(artwork.filter).toBe("none");
@@ -552,7 +558,7 @@ test("menu artwork loads on demand without service prefetch or continuous effect
   const imageRequests: string[] = [], routePrefetches: string[] = [];
   page.on("request", request => {
     const url = new URL(request.url());
-    if ((url.searchParams.get("url") || url.pathname).startsWith("/images/services/")) imageRequests.push(request.url());
+    if ((url.searchParams.get("url") || url.pathname).startsWith("/images/cards/")) imageRequests.push(request.url());
     if (url.pathname.startsWith("/services/") && (request.headers()["next-router-prefetch"] || url.searchParams.has("_rsc"))) routePrefetches.push(request.url());
   });
   await page.emulateMedia({ reducedMotion: "reduce" });
@@ -562,7 +568,7 @@ test("menu artwork loads on demand without service prefetch or continuous effect
   await page.locator(".service-disclosure-trigger").click();
   const menu = page.locator(".service-mega-menu");
   await expect.poll(() => menu.locator("img").evaluateAll(nodes => nodes.every(image => image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0))).toBe(true);
-  expect(new Set(imageRequests).size).toBe(3);
+  expect(new Set(imageRequests).size).toBe(4);
   expect(await menu.evaluate(node => getComputedStyle(node).backdropFilter)).toBe("none");
   expect(await menu.locator("*").evaluateAll(nodes => nodes.every(node => getComputedStyle(node).animationName === "none"))).toBe(true);
   await menu.locator(".service-menu-link").first().hover();

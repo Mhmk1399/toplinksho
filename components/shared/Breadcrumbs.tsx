@@ -3,8 +3,7 @@ import { ChevronLeft, House } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { breadcrumbItems } from "@/lib/page-registry";
 
-export function Breadcrumbs({ path }: { path: string }) {
- const items = breadcrumbItems(path);
+export function Breadcrumbs({ path, items = breadcrumbItems(path) }: { path: string; items?: { title: string; path: string }[] }) {
  return <div className="page-breadcrumbs"><Container>
   <div className="breadcrumb-shell">
    <nav aria-label="مسیر صفحه" className="breadcrumb-scroll" tabIndex={0} data-lenis-prevent>

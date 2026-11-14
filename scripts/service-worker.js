@@ -33,6 +33,11 @@ self.addEventListener("fetch", event => {
   // Never cache personal data, API mutations, private pages, RSC payloads or cross-origin requests.
   if (request.method !== "GET" || url.origin !== self.location.origin || url.pathname.startsWith("/admin") || url.pathname.startsWith("/api/") || request.headers.has("rsc") || url.searchParams.has("_rsc") || request.headers.has("next-router-prefetch") || request.headers.has("range")) return;
   if (request.mode === "navigate") {
+    // CMS projects can be unpublished without a deployment. Do not persist their HTML.
+    if (url.pathname === "/portfolio" || url.pathname.startsWith("/portfolio/")) {
+      event.respondWith(fetch(request).catch(async () => (await caches.open(SHELL)).match("/offline.html")));
+      return;
+    }
     if (!PUBLIC_ROUTES.has(url.pathname) || url.search) return;
     event.respondWith((async () => {
       try {

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "sitemapPublishedOnly": true,
+  "canonicalAndSocialImage": true,
+  "contentDerivedSchema": true,
+  "validation": true,
+  "realDatabase": "isolated MongoDB memory instance",
+  "productionWrites": false
+}

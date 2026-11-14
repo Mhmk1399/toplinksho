@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "assets": 277,
+  "routes": [
+    {
+      "path": "/",
+      "cards": 9,
+      "uniqueImages": 9,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services",
+      "cards": 13,
+      "uniqueImages": 13,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development",
+      "cards": 4,
+      "uniqueImages": 4,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development",
+      "cards": 13,
+      "uniqueImages": 13,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development/service-business-websites",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development/custom-web-applications",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development/booking-system-development",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development/api-system-integrations",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/web-development/website-performance-optimization",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/app-development",
+      "cards": 10,
+      "uniqueImages": 10,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/app-development/mobile-app-development",
+      "cards": 5,
+      "uniqueImages": 5,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/app-development/app-modernization",
+      "cards": 5,
+      "uniqueImages": 5,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/e-commerce-development",
+      "cards": 11,
+      "uniqueImages": 11,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/e-commerce-development/custom-e-commerce-development",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/e-commerce-development/e-commerce-modernization-migration",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/ai-automation",
+      "cards": 11,
+      "uniqueImages": 11,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/ai-automation/ai-workflow-automation",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/ai-automation/ai-assistants-knowledge-systems",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/development/ai-automation/ai-document-processing",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/web-design",
+      "cards": 11,
+      "uniqueImages": 11,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/web-design/business-websites",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/web-design/landing-page-design",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/web-design/website-redesign",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/web-design/nextjs-websites",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/ui-designs",
+      "cards": 11,
+      "uniqueImages": 11,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/ui-designs/web-app-ui-ux-design",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/ui-designs/mobile-app-ui-ux-design",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/ui-designs/ux-audit",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/ui-designs/design-systems",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/brand-identity",
+      "cards": 10,
+      "uniqueImages": 10,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/brand-identity/brand-strategy",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/brand-identity/logo-and-visual-identity",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/design/brand-identity/brand-guidelines",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/seo",
+      "cards": 10,
+      "uniqueImages": 10,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/seo/technical-seo",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/seo/seo-content-strategy",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/seo/local-seo",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/social-media-marketing",
+      "cards": 10,
+      "uniqueImages": 10,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/social-media-marketing/social-media-strategy",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/social-media-marketing/social-media-content-strategy",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/social-media-marketing/social-media-campaign-strategy",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/security",
+      "cards": 10,
+      "uniqueImages": 10,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/security/website-security-audit",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/security/website-protection",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/growth/security/security-monitoring",
+      "cards": 6,
+      "uniqueImages": 6,
+      "fullyMapped": true
+    },
+    {
+      "path": "/about-us",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/contact",
+      "cards": 0,
+      "uniqueImages": 0,
+      "fullyMapped": true
+    },
+    {
+      "path": "/pricing",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/blog",
+      "cards": 0,
+      "uniqueImages": 0,
+      "fullyMapped": true
+    },
+    {
+      "path": "/live-case-studies",
+      "cards": 2,
+      "uniqueImages": 2,
+      "fullyMapped": true
+    },
+    {
+      "path": "/live-case-studies/success-van-hire",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/live-case-studies/real-estate",
+      "cards": 3,
+      "uniqueImages": 3,
+      "fullyMapped": true
+    },
+    {
+      "path": "/faq",
+      "cards": 0,
+      "uniqueImages": 0,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/campaigns",
+      "cards": 8,
+      "uniqueImages": 8,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/google-ads",
+      "cards": 8,
+      "uniqueImages": 8,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/graphic-design",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/content-production",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    },
+    {
+      "path": "/services/online-advertising",
+      "cards": 7,
+      "uniqueImages": 7,
+      "fullyMapped": true
+    }
+  ],
+  "fullCatalogExcludedFromClient": true,
+  "screenshots": [
+    "artifacts/card-artwork-sheet-1.png",
+    "artifacts/card-artwork-sheet-2.png",
+    "artifacts/card-artwork-sheet-3.png",
+    "artifacts/card-artwork-sheet-4.png",
+    "artifacts/card-artwork-sheet-5.png",
+    "artifacts/card-artwork-sheet-6.png",
+    "artifacts/card-artwork-sheet-7.png",
+    "artifacts/card-artwork-sheet-8.png"
+  ]
+}

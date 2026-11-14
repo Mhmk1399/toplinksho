@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Braces, ScanSearch, PenTool, Workflow } from "lucide-react";
-import { getVisual, visualFor, type VisualKey } from "@/lib/visuals";
+import { getVisual, getCardArtwork, visualFor, type VisualKey } from "@/lib/visuals";
 
 const icons = {
   development: Braces,
@@ -18,6 +18,7 @@ export function CardVisual({
   sizes,
   image: imageSrc,
   imageAlt,
+  artworkKey,
   backgroundImage,
   icon,
   variant = "thumbnail",
@@ -30,12 +31,14 @@ export function CardVisual({
   sizes?: string;
   image?: string;
   imageAlt?: string;
+  artworkKey?: string;
   backgroundImage?: string;
   icon?: ReactNode;
   variant?: "thumbnail" | "feature";
 }) {
   const key = visual || visualFor(path);
-  const fallback = getVisual(key);
+  const exact = getCardArtwork({ artworkKey, path });
+  const fallback = exact || getVisual(key);
   const image = {
     src: imageSrc || fallback.src,
     alt: imageAlt ?? (imageSrc ? "" : fallback.alt),
@@ -45,6 +48,7 @@ export function CardVisual({
     <div
       className={`card-visual ${compact ? "card-visual--compact" : ""} ${variant === "feature" ? "feature-card-art" : ""}`}
       aria-hidden={decorative || undefined}
+      data-artwork-key={exact?.key || artworkKey || (path ? "route:" + path : undefined)}
     >
       {variant === "feature" && (
         <>

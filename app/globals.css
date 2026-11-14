@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "../theme/generated.css";
 @import "../components/ui/feature-card.css";
+@import "../components/services/service-process.css";
 
 @theme inline {
   --color-ink: var(--background);
@@ -44,6 +45,8 @@
   --brand-action-pink: var(--paint-bc155f);
   --glass-tint: var(--paint-14152685);
   --glass-blur: 24px;
+  --site-header-top: max(18px, env(safe-area-inset-top));
+  --site-header-height: 80px;
   --scrollbar-thumb: var(--paint-655875);
   --scrollbar-track: var(--paint-0d0f1b);
   --scrollbar-hover: var(--paint-9982b5);
@@ -219,7 +222,7 @@ summary:focus-visible {
 }
 .site-header {
   position: fixed;
-  top: max(18px, env(safe-area-inset-top));
+  top: var(--site-header-top);
   left: 0;
   right: 0;
   z-index: 30;
@@ -234,7 +237,7 @@ summary:focus-visible {
   gap: 24px;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  min-height: var(--site-header-height);
   padding: 14px 22px;
   border-radius: 28px;
 }
@@ -1348,14 +1351,18 @@ html[data-performance="reduced"] :is(.hero-visual, .hero-satellite) {
   }
 }
 @media (max-width: 767px) {
+  :root {
+    --site-header-top: max(12px, env(safe-area-inset-top));
+    --site-header-height: 68px;
+  }
   html {
     scroll-padding-top: 100px;
   }
   .site-header {
-    top: max(12px, env(safe-area-inset-top));
+    top: var(--site-header-top);
   }
   .nav-shell {
-    min-height: 68px;
+    min-height: var(--site-header-height);
     padding: 10px 12px;
     gap: 10px;
     border-radius: 23px;
@@ -2215,9 +2222,16 @@ html[data-performance="reduced"] .hero-floor-mesh { opacity: .4; }
 .service-disclosure-trigger { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 10px 14px; min-height: 44px; border-radius: 17px; list-style: none; cursor: pointer; color: var(--text); }
 .service-disclosure-trigger::-webkit-details-marker { display: none; }
 .service-disclosure-trigger:hover, .service-disclosure[open] .service-disclosure-trigger { color: var(--text); }
-.service-disclosure[open] .service-disclosure-trigger svg { transform: rotate(180deg); }
+.service-disclosure-trigger > svg { transition: transform 180ms cubic-bezier(.2,.7,.3,1); }
+.service-disclosure[open]:not([data-motion="closing"]) .service-disclosure-trigger svg { transform: rotate(180deg); }
+.service-menu-bridge { display: none; position: absolute; inset-inline: 12px; top: 100%; height: 12px; z-index: 40; }
+.service-disclosure[open] > .service-menu-bridge { display: block; }
+.service-disclosure[data-motion="closing"] > .service-mega-menu { pointer-events: none; }
+html[data-performance="reduced"] .service-disclosure-trigger > svg { transition: none; }
+@media (prefers-reduced-motion: reduce) { .service-disclosure-trigger > svg { transition: none; } }
 .service-disclosure:not([open]) > .mega-menu { display: none; }
 .site-header .service-mega-menu {
+ transform-origin: top center;
  position: absolute; inset-inline: 12px; top: calc(100% + 10px); z-index: 40; max-height: calc(100dvh - 130px); overflow-y: auto; overscroll-behavior: contain;
  padding: 18px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); border-radius: 25px;
  color: var(--text); background: radial-gradient(ellipse at 40% 0, color-mix(in srgb, var(--accent) 9%, transparent), transparent 48%), linear-gradient(135deg, color-mix(in srgb, var(--brand-blue) 12%, transparent), transparent 43%, color-mix(in srgb, var(--brand-pink) 6%, transparent)), var(--surface);
@@ -2302,4 +2316,82 @@ html[data-performance="reduced"] .service-mega-menu, html[data-performance="redu
 @media (forced-colors: active) {
  .service-mega-menu, .service-menu-column, .service-menu-feature, .service-menu-footer, .service-menu-search, .mobile-service-group, .mobile-service-toggle, .service-menu-icon { background: Canvas; border-color: CanvasText; box-shadow: none; }
  .site-header .service-menu-button { background: ButtonFace; color: ButtonText; border-color: ButtonText; }
+}
+
+/* A compact, server-rendered glass dock; no scroll listener or backdrop blur. */
+html:has(.page-section-nav) {
+  --section-nav-top: calc(var(--site-header-top) + var(--site-header-height) + 8px);
+  --section-nav-height: 72px;
+  scroll-padding-top: calc(var(--section-nav-top) + var(--section-nav-height));
+}
+.page-section-nav {
+  position: sticky;
+  top: var(--section-nav-top);
+  z-index: 20;
+  pointer-events: none;
+}
+.section-nav-shell {
+  height: var(--section-nav-height);
+  pointer-events: auto;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--text) 7%, transparent), transparent 45%),
+    linear-gradient(115deg, color-mix(in srgb, var(--brand-blue) 16%, transparent), transparent 45%, color-mix(in srgb, var(--brand-pink) 7%, transparent)),
+    color-mix(in srgb, var(--surface) 96%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 20%, transparent), 0 8px 24px var(--paint-00000014);
+}
+.section-nav-link {
+  border-color: color-mix(in srgb, var(--accent) 17%, transparent);
+  background: color-mix(in srgb, var(--text) 3%, transparent);
+  color: var(--text);
+  transition: background-color 150ms, border-color 150ms, color 150ms;
+}
+@media (hover: hover) {
+  .section-nav-link:hover {
+    border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    background: color-mix(in srgb, var(--accent) 13%, transparent);
+    color: var(--accent);
+  }
+}
+.section-nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.section-nav-link:active {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.project-editor h2 {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: normal;
+}
+.project-editor-desktop-save { display: none; }
+html:has(.project-editor-actions) { scroll-padding-bottom: 124px; }
+@media (min-width: 1280px) {
+  html:has(.project-editor-actions) { scroll-padding-bottom: 24px; }
+  .project-editor-desktop-save { display: inline-flex; }
+}
+.public-page:has(> .page-section-nav) > section[id] {
+  scroll-margin-top: 16px;
+}
+@media (min-width: 1024px) {
+  html:has(.page-section-nav) {
+    --section-nav-top: calc(var(--site-header-top) + var(--site-header-height) + 12px);
+    --section-nav-height: 64px;
+  }
+}
+html[data-performance="reduced"] .section-nav-shell {
+  box-shadow: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-nav-link { transition: none; }
+}
+@media (forced-colors: active) {
+  .section-nav-shell, .section-nav-link {
+    background: Canvas;
+    color: CanvasText;
+    border-color: CanvasText;
+    box-shadow: none;
+  }
+  .section-nav-link:focus-visible { outline-color: Highlight; }
 }

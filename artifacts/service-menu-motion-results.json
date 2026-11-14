@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "browserTests": 36,
+  "owner": "components/layout/useServiceMenu.ts",
+  "behavior": {
+    "desktopMinWidth": 1200,
+    "fineHoverOnly": true,
+    "hoverIntentMs": 70,
+    "exitToleranceMs": 170,
+    "openMs": 180,
+    "closeMs": 140,
+    "animatedProperties": [
+      "opacity",
+      "transform"
+    ],
+    "nativeDisclosure": true,
+    "keyboardAndClick": true,
+    "touchPreserved": true,
+    "noJsFallback": true,
+    "reducedMotionAndWeakDeviceFallback": true
+  },
+  "checks": [
+    "lint",
+    "TypeScript",
+    "production build",
+    "36 browser tests including accessibility and narrow viewports",
+    "11 backend checks",
+    "project SEO",
+    "310 SEO combinations",
+    "62 public route migration",
+    "public route smoke checks",
+    "strict UI audit: 0 findings",
+    "DESIGN.md lint"
+  ]
+}

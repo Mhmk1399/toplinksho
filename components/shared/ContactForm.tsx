@@ -72,9 +72,7 @@ export function ContactForm() {
       <Input id={`${id}-name`} name="name" label="نام و نام خانوادگی *" autoComplete="name" value={values.name} onChange={event => update("name", event.target.value)} error={errors.name} required disabled={pending} maxLength={100} placeholder="نام شما" />
       <Input id={`${id}-phone`} name="phone" label="شماره تماس *" type="tel" inputMode="tel" autoComplete="tel" dir="ltr" value={values.phone} onChange={event => update("phone", event.target.value)} error={errors.phone} required disabled={pending} maxLength={32} placeholder="0912 345 6789" />
     </div>
-    <Select id={`${id}-subject`} name="subject" label="مشاوره در زمینهٔ *" value={values.subject} onChange={event => update("subject", event.target.value)} error={errors.subject} required disabled={pending}>
-      <option value="" disabled>زمینهٔ مشاوره را انتخاب کنید</option>{consultationSubjects.map(subject => <option value={subject} key={subject}>{subject}</option>)}
-    </Select>
+    <Select id={`${id}-subject`} name="subject" label="مشاوره در زمینهٔ *" value={values.subject} onValueChange={value => update("subject", value)} error={errors.subject} required disabled={pending} placeholder="زمینهٔ مشاوره را انتخاب کنید" options={consultationSubjects.map(subject => ({ value: subject, label: subject }))} />
     <TextareaField id={`${id}-description`} name="description" label="در چه موردی به مشاوره نیاز دارید؟" value={values.description} onChange={event => update("description", event.target.value)} error={errors.description} disabled={pending} maxLength={3000} rows={4} placeholder="کمی دربارهٔ کسب‌وکار، هدف و نیازتان بنویسید." />
     <Input id={`${id}-website`} name="website" label="آدرس سایت یا شبکهٔ اجتماعی کسب‌وکار" dir="ltr" autoComplete="url" value={values.website} onChange={event => update("website", event.target.value)} error={errors.website} disabled={pending} maxLength={250} placeholder="example.com یا @yourbrand" />
     <div className="hidden" aria-hidden="true"><label htmlFor={`${id}-company`}>Company<input id={`${id}-company`} name="company" tabIndex={-1} autoComplete="off" /></label></div>

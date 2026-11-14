@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "popupOwner": "browser/operating system",
+  "results": [
+    {
+      "viewportWidth": 1440,
+      "width": 646,
+      "height": 48,
+      "overflow": false,
+      "native": true,
+      "background": "oklab(0.149574 0.0023402 -0.0260031 / 0.6)",
+      "appearance": "none",
+      "disabled": false
+    },
+    {
+      "viewportWidth": 390,
+      "width": 306,
+      "height": 48,
+      "overflow": false,
+      "native": true,
+      "background": "oklab(0.149574 0.0023402 -0.0260031 / 0.6)",
+      "appearance": "none",
+      "disabled": false
+    },
+    {
+      "viewportWidth": 320,
+      "width": 236,
+      "height": 48,
+      "overflow": false,
+      "native": true,
+      "background": "oklab(0.149574 0.0023402 -0.0260031 / 0.6)",
+      "appearance": "none",
+      "disabled": false
+    }
+  ]
+}
