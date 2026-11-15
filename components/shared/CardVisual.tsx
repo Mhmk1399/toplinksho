@@ -44,6 +44,9 @@ export function CardVisual({
     alt: imageAlt ?? (imageSrc ? "" : fallback.alt),
   };
   const Icon = icons[key];
+  const imageSizes = sizes || (compact
+    ? "110px"
+    : "(max-width: 639px) min(calc(88vw - 60px), 300px), (max-width: 767px) calc(50vw - 40px), (max-width: 1023px) calc(50vw - 56px), (max-width: 1344px) calc(33.333vw - 58px), 390px");
   return (
     <div
       className={`card-visual ${compact ? "card-visual--compact" : ""} ${variant === "feature" ? "feature-card-art" : ""}`}
@@ -62,7 +65,7 @@ export function CardVisual({
           alt=""
           fill
           loading="lazy"
-          sizes={sizes || "400px"}
+          sizes={imageSizes}
           className="card-visual-background"
         />
       )}
@@ -72,12 +75,7 @@ export function CardVisual({
         alt={decorative ? "" : image.alt}
         fill
         loading="lazy"
-        sizes={
-          sizes ||
-          (compact
-            ? "110px"
-            : "(max-width: 639px) 90vw, (max-width: 1023px) 44vw, 400px")
-        }
+        sizes={imageSizes}
         className="card-visual-image"
       />
       <span className="card-visual-icon" aria-hidden="true">

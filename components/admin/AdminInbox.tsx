@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowRight, Inbox, LoaderCircle, RefreshCw, Search, X } from "lucide-react";
 import { Input, Select } from "@/components/ui/FormControls";
 import { Button } from "@/components/ui/Button";
+import { toast } from "@/lib/client/toast";
+import { useFeedback } from "@/components/ui/useFeedback";
 import { StatusBadge } from "@/components/admin/StatusBadge";
 import { useAdminState, type InboxSnapshot } from "@/components/admin/AdminState";
 import { formatDate, requestStatuses } from "@/lib/consultation";
@@ -18,7 +20,7 @@ export function AdminInbox({ initial, initialStatus }: { initial: InboxResult; i
   const [draft, setDraft] = useState(snapshot.query);
   const [status, setStatus] = useState(snapshot.status);
   const [pending, setPending] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useFeedback("error", "admin-inbox");
   const [expired, setExpired] = useState(false);
   const controller = useRef<AbortController | null>(null);
   useEffect(() => () => controller.current?.abort(), []);
@@ -35,13 +37,17 @@ export function AdminInbox({ initial, initialStatus }: { initial: InboxResult; i
     try {
       const response = await fetch("/api/admin/consultations/search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query, status: filter, page }), signal: current.signal });
       const data = await response.json();
-      if (controller.current !== current) return;
+      if (controller.current !== current || current.signal.aborted) return;
       if (!response.ok) { setExpired(response.status === 401); setError(data.error || "دریافت درخواست‌ها انجام نشد."); return; }
       setInbox({ query, status: filter, page: data.page, result: data });
+      toast.success("نتایج درخواست‌ها به‌روزرسانی شد.", { id: "admin-inbox" });
       const params = new URLSearchParams();
       if (filter) params.set("status", filter);
       if (data.page > 1) params.set("page", String(data.page));
-      router.replace(`/admin${params.size ? `?${params}` : ""}`, { scroll: false });
+      const destination = `/admin${params.size ? `?${params}` : ""}`;
+      // Searching does not change the URL. Avoid a redundant navigation that
+      // could cancel a detail link clicked as these results finish loading.
+      if (window.location.pathname + window.location.search !== destination) router.replace(destination, { scroll: false });
     } catch (failure) { if (!(failure instanceof Error && failure.name === "AbortError")) setError("ارتباط برقرار نشد. نتایج قبلی حفظ شده‌اند؛ دوباره تلاش کنید."); }
     finally { if (controller.current === current) setPending(false); }
   }

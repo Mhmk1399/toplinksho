@@ -21,9 +21,9 @@ export function ServiceEntrance() {
         observer.unobserve(entry.target); seen.add(entry.target);
         if (disabled() || active.size >= 6 || entry.target.matches(":focus-within")) continue;
         const animation = (entry.target as HTMLElement).animate([
-          { opacity: .35, transform: "translateY(14px)" },
+          { opacity: .35, transform: "translateY(10px)" },
           { opacity: 1, transform: "translateY(0)" },
-        ], { duration: 420, delay: Math.min(order++, 3) * 45, easing: "cubic-bezier(.2,.7,.3,1)", fill: "none" });
+        ], { duration: 320, delay: Math.min(order++, 2) * 35, easing: "cubic-bezier(.2,.7,.3,1)", fill: "none" });
         active.add(animation);
         animation.onfinish = animation.oncancel = () => { active.delete(animation); };
       }

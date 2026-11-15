@@ -4,15 +4,22 @@ import { absoluteUrl, getSeoPage } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { findServicePage, findMainPage, breadcrumbItems, childrenOf, servicePages } from "@/lib/page-registry";
 
-export function pageStructuredData(path:string) {
- const page=getSeoPage(path),orgId=absoluteUrl("/#organization"),websiteId=absoluteUrl("/#website"),pageId=absoluteUrl(path+"#webpage");
+export function siteStructuredData() {
+ const orgId=absoluteUrl("/#organization");
+ return [
+  {"@type":"ProfessionalService","@id":orgId,name:site.name,alternateName:"TopLinkSho",url:absoluteUrl(),logo:{"@type":"ImageObject","@id":absoluteUrl("/#logo"),url:absoluteUrl("/images/logo.webp")},image:absoluteUrl(getSeoPage("/").image),description:getSeoPage("/").description,telephone:site.phone,email:site.email,address:{"@type":"PostalAddress",...site.postalAddress},contactPoint:{"@type":"ContactPoint",telephone:site.phone,email:site.email,contactType:"customer service",availableLanguage:["fa"]},sameAs:[site.linkedin]},
+  {"@type":"WebSite","@id":absoluteUrl("/#website"),url:absoluteUrl(),name:site.name,alternateName:"TopLinkSho",inLanguage:"fa-IR",publisher:{"@id":orgId}},
+ ];
+}
+
+export function pageStructuredData(path:string, canonicalPath=path) {
+ const page=getSeoPage(path),orgId=absoluteUrl("/#organization"),websiteId=absoluteUrl("/#website"),pageId=absoluteUrl(canonicalPath+"#webpage");
  const service=findServicePage(path),main=findMainPage(path);
  const trail=breadcrumbItems(path);
  const breadcrumbs={"@type":"BreadcrumbList","@id":absoluteUrl(path+"#breadcrumbs"),itemListElement:trail.map((item,index)=>({"@type":"ListItem",position:index+1,name:item.title,item:absoluteUrl(item.path)}))};
- const org={"@type":"ProfessionalService","@id":orgId,name:site.name,alternateName:"TopLinkSho",url:absoluteUrl(),logo:{"@type":"ImageObject","@id":absoluteUrl("/#logo"),url:absoluteUrl("/images/logo.webp")},image:absoluteUrl(page.image),description:getSeoPage("/").description,telephone:site.phone,email:site.email,address:{"@type":"PostalAddress",streetAddress:"ستارخان، خیابان صحرایی، مرکز تجاری پارسیان",addressLocality:"تهران",addressCountry:"IR"},contactPoint:{"@type":"ContactPoint",telephone:site.phone,email:site.email,contactType:"customer service",availableLanguage:["fa"]},sameAs:[site.linkedin]};
- const graph:Record<string,unknown>[]=[org,{"@type":"WebSite","@id":websiteId,url:absoluteUrl(),name:site.name,alternateName:"TopLinkSho",inLanguage:"fa-IR",publisher:{"@id":orgId}},{
+ const graph:Record<string,unknown>[]=[...siteStructuredData(),{
   "@type":page.kind==="about"?"AboutPage":page.kind==="contact"?"ContactPage":["services","cases","blog","portfolio"].includes(page.kind)?"CollectionPage":"WebPage",
-  "@id":pageId,url:absoluteUrl(path),name:page.title,description:page.description,inLanguage:"fa-IR",isPartOf:{"@id":websiteId},about:{"@id":orgId},
+  "@id":pageId,url:absoluteUrl(canonicalPath),name:page.title,description:page.description,inLanguage:"fa-IR",isPartOf:{"@id":websiteId},about:{"@id":orgId},
   primaryImageOfPage:{"@type":"ImageObject",url:absoluteUrl(page.image)},...(path!=="/"?{breadcrumb:{"@id":breadcrumbs["@id"]}}:{}),
  },...(path!=="/"?[breadcrumbs]:[])];
  const faq=path==="/"?home.faq.items:service?.faq||main?.faq||[];

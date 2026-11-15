@@ -2,6 +2,9 @@
 @import "../theme/generated.css";
 @import "../components/ui/feature-card.css";
 @import "../components/services/service-process.css";
+@import "../components/shared/faq-section.css";
+@import "../components/ui/select.css";
+@import "../components/ui/toast.css";
 
 @theme inline {
   --color-ink: var(--background);
@@ -44,7 +47,7 @@
   --brand-pink: var(--paint-f51b7e);
   --brand-action-pink: var(--paint-bc155f);
   --glass-tint: var(--paint-14152685);
-  --glass-blur: 24px;
+  --glass-blur: 12px;
   --site-header-top: max(18px, env(safe-area-inset-top));
   --site-header-height: 80px;
   --scrollbar-thumb: var(--paint-655875);
@@ -254,9 +257,8 @@ summary:focus-visible {
       var(--paint-ffffff03)
     ),
     var(--glass-tint);
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%)
-    brightness(1.12);
-  backdrop-filter: blur(var(--glass-blur)) saturate(180%) brightness(1.12);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
   box-shadow:
     0 16px 48px var(--paint-00000030),
     0 4px 12px var(--paint-080a1626),
@@ -1705,7 +1707,7 @@ html[data-performance="reduced"] :is(.hero-visual, .hero-satellite) {
   .nav-shell,
   .mobile-menu,
   .footer-shell {
-    --glass-blur: 10px;
+    --glass-blur: 8px;
   }
 }
 html[data-performance="reduced"]
@@ -2134,7 +2136,7 @@ html[data-performance="reduced"] .nav-shell {
 
 /* Neon hero scenery is server-rendered and static; only the foreground drifts. */
 .hero-stage--neon { isolation: isolate; padding-top: 128px; padding-bottom: 30px; background: var(--background); }
-.hero-backdrop { position: absolute; inset: 0; overflow: hidden; pointer-events: none; contain: paint; }
+.hero-backdrop { position: absolute; inset: 0; overflow: hidden; pointer-events: none; contain: paint; z-index: 0; }
 .hero-frame {
   position: absolute; inset-block: 10px 12px; inset-inline: max(10px, calc((100% - 84rem) / 2)); border: 1px solid transparent; border-radius: 31px;
   background: linear-gradient(145deg, color-mix(in srgb, var(--background) 94%, var(--brand-blue)), var(--background) 55%, color-mix(in srgb, var(--background) 91%, var(--brand-blue))) padding-box,
@@ -2211,7 +2213,7 @@ html[data-performance="reduced"] .hero-floor-mesh { opacity: .4; }
 .hero-orbit-glow { stroke-width: 8px; opacity: .08; }
 .hero-orbit-stars { fill: var(--brand-pink); }
 .hero-light-floor { height: 140px; }
-@media (min-width: 1101px) { .hero-stage--neon .hero-grid { grid-template-columns: .93fr 1.07fr; } .hero-stage--neon .hero-art { height: 700px; } }
+@media (min-width: 1101px) { .hero-stage--neon .hero-grid { grid-template-columns: .93fr 1.07fr; min-height: 700px; } .hero-stage--neon .hero-art { height: 700px; } }
 
 /* Service navigation: one static glass sheet and compact, reusable visual columns. */
 .nav-services-item { display: flex; align-items: center; gap: 0; border: 1px solid transparent; border-radius: 18px; }

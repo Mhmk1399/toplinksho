@@ -40,7 +40,7 @@ export function SmoothScroll() {
         if (time - previousTime > 28) slowFrames += 1;
         // A sustained low frame rate opts out for the rest of this visit.
         if (samples >= 24) {
-          if (slowFrames >= 16) {
+          if (slowFrames >= 8) {
             performanceLimited = true;
             reconcile();
             return;

@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, Check, Mail, RefreshCw, Save } from "lucide-react";
 import { useAdminState, type RequestDraft } from "@/components/admin/AdminState";
 import { Button } from "@/components/ui/Button";
+import { useFeedback } from "@/components/ui/useFeedback";
 import { Select, TextareaField } from "@/components/ui/FormControls";
 import { emailStatuses, requestStatuses, type EmailStatus, type RequestStatus } from "@/lib/consultation";
 
@@ -27,9 +28,9 @@ export function AdminRequestForm({ id, initial, emailStatus }: { id: string; ini
   const conflict = draft.version !== baseline.version;
   const [pending, setPending] = useState(false);
   const [mailPending, setMailPending] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useFeedback("error", `request-${id}`);
   const [expired, setExpired] = useState(false);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useFeedback("success", `request-${id}`);
   function edit(next: RequestDraft) { setDraft(id, { ...next, unsaved: next.status !== initial.status || next.notes !== initial.notes }); }
   useEffect(() => {
     function warn(event: BeforeUnloadEvent) { if (dirty) { event.preventDefault(); event.returnValue = ""; } }
@@ -58,7 +59,7 @@ export function AdminRequestForm({ id, initial, emailStatus }: { id: string; ini
     try {
       const response = await fetch(`/api/admin/consultations/${id}/notification`, { method: "POST" });
       const data = await response.json();
-      if (!response.ok) { setExpired(response.status === 401); setError(data.error); return; }
+      if (!response.ok) { setExpired(response.status === 401); setError(data.error || "ارسال اعلان انجام نشد."); return; }
       setMessage("ارسال اعلان در صف قرار گرفت. برای مشاهدهٔ نتیجه، وضعیت را به‌روزرسانی کنید."); router.refresh();
     } catch { setError("ارتباط برقرار نشد. دوباره تلاش کنید."); }
     finally { setMailPending(false); }

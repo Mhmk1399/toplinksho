@@ -9,6 +9,7 @@ export type FeatureCardProps = {
   description?: ReactNode;
   image?: string;
   imageAlt?: string;
+  imageSizes?: string;
   artworkKey?: string;
   backgroundImage?: string;
   visual?: VisualKey;
@@ -30,6 +31,7 @@ export function FeatureCard({
   description,
   image,
   imageAlt,
+  imageSizes,
   artworkKey,
   backgroundImage,
   visual,
@@ -55,6 +57,7 @@ export function FeatureCard({
         visual={visual}
         image={image}
         imageAlt={imageAlt}
+        sizes={imageSizes}
         artworkKey={artworkKey}
         backgroundImage={backgroundImage}
         icon={icon}

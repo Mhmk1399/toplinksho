@@ -8,6 +8,7 @@ import Project from "@/models/Project";
 import { ProjectError } from "@/lib/server/project-errors";
 import { mediaIdPattern, projectImageLimit, projectVideoLimit, projectAssetLimit, type MediaAsset, type ProjectInput } from "@/lib/projects";
 import { acquireProjectLease, releaseProjectLease } from "@/lib/server/project-lock";
+import { localProjectAsset, localProjectAssets } from "@/lib/project-assets";
 
 const bucketName = "projectMedia";
 async function bucket() { await connect(); return new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName }); }
@@ -16,9 +17,12 @@ function asset(file: mongoose.mongo.GridFSFile): MediaAsset {
   const meta = file.metadata!;
   return { id: file._id.toString(), name: meta.name, kind: meta.kind, mime: meta.mime, bytes: file.length, width: meta.width || 0, height: meta.height || 0, uploadedAt: file.uploadDate.toISOString() };
 }
-export async function assetList(projectId: string) {
+export async function assetList(projectId: string, referencedIds?: ReadonlySet<string>) {
+  const local = localProjectAssets(projectId);
+  if (referencedIds && [...referencedIds].every(id => local.some(asset => asset.id === id))) return local.filter(asset => referencedIds.has(asset.id));
+  if (local.length >= projectAssetLimit) return local.slice(0, projectAssetLimit);
   const store = await bucket();
-  return (await store.find({ "metadata.projectId": projectId }).sort({ uploadDate: 1 }).limit(projectAssetLimit).toArray()).map(asset);
+  return [...local, ...(await store.find({ "metadata.projectId": projectId }).sort({ uploadDate: 1 }).limit(projectAssetLimit - local.length).toArray()).map(asset)];
 }
 export async function validateProjectAssets(projectId: string, project: ProjectInput) {
   const ids = [...new Set([project.coverId, ...project.media.flatMap(item => [item.id, item.posterId])].filter(Boolean))];
@@ -57,7 +61,7 @@ export async function uploadProjectAsset(request: Request, projectId: string, us
   }
   try {
     await mongoose.connection.db!.collection(`${bucketName}.files`).createIndex({ "metadata.projectId": 1, uploadDate: 1 });
-    if ((await store.find({ "metadata.projectId": projectId }).limit(projectAssetLimit).toArray()).length >= projectAssetLimit) throw new ProjectError("حداکثر ۳۲ فایل برای هر پروژه قابل بارگذاری است.");
+    if ((await store.find({ "metadata.projectId": projectId }).limit(projectAssetLimit).toArray()).length + localProjectAssets(projectId).length >= projectAssetLimit) throw new ProjectError("حداکثر ۳۲ فایل برای هر پروژه قابل بارگذاری است.");
     let source: Readable, width = 0, height = 0;
     let outputMime = mime;
     if (image) {
@@ -130,6 +134,7 @@ export async function serveProjectCaptions(id: string, privateAccess = false) {
 }
 export async function removeUnusedAsset(id: string) {
   if (!mediaIdPattern.test(id)) throw new ProjectError("فایل پیدا نشد.", 404);
+  if (localProjectAsset(id)) throw new ProjectError("این تصویر یک فایل محلی در public است. می‌توانید آن را از گالری جدا کنید؛ حذف فایل محلی از پنل انجام نمی‌شود.", 409);
   const store = await bucket();
   const file = await store.find({ _id: objectId(id) }).next();
   if (!file) return;

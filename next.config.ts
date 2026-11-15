@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: [
+    "127.0.0.1",
+    "localhost",
+    "192.168.70.122",
+  ],
+
   poweredByHeader: false,
+  images: {
+    // Fill the gap between thumbnail and device widths for crisp, smaller cards.
+    imageSizes: [32, 48, 64, 96, 128, 160, 192, 256, 320, 384, 480, 560],
+  },
   async redirects() {
     return [
       { source: "/about", destination: "/about-us", permanent: true },

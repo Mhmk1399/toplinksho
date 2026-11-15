@@ -35,11 +35,11 @@ export function breadcrumbItems(path: string): { title: string; path: string }[]
  const own = page || findMainPage(path) || (path === "/portfolio" ? portfolio : undefined);
  return [...breadcrumbItems(parent), { title: own?.title || "صفحه", path }];
 }
-export type PublicEntry = { path: string; kind: string; title: string; description: string; image: string; socialId: string; slug?: string };
+export type PublicEntry = { path: string; kind: string; title: string; description: string; image: string; socialId: string; slug?: string; indexable?: boolean };
 const socialId = (path: string) => path === "/" ? "home" : path === "/about-us" ? "about" : path.slice(1).replaceAll("/", "-");
 export const publicEntries: PublicEntry[] = [
  { path: "/", kind: "home", title: home.seo.title, description: home.seo.description, image: home.hero.image, socialId: "home" },
  { path: "/portfolio", kind: "portfolio", title: portfolio.title, description: portfolio.description, image: portfolio.image, socialId: "portfolio" },
- ...mainPages.map(page => ({ path: page.path, kind: page.kind, title: page.title, description: page.description, image: page.image, socialId: socialId(page.path) })),
+ ...mainPages.map(page => ({ path: page.path, kind: page.kind, title: page.title, description: page.description, image: page.image, socialId: socialId(page.path), indexable: page.indexable })),
  ...servicePages.map(page => ({ ...page, kind: page.kind === "catalog" || page.kind === "group" ? "services" : "service", socialId: socialId(page.path) })),
 ];

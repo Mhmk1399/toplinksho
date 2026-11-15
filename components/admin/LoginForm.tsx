@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { Eye, EyeOff, ArrowLeft } from "lucide-react";
 import { Input } from "@/components/ui/FormControls";
 import { Button } from "@/components/ui/Button";
+import { toast } from "@/lib/client/toast";
+import { useFeedback } from "@/components/ui/useFeedback";
 
 export function LoginForm({ next }: { next: string }) {
   const router = useRouter();
@@ -12,7 +14,7 @@ export function LoginForm({ next }: { next: string }) {
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
   const [pending, setPending] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useFeedback("error", "admin-login");
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pending) return;
@@ -23,6 +25,8 @@ export function LoginForm({ next }: { next: string }) {
       const response = await fetch("/api/admin/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }), signal: AbortSignal.timeout(15000) });
       const result = await response.json();
       if (!response.ok) { setError(result.error || "ورود انجام نشد."); return; }
+      toast.dismiss();
+      toast.success("به پنل مدیریت تاپ لینک شو خوش آمدید.", { id: "admin-session", title: "ورود موفق" });
       router.replace(next);
       router.refresh();
     } catch { setError("ارتباط برقرار نشد. دوباره تلاش کنید."); }

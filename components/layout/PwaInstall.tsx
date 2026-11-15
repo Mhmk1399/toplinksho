@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { toast } from "@/lib/client/toast";
 
 interface InstallEvent extends Event {
   prompt(): Promise<void>;
@@ -89,10 +90,12 @@ export function PwaInstall() {
           setError("");
           try {
             await prompt.prompt();
-            await prompt.userChoice;
+            const choice = await prompt.userChoice;
+            if (choice.outcome === "accepted") toast.success("درخواست نصب به مرورگر ارسال شد.", { id: "pwa-install" });
             setPrompt(null);
           } catch {
             setError("نصب انجام نشد. از منوی مرورگر دوباره امتحان کنید.");
+            toast.error("نصب انجام نشد. از منوی مرورگر دوباره امتحان کنید.", { id: "pwa-install", announce: false });
           } finally {
             setBusy(false);
           }

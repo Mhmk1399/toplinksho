@@ -80,9 +80,11 @@ export function useServiceMenu(pathname: string) {
       if (services.current?.open && !services.current.contains(event.target as Node)) closeServices();
     };
     const keyboard = (event: KeyboardEvent) => {
-      if (event.defaultPrevented || event.isComposing) return;
+      // Autofill/accessibility scripts on mobile can dispatch plain keydown
+      // events without KeyboardEvent.key. They must not break form input.
+      if (event.defaultPrevented || event.isComposing || typeof event.key !== "string") return;
       if (event.key === "Escape" && services.current?.open) { event.preventDefault(); closeServices(); return; }
-      if (event.key.toLowerCase() !== "k" || !(event.ctrlKey || event.metaKey) || event.altKey || !desktop.matches || (event.target as HTMLElement).closest("input,textarea,select,[contenteditable=true]")) return;
+      if (!desktop.matches || !(event.ctrlKey || event.metaKey) || event.altKey || event.key.toLowerCase() !== "k" || (event.target instanceof Element && event.target.closest("input,textarea,select,[role=combobox],[contenteditable=true]"))) return;
       event.preventDefault(); openServices();
       services.current?.querySelector<HTMLAnchorElement>(".service-menu-group")?.focus({ preventScroll: true });
     };

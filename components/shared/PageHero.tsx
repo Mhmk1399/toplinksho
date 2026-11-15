@@ -45,7 +45,6 @@ export function PageHero({
 }: PageHeroProps) {
   return (
     <section className="hero-stage hero-stage--neon" id="top">
-      <HeroBackdrop id={"hero-" + image.replace(/[^a-z0-9]/gi, "-")} />
       <Container>
         <div className="hero-grid">
           <div className="hero-copy">
@@ -93,6 +92,8 @@ export function PageHero({
           ))}
         </div>}
       </Container>
+      {/* Render the anchored scenery after the content establishes hero height. */}
+      <HeroBackdrop id={"hero-" + image.replace(/[^a-z0-9]/gi, "-")} />
     </section>
   );
 }

@@ -18,6 +18,7 @@ export function getSeoPage(path: string) {
 }
 export function pageMetadata(path: string): Metadata {
   const page = getSeoPage(path);
+  const canIndex = indexable && page.indexable !== false;
   const title = page.kind === "home" ? page.title : `${page.title} | ${site.name}`;
   const socialImage = { url: absoluteUrl(`/social/${page.socialId}.png`), width: 1200, height: 630, alt: title };
   return {
@@ -25,6 +26,6 @@ export function pageMetadata(path: string): Metadata {
     alternates: { canonical: absoluteUrl(path) },
     openGraph: { type: "website", siteName: site.name, locale: "fa_IR", url: absoluteUrl(path), title, description: page.description, images: [socialImage] },
     twitter: { card: "summary_large_image", title, description: page.description, images: [socialImage.url] },
-    robots: { index: indexable, follow: indexable, ...(indexable ? { googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } } : {}) },
+    robots: { index: canIndex, follow: indexable, ...(canIndex ? { googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } } : {}) },
   };
 }

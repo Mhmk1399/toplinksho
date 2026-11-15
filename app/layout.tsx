@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SiteFrame } from "@/components/layout/SiteFrame";
+import { Toaster } from "@/components/ui/Toaster";
 import { siteOrigin } from "@/lib/seo";
 import "lenis/dist/lenis.css";
 import "./globals.css";
@@ -41,6 +42,7 @@ export default function RootLayout({
         <SiteFrame header={<Navbar />} footer={<Footer />}>
           {children}
         </SiteFrame>
+        <Toaster />
       </body>
     </html>
   );

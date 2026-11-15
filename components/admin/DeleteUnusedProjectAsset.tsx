@@ -1,9 +1,14 @@
 "use client";
 import { useId, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { useFeedback } from "@/components/ui/useFeedback";
+import { toast } from "@/lib/client/toast";
+import { localProjectAsset } from "@/lib/project-assets";
 export function DeleteUnusedProjectAsset({ id, name, disabled, onDeleted }: { id: string; name: string; disabled: boolean; onDeleted: (id: string) => void }) {
   const dialog = useRef<HTMLDialogElement>(null), labelId = useId();
-  const [busy, setBusy] = useState(false), [error, setError] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useFeedback("error", `delete-media-${id}`);
+  if (localProjectAsset(id)) return <span className="text-xs leading-7 text-muted">تصویر محلی؛ قابل افزودن یا حذف از گالری</span>;
   async function remove() {
     if (busy) return; setBusy(true); setError("");
     try {
@@ -11,6 +16,7 @@ export function DeleteUnusedProjectAsset({ id, name, disabled, onDeleted }: { id
       const data = await response.json();
       if (!response.ok) { setError(data.error || "حذف فایل انجام نشد."); return; }
       dialog.current?.close(); onDeleted(id);
+      toast.success("فایل استفاده‌نشده از کتابخانه حذف شد.", { id: `delete-media-${id}` });
     } catch { setError("ارتباط قطع شد؛ دوباره تلاش کنید."); }
     finally { setBusy(false); }
   }

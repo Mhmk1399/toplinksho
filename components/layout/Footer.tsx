@@ -32,7 +32,7 @@ export function Footer() {
             <span className="footer-signature" dir="ltr">
               STRATEGY MEETS CREATIVITY.
             </span>
-            <Link href="/#top" className="footer-back-top">
+            <Link href="#top" className="footer-back-top">
               بازگشت به بالا <ArrowUp size={16} aria-hidden="true" />
             </Link>
           </div>

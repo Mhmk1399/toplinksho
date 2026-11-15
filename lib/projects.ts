@@ -1,3 +1,5 @@
+import { localProjectAsset } from "@/lib/project-assets";
+
 export const projectStatuses = { draft: "پیش‌نویس", published: "منتشرشده", archived: "بایگانی" } as const;
 export type ProjectStatus = keyof typeof projectStatuses;
 export type ProjectMedia = { id: string; alt: string; caption: string; posterId: string; duration: number; captions?: string };
@@ -9,8 +11,8 @@ export type ProjectInput = {
   coverId: string; coverAlt: string; media: ProjectMedia[];
   seoTitle: string; seoDescription: string; status: ProjectStatus; featured: boolean; sortOrder: number;
 };
-export type ProjectDTO = ProjectInput & { id: string; version: number; createdAt: string; updatedAt: string; publishedAt: string | null };
-export type MediaAsset = { id: string; kind: "image" | "video"; name: string; bytes: number; mime: string; width: number; height: number; uploadedAt: string };
+export type ProjectDTO = ProjectInput & { id: string; version: number; createdAt: string; updatedAt: string; publishedAt: string | null; isDemo?: boolean };
+export type MediaAsset = { id: string; kind: "image" | "video"; name: string; bytes: number; mime: string; width: number; height: number; uploadedAt: string; source?: "public" };
 export type ProjectView = ProjectDTO & { assets: MediaAsset[] };
 export const projectImageLimit = 8 * 1024 * 1024;
 export const projectVideoLimit = 80 * 1024 * 1024;
@@ -18,7 +20,7 @@ export const projectAssetLimit = 32;
 export const projectIdPattern = /^[a-f0-9-]{36}$/;
 export const mediaIdPattern = /^[a-f0-9]{24}$/;
 export const projectPath = (slug: string) => `/portfolio/${encodeURIComponent(slug)}`;
-export const mediaPath = (id: string, preview = false) => preview ? `/api/admin/project-media/${id}` : `/media/projects/${id}`;
+export const mediaPath = (id: string, preview = false) => localProjectAsset(id)?.src || (preview ? `/api/admin/project-media/${id}` : `/media/projects/${id}`);
 export function projectSlug(value: string) {
   return value.normalize("NFKC").trim().toLowerCase().replace(/[\s\u200c_]+/g, "-").replace(/[^\p{L}\p{N}-]/gu, "").replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 120);
 }

@@ -16,6 +16,7 @@ const ProjectSchema = new Schema({
   seoTitle: text(160), seoDescription: text(320),
   status: { type: String, enum: ["draft", "published", "archived"], required: true, default: "draft" },
   featured: { type: Boolean, default: false }, sortOrder: { type: Number, default: 0, min: 0, max: 9999 },
+  isDemo: { type: Boolean, default: false, immutable: true },
   version: { type: Number, required: true, default: 1, min: 1 }, publishedAt: { type: Date, default: null },
   uploadLockUntil: { type: Date, default: null },
   createdBy: { type: Schema.Types.ObjectId, ref: "User", required: true }, updatedBy: { type: Schema.Types.ObjectId, ref: "User", required: true },

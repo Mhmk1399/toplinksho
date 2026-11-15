@@ -1,10 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { useFeedback } from "@/components/ui/useFeedback";
 import { projectImageLimit, projectVideoLimit, type MediaAsset } from "@/lib/projects";
 
 export function ProjectUpload({ projectId, disabled, onUploaded, onBusy }: { projectId: string; disabled: boolean; onUploaded: (asset: MediaAsset) => void; onBusy: (busy: boolean) => void }) {
-  const [file, setFile] = useState<File | null>(null), [busy, setBusy] = useState(false), [progress, setProgress] = useState(0), [error, setError] = useState(""), [message, setMessage] = useState("");
+  const [file, setFile] = useState<File | null>(null), [busy, setBusy] = useState(false), [progress, setProgress] = useState(0);
+  const [error, setError] = useFeedback("error", `upload-${projectId}`);
+  const [message, setMessage] = useFeedback("success", `upload-${projectId}`);
   const xhr = useRef<XMLHttpRequest | null>(null), input = useRef<HTMLInputElement>(null), callback = useRef(onUploaded), busyCallback = useRef(onBusy);
   useEffect(() => { callback.current = onUploaded; busyCallback.current = onBusy; }, [onUploaded, onBusy]);
   useEffect(() => () => { if (xhr.current) { xhr.current.onload = xhr.current.onerror = xhr.current.onabort = xhr.current.ontimeout = null; xhr.current.upload.onprogress = null; xhr.current.abort(); busyCallback.current(false); } }, []);
@@ -23,7 +26,7 @@ export function ProjectUpload({ projectId, disabled, onUploaded, onBusy }: { pro
       finish();
     };
     request.onerror = request.ontimeout = () => { setError("ارتباط قطع شد؛ فایل انتخاب‌شده حفظ شده و می‌توانید دوباره تلاش کنید."); finish(); };
-    request.onabort = () => { setMessage("بارگذاری لغو شد. برای شروع دوباره، بارگذاری فایل را بزنید."); finish(); };
+    request.onabort = () => { setMessage("بارگذاری لغو شد. برای شروع دوباره، بارگذاری فایل را بزنید.", { kind: "info" }); finish(); };
     request.send(file);
   }
   return <div className="rounded-2xl border border-dashed border-accent/30 bg-ink/50 p-4 sm:p-5">

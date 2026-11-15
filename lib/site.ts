@@ -1,10 +1,16 @@
 import nav from "@/content/navigation.fa.json";
+const postalAddress = {
+  streetAddress: "ستارخان، خیابان صحرایی، مرکز تجاری پارسیان",
+  addressLocality: "تهران",
+  addressCountry: "IR",
+};
 export const site = {
   name: "تاپ لینک شو",
   phone: "+989122191549",
   phoneDisplay: "۰۹۱۲ ۲۱۹ ۱۵۴۹",
   email: "Info@TopLinkSho.com",
-  address: "تهران، ستارخان، خیابان صحرایی، مرکز تجاری پارسیان",
+  address: `${postalAddress.addressLocality}، ${postalAddress.streetAddress}`,
+  postalAddress,
   linkedin: "https://www.linkedin.com/company/toplinksho",
 };
 

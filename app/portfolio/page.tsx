@@ -4,11 +4,18 @@ import content from "@/content/portfolio.fa.json";
 import { PublicFrame } from "@/components/content/PublicFrame";
 import { Container } from "@/components/ui/Container";
 import { ProjectCards } from "@/components/portfolio/ProjectCards";
-import { listProjects, projectServices } from "@/lib/server/projects";
+import { hasIndexableProjects, listProjects, projectServices } from "@/lib/server/projects";
 import { pageMetadata, absoluteUrl, indexable } from "@/lib/seo";
 import { buttonClasses } from "@/components/ui/Button";
 import { projectPath } from "@/lib/projects";
+import { site } from "@/lib/site";
 export const dynamic = "force-dynamic";
+function portfolioUrl(page = 1, service = "") {
+  const params = new URLSearchParams();
+  if (service) params.set("service", service);
+  if (page > 1) params.set("page", String(page));
+  return "/portfolio" + (params.size ? `?${params}` : "");
+}
 export async function generateMetadata({
   searchParams,
 }: {
@@ -16,8 +23,22 @@ export async function generateMetadata({
 }) {
   const query = await searchParams,
     metadata = pageMetadata("/portfolio");
-  if (query.service || query.page)
-    metadata.robots = { index: false, follow: indexable };
+  const requestedPage = Number(query.page || 1);
+  const validPage = Number.isSafeInteger(requestedPage) && requestedPage > 0;
+  const result = validPage && requestedPage > 1
+    ? await listProjects({ service: query.service, page: requestedPage }) : undefined;
+  const page = result?.page || 1;
+  const canonical = absoluteUrl(portfolioUrl(page));
+  const canIndex = indexable && !query.service && validPage && requestedPage === page && await hasIndexableProjects();
+  if (page > 1) {
+    const title = `${content.title}؛ صفحهٔ ${page.toLocaleString("fa-IR")} | ${site.name}`;
+    metadata.title = { absolute: title };
+    metadata.openGraph = { ...metadata.openGraph, title };
+    metadata.twitter = { ...metadata.twitter, title };
+  }
+  metadata.alternates = { canonical };
+  metadata.openGraph = { ...metadata.openGraph, url: canonical };
+  metadata.robots = { index: canIndex, follow: indexable };
   return metadata;
 }
 export default async function Portfolio({
@@ -30,15 +51,12 @@ export default async function Portfolio({
       ? query.service
       : "";
   const result = await listProjects({ service, page: Number(query.page || 1) });
-  const url = (page: number) =>
-    "/portfolio?" +
-    new URLSearchParams({
-      ...(service ? { service } : {}),
-      page: String(page),
-    });
+  const url = (page: number) => portfolioUrl(page, service) + "#projects";
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
+    "@id": absoluteUrl(portfolioUrl(result.page, service) + "#projects"),
+    mainEntityOfPage: { "@id": absoluteUrl(portfolioUrl(result.page) + "#webpage") },
     name: content.title,
     numberOfItems: result.total,
     itemListElement: result.items.map((project, index) => ({
@@ -51,6 +69,7 @@ export default async function Portfolio({
   return (
     <PublicFrame
       page={{ ...content, path: "/portfolio" }}
+      canonicalPath={portfolioUrl(result.page)}
       secondary={{ label: "مشاهدهٔ پروژه‌ها", href: "#projects" }}
     >
       <script
@@ -146,6 +165,11 @@ export default async function Portfolio({
                 صفحهٔ {result.page.toLocaleString("fa-IR")} از{" "}
                 {result.pages.toLocaleString("fa-IR")}
               </span>
+              {result.page > 1 && (
+                <Link className="inline-flex min-h-11 items-center text-accent" href={url(1)}>
+                  صفحهٔ اول
+                </Link>
+              )}
               {result.page < result.pages && (
                 <Link
                   href={url(result.page + 1)}
