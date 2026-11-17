@@ -14,7 +14,7 @@ export function FAQAccordion({ items, defaultOpenIndex = 0, className = "" }: { 
       const Icon = icons[index % icons.length];
       // Native interaction/history can change `open` before React loads. Keep that
       // browser-owned state; exempt only this element's attributes, not its children.
-      return <details className="faq-item" key={item.id || item.question} name={group} open={defaultOpenIndex === index} suppressHydrationWarning data-service-reveal>
+      return <details className="faq-item" key={item.id || item.question} name={group} open={defaultOpenIndex === index} suppressHydrationWarning>
         <summary className="faq-summary">
           <span className="faq-question-icon" aria-hidden="true"><Icon size={23} /></span>
           <span className="faq-question">{item.question}</span>

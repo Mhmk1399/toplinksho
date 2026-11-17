@@ -110,11 +110,11 @@ export function DesktopServiceMenu({ onNavigate }: CloseProps) {
           {[
             { href: "/services", label: "همهٔ خدمات", Icon: Grid2X2 },
             { href: "/pricing", label: "تعرفه‌ها", Icon: Tags },
-            {
-              href: "/live-case-studies",
-              label: "مطالعهٔ موردی",
-              Icon: Layers3,
-            },
+            // {
+            //   href: "/live-case-studies",
+            //   label: "مطالعهٔ موردی",
+            //   Icon: Layers3,
+            // },
           ].map(({ href, label, Icon }) => (
             <Link href={href} key={href} prefetch={false} onClick={onNavigate}>
               <Icon size={17} aria-hidden="true" />

@@ -2,11 +2,12 @@ import "server-only";
 import type { Metadata } from "next";
 import { publicEntries } from "@/lib/page-registry";
 import { site } from "@/lib/site";
+import { assetUrl } from "@/lib/assets";
 
 const configured = new URL(process.env.APP_URL || "https://toplinksho.com");
 if (!["https:", "http:"].includes(configured.protocol) || configured.username || configured.password) throw new Error("APP_URL must be a public HTTP(S) origin");
 export const siteOrigin = configured.origin;
-export const absoluteUrl = (path = "/") => new URL(path, siteOrigin).href;
+export const absoluteUrl = (path = "/") => new URL(assetUrl(path), siteOrigin).href;
 export const indexable = process.env.SITE_INDEXABLE === "true" && configured.protocol === "https:" && !/^(localhost|127\.|\[::1\])/.test(configured.hostname) && process.env.VERCEL_ENV !== "preview";
 
 export type SeoPage = (typeof publicEntries)[number];

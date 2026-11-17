@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 import { Braces, ScanSearch, PenTool, Workflow } from "lucide-react";
 import { getVisual, getCardArtwork, visualFor, type VisualKey } from "@/lib/visuals";
+import { assetUrl } from "@/lib/assets";
 
 const icons = {
   development: Braces,
@@ -40,7 +41,7 @@ export function CardVisual({
   const exact = getCardArtwork({ artworkKey, path });
   const fallback = exact || getVisual(key);
   const image = {
-    src: imageSrc || fallback.src,
+    src: assetUrl(imageSrc || fallback.src),
     alt: imageAlt ?? (imageSrc ? "" : fallback.alt),
   };
   const Icon = icons[key];
@@ -61,7 +62,7 @@ export function CardVisual({
       )}
       {backgroundImage && (
         <Image
-          src={backgroundImage}
+          src={assetUrl(backgroundImage)}
           alt=""
           fill
           loading="lazy"

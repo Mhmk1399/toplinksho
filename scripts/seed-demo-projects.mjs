@@ -8,9 +8,11 @@ import nextEnv from "@next/env";
 import connect from "../lib/server/db.ts";
 import Project from "../models/Project.ts";
 import User from "../models/User.ts";
-import { validateProject, projectIdPattern, mediaPath, projectPath } from "../lib/projects.ts";
 import { servicePages } from "../lib/page-registry.ts";
 import { localProjectAssets, localProjectAsset } from "../lib/project-assets.ts";
+nextEnv.loadEnvConfig(process.cwd());
+const { validateProject, projectIdPattern, mediaPath, projectPath } = await import("../lib/projects.ts");
+const { assetUrl } = await import("../lib/assets.ts");
 const projectServices = servicePages.filter(page => page.path !== "/services");
 
 export async function demoProjectPlan() {
@@ -38,7 +40,7 @@ export async function demoProjectPlan() {
       assert.equal(meta.width, asset.width); assert.equal(meta.height, asset.height); assert.equal(info.size, asset.bytes);
       assert.equal(item.duration, 0); assert.equal(item.posterId, "");
       assert(item.alt.trim());
-      assert.equal(mediaPath(item.id, true), asset.src);
+      assert.equal(mediaPath(item.id, true), assetUrl(asset.src));
     }
     plans.push({ id, data });
   }
@@ -66,11 +68,10 @@ export async function seedDemoProjects(ownerId) {
       else throw error;
     }
   }
-  return { created, skipped, projects: plans.map(plan => ({ id: plan.id, path: projectPath(plan.data.slug), adminPath: `/admin/projects/${plan.id}`, imageSource: "public", images: 3, videos: 0 })) };
+  return { created, skipped, projects: plans.map(plan => ({ id: plan.id, path: projectPath(plan.data.slug), adminPath: `/admin/projects/${plan.id}`, imageSource: "cdn", images: 3, videos: 0 })) };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  nextEnv.loadEnvConfig(process.cwd());
   try {
     if (process.argv.includes("--dry-run")) {
       const plans = await demoProjectPlan();

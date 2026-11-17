@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import { Container } from "@/components/ui/Container";
+import { assetUrl } from "@/lib/assets";
 
 const defaultSteps = ["شناخت نیاز و اولویت‌ها", "تعریف دامنه و خروجی‌ها", "اجرا و دریافت بازخورد", "آزمون، مستندات و تحویل"];
 const icons = ["discovery", "scope", "build", "verify"];
@@ -39,7 +40,7 @@ export function ServiceProcess({ title, description, steps = defaultSteps, id = 
         </svg>
         <ol className="workflow-list" role="list">{items.map((text, index) => <li key={index} className="workflow-step" style={{ "--workflow-offset": `${offsets[index]}px` } as CSSProperties}>
           <div className="workflow-card">
-            <Image className="workflow-icon" src={`/images/process/${icons[Math.min(index, icons.length - 1)]}.png`} alt="" width={128} height={128} sizes="(min-width: 1024px) 120px, 72px" loading="lazy" />
+            <Image className="workflow-icon" src={assetUrl(`/images/process/${icons[Math.min(index, icons.length - 1)]}.png`)} alt="" width={128} height={128} sizes="(min-width: 1024px) 120px, 72px" loading="lazy" />
             <div className="workflow-copy"><span className="workflow-step-number" aria-hidden="true">{new Intl.NumberFormat("fa-IR", { minimumIntegerDigits: 2 }).format(index + 1)}</span><p>{text}</p></div>
           </div><span className="workflow-node" aria-hidden="true" />
         </li>)}</ol>

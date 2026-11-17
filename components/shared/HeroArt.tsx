@@ -1,6 +1,7 @@
 import Image, { getImageProps } from "next/image";
 import { HeroMotion } from "@/components/shared/HeroMotion";
 import { HeroOrbits } from "@/components/shared/HeroBackdrop";
+import { assetUrl } from "@/lib/assets";
 
 type HeroArtProps = { image: string; alt: string; note: string; detail: string; coordinate: string; unoptimized?: boolean };
 
@@ -15,14 +16,14 @@ export function HeroArt({ image, alt, note, detail, coordinate, unoptimized = fa
     ? `(max-width: 360px) 218px, (max-width: 767px) 248px, ${desktopSizes}`
     : `(max-width: 767px) ${mobileSizes}, ${desktopSizes}`;
   const mobileImage = /^\/images\/hero-(home|about|services|contact|404)\.png$/.test(image)
-    ? getImageProps({ src: image.replace(/\.png$/, "-mobile.png"), alt, width: 640, height: isPortrait ? 960 : 640, sizes: mobileSizes }).props
+    ? getImageProps({ src: assetUrl(image.replace(/\.png$/, "-mobile.png")), alt, width: 640, height: isPortrait ? 960 : 640, sizes: mobileSizes }).props
     : undefined;
   return <HeroMotion>
     <HeroOrbits />
     <span className="art-coordinate" dir="ltr">{coordinate}</span>
     <div className="hero-visual"><picture>
       {mobileImage && <source media="(max-width: 767px)" srcSet={mobileImage.srcSet} sizes={mobileImage.sizes} />}
-      <Image src={image} alt={alt} unoptimized={unoptimized} fill loading="eager" fetchPriority="high"
+      <Image src={assetUrl(image)} alt={alt} unoptimized={unoptimized} fill loading="eager" fetchPriority="high"
         sizes={imageSizes} className="hero-image" />
     </picture></div>
     <span className="hero-satellite" aria-hidden="true" />

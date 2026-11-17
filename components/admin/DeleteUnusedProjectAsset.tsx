@@ -8,7 +8,7 @@ export function DeleteUnusedProjectAsset({ id, name, disabled, onDeleted }: { id
   const dialog = useRef<HTMLDialogElement>(null), labelId = useId();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useFeedback("error", `delete-media-${id}`);
-  if (localProjectAsset(id)) return <span className="text-xs leading-7 text-muted">تصویر محلی؛ قابل افزودن یا حذف از گالری</span>;
+  if (localProjectAsset(id)) return <span className="text-xs leading-7 text-muted">تصویر آمادهٔ سایت؛ قابل افزودن یا حذف از گالری</span>;
   async function remove() {
     if (busy) return; setBusy(true); setError("");
     try {

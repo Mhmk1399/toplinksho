@@ -1,14 +1,20 @@
 import "server-only";
 import mongoose from "mongoose";
 import { Readable } from "node:stream";
-import { pipeline } from "node:stream/promises";
+import { finished, pipeline } from "node:stream/promises";
+import { createReadStream, createWriteStream } from "node:fs";
+import { mkdtemp, open, rmdir, unlink } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import sharp from "sharp";
 import connect from "@/lib/server/db";
 import Project from "@/models/Project";
+import ProjectMedia, { type ProjectMediaRecord } from "@/models/ProjectMedia";
 import { ProjectError } from "@/lib/server/project-errors";
 import { mediaIdPattern, projectImageLimit, projectVideoLimit, projectAssetLimit, type MediaAsset, type ProjectInput } from "@/lib/projects";
 import { acquireProjectLease, releaseProjectLease } from "@/lib/server/project-lock";
 import { localProjectAsset, localProjectAssets } from "@/lib/project-assets";
+import { objectStorage, putStoredObject, getStoredObject, headStoredObject, deleteStoredObject, storageObjectMissing } from "@/lib/server/object-storage";
 
 const bucketName = "projectMedia";
 async function bucket() { await connect(); return new mongoose.mongo.GridFSBucket(mongoose.connection.db!, { bucketName }); }
@@ -17,12 +23,20 @@ function asset(file: mongoose.mongo.GridFSFile): MediaAsset {
   const meta = file.metadata!;
   return { id: file._id.toString(), name: meta.name, kind: meta.kind, mime: meta.mime, bytes: file.length, width: meta.width || 0, height: meta.height || 0, uploadedAt: file.uploadDate.toISOString() };
 }
+function cloudAsset(file: ProjectMediaRecord & { _id: mongoose.Types.ObjectId }): MediaAsset {
+  return { id: file._id.toString(), name: file.name, kind: file.kind, mime: file.mime, bytes: file.bytes, width: file.width, height: file.height, uploadedAt: file.createdAt.toISOString() };
+}
 export async function assetList(projectId: string, referencedIds?: ReadonlySet<string>) {
   const local = localProjectAssets(projectId);
   if (referencedIds && [...referencedIds].every(id => local.some(asset => asset.id === id))) return local.filter(asset => referencedIds.has(asset.id));
   if (local.length >= projectAssetLimit) return local.slice(0, projectAssetLimit);
   const store = await bucket();
-  return [...local, ...(await store.find({ "metadata.projectId": projectId }).sort({ uploadDate: 1 }).limit(projectAssetLimit - local.length).toArray()).map(asset)];
+  const [legacy, uploaded] = await Promise.all([
+    store.find({ "metadata.projectId": projectId }).sort({ uploadDate: 1 }).limit(projectAssetLimit).toArray(),
+    ProjectMedia.find({ projectId }).sort({ createdAt: 1 }).limit(projectAssetLimit).lean(),
+  ]);
+  const files = [...legacy.map(asset), ...uploaded.map(cloudAsset)].sort((a, b) => a.uploadedAt.localeCompare(b.uploadedAt));
+  return [...local, ...files].slice(0, projectAssetLimit);
 }
 export async function validateProjectAssets(projectId: string, project: ProjectInput) {
   const ids = [...new Set([project.coverId, ...project.media.flatMap(item => [item.id, item.posterId])].filter(Boolean))];
@@ -36,6 +50,8 @@ export async function validateProjectAssets(projectId: string, project: ProjectI
   }
 }
 export async function uploadProjectAsset(request: Request, projectId: string, userId: string) {
+  // Never silently write new binaries to MongoDB when cloud configuration is absent.
+  const storage = objectStorage();
   const store = await bucket();
   if (!await Project.exists({ publicId: projectId })) throw new ProjectError("ابتدا پیش‌نویس پروژه را ذخیره کنید.", 404);
   const mime = request.headers.get("content-type")?.split(";")[0] || "";
@@ -50,20 +66,31 @@ export async function uploadProjectAsset(request: Request, projectId: string, us
   let lease: Date;
   try { lease = await acquireProjectLease(projectId); }
   catch (error) { await reader.cancel(); reader.releaseLock(); throw error; }
-  let size = 0, upload: mongoose.mongo.GridFSBucketWriteStream | undefined;
+  let size = 0, temporaryDirectory = "", temporaryFile = "", videoSource: ReturnType<typeof createReadStream> | undefined;
+  let uploaded: { bucket: string; key: string } | undefined;
+  let metadataId: mongoose.Types.ObjectId | undefined;
+  let stage: "processing" | "storage" | "metadata" = "processing";
+  const cancelReader = () => { void reader.cancel().catch(() => {}); };
+  request.signal.addEventListener("abort", cancelReader, { once: true });
   async function* chunks() {
     while (true) {
       const { value, done } = await reader.read(); if (done) break;
+      request.signal.throwIfAborted();
       size += value.length;
       if (size > limit) throw new ProjectError("حجم فایل بیش از حد مجاز است.", 413);
       yield Buffer.from(value);
     }
   }
   try {
-    await mongoose.connection.db!.collection(`${bucketName}.files`).createIndex({ "metadata.projectId": 1, uploadDate: 1 });
-    if ((await store.find({ "metadata.projectId": projectId }).limit(projectAssetLimit).toArray()).length + localProjectAssets(projectId).length >= projectAssetLimit) throw new ProjectError("حداکثر ۳۲ فایل برای هر پروژه قابل بارگذاری است.");
-    let source: Readable, width = 0, height = 0;
-    let outputMime = mime;
+    if (!await Project.exists({ publicId: projectId, deletionRequestedAt: null })) throw new ProjectError("حذف این پروژه در حال تکمیل است؛ امکان بارگذاری فایل جدید وجود ندارد.", 409);
+    await ProjectMedia.init();
+    const [legacyCount, uploadedCount] = await Promise.all([
+      store.find({ "metadata.projectId": projectId }).limit(projectAssetLimit).toArray(),
+      ProjectMedia.countDocuments({ projectId }),
+    ]);
+    if (legacyCount.length + uploadedCount + localProjectAssets(projectId).length >= projectAssetLimit) throw new ProjectError("حداکثر ۳۲ فایل برای هر پروژه قابل بارگذاری است.");
+    let source: Buffer | Readable, width = 0, height = 0, outputBytes = 0;
+    let outputMime: ProjectMediaRecord["mime"] = image ? "image/webp" : mime === "video/mp4" ? "video/mp4" : "video/webm";
     if (image) {
       const buffers: Buffer[] = []; for await (const chunk of chunks()) buffers.push(chunk);
       if (!size) throw new ProjectError("فایل خالی است.");
@@ -76,48 +103,91 @@ export async function uploadProjectAsset(request: Request, projectId: string, us
       const meta = await decoder.metadata();
       if (!["png", "jpeg", "webp"].includes(meta.format || "") || (meta.pages || 1) > 1) throw new ProjectError("یک تصویر ثابت با فرمت مجاز انتخاب کنید.");
       const result = await decoder.rotate().resize({ width: 2000, height: 2000, fit: "inside", withoutEnlargement: true }).webp({ quality: 86 }).toBuffer({ resolveWithObject: true });
-      width = result.info.width; height = result.info.height; outputMime = "image/webp"; source = Readable.from([result.data]);
+      width = result.info.width; height = result.info.height; outputMime = "image/webp"; source = result.data; outputBytes = result.data.length;
     } else {
-      const iterator = chunks(), prefix: Buffer[] = []; let prefixSize = 0;
-      while (prefixSize < 32) { const next = await iterator.next(); if (next.done) break; prefix.push(next.value); prefixSize += next.value.length; }
-      const signature = Buffer.concat(prefix);
+      // Disk spooling bounds memory and supplies an exact length for S3-compatible PUT.
+      temporaryDirectory = await mkdtemp(join(tmpdir(), "toplinksho-upload-"));
+      temporaryFile = join(temporaryDirectory, "body");
+      await pipeline(Readable.from(chunks()), createWriteStream(temporaryFile, { flags: "wx", mode: 0o600 }), { signal: request.signal });
+      const handle = await open(temporaryFile, "r");
+      const prefix = Buffer.alloc(32);
+      let prefixSize = 0;
+      try { prefixSize = (await handle.read(prefix, 0, 32, 0)).bytesRead; } finally { await handle.close(); }
+      const signature = prefix.subarray(0, prefixSize);
       if (!(mime === "video/mp4" ? signature.length >= 16 && signature.toString("ascii", 4, 8) === "ftyp" : signature.subarray(0, 4).equals(Buffer.from([0x1a, 0x45, 0xdf, 0xa3])))) throw new ProjectError("محتوای ویدیو با فرمت انتخاب‌شده مطابقت ندارد.", 415);
-      source = Readable.from((async function* () { yield signature; for await (const chunk of iterator) yield chunk; })());
+      videoSource = createReadStream(temporaryFile); source = videoSource; outputBytes = size;
     }
-    upload = store.openUploadStream(name, { metadata: { projectId, uploadedBy: userId, kind: image ? "image" : "video", mime: outputMime, name, width, height } });
-    await pipeline(source, upload, { signal: request.signal });
-    const file = await store.find({ _id: upload.id }).next();
-    if (!file) throw new ProjectError("ذخیرهٔ فایل کامل نشد.", 503);
-    return asset(file);
+    request.signal.throwIfAborted();
+    const id = new mongoose.Types.ObjectId(); metadataId = id;
+    uploaded = { bucket: storage.bucket, key: `${storage.keyPrefix}/${projectId}/${id.toString()}.${image ? "webp" : mime === "video/mp4" ? "mp4" : "webm"}` };
+    stage = "storage";
+    await putStoredObject(uploaded, source, outputBytes, outputMime, request.signal);
+    request.signal.throwIfAborted();
+    stage = "metadata";
+    const record = await ProjectMedia.create({ _id: id, projectId, ...uploaded, uploadedBy: userId, kind: image ? "image" : "video", mime: outputMime, name, bytes: outputBytes, width, height });
+    return cloudAsset(record.toObject());
   } catch (error) {
     await reader.cancel().catch(() => {});
-    if (upload) { await upload.abort().catch(() => {}); await store.delete(upload.id).catch(() => {}); }
+    let preserveObject = false;
+    // A lost Mongo acknowledgement does not prove the metadata write failed.
+    if (stage === "metadata" && metadataId) {
+      try {
+        const saved = await ProjectMedia.findById(metadataId).lean();
+        if (saved) return cloudAsset(saved);
+      } catch { preserveObject = true; }
+    }
+    // Object keys are unique to this attempt; rollback never touches an existing asset.
+    if (uploaded && !preserveObject) await deleteStoredObject(uploaded).catch(() => {});
     if (error instanceof ProjectError) throw error;
     if (request.signal.aborted) throw new ProjectError("بارگذاری لغو شد.", 499);
+    if (stage !== "processing") throw new ProjectError("ذخیرهٔ فایل انجام نشد. اتصال، دسترسی و تنظیمات باکت آپلود را بررسی و دوباره تلاش کنید.", 503);
     throw new ProjectError("فایل قابل پردازش نیست؛ فرمت و اندازهٔ آن را بررسی کنید.", 422);
-  } finally { reader.releaseLock(); await releaseProjectLease(projectId, lease); }
+  } finally {
+    request.signal.removeEventListener("abort", cancelReader);
+    reader.releaseLock();
+    if (videoSource) { videoSource.destroy(); await finished(videoSource, { cleanup: true }).catch(() => {}); }
+    if (temporaryFile) await unlink(temporaryFile).catch(() => {});
+    if (temporaryDirectory) await rmdir(temporaryDirectory).catch(() => {});
+    await releaseProjectLease(projectId, lease);
+  }
 }
 export async function serveProjectAsset(request: Request, id: string, privateAccess = false) {
   const denied = () => new Response(null, { status: 404, headers: { "Cache-Control": "no-store", "X-Robots-Tag": "noindex" } });
   if (!mediaIdPattern.test(id) || !process.env.MONGODB_URI) return denied();
-  const store = await bucket(), file = await store.find({ _id: objectId(id) }).next();
-  if (!file) return denied();
-  if (!privateAccess && !await Project.exists({ status: "published", $or: [{ coverId: id }, { "media.id": id }, { "media.posterId": id }] })) return denied();
-  let start = 0, end = file.length - 1, status = 200;
-  const headers = new Headers({ "Content-Type": file.metadata!.mime, "X-Content-Type-Options": "nosniff", "Accept-Ranges": "bytes", "Cache-Control": privateAccess ? "private, no-store" : "public, max-age=300, must-revalidate", "Content-Security-Policy": "default-src 'none'; sandbox" });
+  await connect();
+  const cloud = await ProjectMedia.findById(id).select("+bucket +key").lean();
+  const store = cloud ? undefined : await bucket();
+  const legacy = store ? await store.find({ _id: objectId(id) }).next() : null;
+  if (!cloud && !legacy) return denied();
+  const projectId = cloud?.projectId || legacy!.metadata!.projectId;
+  if (!privateAccess && !await Project.exists({ publicId: projectId, status: "published", $or: [{ coverId: id }, { "media.id": id }, { "media.posterId": id }] })) return denied();
+  const bytes = cloud?.bytes || legacy!.length, mime = cloud?.mime || legacy!.metadata!.mime;
+  let start = 0, end = bytes - 1, status = 200;
+  const headers = new Headers({ "Content-Type": mime, "X-Content-Type-Options": "nosniff", "Accept-Ranges": "bytes", "Cache-Control": privateAccess ? "private, no-store" : "public, max-age=300, must-revalidate", "Content-Security-Policy": "default-src 'none'; sandbox" });
   if (privateAccess) headers.set("X-Robots-Tag", "noindex, nofollow");
   const range = request.headers.get("range");
   if (range) {
     const match = /^bytes=(\d*)-(\d*)$/.exec(range);
-    if (!match || (!match[1] && !match[2])) return new Response(null, { status: 416, headers: { ...Object.fromEntries(headers), "Content-Range": `bytes */${file.length}` } });
-    if (!match[1]) start = Math.max(0, file.length - Number(match[2]));
+    if (!match || (!match[1] && !match[2])) return new Response(null, { status: 416, headers: { ...Object.fromEntries(headers), "Content-Range": `bytes */${bytes}` } });
+    if (!match[1]) start = Math.max(0, bytes - Number(match[2]));
     else { start = Number(match[1]); if (match[2]) end = Math.min(end, Number(match[2])); }
-    if (!Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start < 0 || start > end || start >= file.length) return new Response(null, { status: 416, headers: { ...Object.fromEntries(headers), "Content-Range": `bytes */${file.length}` } });
-    status = 206; headers.set("Content-Range", `bytes ${start}-${end}/${file.length}`);
+    if (!Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start < 0 || start > end || start >= bytes) return new Response(null, { status: 416, headers: { ...Object.fromEntries(headers), "Content-Range": `bytes */${bytes}` } });
+    status = 206; headers.set("Content-Range", `bytes ${start}-${end}/${bytes}`);
   }
   headers.set("Content-Length", String(end - start + 1));
+  if (cloud) {
+    try {
+      if (request.method === "HEAD") { await headStoredObject(cloud, request.signal); return new Response(null, { status, headers }); }
+      const result = await getStoredObject(cloud, status === 206 ? `bytes=${start}-${end}` : undefined, request.signal);
+      if (!result.Body) return denied();
+      return new Response(result.Body.transformToWebStream(), { status, headers });
+    } catch (error) {
+      if (storageObjectMissing(error)) return denied();
+      return new Response(null, { status: request.signal.aborted ? 499 : 503, headers: { "Cache-Control": "no-store", "X-Robots-Tag": "noindex" } });
+    }
+  }
   if (request.method === "HEAD") return new Response(null, { status, headers });
-  const stream = store.openDownloadStream(file._id, { start, end: end + 1 });
+  const stream = store!.openDownloadStream(legacy!._id, { start, end: end + 1 });
   const abort = () => stream.destroy();
   request.signal.addEventListener("abort", abort, { once: true });
   stream.once("close", () => request.signal.removeEventListener("abort", abort));
@@ -135,12 +205,41 @@ export async function serveProjectCaptions(id: string, privateAccess = false) {
 export async function removeUnusedAsset(id: string) {
   if (!mediaIdPattern.test(id)) throw new ProjectError("فایل پیدا نشد.", 404);
   if (localProjectAsset(id)) throw new ProjectError("این تصویر یک فایل محلی در public است. می‌توانید آن را از گالری جدا کنید؛ حذف فایل محلی از پنل انجام نمی‌شود.", 409);
-  const store = await bucket();
-  const file = await store.find({ _id: objectId(id) }).next();
-  if (!file) return;
-  const lease = await acquireProjectLease(file.metadata!.projectId);
+  await connect();
+  const cloud = await ProjectMedia.findById(id).select("+bucket +key").lean();
+  const store = cloud ? undefined : await bucket();
+  const file = store ? await store.find({ _id: objectId(id) }).next() : null;
+  if (!file && !cloud) return;
+  const projectId = cloud?.projectId || file!.metadata!.projectId;
+  const lease = await acquireProjectLease(projectId);
   try {
     if (await Project.exists({ $or: [{ coverId: id }, { "media.id": id }, { "media.posterId": id }] })) throw new ProjectError("این فایل در نسخهٔ ذخیره‌شده استفاده می‌شود. ابتدا آن را از پروژه جدا و تغییرات را ذخیره کنید.", 409);
+    if (cloud) {
+      try { await deleteStoredObject(cloud); }
+      catch { throw new ProjectError("حذف فایل از فضای ذخیره‌سازی انجام نشد. تنظیمات باکت را بررسی و دوباره تلاش کنید.", 503); }
+      await ProjectMedia.deleteOne({ _id: cloud._id, projectId });
+    } else { await store!.delete(file!._id); }
+  } finally { await releaseProjectLease(projectId, lease); }
+}
+
+/** Caller holds the project lease and has durably marked the project for deletion. */
+export async function deleteProjectAssets(projectId: string, signal: AbortSignal) {
+  await connect();
+  const store = await bucket();
+  const uploaded = await ProjectMedia.find({ projectId }).select("+bucket +key").lean();
+  const legacy = await store.find({ "metadata.projectId": projectId }).toArray();
+  const referencedElsewhere = (id: string) => Project.exists({ publicId: { $ne: projectId }, $or: [{ coverId: id }, { "media.id": id }, { "media.posterId": id }] });
+  // The registry of shared CDN artwork is deliberately excluded from this cleanup.
+  for (const file of uploaded) {
+    signal.throwIfAborted();
+    if (await referencedElsewhere(file._id.toString())) throw new ProjectError("یکی از فایل‌ها به پروژهٔ دیگری متصل است؛ ابتدا ارتباط آن را بررسی کنید.", 409);
+    try { await deleteStoredObject(file, signal); }
+    catch (error) { if (!storageObjectMissing(error)) throw error; }
+    await ProjectMedia.deleteOne({ _id: file._id, projectId });
+  }
+  for (const file of legacy) {
+    signal.throwIfAborted();
+    if (await referencedElsewhere(file._id.toString())) throw new ProjectError("یکی از فایل‌ها به پروژهٔ دیگری متصل است؛ ابتدا ارتباط آن را بررسی کنید.", 409);
     await store.delete(file._id);
-  } finally { await releaseProjectLease(file.metadata!.projectId, lease); }
+  }
 }

@@ -19,6 +19,7 @@ const ProjectSchema = new Schema({
   isDemo: { type: Boolean, default: false, immutable: true },
   version: { type: Number, required: true, default: 1, min: 1 }, publishedAt: { type: Date, default: null },
   uploadLockUntil: { type: Date, default: null },
+  deletionRequestedAt: { type: Date, default: null },
   createdBy: { type: Schema.Types.ObjectId, ref: "User", required: true }, updatedBy: { type: Schema.Types.ObjectId, ref: "User", required: true },
 }, { timestamps: true, versionKey: false, bufferCommands: false });
 ProjectSchema.index({ status: 1, featured: -1, sortOrder: 1, publishedAt: -1 });
@@ -27,4 +28,8 @@ ProjectSchema.index({ status: 1, coverId: 1 });
 ProjectSchema.index({ status: 1, "media.id": 1 });
 ProjectSchema.index({ status: 1, "media.posterId": 1 });
 export type ProjectRecord = InferSchemaType<typeof ProjectSchema>;
+// Next dev can reuse a compiled model across reloads; keep the deletion field known.
+if (models.Project && !models.Project.schema.path("deletionRequestedAt")) {
+  models.Project.schema.add({ deletionRequestedAt: { type: Date, default: null } });
+}
 export default (models.Project || mongoose.model<ProjectRecord>("Project", ProjectSchema)) as Model<ProjectRecord>;

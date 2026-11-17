@@ -39,6 +39,10 @@
 }
 html[data-performance="reduced"] .workflow-card, html[data-performance="reduced"] .workflow-node { box-shadow: none; }
 html[data-performance="reduced"] .workflow-floor-mesh { display: none; }
+@media (hover: none), (pointer: coarse) {
+  .workflow-card { box-shadow: inset 0 1px 1px color-mix(in srgb, var(--text) 20%, transparent); }
+  .workflow-node,.workflow-step:first-of-type .workflow-node { box-shadow: none; }
+}
 @media (forced-colors: active) {
   .workflow-scene, .workflow-rail, .workflow-card::after { display: none; }
   .workflow-card, .workflow-step:first-of-type .workflow-card { background: Canvas; color: CanvasText; border-color: CanvasText; box-shadow: none; }

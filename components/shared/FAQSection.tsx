@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { FAQAccordion, type FAQItem } from "@/components/ui/FAQAccordion";
+import { assetUrl } from "@/lib/assets";
 
 export type FAQSectionProps = {
   items: readonly FAQItem[];
@@ -30,7 +31,7 @@ export function FAQSection({ items, id = "faq", headingId = `${id}-title`, title
         <h2 id={headingId} className="home-title font-extrabold">{position < 0 ? title : <>{title.slice(0, position)}<span>{accent}</span>{title.slice(position + accent.length)}</>}</h2>
       </div>
       <figure className="faq-figure" data-service-reveal>
-        <Image className="faq-illustration" src={image} alt={imageAlt} width={560} height={480} sizes="(min-width: 1024px) 430px, (min-width: 768px) 300px, (max-width: 351px) calc(100vw - 32px), 320px" loading="lazy" />
+        <Image className="faq-illustration" src={assetUrl(image)} alt={imageAlt} width={560} height={480} sizes="(min-width: 1024px) 430px, (min-width: 768px) 300px, (max-width: 351px) calc(100vw - 32px), 320px" loading="lazy" />
       </figure>
       <div className="faq-questions"><FAQAccordion items={items} defaultOpenIndex={defaultOpenIndex} /></div>
       {(description || cta) && <div className="faq-context" data-service-reveal>

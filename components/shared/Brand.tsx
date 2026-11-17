@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetUrl } from "@/lib/assets";
 
 export function Brand({ href = "/#top", label = "تاپ لینک شو، صفحه اصلی" }: { href?: string; label?: string } = {}) {
   return (
@@ -9,7 +10,7 @@ export function Brand({ href = "/#top", label = "تاپ لینک شو، صفحه
       aria-label={label}
     >
       <Image
-        src="/images/logo.webp"
+        src={assetUrl("/images/logo.webp")}
         alt="تاپ لینک شو"
         width={132}
         height={71}

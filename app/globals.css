@@ -5,6 +5,8 @@
 @import "../components/shared/faq-section.css";
 @import "../components/ui/select.css";
 @import "../components/ui/toast.css";
+@import "../components/shared/contact-links.css";
+@import "../components/shared/floating-contact.css";
 
 @theme inline {
   --color-ink: var(--background);
@@ -61,9 +63,14 @@
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scroll-padding-top: 110px;
   scrollbar-gutter: stable;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-anchor-scrolling="true"] {
+    scroll-behavior: smooth;
+  }
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -547,7 +554,6 @@ summary:focus-visible {
 .hero-visual {
   position: absolute;
   inset: 0;
-  animation: hero-drift 8s ease-in-out infinite paused;
 }
 .hero-satellite {
   position: absolute;
@@ -563,40 +569,40 @@ summary:focus-visible {
     var(--paint-6b194e)
   );
   box-shadow: 0 0 18px var(--paint-f51b7e30);
-  animation: hero-orbit 14s ease-in-out infinite paused;
   pointer-events: none;
 }
-.hero-art[data-active="true"] :is(.hero-visual, .hero-satellite) {
-  animation-play-state: running;
-  will-change: transform;
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .hero-art[data-active="true"] .hero-visual {
+    animation: hero-drift 680ms ease-in-out both;
+  }
+  .hero-art[data-active="true"] .hero-satellite {
+    animation: hero-orbit 680ms ease-in-out both;
+  }
 }
 @keyframes hero-drift {
   0%,
   100% {
-    transform: translate3d(0, 5px, 0) rotate(-0.6deg);
+    transform: none;
   }
   50% {
-    transform: translate3d(0, -9px, 0) rotate(0.6deg);
+    transform: translateY(-5px);
   }
 }
 @keyframes hero-orbit {
   0%,
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: none;
   }
-  35% {
-    transform: translate3d(30px, 56px, 0);
-  }
-  70% {
-    transform: translate3d(-10px, 90px, 0);
+  50% {
+    transform: translate(4px, -3px);
   }
 }
-html[data-performance="reduced"] :is(.hero-visual, .hero-satellite) {
+html[data-performance="reduced"] .hero-art :is(.hero-visual, .hero-satellite) {
   animation: none;
   will-change: auto;
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-art :is(.hero-visual, .hero-satellite) {
+  .hero-art[data-active="true"] :is(.hero-visual, .hero-satellite) {
     animation: none;
     will-change: auto;
   }
@@ -1707,8 +1713,22 @@ html[data-performance="reduced"] :is(.hero-visual, .hero-satellite) {
   .nav-shell,
   .mobile-menu,
   .footer-shell {
-    --glass-blur: 8px;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: var(--surface);
+    transition: none;
   }
+}
+/* Scope scroll styling to the header, avoiding whole-document style invalidation. */
+.site-header[data-scrolled="true"] .nav-shell {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background-color: var(--surface);
+  transition: none;
+}
+.footer-shell {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 html[data-performance="reduced"]
   :is(.nav-shell, .mobile-menu, .footer-shell, .art-note) {

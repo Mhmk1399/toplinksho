@@ -87,25 +87,32 @@
 .feature-card-heading {
   position: relative;
   display: flex;
-  align-items: start;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8px 12px;
 }
 .feature-card-title {
+  flex: 1 1 max-content;
   margin: 0;
   min-width: 0;
+  max-width: 100%;
   color: var(--text);
   font-size: clamp(16px, 1.5vw, 22px);
   font-weight: 850;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: -.55px;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 .feature-card-category {
-  flex-shrink: 0;
-  max-width: 40%;
-  margin-top: 2px;
-  padding: 4px;
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 100%;
+  margin-inline-start: auto;
+  padding: 4px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border: 1px solid color-mix(in srgb, var(--accent) 46%, transparent);
   border-radius: 24px;
   color: var(--text);
@@ -189,8 +196,8 @@
   .card-grid-cue { display: block; margin-bottom: 8px; color: var(--muted); font-size: 10px; line-height: 1.9; }
   .neon-surface.feature-card { padding: 9px; border-radius: 28px; }
   .feature-card-panel { padding: 18px 17px 20px; border-radius: 25px; }
-  .feature-card-title { font-size: 20px; }
-  .feature-card-category { padding: 4px 8px; font-size: 9px; }
+  .feature-card-title { font-size: clamp(16px, 4.6vw, 19px); }
+  .feature-card-category { padding: 4px 8px; font-size: 10px; }
   .feature-card-description { font-size: 12px; line-height: 2.05; }
 }
 html[data-performance="reduced"] .neon-surface.feature-card,

@@ -6,7 +6,7 @@ import connect from "@/lib/server/db";
 import Project from "@/models/Project";
 import { servicePages } from "@/lib/page-registry";
 import { emptyProject, validateProject, projectIdPattern, type ProjectDTO, type ProjectInput, type ProjectStatus } from "@/lib/projects";
-import { assetList, validateProjectAssets } from "@/lib/server/project-media";
+import { assetList, deleteProjectAssets, validateProjectAssets } from "@/lib/server/project-media";
 import { ProjectError } from "@/lib/server/project-errors";
 import { acquireProjectLease, releaseProjectLease } from "@/lib/server/project-lock";
 
@@ -18,7 +18,7 @@ const publicCacheOptions = { revalidate: 60, tags: [publicProjectsTag] };
 export const projectServices = servicePages.filter(page => page.path !== "/services").map(page => ({ path: page.path, title: page.title, group: page.group || "growth", parent: page.parent || "/services" }));
 function dto(row: Record<string, unknown>): ProjectDTO {
   const fields = Object.fromEntries(Object.keys(emptyProject()).map(key => [key, row[key]]));
-  return JSON.parse(JSON.stringify({ ...fields, id: row.publicId, version: row.version, createdAt: row.createdAt, updatedAt: row.updatedAt, publishedAt: row.publishedAt || null, isDemo: row.isDemo === true })) as ProjectDTO;
+  return JSON.parse(JSON.stringify({ ...fields, id: row.publicId, version: row.version, createdAt: row.createdAt, updatedAt: row.updatedAt, publishedAt: row.publishedAt || null, isDemo: row.isDemo === true, deletionPending: !!row.deletionRequestedAt })) as ProjectDTO;
 }
 export async function adminProject(id: string) {
   if (!projectIdPattern.test(id)) return null;
@@ -83,6 +83,7 @@ export async function saveProject(id: string, body: Record<string, unknown>, use
   if (Object.keys(errors).length) throw new ProjectError("فیلدهای مشخص‌شده را بررسی کنید.", 422, errors);
   await connect(); await Project.init();
   const existing = await adminProject(id);
+  if (existing?.deletionPending) throw new ProjectError("حذف این پروژه در حال تکمیل است. برای ادامه، دوباره گزینهٔ حذف را بزنید.", 409);
   if (creating && existing) return existing; // Stable client ID makes a retried creation idempotent.
   if (!creating && !existing) throw new ProjectError("پروژه پیدا نشد.", 404);
   if (existing && (!Number.isInteger(body.version) || body.version !== existing.version)) throw new ProjectError("نسخهٔ جدیدتری در سرور وجود دارد. تغییرات شما حفظ شده؛ پیش از ذخیره، آخرین نسخه را بررسی کنید.", 409);
@@ -94,7 +95,7 @@ export async function saveProject(id: string, body: Record<string, unknown>, use
     await validateProjectAssets(id, data);
     const row = creating
       ? await new Project({ ...values, publicId: id, createdBy: userId }).save()
-      : await Project.findOneAndUpdate({ publicId: id, version: Number(body.version) }, { $set: values, $inc: { version: 1 } }, { returnDocument: "after", runValidators: true });
+      : await Project.findOneAndUpdate({ publicId: id, version: Number(body.version), deletionRequestedAt: null }, { $set: values, $inc: { version: 1 } }, { returnDocument: "after", runValidators: true });
     if (!row) throw new ProjectError("این پروژه هم‌زمان تغییر کرده است. نسخهٔ تازه را بررسی کنید.", 409);
     refreshProjectPages(data, existing);
     return dto(row.toObject());
@@ -106,6 +107,42 @@ export async function saveProject(id: string, body: Record<string, unknown>, use
     if ((error as { code?: number }).code === 11000) throw new ProjectError("این نشانی برای پروژهٔ دیگری ثبت شده است.", 409, { slug: "نشانی دیگری انتخاب کنید." });
     throw error;
   } finally { if (lease) await releaseProjectLease(id, lease); }
+}
+export async function deleteProject(id: string, body: Record<string, unknown>) {
+  if (!projectIdPattern.test(id)) throw new ProjectError("شناسهٔ پروژه معتبر نیست.");
+  if (!Number.isSafeInteger(body.version) || Number(body.version) < 1) throw new ProjectError("نسخهٔ پروژه معتبر نیست. صفحه را تازه‌سازی کنید.", 422);
+  await connect();
+  if (!await Project.exists({ publicId: id })) return;
+  const lease = await acquireProjectLease(id);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 45000);
+  try {
+    // Recheck under the same lease used by saving and uploading.
+    const row = await Project.findOne({ publicId: id, uploadLockUntil: lease }).lean();
+    if (!row) return;
+    const previous = dto(row);
+    if (!row.deletionRequestedAt) {
+      if (row.version !== body.version) throw new ProjectError("پروژه تغییر کرده است. نسخهٔ جدید را بررسی و حذف را دوباره تأیید کنید.", 409);
+      const marked = await Project.updateOne({ publicId: id, version: body.version, uploadLockUntil: lease }, { $set: { status: "archived", deletionRequestedAt: new Date() }, $inc: { version: 1 } });
+      if (!marked.modifiedCount) throw new ProjectError("پروژه تغییر کرده است. نسخهٔ جدید را بررسی کنید.", 409);
+    }
+    // Removing a published page does not wait for remote file cleanup to finish.
+    refreshProjectPages(previous, previous);
+    revalidatePath("/admin/projects");
+    try {
+      await deleteProjectAssets(id, controller.signal);
+      const result = await Project.deleteOne({ publicId: id, uploadLockUntil: lease, deletionRequestedAt: { $ne: null } });
+      if (!result.deletedCount) throw new Error("Project deletion lease expired");
+    } catch {
+      throw new ProjectError("پاک‌سازی فایل‌های پروژه کامل نشد. پروژه از سایت برداشته شده است؛ برای تکمیل حذف، دوباره تلاش کنید.", 503);
+    }
+    refreshProjectPages(previous, previous);
+    revalidatePath("/admin/projects");
+    revalidatePath(`/admin/projects/${id}`);
+  } finally {
+    clearTimeout(timeout);
+    await releaseProjectLease(id, lease);
+  }
 }
 function refreshProjectPages(project: ProjectInput, previous: ProjectDTO | null) {
   // Route Handler writes must expire immediately, especially on unpublication.

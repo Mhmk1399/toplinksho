@@ -68,7 +68,7 @@ export function FeatureCard({
         <div className="feature-card-heading">
           <Heading className="feature-card-title">{title}</Heading>
           {category && (
-            <span className="feature-card-category">{category}</span>
+            <span className="feature-card-category" title={category}>{category}</span>
           )}
         </div>
         <span className="feature-card-rule" aria-hidden="true" />
@@ -90,6 +90,7 @@ export function FeatureCard({
           onClick={onNavigate}
           className="feature-card-cover-link"
           aria-label={title}
+          title={category}
         >
           <span className="sr-only">{title}</span>
         </Link>

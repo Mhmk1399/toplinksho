@@ -7,7 +7,7 @@ import { findServicePage, findMainPage, breadcrumbItems, childrenOf, servicePage
 export function siteStructuredData() {
  const orgId=absoluteUrl("/#organization");
  return [
-  {"@type":"ProfessionalService","@id":orgId,name:site.name,alternateName:"TopLinkSho",url:absoluteUrl(),logo:{"@type":"ImageObject","@id":absoluteUrl("/#logo"),url:absoluteUrl("/images/logo.webp")},image:absoluteUrl(getSeoPage("/").image),description:getSeoPage("/").description,telephone:site.phone,email:site.email,address:{"@type":"PostalAddress",...site.postalAddress},contactPoint:{"@type":"ContactPoint",telephone:site.phone,email:site.email,contactType:"customer service",availableLanguage:["fa"]},sameAs:[site.linkedin]},
+  {"@type":"ProfessionalService","@id":orgId,name:site.name,alternateName:"TopLinkSho",url:absoluteUrl(),logo:{"@type":"ImageObject","@id":absoluteUrl("/#logo"),url:absoluteUrl("/images/logo.webp")},image:absoluteUrl(getSeoPage("/").image),description:getSeoPage("/").description,telephone:site.phone,email:site.email,address:{"@type":"PostalAddress",...site.postalAddress},contactPoint:{"@type":"ContactPoint",telephone:site.phone,email:site.email,contactType:"customer service",availableLanguage:["fa"]},sameAs:[site.linkedin,site.instagram].filter(Boolean)},
   {"@type":"WebSite","@id":absoluteUrl("/#website"),url:absoluteUrl(),name:site.name,alternateName:"TopLinkSho",inLanguage:"fa-IR",publisher:{"@id":orgId}},
  ];
 }

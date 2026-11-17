@@ -59,6 +59,10 @@
 }
 html[data-performance="reduced"] :is(.faq-item,.faq-light-arc,.faq-sphere) { box-shadow: none; }
 html[data-performance="reduced"] :is(.faq-item,.faq-chevron) { transition: none; }
+@media (hover: none), (pointer: coarse) {
+  .faq-light-arc { box-shadow: none; }
+  .faq-item,.faq-chevron { transition: none; }
+}
 @media (prefers-reduced-motion: reduce) { .faq-item,.faq-chevron { transition: none; } }
 @media (forced-colors: active) {
   .faq-scene { display: none; }

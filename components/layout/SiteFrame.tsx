@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { FloatingContact } from "@/components/shared/FloatingContact";
 
 export function SiteFrame({
   children,
@@ -21,6 +22,7 @@ export function SiteFrame({
       {header}
       {children}
       {footer}
+      <FloatingContact />
     </>
   );
 }

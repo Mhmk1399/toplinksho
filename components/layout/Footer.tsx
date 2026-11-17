@@ -2,12 +2,13 @@ import { PwaInstall } from "@/components/layout/PwaInstall";
 import Link from "next/link";
 import { Brand } from "@/components/shared/Brand";
 import { Container } from "@/components/ui/Container";
-import { ArrowUp, ArrowUpLeft } from "lucide-react";
-import { navigation, site } from "@/lib/site";
+import { ContactLinks } from "@/components/shared/ContactLinks";
+import { ArrowUp } from "lucide-react";
+import { navigation } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer site-footer--contacts">
       <Container>
         <div className="footer-shell">
           <div className="footer-top">
@@ -18,13 +19,7 @@ export function Footer() {
             <nav aria-label="ناوبری پاورقی">
               {navigation.map(({ href, label }) => <Link href={href} key={href}>{label}</Link>)}
             </nav>
-            <Link
-              href={site.linkedin}
-              className="footer-social"
-              dir="ltr"
-            >
-              LinkedIn <ArrowUpLeft size={16} aria-hidden="true" />
-            </Link>
+            <ContactLinks variant="footer" className="footer-contact-links" />
           </div>
           <div className="footer-bottom">
             <PwaInstall />

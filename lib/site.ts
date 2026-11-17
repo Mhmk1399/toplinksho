@@ -1,4 +1,5 @@
 import nav from "@/content/navigation.fa.json";
+const phone = "+989122191549";
 const postalAddress = {
   streetAddress: "ستارخان، خیابان صحرایی، مرکز تجاری پارسیان",
   addressLocality: "تهران",
@@ -6,12 +7,15 @@ const postalAddress = {
 };
 export const site = {
   name: "تاپ لینک شو",
-  phone: "+989122191549",
+  phone,
   phoneDisplay: "۰۹۱۲ ۲۱۹ ۱۵۴۹",
   email: "Info@TopLinkSho.com",
   address: `${postalAddress.addressLocality}، ${postalAddress.streetAddress}`,
   postalAddress,
   linkedin: "https://www.linkedin.com/company/toplinksho",
+  whatsapp: phone,
+  // Set the confirmed profile URL to activate the visible Instagram placeholder.
+  instagram: "",
 };
 
 export const navigation = nav.items;

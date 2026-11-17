@@ -5,7 +5,9 @@ const SHELL = PREFIX + "shell-" + VERSION;
 const PAGES = PREFIX + "pages-" + VERSION;
 const ASSETS = PREFIX + "assets-" + VERSION;
 const PUBLIC_ROUTES = new Set(__PUBLIC_ROUTES__);
-const CORE = ["/theme.css", "/offline.html", "/images/logo.webp", "/icons/icon-192.png", "/icons/icon-512.png"];
+const STATIC_ASSET_BASE = new URL(__ASSET_BASE_URL__);
+// Offline startup must succeed even if the public image CDN is unavailable.
+const CORE = ["/theme.css", "/offline.html", "/icons/icon-192.png", "/icons/icon-512.png"];
 self.addEventListener("install", event => {
   // An update waits for existing tabs to close; never interrupt an unsaved form.
   event.waitUntil(caches.open(SHELL).then(cache => cache.addAll(CORE)));
@@ -26,6 +28,15 @@ async function store(cacheName, request, response, max) {
     const keys = await cache.keys();
     for (const key of keys.slice(0, Math.max(0, keys.length - max))) await cache.delete(key);
   } catch { /* Storage quota/private mode must not break normal navigation. */ }
+}
+function staticOptimizedImage(url) {
+  if (url.pathname !== "/_next/image") return false;
+  const input = url.searchParams.get("url");
+  if (!input) return false;
+  try {
+    const source = new URL(input, self.location.origin);
+    return source.origin === STATIC_ASSET_BASE.origin && source.pathname.startsWith(STATIC_ASSET_BASE.pathname.replace(/\/$/, "") + "/");
+  } catch { return false; }
 }
 self.addEventListener("fetch", event => {
   const request = event.request;
@@ -50,7 +61,8 @@ self.addEventListener("fetch", event => {
     })());
     return;
   }
-  const cacheable = CORE.includes(url.pathname) || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/fonts/") || url.pathname.startsWith("/icons/") || url.pathname.startsWith("/images/") || url.pathname === "/_next/image";
+  // Publication-gated media, including optimized /media/projects inputs, stays online-only.
+  const cacheable = CORE.includes(url.pathname) || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/fonts/") || url.pathname.startsWith("/icons/") || staticOptimizedImage(url);
   if (!cacheable) return;
   event.respondWith((async () => {
     const cache = await caches.open(ASSETS);
