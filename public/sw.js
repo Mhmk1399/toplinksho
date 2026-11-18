@@ -1,6 +1,6 @@
 /* Generated with a content revision before each production build. */
 const PREFIX = "toplinksho-";
-const VERSION = "acbefdc8b50bbfec";
+const VERSION = "411adfca1bac72a8";
 const SHELL = PREFIX + "shell-" + VERSION;
 const PAGES = PREFIX + "pages-" + VERSION;
 const ASSETS = PREFIX + "assets-" + VERSION;
