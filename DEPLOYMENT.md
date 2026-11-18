@@ -10,6 +10,7 @@ port and the host Nginx instance provides the public HTTP/HTTPS endpoint.
 - Server directory: `/opt/apps/toplinksho`
 - Container: `toplinksho-app`
 - Private upstream: `127.0.0.1:3140`
+- Canonical domain: `https://toplinksho.com`
 - Public endpoint: host Nginx on ports 80 and 443
 - Runtime limit: 1 CPU and 768 MiB RAM
 
@@ -31,9 +32,12 @@ rsync -az --delete \
   ./ SSH_USER@SERVER_IP:/opt/apps/toplinksho/
 ```
 
-The current application does not read any environment variables. The local
-`.env` is therefore intentionally excluded and must not be uploaded or copied
-into the Docker image.
+The application reads its runtime settings from the server-side `.env`, which
+must already exist at `/opt/apps/toplinksho/.env` with mode `600`. It is
+intentionally excluded from uploads and Docker build contexts. Compose passes
+only the non-secret `APP_URL`, `SITE_INDEXABLE`, and
+`NEXT_PUBLIC_ASSET_BASE_URL` values into `next build`; secrets remain runtime
+variables and are never baked into the image.
 
 ## 2. Build and start
 
@@ -60,27 +64,23 @@ because the server inventory reports 12 GiB free disk space.
 
 ## 3. Configure Nginx and HTTPS
 
-First create an A record for the production domain pointing to the server IP.
-Then, on the server, replace `DOMAIN` in the provided template and install it:
+Point the apex and `www` records to `185.231.112.253` without changing the
+domain's mail MX, SPF, DKIM, or DMARC records. Install the provided bootstrap
+HTTP site, request the certificate, and then replace it with the tracked final
+configuration:
 
 ```bash
-sed 's/DOMAIN/example.com/g' deploy/nginx/toplinksho.conf.example \
+sed 's/DOMAIN/toplinksho.com/g' deploy/nginx/toplinksho.conf.example \
   | sudo tee /etc/nginx/sites-available/toplinksho >/dev/null
-sudo ln -s /etc/nginx/sites-available/toplinksho /etc/nginx/sites-enabled/toplinksho
+sudo ln -sfn /etc/nginx/sites-available/toplinksho /etc/nginx/sites-enabled/toplinksho
 sudo nginx -t
 sudo systemctl reload nginx
-```
-
-Do not request a certificate until DNS resolves to the server. Once it does:
-
-```bash
-sudo certbot --nginx -d example.com -d www.example.com
+sudo certbot --nginx --redirect -d toplinksho.com -d www.toplinksho.com
+sudo cp deploy/nginx/toplinksho.com.conf /etc/nginx/sites-available/toplinksho
 sudo nginx -t
-curl --fail --show-error --head https://example.com/
+sudo systemctl reload nginx
+curl --fail --show-error --head https://toplinksho.com/
 ```
-
-If the site does not use `www`, remove that server name and omit the second
-`-d` argument.
 
 ## Operations and rollback
 
