@@ -39,8 +39,7 @@ export function Navbar() {
             ))}
           </div>
           <div className="max-sm:hidden"><Button href="#contact" size="sm">مشاوره رایگان</Button></div>
-          <button className="hidden size-11 place-items-center rounded-xl border border-white/10 bg-white/5 max-lg:grid" onClick={() => setOpen(true)} aria-label="باز کردن منو" aria-expanded={open}>
-            <Menu size={23} />
+<button className="hidden size-11 place-items-center rounded-xl border border-[#303349] bg-[#11152a] max-lg:grid">            <Menu size={23} />
           </button>
         </nav>
       </Container>
