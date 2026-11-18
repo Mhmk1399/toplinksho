@@ -1,0 +1,1664 @@
+{
+  "route:/services": {
+    "src": "/images/cards/8395521fb736c627-3cc0c6c2cc.png",
+    "alt": "تصویرسازی خدمات طراحی، توسعه و رشد",
+    "title": "خدمات طراحی، توسعه و رشد",
+    "context": "/services"
+  },
+  "route:/services/development": {
+    "src": "/images/cards/b8837be6d2806b6e-6977303216.png",
+    "alt": "تصویرسازی توسعه",
+    "title": "توسعه",
+    "context": "/services/development"
+  },
+  "route:/services/design": {
+    "src": "/images/cards/2a30b426b8c86241-3b293ea8c7.png",
+    "alt": "تصویرسازی طراحی",
+    "title": "طراحی",
+    "context": "/services/design"
+  },
+  "route:/services/growth": {
+    "src": "/images/cards/2b148131a5087a8f-1f9e1c88f1.png",
+    "alt": "تصویرسازی رشد و امنیت",
+    "title": "رشد و امنیت",
+    "context": "/services/growth"
+  },
+  "route:/services/development/web-development": {
+    "src": "/images/cards/a30945b8a02f7920-e4831dffc8.png",
+    "alt": "تصویرسازی توسعه وب",
+    "title": "توسعه وب",
+    "context": "/services/development/web-development"
+  },
+  "fit:/services/development/web-development": {
+    "src": "/images/cards/88e20dca21692a93-0a37f87445.png",
+    "alt": "تصویرسازی کاربرد و مخاطب توسعه وب",
+    "title": "کاربرد و مخاطب توسعه وب",
+    "context": "/services/development/web-development"
+  },
+  "deliverable:/services/development/web-development:0": {
+    "src": "/images/cards/0fdc9608b5d45c5a-9b86ff74b7.png",
+    "alt": "تصویرسازی معماری صفحات و جریان‌های اصلی",
+    "title": "معماری صفحات و جریان‌های اصلی",
+    "context": "/services/development/web-development"
+  },
+  "deliverable:/services/development/web-development:1": {
+    "src": "/images/cards/9d3a27fc4050ddf5-a04e91456c.png",
+    "alt": "تصویرسازی توسعهٔ رابط واکنش‌گرا و بخش‌های اختصاصی",
+    "title": "توسعهٔ رابط واکنش‌گرا و بخش‌های اختصاصی",
+    "context": "/services/development/web-development"
+  },
+  "deliverable:/services/development/web-development:2": {
+    "src": "/images/cards/d4ae6125686bbade-3506873be4.png",
+    "alt": "تصویرسازی اتصال فرم‌ها، داده‌ها و سرویس‌های مورد توافق",
+    "title": "اتصال فرم‌ها، داده‌ها و سرویس‌های مورد توافق",
+    "context": "/services/development/web-development"
+  },
+  "deliverable:/services/development/web-development:3": {
+    "src": "/images/cards/fc9a6020f3cff05d-2b80feebfa.png",
+    "alt": "تصویرسازی آزمون مسیرهای اصلی و راهنمای تحویل",
+    "title": "آزمون مسیرهای اصلی و راهنمای تحویل",
+    "context": "/services/development/web-development"
+  },
+  "route:/services/development/web-development/service-business-websites": {
+    "src": "/images/cards/8fe9342c788316cb-2102f735f3.png",
+    "alt": "تصویرسازی سایت کسب‌وکارهای خدماتی",
+    "title": "سایت کسب‌وکارهای خدماتی",
+    "context": "/services/development/web-development/service-business-websites"
+  },
+  "fit:/services/development/web-development/service-business-websites": {
+    "src": "/images/cards/7d932b60d940f690-0ea91be806.png",
+    "alt": "تصویرسازی کاربرد و مخاطب سایت کسب‌وکارهای خدماتی",
+    "title": "کاربرد و مخاطب سایت کسب‌وکارهای خدماتی",
+    "context": "/services/development/web-development/service-business-websites"
+  },
+  "deliverable:/services/development/web-development/service-business-websites:0": {
+    "src": "/images/cards/c37e0a2791cf62f5-8c81690c22.png",
+    "alt": "تصویرسازی نقشهٔ صفحات خدمات و معرفی کسب‌وکار",
+    "title": "نقشهٔ صفحات خدمات و معرفی کسب‌وکار",
+    "context": "/services/development/web-development/service-business-websites"
+  },
+  "deliverable:/services/development/web-development/service-business-websites:1": {
+    "src": "/images/cards/e660caaabb8a58a2-df5102597c.png",
+    "alt": "تصویرسازی ساختار فرم درخواست و راه‌های ارتباطی",
+    "title": "ساختار فرم درخواست و راه‌های ارتباطی",
+    "context": "/services/development/web-development/service-business-websites"
+  },
+  "deliverable:/services/development/web-development/service-business-websites:2": {
+    "src": "/images/cards/741ca229ea9ba647-822dc18d24.png",
+    "alt": "تصویرسازی نسخهٔ واکنش‌گرا با دسترسی آسان به اطلاعات",
+    "title": "نسخهٔ واکنش‌گرا با دسترسی آسان به اطلاعات",
+    "context": "/services/development/web-development/service-business-websites"
+  },
+  "route:/services/development/web-development/custom-web-applications": {
+    "src": "/images/cards/fc19b1f2ea587a5c-07f2cea850.png",
+    "alt": "تصویرسازی وب‌اپلیکیشن اختصاصی",
+    "title": "وب‌اپلیکیشن اختصاصی",
+    "context": "/services/development/web-development/custom-web-applications"
+  },
+  "fit:/services/development/web-development/custom-web-applications": {
+    "src": "/images/cards/ea2871acf36dabc9-0b0f9e3550.png",
+    "alt": "تصویرسازی کاربرد و مخاطب وب‌اپلیکیشن اختصاصی",
+    "title": "کاربرد و مخاطب وب‌اپلیکیشن اختصاصی",
+    "context": "/services/development/web-development/custom-web-applications"
+  },
+  "deliverable:/services/development/web-development/custom-web-applications:0": {
+    "src": "/images/cards/38184cdbc82db5a8-26e81923ed.png",
+    "alt": "تصویرسازی نقشهٔ نقش‌ها، دسترسی‌ها و جریان اطلاعات",
+    "title": "نقشهٔ نقش‌ها، دسترسی‌ها و جریان اطلاعات",
+    "context": "/services/development/web-development/custom-web-applications"
+  },
+  "deliverable:/services/development/web-development/custom-web-applications:1": {
+    "src": "/images/cards/ecb4fad0f68b8db4-6ebd70ee58.png",
+    "alt": "تصویرسازی داشبورد و امکانات اختصاصی مورد توافق",
+    "title": "داشبورد و امکانات اختصاصی مورد توافق",
+    "context": "/services/development/web-development/custom-web-applications"
+  },
+  "deliverable:/services/development/web-development/custom-web-applications:2": {
+    "src": "/images/cards/2be4915fc23edc71-a6b5e75c54.png",
+    "alt": "تصویرسازی اتصال رابط به پایگاه داده و سرویس‌های لازم",
+    "title": "اتصال رابط به پایگاه داده و سرویس‌های لازم",
+    "context": "/services/development/web-development/custom-web-applications"
+  },
+  "route:/services/development/web-development/booking-system-development": {
+    "src": "/images/cards/3049b8f82775c444-8d31af814a.png",
+    "alt": "تصویرسازی توسعه سامانه رزرو",
+    "title": "توسعه سامانه رزرو",
+    "context": "/services/development/web-development/booking-system-development"
+  },
+  "fit:/services/development/web-development/booking-system-development": {
+    "src": "/images/cards/2da0b1071425c89f-7548b4eb56.png",
+    "alt": "تصویرسازی کاربرد و مخاطب توسعه سامانه رزرو",
+    "title": "کاربرد و مخاطب توسعه سامانه رزرو",
+    "context": "/services/development/web-development/booking-system-development"
+  },
+  "deliverable:/services/development/web-development/booking-system-development:0": {
+    "src": "/images/cards/296f975472316ec5-2f08461ea9.png",
+    "alt": "تصویرسازی تعریف قواعد زمان‌بندی، ظرفیت و لغو",
+    "title": "تعریف قواعد زمان‌بندی، ظرفیت و لغو",
+    "context": "/services/development/web-development/booking-system-development"
+  },
+  "deliverable:/services/development/web-development/booking-system-development:1": {
+    "src": "/images/cards/388059ef4bbbe6f2-db6dd59547.png",
+    "alt": "تصویرسازی مسیر ثبت رزرو و تأیید برای مشتری",
+    "title": "مسیر ثبت رزرو و تأیید برای مشتری",
+    "context": "/services/development/web-development/booking-system-development"
+  },
+  "deliverable:/services/development/web-development/booking-system-development:2": {
+    "src": "/images/cards/bb67ef1c001a275e-d25d5a0034.png",
+    "alt": "تصویرسازی پنل مدیریت رزرو و یادآوری‌های مورد توافق",
+    "title": "پنل مدیریت رزرو و یادآوری‌های مورد توافق",
+    "context": "/services/development/web-development/booking-system-development"
+  },
+  "route:/services/development/web-development/api-system-integrations": {
+    "src": "/images/cards/d8ffff0ab61a567c-074d396614.png",
+    "alt": "تصویرسازی اتصال API و سامانه‌ها",
+    "title": "اتصال API و سامانه‌ها",
+    "context": "/services/development/web-development/api-system-integrations"
+  },
+  "fit:/services/development/web-development/api-system-integrations": {
+    "src": "/images/cards/3a2bab8432a8b129-69162207a9.png",
+    "alt": "تصویرسازی کاربرد و مخاطب اتصال API و سامانه‌ها",
+    "title": "کاربرد و مخاطب اتصال API و سامانه‌ها",
+    "context": "/services/development/web-development/api-system-integrations"
+  },
+  "deliverable:/services/development/web-development/api-system-integrations:0": {
+    "src": "/images/cards/4ff70d68f100d18c-2af5b5ce9e.png",
+    "alt": "تصویرسازی نقشهٔ داده و قرارداد اتصال بین سامانه‌ها",
+    "title": "نقشهٔ داده و قرارداد اتصال بین سامانه‌ها",
+    "context": "/services/development/web-development/api-system-integrations"
+  },
+  "deliverable:/services/development/web-development/api-system-integrations:1": {
+    "src": "/images/cards/d70f38ede99b7854-b67ec4fd51.png",
+    "alt": "تصویرسازی پیاده‌سازی احراز هویت و گردش تبادل اطلاعات",
+    "title": "پیاده‌سازی احراز هویت و گردش تبادل اطلاعات",
+    "context": "/services/development/web-development/api-system-integrations"
+  },
+  "deliverable:/services/development/web-development/api-system-integrations:2": {
+    "src": "/images/cards/032b8b337d6912f1-2e0d7b0eea.png",
+    "alt": "تصویرسازی ثبت خطاها و سناریوهای تلاش مجدد",
+    "title": "ثبت خطاها و سناریوهای تلاش مجدد",
+    "context": "/services/development/web-development/api-system-integrations"
+  },
+  "route:/services/development/web-development/website-performance-optimization": {
+    "src": "/images/cards/e17b34dbd73b532f-664397d59c.png",
+    "alt": "تصویرسازی بهینه‌سازی سرعت سایت",
+    "title": "بهینه‌سازی سرعت سایت",
+    "context": "/services/development/web-development/website-performance-optimization"
+  },
+  "fit:/services/development/web-development/website-performance-optimization": {
+    "src": "/images/cards/a681b91979669497-286748b883.png",
+    "alt": "تصویرسازی کاربرد و مخاطب بهینه‌سازی سرعت سایت",
+    "title": "کاربرد و مخاطب بهینه‌سازی سرعت سایت",
+    "context": "/services/development/web-development/website-performance-optimization"
+  },
+  "deliverable:/services/development/web-development/website-performance-optimization:0": {
+    "src": "/images/cards/f1ccefae65c9883b-6ae69da670.png",
+    "alt": "تصویرسازی گزارش وضعیت اولیه در صفحات منتخب",
+    "title": "گزارش وضعیت اولیه در صفحات منتخب",
+    "context": "/services/development/web-development/website-performance-optimization"
+  },
+  "deliverable:/services/development/web-development/website-performance-optimization:1": {
+    "src": "/images/cards/3a90cd846c2d4eeb-f6dd921b5b.png",
+    "alt": "تصویرسازی اصلاحات تصویر، فونت و کدهای مورد توافق",
+    "title": "اصلاحات تصویر، فونت و کدهای مورد توافق",
+    "context": "/services/development/web-development/website-performance-optimization"
+  },
+  "deliverable:/services/development/web-development/website-performance-optimization:2": {
+    "src": "/images/cards/743b4cdc297db522-30294767d9.png",
+    "alt": "تصویرسازی مقایسهٔ نتایج و راهنمای حفظ عملکرد",
+    "title": "مقایسهٔ نتایج و راهنمای حفظ عملکرد",
+    "context": "/services/development/web-development/website-performance-optimization"
+  },
+  "route:/services/development/app-development": {
+    "src": "/images/cards/f4d13a06281a3714-4dfaec70f7.png",
+    "alt": "تصویرسازی توسعه اپلیکیشن",
+    "title": "توسعه اپلیکیشن",
+    "context": "/services/development/app-development"
+  },
+  "fit:/services/development/app-development": {
+    "src": "/images/cards/79742ed0dc4c7256-20f8b6aa6a.png",
+    "alt": "تصویرسازی کاربرد و مخاطب توسعه اپلیکیشن",
+    "title": "کاربرد و مخاطب توسعه اپلیکیشن",
+    "context": "/services/development/app-development"
+  },
+  "deliverable:/services/development/app-development:0": {
+    "src": "/images/cards/fab2a0c2774dc501-82c0c5957b.png",
+    "alt": "تصویرسازی تعریف امکانات ضروری نسخهٔ نخست",
+    "title": "تعریف امکانات ضروری نسخهٔ نخست",
+    "context": "/services/development/app-development"
+  },
+  "deliverable:/services/development/app-development:1": {
+    "src": "/images/cards/18fc5863197c7132-b498d82454.png",
+    "alt": "تصویرسازی طراحی جریان‌ها و نقش‌های کاربران",
+    "title": "طراحی جریان‌ها و نقش‌های کاربران",
+    "context": "/services/development/app-development"
+  },
+  "deliverable:/services/development/app-development:2": {
+    "src": "/images/cards/487ab21bf952b222-e54b90e256.png",
+    "alt": "تصویرسازی توسعه و اتصال به سرویس‌های پشتیبان",
+    "title": "توسعه و اتصال به سرویس‌های پشتیبان",
+    "context": "/services/development/app-development"
+  },
+  "deliverable:/services/development/app-development:3": {
+    "src": "/images/cards/94b20005e93fff49-f446ad7981.png",
+    "alt": "تصویرسازی آزمون سناریوهای استفاده و برنامهٔ انتشار",
+    "title": "آزمون سناریوهای استفاده و برنامهٔ انتشار",
+    "context": "/services/development/app-development"
+  },
+  "route:/services/development/app-development/mobile-app-development": {
+    "src": "/images/cards/5e4ec28041b91e0a-4e115c978d.png",
+    "alt": "تصویرسازی توسعه اپلیکیشن موبایل",
+    "title": "توسعه اپلیکیشن موبایل",
+    "context": "/services/development/app-development/mobile-app-development"
+  },
+  "fit:/services/development/app-development/mobile-app-development": {
+    "src": "/images/cards/2831f0fc3d79a382-e0feb9353a.png",
+    "alt": "تصویرسازی کاربرد و مخاطب توسعه اپلیکیشن موبایل",
+    "title": "کاربرد و مخاطب توسعه اپلیکیشن موبایل",
+    "context": "/services/development/app-development/mobile-app-development"
+  },
+  "deliverable:/services/development/app-development/mobile-app-development:0": {
+    "src": "/images/cards/45aabc000ac3cf03-f85c51721d.png",
+    "alt": "تصویرسازی دامنهٔ نسخهٔ اولیه و سیستم‌عامل‌های هدف",
+    "title": "دامنهٔ نسخهٔ اولیه و سیستم‌عامل‌های هدف",
+    "context": "/services/development/app-development/mobile-app-development"
+  },
+  "deliverable:/services/development/app-development/mobile-app-development:1": {
+    "src": "/images/cards/3cb886b78727182b-c5e35af069.png",
+    "alt": "تصویرسازی رابط و جریان‌های اصلی استفاده",
+    "title": "رابط و جریان‌های اصلی استفاده",
+    "context": "/services/development/app-development/mobile-app-development"
+  },
+  "deliverable:/services/development/app-development/mobile-app-development:2": {
+    "src": "/images/cards/e0f44d5fbdc06164-4ef6b5ec02.png",
+    "alt": "تصویرسازی اتصال به بک‌اند، آزمون و برنامهٔ انتشار",
+    "title": "اتصال به بک‌اند، آزمون و برنامهٔ انتشار",
+    "context": "/services/development/app-development/mobile-app-development"
+  },
+  "route:/services/development/app-development/app-modernization": {
+    "src": "/images/cards/1c421481c08e04ed-c9a319d1c4.png",
+    "alt": "تصویرسازی نوسازی اپلیکیشن",
+    "title": "نوسازی اپلیکیشن",
+    "context": "/services/development/app-development/app-modernization"
+  },
+  "fit:/services/development/app-development/app-modernization": {
+    "src": "/images/cards/f6614238e89e364f-97a433a23b.png",
+    "alt": "تصویرسازی کاربرد و مخاطب نوسازی اپلیکیشن",
+    "title": "کاربرد و مخاطب نوسازی اپلیکیشن",
+    "context": "/services/development/app-development/app-modernization"
+  },
+  "deliverable:/services/development/app-development/app-modernization:0": {
+    "src": "/images/cards/1550c6b84928c67c-1136b7d24a.png",
+    "alt": "تصویرسازی گزارش معماری و محدودیت‌های فعلی",
+    "title": "گزارش معماری و محدودیت‌های فعلی",
+    "context": "/services/development/app-development/app-modernization"
+  },
+  "deliverable:/services/development/app-development/app-modernization:1": {
+    "src": "/images/cards/ad6cea03997f9a32-2899a27456.png",
+    "alt": "تصویرسازی برنامهٔ بازسازی یا بهبود تدریجی",
+    "title": "برنامهٔ بازسازی یا بهبود تدریجی",
+    "context": "/services/development/app-development/app-modernization"
+  },
+  "deliverable:/services/development/app-development/app-modernization:2": {
+    "src": "/images/cards/19dacf770c2c6d31-7e237a2863.png",
+    "alt": "تصویرسازی نسخهٔ اصلاح‌شده همراه با آزمون مسیرهای اصلی",
+    "title": "نسخهٔ اصلاح‌شده همراه با آزمون مسیرهای اصلی",
+    "context": "/services/development/app-development/app-modernization"
+  },
+  "route:/services/development/e-commerce-development": {
+    "src": "/images/cards/441ff648bfbac7e9-649dc57676.png",
+    "alt": "تصویرسازی توسعه فروشگاه اینترنتی",
+    "title": "توسعه فروشگاه اینترنتی",
+    "context": "/services/development/e-commerce-development"
+  },
+  "fit:/services/development/e-commerce-development": {
+    "src": "/images/cards/2ede51e42a50ffbc-f7b822b926.png",
+    "alt": "تصویرسازی کاربرد و مخاطب توسعه فروشگاه اینترنتی",
+    "title": "کاربرد و مخاطب توسعه فروشگاه اینترنتی",
+    "context": "/services/development/e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development:0": {
+    "src": "/images/cards/d90c60318f84ad18-a44530b78f.png",
+    "alt": "تصویرسازی ساختار محصولات و دسته‌بندی‌ها",
+    "title": "ساختار محصولات و دسته‌بندی‌ها",
+    "context": "/services/development/e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development:1": {
+    "src": "/images/cards/aa6ee8e233332a4f-9dffb12619.png",
+    "alt": "تصویرسازی پیاده‌سازی سبد و گردش ثبت سفارش",
+    "title": "پیاده‌سازی سبد و گردش ثبت سفارش",
+    "context": "/services/development/e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development:2": {
+    "src": "/images/cards/7d1ae1351c457642-3d0c0aa9ad.png",
+    "alt": "تصویرسازی اتصال پرداخت، موجودی یا ارسال طبق توافق",
+    "title": "اتصال پرداخت، موجودی یا ارسال طبق توافق",
+    "context": "/services/development/e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development:3": {
+    "src": "/images/cards/e866f8f3eda3bbf7-a62a01b56f.png",
+    "alt": "تصویرسازی آزمون تجربهٔ خرید در موبایل و دسکتاپ",
+    "title": "آزمون تجربهٔ خرید در موبایل و دسکتاپ",
+    "context": "/services/development/e-commerce-development"
+  },
+  "route:/services/development/e-commerce-development/custom-e-commerce-development": {
+    "src": "/images/cards/81348f38794ce4fe-fbd02df8e8.png",
+    "alt": "تصویرسازی فروشگاه اینترنتی اختصاصی",
+    "title": "فروشگاه اینترنتی اختصاصی",
+    "context": "/services/development/e-commerce-development/custom-e-commerce-development"
+  },
+  "fit:/services/development/e-commerce-development/custom-e-commerce-development": {
+    "src": "/images/cards/515674e78b8e5d07-3f38b62b6a.png",
+    "alt": "تصویرسازی کاربرد و مخاطب فروشگاه اینترنتی اختصاصی",
+    "title": "کاربرد و مخاطب فروشگاه اینترنتی اختصاصی",
+    "context": "/services/development/e-commerce-development/custom-e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:0": {
+    "src": "/images/cards/9b680644e621003b-5307869c21.png",
+    "alt": "تصویرسازی مدل محصولات، ویژگی‌ها و موجودی",
+    "title": "مدل محصولات، ویژگی‌ها و موجودی",
+    "context": "/services/development/e-commerce-development/custom-e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:1": {
+    "src": "/images/cards/610e68e8cf4a638d-40a765b4f5.png",
+    "alt": "تصویرسازی سبد خرید و مسیر ثبت سفارش متناسب با فروش",
+    "title": "سبد خرید و مسیر ثبت سفارش متناسب با فروش",
+    "context": "/services/development/e-commerce-development/custom-e-commerce-development"
+  },
+  "deliverable:/services/development/e-commerce-development/custom-e-commerce-development:2": {
+    "src": "/images/cards/51f811f002b586c7-ef6551e93a.png",
+    "alt": "تصویرسازی امکانات مدیریت سفارش و اتصال‌های توافق‌شده",
+    "title": "امکانات مدیریت سفارش و اتصال‌های توافق‌شده",
+    "context": "/services/development/e-commerce-development/custom-e-commerce-development"
+  },
+  "route:/services/development/e-commerce-development/e-commerce-modernization-migration": {
+    "src": "/images/cards/7f2a430e2291f704-db5b3e85bb.png",
+    "alt": "تصویرسازی بازطراحی و انتقال فروشگاه",
+    "title": "بازطراحی و انتقال فروشگاه",
+    "context": "/services/development/e-commerce-development/e-commerce-modernization-migration"
+  },
+  "fit:/services/development/e-commerce-development/e-commerce-modernization-migration": {
+    "src": "/images/cards/c5da2e47da9a0e81-9006726f28.png",
+    "alt": "تصویرسازی کاربرد و مخاطب بازطراحی و انتقال فروشگاه",
+    "title": "کاربرد و مخاطب بازطراحی و انتقال فروشگاه",
+    "context": "/services/development/e-commerce-development/e-commerce-modernization-migration"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:0": {
+    "src": "/images/cards/f2a3783f4be76cd8-8869f341e5.png",
+    "alt": "تصویرسازی فهرست داده‌ها و آدرس‌های قابل انتقال",
+    "title": "فهرست داده‌ها و آدرس‌های قابل انتقال",
+    "context": "/services/development/e-commerce-development/e-commerce-modernization-migration"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:1": {
+    "src": "/images/cards/34034fabe90d48a2-a82ea043bc.png",
+    "alt": "تصویرسازی برنامهٔ مهاجرت، آزمون و بازگشت احتمالی",
+    "title": "برنامهٔ مهاجرت، آزمون و بازگشت احتمالی",
+    "context": "/services/development/e-commerce-development/e-commerce-modernization-migration"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-modernization-migration:2": {
+    "src": "/images/cards/4e9c1f2c126d99ae-38e9891675.png",
+    "alt": "تصویرسازی بررسی مسیر خرید پس از انتقال",
+    "title": "بررسی مسیر خرید پس از انتقال",
+    "context": "/services/development/e-commerce-development/e-commerce-modernization-migration"
+  },
+  "route:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization": {
+    "src": "/images/cards/678a5e8a15202db9-9acace0712.png",
+    "alt": "تصویرسازی بهینه‌سازی خرید و پرداخت",
+    "title": "بهینه‌سازی خرید و پرداخت",
+    "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization"
+  },
+  "fit:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization": {
+    "src": "/images/cards/8e4406ba7da164f4-ce81ac0425.png",
+    "alt": "تصویرسازی کاربرد و مخاطب بهینه‌سازی خرید و پرداخت",
+    "title": "کاربرد و مخاطب بهینه‌سازی خرید و پرداخت",
+    "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:0": {
+    "src": "/images/cards/377f7b9cfcd9f21e-a66d3d4555.png",
+    "alt": "تصویرسازی مرور تجربهٔ سبد و تکمیل سفارش",
+    "title": "مرور تجربهٔ سبد و تکمیل سفارش",
+    "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:1": {
+    "src": "/images/cards/c71d8422d40c3c4e-85a7f1bcab.png",
+    "alt": "تصویرسازی فهرست اصلاحات تجربه و عملکرد",
+    "title": "فهرست اصلاحات تجربه و عملکرد",
+    "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization"
+  },
+  "deliverable:/services/development/e-commerce-development/e-commerce-performance-checkout-optimization:2": {
+    "src": "/images/cards/1dc44b84f062c7fc-a6671fa74d.png",
+    "alt": "تصویرسازی آزمون سناریوهای خرید در دستگاه‌های اصلی",
+    "title": "آزمون سناریوهای خرید در دستگاه‌های اصلی",
+    "context": "/services/development/e-commerce-development/e-commerce-performance-checkout-optimization"
+  },
+  "route:/services/development/ai-automation": {
+    "src": "/images/cards/5e84f95316178f00-dec964c347.png",
+    "alt": "تصویرسازی هوش مصنوعی و اتوماسیون",
+    "title": "هوش مصنوعی و اتوماسیون",
+    "context": "/services/development/ai-automation"
+  },
+  "fit:/services/development/ai-automation": {
+    "src": "/images/cards/4efd1363ecda2f37-608a6e6e00.png",
+    "alt": "تصویرسازی کاربرد و مخاطب هوش مصنوعی و اتوماسیون",
+    "title": "کاربرد و مخاطب هوش مصنوعی و اتوماسیون",
+    "context": "/services/development/ai-automation"
+  },
+  "deliverable:/services/development/ai-automation:0": {
+    "src": "/images/cards/f7ebf7932e003221-46a9afae90.png",
+    "alt": "تصویرسازی بررسی داده‌ها و فرایند فعلی",
+    "title": "بررسی داده‌ها و فرایند فعلی",
+    "context": "/services/development/ai-automation"
+  },
+  "deliverable:/services/development/ai-automation:1": {
+    "src": "/images/cards/1fef89c3dda2788f-63bde0e017.png",
+    "alt": "تصویرسازی طراحی جریان خودکار و نقاط کنترل انسانی",
+    "title": "طراحی جریان خودکار و نقاط کنترل انسانی",
+    "context": "/services/development/ai-automation"
+  },
+  "deliverable:/services/development/ai-automation:2": {
+    "src": "/images/cards/0420ab66f131c35a-0faa730d4b.png",
+    "alt": "تصویرسازی ساخت ابزار یا اتصال سرویس‌های مورد نیاز",
+    "title": "ساخت ابزار یا اتصال سرویس‌های مورد نیاز",
+    "context": "/services/development/ai-automation"
+  },
+  "deliverable:/services/development/ai-automation:3": {
+    "src": "/images/cards/c6e50ba9597c68cf-2133691d73.png",
+    "alt": "تصویرسازی آزمون کیفیت خروجی و مستندات استفاده",
+    "title": "آزمون کیفیت خروجی و مستندات استفاده",
+    "context": "/services/development/ai-automation"
+  },
+  "route:/services/development/ai-automation/ai-workflow-automation": {
+    "src": "/images/cards/c1c556fdf17f2a03-49ad4d0ac6.png",
+    "alt": "تصویرسازی اتوماسیون فرایندهای کاری",
+    "title": "اتوماسیون فرایندهای کاری",
+    "context": "/services/development/ai-automation/ai-workflow-automation"
+  },
+  "fit:/services/development/ai-automation/ai-workflow-automation": {
+    "src": "/images/cards/8af14968bfc2fbd8-ac6a43be87.png",
+    "alt": "تصویرسازی کاربرد و مخاطب اتوماسیون فرایندهای کاری",
+    "title": "کاربرد و مخاطب اتوماسیون فرایندهای کاری",
+    "context": "/services/development/ai-automation/ai-workflow-automation"
+  },
+  "deliverable:/services/development/ai-automation/ai-workflow-automation:0": {
+    "src": "/images/cards/7ff5931b0572be6e-c27178113f.png",
+    "alt": "تصویرسازی نقشهٔ جریان کار و نقاط تصمیم‌گیری",
+    "title": "نقشهٔ جریان کار و نقاط تصمیم‌گیری",
+    "context": "/services/development/ai-automation/ai-workflow-automation"
+  },
+  "deliverable:/services/development/ai-automation/ai-workflow-automation:1": {
+    "src": "/images/cards/f75d7bc7738b5027-646345d1ba.png",
+    "alt": "تصویرسازی اتصال ابزارها و قواعد اجرای خودکار",
+    "title": "اتصال ابزارها و قواعد اجرای خودکار",
+    "context": "/services/development/ai-automation/ai-workflow-automation"
+  },
+  "deliverable:/services/development/ai-automation/ai-workflow-automation:2": {
+    "src": "/images/cards/0b58f2995e43ca16-cfd55f4219.png",
+    "alt": "تصویرسازی ثبت نتیجه، خطا و مسیر ارجاع به تیم",
+    "title": "ثبت نتیجه، خطا و مسیر ارجاع به تیم",
+    "context": "/services/development/ai-automation/ai-workflow-automation"
+  },
+  "route:/services/development/ai-automation/ai-assistants-knowledge-systems": {
+    "src": "/images/cards/1d0bf8460e72e2e4-132594200c.png",
+    "alt": "تصویرسازی دستیار هوشمند و پایگاه دانش",
+    "title": "دستیار هوشمند و پایگاه دانش",
+    "context": "/services/development/ai-automation/ai-assistants-knowledge-systems"
+  },
+  "fit:/services/development/ai-automation/ai-assistants-knowledge-systems": {
+    "src": "/images/cards/b0599c5b66b66768-c608bef828.png",
+    "alt": "تصویرسازی کاربرد و مخاطب دستیار هوشمند و پایگاه دانش",
+    "title": "کاربرد و مخاطب دستیار هوشمند و پایگاه دانش",
+    "context": "/services/development/ai-automation/ai-assistants-knowledge-systems"
+  },
+  "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:0": {
+    "src": "/images/cards/a6d5a291f61a1d2d-4ed12390b8.png",
+    "alt": "تصویرسازی ساختار منابع دانش و سطح دسترسی",
+    "title": "ساختار منابع دانش و سطح دسترسی",
+    "context": "/services/development/ai-automation/ai-assistants-knowledge-systems"
+  },
+  "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:1": {
+    "src": "/images/cards/3b7bfb825892ae15-9f59bea8bf.png",
+    "alt": "تصویرسازی دستیار پاسخ‌گویی متصل به داده‌های مجاز",
+    "title": "دستیار پاسخ‌گویی متصل به داده‌های مجاز",
+    "context": "/services/development/ai-automation/ai-assistants-knowledge-systems"
+  },
+  "deliverable:/services/development/ai-automation/ai-assistants-knowledge-systems:2": {
+    "src": "/images/cards/e081d2d8bf0abad3-0ca97a1bb5.png",
+    "alt": "تصویرسازی آزمون پاسخ‌ها و مسیر ارجاع موارد نامطمئن",
+    "title": "آزمون پاسخ‌ها و مسیر ارجاع موارد نامطمئن",
+    "context": "/services/development/ai-automation/ai-assistants-knowledge-systems"
+  },
+  "route:/services/development/ai-automation/ai-document-processing": {
+    "src": "/images/cards/40c890684b7d5044-79e73ebdc0.png",
+    "alt": "تصویرسازی پردازش هوشمند اسناد",
+    "title": "پردازش هوشمند اسناد",
+    "context": "/services/development/ai-automation/ai-document-processing"
+  },
+  "fit:/services/development/ai-automation/ai-document-processing": {
+    "src": "/images/cards/1d787e5fe5c7b5c9-40bfca492e.png",
+    "alt": "تصویرسازی کاربرد و مخاطب پردازش هوشمند اسناد",
+    "title": "کاربرد و مخاطب پردازش هوشمند اسناد",
+    "context": "/services/development/ai-automation/ai-document-processing"
+  },
+  "deliverable:/services/development/ai-automation/ai-document-processing:0": {
+    "src": "/images/cards/3889f07067dbc213-2cf2cf56cc.png",
+    "alt": "تصویرسازی تعریف نوع سند و فیلدهای قابل استخراج",
+    "title": "تعریف نوع سند و فیلدهای قابل استخراج",
+    "context": "/services/development/ai-automation/ai-document-processing"
+  },
+  "deliverable:/services/development/ai-automation/ai-document-processing:1": {
+    "src": "/images/cards/226965176cfd3bdf-bd5be982a3.png",
+    "alt": "تصویرسازی جریان پردازش و کنترل موارد ناقص",
+    "title": "جریان پردازش و کنترل موارد ناقص",
+    "context": "/services/development/ai-automation/ai-document-processing"
+  },
+  "deliverable:/services/development/ai-automation/ai-document-processing:2": {
+    "src": "/images/cards/eff85ff0c8431145-85e526edae.png",
+    "alt": "تصویرسازی خروجی ساخت‌یافته و مسیر بازبینی انسانی",
+    "title": "خروجی ساخت‌یافته و مسیر بازبینی انسانی",
+    "context": "/services/development/ai-automation/ai-document-processing"
+  },
+  "route:/services/design/web-design": {
+    "src": "/images/cards/a5ccc173bd281ac9-22ea2f7f97.png",
+    "alt": "تصویرسازی طراحی سایت",
+    "title": "طراحی سایت",
+    "context": "/services/design/web-design"
+  },
+  "fit:/services/design/web-design": {
+    "src": "/images/cards/e8cdc2caa6dede3b-0fcb132024.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی سایت",
+    "title": "کاربرد و مخاطب طراحی سایت",
+    "context": "/services/design/web-design"
+  },
+  "deliverable:/services/design/web-design:0": {
+    "src": "/images/cards/679623f9c489703b-eeb7d0695e.png",
+    "alt": "تصویرسازی نقشهٔ صفحات و اولویت محتوا",
+    "title": "نقشهٔ صفحات و اولویت محتوا",
+    "context": "/services/design/web-design"
+  },
+  "deliverable:/services/design/web-design:1": {
+    "src": "/images/cards/7d4c7907fded037f-022700a6aa.png",
+    "alt": "تصویرسازی طراحی مسیرهای کاربر و وایرفریم",
+    "title": "طراحی مسیرهای کاربر و وایرفریم",
+    "context": "/services/design/web-design"
+  },
+  "deliverable:/services/design/web-design:2": {
+    "src": "/images/cards/ef2908ec3b3cba59-b53746295b.png",
+    "alt": "تصویرسازی رابط هماهنگ با هویت برند در اندازه‌های اصلی",
+    "title": "رابط هماهنگ با هویت برند در اندازه‌های اصلی",
+    "context": "/services/design/web-design"
+  },
+  "deliverable:/services/design/web-design:3": {
+    "src": "/images/cards/5c1757b3fd999096-6344390987.png",
+    "alt": "تصویرسازی مشخصات طراحی و هماهنگی برای توسعه",
+    "title": "مشخصات طراحی و هماهنگی برای توسعه",
+    "context": "/services/design/web-design"
+  },
+  "route:/services/design/web-design/business-websites": {
+    "src": "/images/cards/3b2bb8cdc4026243-b460c60c0a.png",
+    "alt": "تصویرسازی طراحی سایت شرکتی",
+    "title": "طراحی سایت شرکتی",
+    "context": "/services/design/web-design/business-websites"
+  },
+  "fit:/services/design/web-design/business-websites": {
+    "src": "/images/cards/3758e680e9186dbc-f9549d9fb3.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی سایت شرکتی",
+    "title": "کاربرد و مخاطب طراحی سایت شرکتی",
+    "context": "/services/design/web-design/business-websites"
+  },
+  "deliverable:/services/design/web-design/business-websites:0": {
+    "src": "/images/cards/3a3d6333c1a263cb-f78a818b65.png",
+    "alt": "تصویرسازی نقشهٔ محتوای معرفی، خدمات و تماس",
+    "title": "نقشهٔ محتوای معرفی، خدمات و تماس",
+    "context": "/services/design/web-design/business-websites"
+  },
+  "deliverable:/services/design/web-design/business-websites:1": {
+    "src": "/images/cards/28ec0b4304907d43-20158144de.png",
+    "alt": "تصویرسازی طراحی صفحات کلیدی در اندازه‌های اصلی",
+    "title": "طراحی صفحات کلیدی در اندازه‌های اصلی",
+    "context": "/services/design/web-design/business-websites"
+  },
+  "deliverable:/services/design/web-design/business-websites:2": {
+    "src": "/images/cards/9fc5288490c19776-118b548115.png",
+    "alt": "تصویرسازی الگوی هماهنگ اجزای رابط و راهنمای تحویل",
+    "title": "الگوی هماهنگ اجزای رابط و راهنمای تحویل",
+    "context": "/services/design/web-design/business-websites"
+  },
+  "route:/services/design/web-design/landing-page-design": {
+    "src": "/images/cards/025b124391cad8d3-27b9d636d2.png",
+    "alt": "تصویرسازی طراحی لندینگ پیج",
+    "title": "طراحی لندینگ پیج",
+    "context": "/services/design/web-design/landing-page-design"
+  },
+  "fit:/services/design/web-design/landing-page-design": {
+    "src": "/images/cards/d57f52455731c1fc-ba0baa5c7e.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی لندینگ پیج",
+    "title": "کاربرد و مخاطب طراحی لندینگ پیج",
+    "context": "/services/design/web-design/landing-page-design"
+  },
+  "deliverable:/services/design/web-design/landing-page-design:0": {
+    "src": "/images/cards/d74f34ca8cc77b38-6ceaa28405.png",
+    "alt": "تصویرسازی ساختار پیام، مزیت و پاسخ به ابهام‌ها",
+    "title": "ساختار پیام، مزیت و پاسخ به ابهام‌ها",
+    "context": "/services/design/web-design/landing-page-design"
+  },
+  "deliverable:/services/design/web-design/landing-page-design:1": {
+    "src": "/images/cards/7ca4477cb94371c6-1e82f72586.png",
+    "alt": "تصویرسازی طراحی دعوت به اقدام و فرم مرتبط",
+    "title": "طراحی دعوت به اقدام و فرم مرتبط",
+    "context": "/services/design/web-design/landing-page-design"
+  },
+  "deliverable:/services/design/web-design/landing-page-design:2": {
+    "src": "/images/cards/7265f9ee99766178-0dc37964be.png",
+    "alt": "تصویرسازی نسخهٔ واکنش‌گرا و طرح ارزیابی عملکرد",
+    "title": "نسخهٔ واکنش‌گرا و طرح ارزیابی عملکرد",
+    "context": "/services/design/web-design/landing-page-design"
+  },
+  "route:/services/design/web-design/website-redesign": {
+    "src": "/images/cards/206f037075d5eff0-78a5b6ac94.png",
+    "alt": "تصویرسازی بازطراحی سایت",
+    "title": "بازطراحی سایت",
+    "context": "/services/design/web-design/website-redesign"
+  },
+  "fit:/services/design/web-design/website-redesign": {
+    "src": "/images/cards/54c45fc313d39777-c7cd702393.png",
+    "alt": "تصویرسازی کاربرد و مخاطب بازطراحی سایت",
+    "title": "کاربرد و مخاطب بازطراحی سایت",
+    "context": "/services/design/web-design/website-redesign"
+  },
+  "deliverable:/services/design/web-design/website-redesign:0": {
+    "src": "/images/cards/36d2233e37d9dfa9-05234b2a75.png",
+    "alt": "تصویرسازی مرور تجربه و مشکلات سایت فعلی",
+    "title": "مرور تجربه و مشکلات سایت فعلی",
+    "context": "/services/design/web-design/website-redesign"
+  },
+  "deliverable:/services/design/web-design/website-redesign:1": {
+    "src": "/images/cards/97c47465b1f0713a-f41916279d.png",
+    "alt": "تصویرسازی ساختار و رابط بازطراحی‌شده",
+    "title": "ساختار و رابط بازطراحی‌شده",
+    "context": "/services/design/web-design/website-redesign"
+  },
+  "deliverable:/services/design/web-design/website-redesign:2": {
+    "src": "/images/cards/d9d618cff4ed24b0-e12725b500.png",
+    "alt": "تصویرسازی برنامهٔ حفظ آدرس‌ها و محتوای مهم",
+    "title": "برنامهٔ حفظ آدرس‌ها و محتوای مهم",
+    "context": "/services/design/web-design/website-redesign"
+  },
+  "route:/services/design/web-design/nextjs-websites": {
+    "src": "/images/cards/6891fd424ca35908-fafa628bb5.png",
+    "alt": "تصویرسازی طراحی و توسعه سایت با Next.js",
+    "title": "طراحی و توسعه سایت با Next.js",
+    "context": "/services/design/web-design/nextjs-websites"
+  },
+  "fit:/services/design/web-design/nextjs-websites": {
+    "src": "/images/cards/6642f49b5b93ccb7-6997770508.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی و توسعه سایت با Next.js",
+    "title": "کاربرد و مخاطب طراحی و توسعه سایت با Next.js",
+    "context": "/services/design/web-design/nextjs-websites"
+  },
+  "deliverable:/services/design/web-design/nextjs-websites:0": {
+    "src": "/images/cards/6d6b88a9be133695-9ff7e5cad3.png",
+    "alt": "تصویرسازی انتخاب ساختار صفحات و روش تأمین محتوا",
+    "title": "انتخاب ساختار صفحات و روش تأمین محتوا",
+    "context": "/services/design/web-design/nextjs-websites"
+  },
+  "deliverable:/services/design/web-design/nextjs-websites:1": {
+    "src": "/images/cards/b6c6a706e6563dfc-325f38399b.png",
+    "alt": "تصویرسازی رابط واکنش‌گرا و توسعهٔ امکانات توافق‌شده",
+    "title": "رابط واکنش‌گرا و توسعهٔ امکانات توافق‌شده",
+    "context": "/services/design/web-design/nextjs-websites"
+  },
+  "deliverable:/services/design/web-design/nextjs-websites:2": {
+    "src": "/images/cards/116e0339a10279b1-435629a545.png",
+    "alt": "تصویرسازی بررسی سئو، عملکرد و نیازهای میزبانی",
+    "title": "بررسی سئو، عملکرد و نیازهای میزبانی",
+    "context": "/services/design/web-design/nextjs-websites"
+  },
+  "route:/services/design/ui-designs": {
+    "src": "/images/cards/3ec9d0400255adb1-409eb9b0f7.png",
+    "alt": "تصویرسازی طراحی رابط و تجربه کاربری",
+    "title": "طراحی رابط و تجربه کاربری",
+    "context": "/services/design/ui-designs"
+  },
+  "fit:/services/design/ui-designs": {
+    "src": "/images/cards/33e3b5e39f8f269d-22c00793ca.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی رابط و تجربه کاربری",
+    "title": "کاربرد و مخاطب طراحی رابط و تجربه کاربری",
+    "context": "/services/design/ui-designs"
+  },
+  "deliverable:/services/design/ui-designs:0": {
+    "src": "/images/cards/98fdecab24da9a01-d8550b96a4.png",
+    "alt": "تصویرسازی بررسی نیازها و سناریوهای اصلی",
+    "title": "بررسی نیازها و سناریوهای اصلی",
+    "context": "/services/design/ui-designs"
+  },
+  "deliverable:/services/design/ui-designs:1": {
+    "src": "/images/cards/a390a762a9237583-cce76c5878.png",
+    "alt": "تصویرسازی طراحی جریان‌ها و معماری اطلاعات",
+    "title": "طراحی جریان‌ها و معماری اطلاعات",
+    "context": "/services/design/ui-designs"
+  },
+  "deliverable:/services/design/ui-designs:2": {
+    "src": "/images/cards/a2e054d9f6524027-27111ce861.png",
+    "alt": "تصویرسازی نمونهٔ تعاملی و اجزای رابط",
+    "title": "نمونهٔ تعاملی و اجزای رابط",
+    "context": "/services/design/ui-designs"
+  },
+  "deliverable:/services/design/ui-designs:3": {
+    "src": "/images/cards/22b3012a2202e4b4-1f02b42a88.png",
+    "alt": "تصویرسازی ثبت وضعیت‌های تعاملی و راهنمای توسعه",
+    "title": "ثبت وضعیت‌های تعاملی و راهنمای توسعه",
+    "context": "/services/design/ui-designs"
+  },
+  "route:/services/design/ui-designs/web-app-ui-ux-design": {
+    "src": "/images/cards/f9dec5fb493a6019-a87e030d96.png",
+    "alt": "تصویرسازی طراحی تجربه وب‌اپلیکیشن",
+    "title": "طراحی تجربه وب‌اپلیکیشن",
+    "context": "/services/design/ui-designs/web-app-ui-ux-design"
+  },
+  "fit:/services/design/ui-designs/web-app-ui-ux-design": {
+    "src": "/images/cards/5e702468032422a9-46abcd3ddf.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی تجربه وب‌اپلیکیشن",
+    "title": "کاربرد و مخاطب طراحی تجربه وب‌اپلیکیشن",
+    "context": "/services/design/ui-designs/web-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/web-app-ui-ux-design:0": {
+    "src": "/images/cards/646c7ed3ed0a9d32-5505a54272.png",
+    "alt": "تصویرسازی نقشهٔ وظایف، نقش‌ها و مسیرهای اصلی",
+    "title": "نقشهٔ وظایف، نقش‌ها و مسیرهای اصلی",
+    "context": "/services/design/ui-designs/web-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/web-app-ui-ux-design:1": {
+    "src": "/images/cards/69733563757ecbd7-eb10411b8c.png",
+    "alt": "تصویرسازی وایرفریم و نمونهٔ تعاملی داشبوردها",
+    "title": "وایرفریم و نمونهٔ تعاملی داشبوردها",
+    "context": "/services/design/ui-designs/web-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/web-app-ui-ux-design:2": {
+    "src": "/images/cards/78617e18c4d8124a-ad3cf55321.png",
+    "alt": "تصویرسازی طراحی وضعیت‌های خطا، خالی و بارگذاری",
+    "title": "طراحی وضعیت‌های خطا، خالی و بارگذاری",
+    "context": "/services/design/ui-designs/web-app-ui-ux-design"
+  },
+  "route:/services/design/ui-designs/mobile-app-ui-ux-design": {
+    "src": "/images/cards/eb26b901c1fd2a75-08973a8f27.png",
+    "alt": "تصویرسازی طراحی رابط اپلیکیشن موبایل",
+    "title": "طراحی رابط اپلیکیشن موبایل",
+    "context": "/services/design/ui-designs/mobile-app-ui-ux-design"
+  },
+  "fit:/services/design/ui-designs/mobile-app-ui-ux-design": {
+    "src": "/images/cards/f2857382238e21d3-260d7ba743.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی رابط اپلیکیشن موبایل",
+    "title": "کاربرد و مخاطب طراحی رابط اپلیکیشن موبایل",
+    "context": "/services/design/ui-designs/mobile-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:0": {
+    "src": "/images/cards/bcba53a2ca486d20-123ee8c275.png",
+    "alt": "تصویرسازی جریان‌های اصلی استفاده در موبایل",
+    "title": "جریان‌های اصلی استفاده در موبایل",
+    "context": "/services/design/ui-designs/mobile-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:1": {
+    "src": "/images/cards/509ae7411edb25f6-a2af7443d6.png",
+    "alt": "تصویرسازی صفحات و وضعیت‌های تعاملی مورد توافق",
+    "title": "صفحات و وضعیت‌های تعاملی مورد توافق",
+    "context": "/services/design/ui-designs/mobile-app-ui-ux-design"
+  },
+  "deliverable:/services/design/ui-designs/mobile-app-ui-ux-design:2": {
+    "src": "/images/cards/e352e204645e5c2a-8ea608bbbb.png",
+    "alt": "تصویرسازی نمونهٔ تعاملی و مشخصات تحویل به توسعه",
+    "title": "نمونهٔ تعاملی و مشخصات تحویل به توسعه",
+    "context": "/services/design/ui-designs/mobile-app-ui-ux-design"
+  },
+  "route:/services/design/ui-designs/ux-audit": {
+    "src": "/images/cards/cec76e187c49a476-3f90f62a36.png",
+    "alt": "تصویرسازی ارزیابی تجربه کاربری",
+    "title": "ارزیابی تجربه کاربری",
+    "context": "/services/design/ui-designs/ux-audit"
+  },
+  "fit:/services/design/ui-designs/ux-audit": {
+    "src": "/images/cards/4f25d1efb4e1d72e-0a61159aba.png",
+    "alt": "تصویرسازی کاربرد و مخاطب ارزیابی تجربه کاربری",
+    "title": "کاربرد و مخاطب ارزیابی تجربه کاربری",
+    "context": "/services/design/ui-designs/ux-audit"
+  },
+  "deliverable:/services/design/ui-designs/ux-audit:0": {
+    "src": "/images/cards/2fc44d88a8585afd-e911d4a2e1.png",
+    "alt": "تصویرسازی تعریف سناریوها و مسیرهای ارزیابی",
+    "title": "تعریف سناریوها و مسیرهای ارزیابی",
+    "context": "/services/design/ui-designs/ux-audit"
+  },
+  "deliverable:/services/design/ui-designs/ux-audit:1": {
+    "src": "/images/cards/993fb88b92a342f8-f53b619a65.png",
+    "alt": "تصویرسازی گزارش مشکلات همراه با شواهد",
+    "title": "گزارش مشکلات همراه با شواهد",
+    "context": "/services/design/ui-designs/ux-audit"
+  },
+  "deliverable:/services/design/ui-designs/ux-audit:2": {
+    "src": "/images/cards/d252ead717897d1d-771b187e56.png",
+    "alt": "تصویرسازی فهرست اصلاحات اولویت‌دار و پیشنهاد طراحی",
+    "title": "فهرست اصلاحات اولویت‌دار و پیشنهاد طراحی",
+    "context": "/services/design/ui-designs/ux-audit"
+  },
+  "route:/services/design/ui-designs/design-systems": {
+    "src": "/images/cards/3422176349721517-4ad397fc26.png",
+    "alt": "تصویرسازی طراحی سیستم دیزاین",
+    "title": "طراحی سیستم دیزاین",
+    "context": "/services/design/ui-designs/design-systems"
+  },
+  "fit:/services/design/ui-designs/design-systems": {
+    "src": "/images/cards/e363032f9c4cc1f1-db11a763cf.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی سیستم دیزاین",
+    "title": "کاربرد و مخاطب طراحی سیستم دیزاین",
+    "context": "/services/design/ui-designs/design-systems"
+  },
+  "deliverable:/services/design/ui-designs/design-systems:0": {
+    "src": "/images/cards/433c7aaea725b3f9-b403947882.png",
+    "alt": "تصویرسازی توکن‌های طراحی و اصول کاربرد",
+    "title": "توکن‌های طراحی و اصول کاربرد",
+    "context": "/services/design/ui-designs/design-systems"
+  },
+  "deliverable:/services/design/ui-designs/design-systems:1": {
+    "src": "/images/cards/2b87eb345918018f-981fc3f414.png",
+    "alt": "تصویرسازی اجزای اصلی همراه با حالت‌های تعاملی",
+    "title": "اجزای اصلی همراه با حالت‌های تعاملی",
+    "context": "/services/design/ui-designs/design-systems"
+  },
+  "deliverable:/services/design/ui-designs/design-systems:2": {
+    "src": "/images/cards/6938082d195e9edc-6488b695d6.png",
+    "alt": "تصویرسازی راهنمای توسعه و نگهداری سیستم",
+    "title": "راهنمای توسعه و نگهداری سیستم",
+    "context": "/services/design/ui-designs/design-systems"
+  },
+  "route:/services/design/brand-identity": {
+    "src": "/images/cards/30eb7cdfb8f7aafc-8c0ff2ea60.png",
+    "alt": "تصویرسازی هویت برند",
+    "title": "هویت برند",
+    "context": "/services/design/brand-identity"
+  },
+  "fit:/services/design/brand-identity": {
+    "src": "/images/cards/f36efd471e9a4bd1-5ff0111f6f.png",
+    "alt": "تصویرسازی کاربرد و مخاطب هویت برند",
+    "title": "کاربرد و مخاطب هویت برند",
+    "context": "/services/design/brand-identity"
+  },
+  "deliverable:/services/design/brand-identity:0": {
+    "src": "/images/cards/d5c9670cd5283a83-0a5cb6258d.png",
+    "alt": "تصویرسازی جمع‌بندی مخاطب و ارزش پیشنهادی",
+    "title": "جمع‌بندی مخاطب و ارزش پیشنهادی",
+    "context": "/services/design/brand-identity"
+  },
+  "deliverable:/services/design/brand-identity:1": {
+    "src": "/images/cards/e8f8ff966a48e326-a57ec7743e.png",
+    "alt": "تصویرسازی تعریف جهت‌گیری پیام و هویت بصری",
+    "title": "تعریف جهت‌گیری پیام و هویت بصری",
+    "context": "/services/design/brand-identity"
+  },
+  "deliverable:/services/design/brand-identity:2": {
+    "src": "/images/cards/32bcde31cab89ea2-c83e4b465e.png",
+    "alt": "تصویرسازی طراحی اجزای هویت در دامنهٔ توافق‌شده",
+    "title": "طراحی اجزای هویت در دامنهٔ توافق‌شده",
+    "context": "/services/design/brand-identity"
+  },
+  "deliverable:/services/design/brand-identity:3": {
+    "src": "/images/cards/330957fcd4f929e3-749b0e3364.png",
+    "alt": "تصویرسازی فایل‌ها و راهنمای کاربرد برند",
+    "title": "فایل‌ها و راهنمای کاربرد برند",
+    "context": "/services/design/brand-identity"
+  },
+  "route:/services/design/brand-identity/brand-strategy": {
+    "src": "/images/cards/d95be9ae8da57cfd-00c0d7e7d4.png",
+    "alt": "تصویرسازی استراتژی برند",
+    "title": "استراتژی برند",
+    "context": "/services/design/brand-identity/brand-strategy"
+  },
+  "fit:/services/design/brand-identity/brand-strategy": {
+    "src": "/images/cards/3dda07274b7bbf3d-dc34121f30.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی برند",
+    "title": "کاربرد و مخاطب استراتژی برند",
+    "context": "/services/design/brand-identity/brand-strategy"
+  },
+  "deliverable:/services/design/brand-identity/brand-strategy:0": {
+    "src": "/images/cards/2ebbf666e199fd79-de1d72fbc4.png",
+    "alt": "تصویرسازی جمع‌بندی مخاطب و زمینهٔ رقابتی",
+    "title": "جمع‌بندی مخاطب و زمینهٔ رقابتی",
+    "context": "/services/design/brand-identity/brand-strategy"
+  },
+  "deliverable:/services/design/brand-identity/brand-strategy:1": {
+    "src": "/images/cards/1cb8219ddeacf8b4-74848aeccc.png",
+    "alt": "تصویرسازی جایگاه و پیام‌های اصلی برند",
+    "title": "جایگاه و پیام‌های اصلی برند",
+    "context": "/services/design/brand-identity/brand-strategy"
+  },
+  "deliverable:/services/design/brand-identity/brand-strategy:2": {
+    "src": "/images/cards/076542536a21b9f7-204e5c1308.png",
+    "alt": "تصویرسازی چارچوب لحن و اولویت نقاط تماس",
+    "title": "چارچوب لحن و اولویت نقاط تماس",
+    "context": "/services/design/brand-identity/brand-strategy"
+  },
+  "route:/services/design/brand-identity/logo-and-visual-identity": {
+    "src": "/images/cards/99e147072d81d92a-11e9f86254.png",
+    "alt": "تصویرسازی طراحی لوگو و هویت بصری",
+    "title": "طراحی لوگو و هویت بصری",
+    "context": "/services/design/brand-identity/logo-and-visual-identity"
+  },
+  "fit:/services/design/brand-identity/logo-and-visual-identity": {
+    "src": "/images/cards/72a8b85f7e561912-4b3c6e3d45.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی لوگو و هویت بصری",
+    "title": "کاربرد و مخاطب طراحی لوگو و هویت بصری",
+    "context": "/services/design/brand-identity/logo-and-visual-identity"
+  },
+  "deliverable:/services/design/brand-identity/logo-and-visual-identity:0": {
+    "src": "/images/cards/c25dd27198ba48de-d0225491f3.png",
+    "alt": "تصویرسازی جهت‌گیری بصری و اتودهای مورد توافق",
+    "title": "جهت‌گیری بصری و اتودهای مورد توافق",
+    "context": "/services/design/brand-identity/logo-and-visual-identity"
+  },
+  "deliverable:/services/design/brand-identity/logo-and-visual-identity:1": {
+    "src": "/images/cards/efbc8c4056a39d4b-b7b0491756.png",
+    "alt": "تصویرسازی نشانه، رنگ و تایپوگرافی منتخب",
+    "title": "نشانه، رنگ و تایپوگرافی منتخب",
+    "context": "/services/design/brand-identity/logo-and-visual-identity"
+  },
+  "deliverable:/services/design/brand-identity/logo-and-visual-identity:2": {
+    "src": "/images/cards/638318063a6b3140-41333598db.png",
+    "alt": "تصویرسازی فایل‌های نهایی و نمونهٔ کاربرد",
+    "title": "فایل‌های نهایی و نمونهٔ کاربرد",
+    "context": "/services/design/brand-identity/logo-and-visual-identity"
+  },
+  "route:/services/design/brand-identity/brand-guidelines": {
+    "src": "/images/cards/a293d4892fb4e31b-21ba42e47a.png",
+    "alt": "تصویرسازی راهنمای هویت برند",
+    "title": "راهنمای هویت برند",
+    "context": "/services/design/brand-identity/brand-guidelines"
+  },
+  "fit:/services/design/brand-identity/brand-guidelines": {
+    "src": "/images/cards/5f486adf9f0beb03-a5674f3c1b.png",
+    "alt": "تصویرسازی کاربرد و مخاطب راهنمای هویت برند",
+    "title": "کاربرد و مخاطب راهنمای هویت برند",
+    "context": "/services/design/brand-identity/brand-guidelines"
+  },
+  "deliverable:/services/design/brand-identity/brand-guidelines:0": {
+    "src": "/images/cards/4372cb6627336e1d-202bece31b.png",
+    "alt": "تصویرسازی قواعد کاربرد نشانه، رنگ و تایپوگرافی",
+    "title": "قواعد کاربرد نشانه، رنگ و تایپوگرافی",
+    "context": "/services/design/brand-identity/brand-guidelines"
+  },
+  "deliverable:/services/design/brand-identity/brand-guidelines:1": {
+    "src": "/images/cards/54f8252835eda17e-815def4793.png",
+    "alt": "تصویرسازی نمونه‌های درست و نادرست استفاده",
+    "title": "نمونه‌های درست و نادرست استفاده",
+    "context": "/services/design/brand-identity/brand-guidelines"
+  },
+  "deliverable:/services/design/brand-identity/brand-guidelines:2": {
+    "src": "/images/cards/3792a712de518ed7-0cfd049f6c.png",
+    "alt": "تصویرسازی فایل راهنما و الگوهای توافق‌شده",
+    "title": "فایل راهنما و الگوهای توافق‌شده",
+    "context": "/services/design/brand-identity/brand-guidelines"
+  },
+  "route:/services/growth/seo": {
+    "src": "/images/cards/45553c3ea3a3d922-f06efb5490.png",
+    "alt": "تصویرسازی سئو و بهینه‌سازی",
+    "title": "سئو و بهینه‌سازی",
+    "context": "/services/growth/seo"
+  },
+  "fit:/services/growth/seo": {
+    "src": "/images/cards/b27917422160c4c4-552aa3bcd5.png",
+    "alt": "تصویرسازی کاربرد و مخاطب سئو و بهینه‌سازی",
+    "title": "کاربرد و مخاطب سئو و بهینه‌سازی",
+    "context": "/services/growth/seo"
+  },
+  "deliverable:/services/growth/seo:0": {
+    "src": "/images/cards/0a7601cc2138e9b5-fdf8f067cc.png",
+    "alt": "تصویرسازی بررسی فنی و ساختار صفحات",
+    "title": "بررسی فنی و ساختار صفحات",
+    "context": "/services/growth/seo"
+  },
+  "deliverable:/services/growth/seo:1": {
+    "src": "/images/cards/9985fe0330a6d462-35f794a0a1.png",
+    "alt": "تصویرسازی تحقیق موضوع و کلمات کلیدی مرتبط",
+    "title": "تحقیق موضوع و کلمات کلیدی مرتبط",
+    "context": "/services/growth/seo"
+  },
+  "deliverable:/services/growth/seo:2": {
+    "src": "/images/cards/cca42c5ae2c50376-a3c28d256b.png",
+    "alt": "تصویرسازی برنامهٔ اصلاح محتوا و پیوندهای داخلی",
+    "title": "برنامهٔ اصلاح محتوا و پیوندهای داخلی",
+    "context": "/services/growth/seo"
+  },
+  "deliverable:/services/growth/seo:3": {
+    "src": "/images/cards/80b37c35342200b6-170426a9f9.png",
+    "alt": "تصویرسازی شاخص‌های ارزیابی و اولویت اقدامات",
+    "title": "شاخص‌های ارزیابی و اولویت اقدامات",
+    "context": "/services/growth/seo"
+  },
+  "route:/services/growth/seo/technical-seo": {
+    "src": "/images/cards/7d891a290097e1ac-85376a8ef7.png",
+    "alt": "تصویرسازی سئوی فنی",
+    "title": "سئوی فنی",
+    "context": "/services/growth/seo/technical-seo"
+  },
+  "fit:/services/growth/seo/technical-seo": {
+    "src": "/images/cards/a155183525961557-bb8fc929dc.png",
+    "alt": "تصویرسازی کاربرد و مخاطب سئوی فنی",
+    "title": "کاربرد و مخاطب سئوی فنی",
+    "context": "/services/growth/seo/technical-seo"
+  },
+  "deliverable:/services/growth/seo/technical-seo:0": {
+    "src": "/images/cards/b7461573a5ae9300-ac9f95f906.png",
+    "alt": "تصویرسازی گزارش خزش و وضعیت ایندکس صفحات مهم",
+    "title": "گزارش خزش و وضعیت ایندکس صفحات مهم",
+    "context": "/services/growth/seo/technical-seo"
+  },
+  "deliverable:/services/growth/seo/technical-seo:1": {
+    "src": "/images/cards/b6a2e3c67deec8ac-5ba7d9bb91.png",
+    "alt": "تصویرسازی بررسی آدرس‌های اصلی، ریدایرکت و دادهٔ ساختاریافته",
+    "title": "بررسی آدرس‌های اصلی، ریدایرکت و دادهٔ ساختاریافته",
+    "context": "/services/growth/seo/technical-seo"
+  },
+  "deliverable:/services/growth/seo/technical-seo:2": {
+    "src": "/images/cards/3b7d2b89a93da7a3-8aa3a16cc5.png",
+    "alt": "تصویرسازی فهرست اصلاحات فنی براساس اثر و امکان اجرا",
+    "title": "فهرست اصلاحات فنی براساس اثر و امکان اجرا",
+    "context": "/services/growth/seo/technical-seo"
+  },
+  "route:/services/growth/seo/seo-content-strategy": {
+    "src": "/images/cards/70db6b34518a768c-cc888fd497.png",
+    "alt": "تصویرسازی استراتژی محتوای سئو",
+    "title": "استراتژی محتوای سئو",
+    "context": "/services/growth/seo/seo-content-strategy"
+  },
+  "fit:/services/growth/seo/seo-content-strategy": {
+    "src": "/images/cards/ccc0a3804b90283b-547b242404.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی محتوای سئو",
+    "title": "کاربرد و مخاطب استراتژی محتوای سئو",
+    "context": "/services/growth/seo/seo-content-strategy"
+  },
+  "deliverable:/services/growth/seo/seo-content-strategy:0": {
+    "src": "/images/cards/62fbebb20958abce-82d30d581f.png",
+    "alt": "تصویرسازی تحقیق موضوع و گروه‌بندی کلمات کلیدی",
+    "title": "تحقیق موضوع و گروه‌بندی کلمات کلیدی",
+    "context": "/services/growth/seo/seo-content-strategy"
+  },
+  "deliverable:/services/growth/seo/seo-content-strategy:1": {
+    "src": "/images/cards/c1de09ffe2172106-badfd2291f.png",
+    "alt": "تصویرسازی نقشهٔ صفحات و پیشنهاد پیوندهای داخلی",
+    "title": "نقشهٔ صفحات و پیشنهاد پیوندهای داخلی",
+    "context": "/services/growth/seo/seo-content-strategy"
+  },
+  "deliverable:/services/growth/seo/seo-content-strategy:2": {
+    "src": "/images/cards/7fcde779e92c11db-c139192d4b.png",
+    "alt": "تصویرسازی بریف‌ها و اولویت‌های تولید یا اصلاح محتوا",
+    "title": "بریف‌ها و اولویت‌های تولید یا اصلاح محتوا",
+    "context": "/services/growth/seo/seo-content-strategy"
+  },
+  "route:/services/growth/seo/local-seo": {
+    "src": "/images/cards/e522babc5a43be1a-20b88e4509.png",
+    "alt": "تصویرسازی سئوی محلی",
+    "title": "سئوی محلی",
+    "context": "/services/growth/seo/local-seo"
+  },
+  "fit:/services/growth/seo/local-seo": {
+    "src": "/images/cards/2d0dbb50ca71e67d-f85cd46b61.png",
+    "alt": "تصویرسازی کاربرد و مخاطب سئوی محلی",
+    "title": "کاربرد و مخاطب سئوی محلی",
+    "context": "/services/growth/seo/local-seo"
+  },
+  "deliverable:/services/growth/seo/local-seo:0": {
+    "src": "/images/cards/34284a8be6dbf529-fb8580fecf.png",
+    "alt": "تصویرسازی مرور یکپارچگی اطلاعات تماس و موقعیت",
+    "title": "مرور یکپارچگی اطلاعات تماس و موقعیت",
+    "context": "/services/growth/seo/local-seo"
+  },
+  "deliverable:/services/growth/seo/local-seo:1": {
+    "src": "/images/cards/5d62cf6a483a8a56-016589597a.png",
+    "alt": "تصویرسازی برنامهٔ صفحات و محتوای محلی",
+    "title": "برنامهٔ صفحات و محتوای محلی",
+    "context": "/services/growth/seo/local-seo"
+  },
+  "deliverable:/services/growth/seo/local-seo:2": {
+    "src": "/images/cards/42fadbf57aa5dcd4-de9998f39c.png",
+    "alt": "تصویرسازی پیشنهاد اصلاح حضور در کانال‌های مرتبط",
+    "title": "پیشنهاد اصلاح حضور در کانال‌های مرتبط",
+    "context": "/services/growth/seo/local-seo"
+  },
+  "route:/services/growth/social-media-marketing": {
+    "src": "/images/cards/a474572200a35b71-5d08ce8a15.png",
+    "alt": "تصویرسازی بازاریابی شبکه‌های اجتماعی",
+    "title": "بازاریابی شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "fit:/services/growth/social-media-marketing": {
+    "src": "/images/cards/632c9f9b2c55bc63-38f14dad93.png",
+    "alt": "تصویرسازی کاربرد و مخاطب بازاریابی شبکه‌های اجتماعی",
+    "title": "کاربرد و مخاطب بازاریابی شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "deliverable:/services/growth/social-media-marketing:0": {
+    "src": "/images/cards/b738bc584a2c2dfc-ece1ef2c9b.png",
+    "alt": "تصویرسازی شناخت مخاطب و نقش کانال‌ها",
+    "title": "شناخت مخاطب و نقش کانال‌ها",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "deliverable:/services/growth/social-media-marketing:1": {
+    "src": "/images/cards/b092ac503f4ed108-48567c04a3.png",
+    "alt": "تصویرسازی تدوین ستون‌های محتوایی و لحن",
+    "title": "تدوین ستون‌های محتوایی و لحن",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "deliverable:/services/growth/social-media-marketing:2": {
+    "src": "/images/cards/eacae3e7901a2c04-eb58eab87f.png",
+    "alt": "تصویرسازی تقویم انتشار و چارچوب کمپین",
+    "title": "تقویم انتشار و چارچوب کمپین",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "deliverable:/services/growth/social-media-marketing:3": {
+    "src": "/images/cards/38024b6ba16da751-3c3e8145b4.png",
+    "alt": "تصویرسازی مرور عملکرد و اقدام‌های دورهٔ بعد",
+    "title": "مرور عملکرد و اقدام‌های دورهٔ بعد",
+    "context": "/services/growth/social-media-marketing"
+  },
+  "route:/services/growth/social-media-marketing/social-media-strategy": {
+    "src": "/images/cards/5999657f2b94827e-fe76bb4d81.png",
+    "alt": "تصویرسازی استراتژی شبکه‌های اجتماعی",
+    "title": "استراتژی شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-strategy"
+  },
+  "fit:/services/growth/social-media-marketing/social-media-strategy": {
+    "src": "/images/cards/6b91d7a28aac434a-b027ab3eae.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی شبکه‌های اجتماعی",
+    "title": "کاربرد و مخاطب استراتژی شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-strategy:0": {
+    "src": "/images/cards/bf67b3128404a284-5be7a91381.png",
+    "alt": "تصویرسازی بررسی وضعیت فعلی و کانال‌های مناسب",
+    "title": "بررسی وضعیت فعلی و کانال‌های مناسب",
+    "context": "/services/growth/social-media-marketing/social-media-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-strategy:1": {
+    "src": "/images/cards/fa89504bc8e754a3-21d84ecc24.png",
+    "alt": "تصویرسازی تعریف لحن و ستون‌های محتوا",
+    "title": "تعریف لحن و ستون‌های محتوا",
+    "context": "/services/growth/social-media-marketing/social-media-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-strategy:2": {
+    "src": "/images/cards/902767f46e32be3c-2fb67e5168.png",
+    "alt": "تصویرسازی شاخص‌ها و برنامهٔ اجرایی دورهٔ نخست",
+    "title": "شاخص‌ها و برنامهٔ اجرایی دورهٔ نخست",
+    "context": "/services/growth/social-media-marketing/social-media-strategy"
+  },
+  "route:/services/growth/social-media-marketing/social-media-content-strategy": {
+    "src": "/images/cards/cea757a0fef752c3-58e9283617.png",
+    "alt": "تصویرسازی استراتژی محتوای شبکه‌های اجتماعی",
+    "title": "استراتژی محتوای شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-content-strategy"
+  },
+  "fit:/services/growth/social-media-marketing/social-media-content-strategy": {
+    "src": "/images/cards/c3ba4177340e26a6-54a621f544.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی محتوای شبکه‌های اجتماعی",
+    "title": "کاربرد و مخاطب استراتژی محتوای شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-content-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:0": {
+    "src": "/images/cards/09d5d162c2558069-6a22a15ed6.png",
+    "alt": "تصویرسازی ساختار موضوعی و تقویم محتوایی",
+    "title": "ساختار موضوعی و تقویم محتوایی",
+    "context": "/services/growth/social-media-marketing/social-media-content-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:1": {
+    "src": "/images/cards/c1e5f7310f1662c5-7b8cdaefc8.png",
+    "alt": "تصویرسازی بریف قالب‌ها و نمونهٔ مسیر تولید",
+    "title": "بریف قالب‌ها و نمونهٔ مسیر تولید",
+    "context": "/services/growth/social-media-marketing/social-media-content-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-content-strategy:2": {
+    "src": "/images/cards/6d5d3eb8f32272f5-efd1cbba4c.png",
+    "alt": "تصویرسازی روند تأیید و بازبینی محتوا",
+    "title": "روند تأیید و بازبینی محتوا",
+    "context": "/services/growth/social-media-marketing/social-media-content-strategy"
+  },
+  "route:/services/growth/social-media-marketing/social-media-campaign-strategy": {
+    "src": "/images/cards/8d2bb71a0b44e874-e7d55703d8.png",
+    "alt": "تصویرسازی استراتژی کمپین شبکه‌های اجتماعی",
+    "title": "استراتژی کمپین شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-campaign-strategy"
+  },
+  "fit:/services/growth/social-media-marketing/social-media-campaign-strategy": {
+    "src": "/images/cards/ca7b263b417d0c83-7b9a5bdf30.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی کمپین شبکه‌های اجتماعی",
+    "title": "کاربرد و مخاطب استراتژی کمپین شبکه‌های اجتماعی",
+    "context": "/services/growth/social-media-marketing/social-media-campaign-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:0": {
+    "src": "/images/cards/3ebb89e84652e748-4ec62e36a1.png",
+    "alt": "تصویرسازی بریف هدف، پیشنهاد و مخاطب کمپین",
+    "title": "بریف هدف، پیشنهاد و مخاطب کمپین",
+    "context": "/services/growth/social-media-marketing/social-media-campaign-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:1": {
+    "src": "/images/cards/e19314967ec23e76-7eca53f596.png",
+    "alt": "تصویرسازی نقشهٔ کانال‌ها و برنامهٔ انتشار",
+    "title": "نقشهٔ کانال‌ها و برنامهٔ انتشار",
+    "context": "/services/growth/social-media-marketing/social-media-campaign-strategy"
+  },
+  "deliverable:/services/growth/social-media-marketing/social-media-campaign-strategy:2": {
+    "src": "/images/cards/c0d76c1d0c9153c1-9ad20d07b1.png",
+    "alt": "تصویرسازی شاخص‌های ارزیابی و چارچوب گزارش",
+    "title": "شاخص‌های ارزیابی و چارچوب گزارش",
+    "context": "/services/growth/social-media-marketing/social-media-campaign-strategy"
+  },
+  "route:/services/growth/security": {
+    "src": "/images/cards/bfdec8803a9453ab-f2bd6a530b.png",
+    "alt": "تصویرسازی امنیت وب و سامانه‌ها",
+    "title": "امنیت وب و سامانه‌ها",
+    "context": "/services/growth/security"
+  },
+  "fit:/services/growth/security": {
+    "src": "/images/cards/891a91c7b2007621-480affbf7a.png",
+    "alt": "تصویرسازی کاربرد و مخاطب امنیت وب و سامانه‌ها",
+    "title": "کاربرد و مخاطب امنیت وب و سامانه‌ها",
+    "context": "/services/growth/security"
+  },
+  "deliverable:/services/growth/security:0": {
+    "src": "/images/cards/a49de0960d4e19cc-3111b24dee.png",
+    "alt": "تصویرسازی تعریف دارایی‌ها و دامنهٔ بررسی مجاز",
+    "title": "تعریف دارایی‌ها و دامنهٔ بررسی مجاز",
+    "context": "/services/growth/security"
+  },
+  "deliverable:/services/growth/security:1": {
+    "src": "/images/cards/e6e76b0c442cf88d-f570488836.png",
+    "alt": "تصویرسازی مرور دسترسی‌ها و تنظیمات مرتبط",
+    "title": "مرور دسترسی‌ها و تنظیمات مرتبط",
+    "context": "/services/growth/security"
+  },
+  "deliverable:/services/growth/security:2": {
+    "src": "/images/cards/917d455198cce944-a1f1165eac.png",
+    "alt": "تصویرسازی گزارش ریسک‌ها و اولویت اصلاح",
+    "title": "گزارش ریسک‌ها و اولویت اصلاح",
+    "context": "/services/growth/security"
+  },
+  "deliverable:/services/growth/security:3": {
+    "src": "/images/cards/27b576b6c09c38b4-48c9b49c1e.png",
+    "alt": "تصویرسازی برنامهٔ مراقبت و مسئولیت‌های نگهداری",
+    "title": "برنامهٔ مراقبت و مسئولیت‌های نگهداری",
+    "context": "/services/growth/security"
+  },
+  "route:/services/growth/security/website-security-audit": {
+    "src": "/images/cards/f58b99c4648d0558-388e0a3e9a.png",
+    "alt": "تصویرسازی ارزیابی امنیت وب‌سایت",
+    "title": "ارزیابی امنیت وب‌سایت",
+    "context": "/services/growth/security/website-security-audit"
+  },
+  "fit:/services/growth/security/website-security-audit": {
+    "src": "/images/cards/dd59b6926feee5f8-015792e5ff.png",
+    "alt": "تصویرسازی کاربرد و مخاطب ارزیابی امنیت وب‌سایت",
+    "title": "کاربرد و مخاطب ارزیابی امنیت وب‌سایت",
+    "context": "/services/growth/security/website-security-audit"
+  },
+  "deliverable:/services/growth/security/website-security-audit:0": {
+    "src": "/images/cards/b66b09d100cba982-bf25f7688c.png",
+    "alt": "تصویرسازی دامنه و روش بررسی تأییدشده",
+    "title": "دامنه و روش بررسی تأییدشده",
+    "context": "/services/growth/security/website-security-audit"
+  },
+  "deliverable:/services/growth/security/website-security-audit:1": {
+    "src": "/images/cards/909ccf0c819bdf0c-b916768dd1.png",
+    "alt": "تصویرسازی گزارش یافته‌ها و شواهد قابل بازبینی",
+    "title": "گزارش یافته‌ها و شواهد قابل بازبینی",
+    "context": "/services/growth/security/website-security-audit"
+  },
+  "deliverable:/services/growth/security/website-security-audit:2": {
+    "src": "/images/cards/6662e7f4883b35ee-4b131f29f6.png",
+    "alt": "تصویرسازی اولویت اصلاح و برنامهٔ بررسی مجدد",
+    "title": "اولویت اصلاح و برنامهٔ بررسی مجدد",
+    "context": "/services/growth/security/website-security-audit"
+  },
+  "route:/services/growth/security/website-protection": {
+    "src": "/images/cards/60ad0579e5b3fec9-f286212f2f.png",
+    "alt": "تصویرسازی ایمن‌سازی وب‌سایت",
+    "title": "ایمن‌سازی وب‌سایت",
+    "context": "/services/growth/security/website-protection"
+  },
+  "fit:/services/growth/security/website-protection": {
+    "src": "/images/cards/213eb2e81c2ebce9-18189b3bfd.png",
+    "alt": "تصویرسازی کاربرد و مخاطب ایمن‌سازی وب‌سایت",
+    "title": "کاربرد و مخاطب ایمن‌سازی وب‌سایت",
+    "context": "/services/growth/security/website-protection"
+  },
+  "deliverable:/services/growth/security/website-protection:0": {
+    "src": "/images/cards/dd92478e133b812a-910b678df3.png",
+    "alt": "تصویرسازی مرور دسترسی‌ها و تنظیمات مرتبط",
+    "title": "مرور دسترسی‌ها و تنظیمات مرتبط",
+    "context": "/services/growth/security/website-protection"
+  },
+  "deliverable:/services/growth/security/website-protection:1": {
+    "src": "/images/cards/eec3243a5d541248-91ff77e554.png",
+    "alt": "تصویرسازی اجرای اصلاحات توافق‌شده و ثبت تغییرات",
+    "title": "اجرای اصلاحات توافق‌شده و ثبت تغییرات",
+    "context": "/services/growth/security/website-protection"
+  },
+  "deliverable:/services/growth/security/website-protection:2": {
+    "src": "/images/cards/5468dc9214c2c590-f92a3d65fd.png",
+    "alt": "تصویرسازی راهنمای پشتیبان‌گیری و نگهداری",
+    "title": "راهنمای پشتیبان‌گیری و نگهداری",
+    "context": "/services/growth/security/website-protection"
+  },
+  "route:/services/growth/security/security-monitoring": {
+    "src": "/images/cards/e2ddf1470d71fd41-356e637feb.png",
+    "alt": "تصویرسازی پایش امنیت سایت",
+    "title": "پایش امنیت سایت",
+    "context": "/services/growth/security/security-monitoring"
+  },
+  "fit:/services/growth/security/security-monitoring": {
+    "src": "/images/cards/2982d70da0cb8df4-67eb4596b2.png",
+    "alt": "تصویرسازی کاربرد و مخاطب پایش امنیت سایت",
+    "title": "کاربرد و مخاطب پایش امنیت سایت",
+    "context": "/services/growth/security/security-monitoring"
+  },
+  "deliverable:/services/growth/security/security-monitoring:0": {
+    "src": "/images/cards/6456691c0bb3179b-6c07ad3a90.png",
+    "alt": "تصویرسازی تعیین رویدادها و حدود پایش",
+    "title": "تعیین رویدادها و حدود پایش",
+    "context": "/services/growth/security/security-monitoring"
+  },
+  "deliverable:/services/growth/security/security-monitoring:1": {
+    "src": "/images/cards/b5429940d1686edc-97207b67b6.png",
+    "alt": "تصویرسازی تنظیم هشدار و مسیر ارجاع رویداد",
+    "title": "تنظیم هشدار و مسیر ارجاع رویداد",
+    "context": "/services/growth/security/security-monitoring"
+  },
+  "deliverable:/services/growth/security/security-monitoring:2": {
+    "src": "/images/cards/9b3e3cc59d1ec60e-6d632f269e.png",
+    "alt": "تصویرسازی گزارش دوره‌ای و مسئولیت پاسخ‌گویی",
+    "title": "گزارش دوره‌ای و مسئولیت پاسخ‌گویی",
+    "context": "/services/growth/security/security-monitoring"
+  },
+  "route:/services/google-ads": {
+    "src": "/images/cards/db2a805b41b625c8-5656a002e3.png",
+    "alt": "تصویرسازی تبلیغات گوگل",
+    "title": "تبلیغات گوگل",
+    "context": "/services/google-ads"
+  },
+  "fit:/services/google-ads": {
+    "src": "/images/cards/9332f299579a13ce-0f4a858b11.png",
+    "alt": "تصویرسازی کاربرد و مخاطب تبلیغات گوگل",
+    "title": "کاربرد و مخاطب تبلیغات گوگل",
+    "context": "/services/google-ads"
+  },
+  "deliverable:/services/google-ads:0": {
+    "src": "/images/cards/5e22e43d3b6f4580-d7e6d6ebb1.png",
+    "alt": "تصویرسازی پیشنهاد ساختار کمپین و کلیدواژه‌ها",
+    "title": "پیشنهاد ساختار کمپین و کلیدواژه‌ها",
+    "context": "/services/google-ads"
+  },
+  "deliverable:/services/google-ads:1": {
+    "src": "/images/cards/d8426951fa0ca312-395da66a45.png",
+    "alt": "تصویرسازی متن آگهی و فهرست کلیدواژه‌های منفی اولیه",
+    "title": "متن آگهی و فهرست کلیدواژه‌های منفی اولیه",
+    "context": "/services/google-ads"
+  },
+  "deliverable:/services/google-ads:2": {
+    "src": "/images/cards/4832f3239556083e-c9ad64eaff.png",
+    "alt": "تصویرسازی برنامه سنجش تبدیل با توجه به دسترسی‌ها",
+    "title": "برنامه سنجش تبدیل با توجه به دسترسی‌ها",
+    "context": "/services/google-ads"
+  },
+  "deliverable:/services/google-ads:3": {
+    "src": "/images/cards/728ace5f0637bc04-f5bae8a2e8.png",
+    "alt": "تصویرسازی گزارش هزینه، عملکرد و تغییرات پیشنهادی",
+    "title": "گزارش هزینه، عملکرد و تغییرات پیشنهادی",
+    "context": "/services/google-ads"
+  },
+  "route:/services/campaigns": {
+    "src": "/images/cards/aeb628558a68f3d2-cc4aab1259.png",
+    "alt": "تصویرسازی استراتژی و کمپین تبلیغاتی",
+    "title": "استراتژی و کمپین تبلیغاتی",
+    "context": "/services/campaigns"
+  },
+  "fit:/services/campaigns": {
+    "src": "/images/cards/1b7f09f62702a2b3-6abe75dc84.png",
+    "alt": "تصویرسازی کاربرد و مخاطب استراتژی و کمپین تبلیغاتی",
+    "title": "کاربرد و مخاطب استراتژی و کمپین تبلیغاتی",
+    "context": "/services/campaigns"
+  },
+  "deliverable:/services/campaigns:0": {
+    "src": "/images/cards/884799ad618b193a-c6671ba321.png",
+    "alt": "تصویرسازی بریف کمپین و معیارهای ارزیابی",
+    "title": "بریف کمپین و معیارهای ارزیابی",
+    "context": "/services/campaigns"
+  },
+  "deliverable:/services/campaigns:1": {
+    "src": "/images/cards/cd4ee3d861483184-fbed16667d.png",
+    "alt": "تصویرسازی ایده مرکزی و چارچوب پیام‌های تبلیغاتی",
+    "title": "ایده مرکزی و چارچوب پیام‌های تبلیغاتی",
+    "context": "/services/campaigns"
+  },
+  "deliverable:/services/campaigns:2": {
+    "src": "/images/cards/227c05fc0cfc94c7-23b098bb37.png",
+    "alt": "تصویرسازی برنامه اجرایی، مسئولیت‌ها و نیازهای تولید",
+    "title": "برنامه اجرایی، مسئولیت‌ها و نیازهای تولید",
+    "context": "/services/campaigns"
+  },
+  "deliverable:/services/campaigns:3": {
+    "src": "/images/cards/49eab02c9ff8340c-66fbd8ce25.png",
+    "alt": "تصویرسازی گزارش جمع‌بندی و پیشنهاد ادامه مسیر",
+    "title": "گزارش جمع‌بندی و پیشنهاد ادامه مسیر",
+    "context": "/services/campaigns"
+  },
+  "route:/services/graphic-design": {
+    "src": "/images/cards/231246dd32ccf476-effeac2cb2.png",
+    "alt": "تصویرسازی طراحی گرافیکی",
+    "title": "طراحی گرافیکی",
+    "context": "/services/graphic-design"
+  },
+  "fit:/services/graphic-design": {
+    "src": "/images/cards/a54a9d545b027dda-0b09661aac.png",
+    "alt": "تصویرسازی کاربرد و مخاطب طراحی گرافیکی",
+    "title": "کاربرد و مخاطب طراحی گرافیکی",
+    "context": "/services/graphic-design"
+  },
+  "deliverable:/services/graphic-design:0": {
+    "src": "/images/cards/09ff0719c597b703-16003fe4f0.png",
+    "alt": "تصویرسازی اتودهای بصری و مسیر طراحی",
+    "title": "اتودهای بصری و مسیر طراحی",
+    "context": "/services/graphic-design"
+  },
+  "deliverable:/services/graphic-design:1": {
+    "src": "/images/cards/71fa77c0ee61a965-a84a6a09b9.png",
+    "alt": "تصویرسازی فایل‌های نهایی برای رسانه‌های توافق‌شده",
+    "title": "فایل‌های نهایی برای رسانه‌های توافق‌شده",
+    "context": "/services/graphic-design"
+  },
+  "deliverable:/services/graphic-design:2": {
+    "src": "/images/cards/bfd734bb13b1db8e-e206857696.png",
+    "alt": "تصویرسازی راهنمای کاربرد و مشخصات فنی خروجی",
+    "title": "راهنمای کاربرد و مشخصات فنی خروجی",
+    "context": "/services/graphic-design"
+  },
+  "route:/services/content-production": {
+    "src": "/images/cards/205e1882ff779e98-cb944f2672.png",
+    "alt": "تصویرسازی تولید محتوا و تدوین ویدیو",
+    "title": "تولید محتوا و تدوین ویدیو",
+    "context": "/services/content-production"
+  },
+  "fit:/services/content-production": {
+    "src": "/images/cards/59cb903304e73d8b-eb0f889797.png",
+    "alt": "تصویرسازی کاربرد و مخاطب تولید محتوا و تدوین ویدیو",
+    "title": "کاربرد و مخاطب تولید محتوا و تدوین ویدیو",
+    "context": "/services/content-production"
+  },
+  "deliverable:/services/content-production:0": {
+    "src": "/images/cards/5d95a2c3ea3b3b83-21ca6fb415.png",
+    "alt": "تصویرسازی بریف و سناریوی محتوایی",
+    "title": "بریف و سناریوی محتوایی",
+    "context": "/services/content-production"
+  },
+  "deliverable:/services/content-production:1": {
+    "src": "/images/cards/8f43f23394b375b7-a664db82b8.png",
+    "alt": "تصویرسازی محتوای آمادهٔ انتشار مطابق دامنهٔ پروژه",
+    "title": "محتوای آمادهٔ انتشار مطابق دامنهٔ پروژه",
+    "context": "/services/content-production"
+  },
+  "deliverable:/services/content-production:2": {
+    "src": "/images/cards/1cd1e106d639d6e1-680b91e791.png",
+    "alt": "تصویرسازی نسخه‌های متناسب با بسترهای انتشار",
+    "title": "نسخه‌های متناسب با بسترهای انتشار",
+    "context": "/services/content-production"
+  },
+  "route:/services/online-advertising": {
+    "src": "/images/cards/31ebc3c21b596e6a-3bbe59547d.png",
+    "alt": "تصویرسازی تبلیغات آنلاین",
+    "title": "تبلیغات آنلاین",
+    "context": "/services/online-advertising"
+  },
+  "fit:/services/online-advertising": {
+    "src": "/images/cards/4b9e17b2be7ff251-67940832fe.png",
+    "alt": "تصویرسازی کاربرد و مخاطب تبلیغات آنلاین",
+    "title": "کاربرد و مخاطب تبلیغات آنلاین",
+    "context": "/services/online-advertising"
+  },
+  "deliverable:/services/online-advertising:0": {
+    "src": "/images/cards/e39a622dfab50f30-7853e4d0e4.png",
+    "alt": "تصویرسازی برنامهٔ رسانه و انتشار",
+    "title": "برنامهٔ رسانه و انتشار",
+    "context": "/services/online-advertising"
+  },
+  "deliverable:/services/online-advertising:1": {
+    "src": "/images/cards/9445b5a19c130964-27dddc9f7c.png",
+    "alt": "تصویرسازی محتوای تبلیغاتی مورد توافق",
+    "title": "محتوای تبلیغاتی مورد توافق",
+    "context": "/services/online-advertising"
+  },
+  "deliverable:/services/online-advertising:2": {
+    "src": "/images/cards/3d2e19552734ed2b-d81f4498a0.png",
+    "alt": "تصویرسازی گزارش اجرا، آموخته‌ها و اقدام بعدی",
+    "title": "گزارش اجرا، آموخته‌ها و اقدام بعدی",
+    "context": "/services/online-advertising"
+  },
+  "section:/about-us:0": {
+    "src": "/images/cards/41a9ef3c304521a1-96ab81b37f.png",
+    "alt": "تصویرسازی مسئله را پیش از ابزار انتخاب می‌کنیم",
+    "title": "مسئله را پیش از ابزار انتخاب می‌کنیم",
+    "context": "/about-us"
+  },
+  "section:/about-us:1": {
+    "src": "/images/cards/6d28d0597310bd89-6ada6500b3.png",
+    "alt": "تصویرسازی از طراحی تا اجرا، هماهنگ",
+    "title": "از طراحی تا اجرا، هماهنگ",
+    "context": "/about-us"
+  },
+  "section:/about-us:2": {
+    "src": "/images/cards/3b046d539d24f179-8efaa1fde3.png",
+    "alt": "تصویرسازی تحویل روشن و همکاری قابل پیگیری",
+    "title": "تحویل روشن و همکاری قابل پیگیری",
+    "context": "/about-us"
+  },
+  "section:/pricing:0": {
+    "src": "/images/cards/bfed7cc884295798-80b1cfb6f1.png",
+    "alt": "تصویرسازی سایت و تجربهٔ دیجیتال",
+    "title": "سایت و تجربهٔ دیجیتال",
+    "context": "/pricing"
+  },
+  "section:/pricing:1": {
+    "src": "/images/cards/9e23cfc9ded91417-6602a10818.png",
+    "alt": "تصویرسازی سئو و بهبود حضور",
+    "title": "سئو و بهبود حضور",
+    "context": "/pricing"
+  },
+  "section:/pricing:2": {
+    "src": "/images/cards/ac374e3d5ae5f31c-bad05fea47.png",
+    "alt": "تصویرسازی ابزار هوشمند و راهکار اختصاصی",
+    "title": "ابزار هوشمند و راهکار اختصاصی",
+    "context": "/pricing"
+  },
+  "route:/live-case-studies/success-van-hire": {
+    "src": "/images/cards/393bcae356e41275-8620904599.png",
+    "alt": "تصویرسازی طرح سامانه رزرو خودرو Success Van Hire",
+    "title": "طرح سامانه رزرو خودرو Success Van Hire",
+    "context": "/live-case-studies/success-van-hire"
+  },
+  "section:/live-case-studies/success-van-hire:0": {
+    "src": "/images/cards/5ad527634c8229a4-55d585de36.png",
+    "alt": "تصویرسازی مسئلهٔ کسب‌وکار",
+    "title": "مسئلهٔ کسب‌وکار",
+    "context": "/live-case-studies/success-van-hire"
+  },
+  "section:/live-case-studies/success-van-hire:1": {
+    "src": "/images/cards/37353a95379d45e4-b42ef4504d.png",
+    "alt": "تصویرسازی راهکار پیشنهادی",
+    "title": "راهکار پیشنهادی",
+    "context": "/live-case-studies/success-van-hire"
+  },
+  "section:/live-case-studies/success-van-hire:2": {
+    "src": "/images/cards/78b610adb09bd66f-ebf6db3bdf.png",
+    "alt": "تصویرسازی مسیر بررسی و اجرا",
+    "title": "مسیر بررسی و اجرا",
+    "context": "/live-case-studies/success-van-hire"
+  },
+  "route:/live-case-studies/real-estate": {
+    "src": "/images/cards/c2b290c0d1f045d9-1df0d0c200.png",
+    "alt": "تصویرسازی طرح پلتفرم یکپارچهٔ املاک اوج",
+    "title": "طرح پلتفرم یکپارچهٔ املاک اوج",
+    "context": "/live-case-studies/real-estate"
+  },
+  "section:/live-case-studies/real-estate:0": {
+    "src": "/images/cards/bff839d4d106d4f1-9b9b9f822b.png",
+    "alt": "تصویرسازی مسئلهٔ کسب‌وکار",
+    "title": "مسئلهٔ کسب‌وکار",
+    "context": "/live-case-studies/real-estate"
+  },
+  "section:/live-case-studies/real-estate:1": {
+    "src": "/images/cards/04482c78bf11c937-e250f378ec.png",
+    "alt": "تصویرسازی راهکار پیشنهادی",
+    "title": "راهکار پیشنهادی",
+    "context": "/live-case-studies/real-estate"
+  },
+  "section:/live-case-studies/real-estate:2": {
+    "src": "/images/cards/d75174d1b366f866-1a4fb36ec5.png",
+    "alt": "تصویرسازی دامنهٔ قابل بررسی",
+    "title": "دامنهٔ قابل بررسی",
+    "context": "/live-case-studies/real-estate"
+  },
+  "ai:chatbot": {
+    "src": "/images/cards/ee65896069366611-e6715bd110.png",
+    "alt": "تصویرسازی دستیار پشتیبانی مشتری",
+    "title": "دستیار پشتیبانی مشتری",
+    "context": "/"
+  },
+  "ai:lead": {
+    "src": "/images/cards/9b881ff873391dd4-84e96acf52.png",
+    "alt": "تصویرسازی ارزیابی سرنخ‌های فروش",
+    "title": "ارزیابی سرنخ‌های فروش",
+    "context": "/"
+  },
+  "ai:booking": {
+    "src": "/images/cards/86724924b4d550e0-1c9fef75a4.png",
+    "alt": "تصویرسازی رزرو و پیگیری خودکار",
+    "title": "رزرو و پیگیری خودکار",
+    "context": "/"
+  },
+  "ai:analytics": {
+    "src": "/images/cards/a9d11574b1f464eb-d905c8c5fe.png",
+    "alt": "تصویرسازی داشبورد تحلیل کسب‌وکار",
+    "title": "داشبورد تحلیل کسب‌وکار",
+    "context": "/"
+  },
+  "ai:content": {
+    "src": "/images/cards/a21fab42b650e5b7-dd5ada580d.png",
+    "alt": "تصویرسازی دستیار تولید محتوا",
+    "title": "دستیار تولید محتوا",
+    "context": "/"
+  },
+  "ai:sales": {
+    "src": "/images/cards/53752c1d9477c524-4a7fdbbf7a.png",
+    "alt": "تصویرسازی دستیار راهنمای خرید",
+    "title": "دستیار راهنمای خرید",
+    "context": "/"
+  },
+  "menu:growth-security": {
+    "src": "/images/cards/598992f3ad0fc043-c72b753950.png",
+    "alt": "تصویرسازی مسیر رشد و امنیت",
+    "title": "مسیر رشد و امنیت",
+    "context": "navigation"
+  }
+}

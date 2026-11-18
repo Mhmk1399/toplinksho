@@ -1,0 +1,122 @@
+/* Shared contact links use static glass reflections and the project's theme tokens. */
+.contact-link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+.contact-link-item { min-width: 0; }
+.contact-channel {
+  --contact-tone: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 56px;
+  padding: 11px 13px;
+  border: 1px solid color-mix(in srgb, var(--contact-tone) 28%, transparent);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 0 0, color-mix(in srgb, var(--contact-tone) 10%, transparent), transparent 70%),
+    linear-gradient(130deg, color-mix(in srgb, var(--text) 4%, transparent), transparent),
+    color-mix(in srgb, var(--surface) 70%, transparent);
+  color: var(--text);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 8%, transparent);
+  font: inherit;
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-channel[data-pending="true"] { border-style: dashed; }
+.contact-channel[data-channel="phone"] { --contact-tone: var(--accent); }
+.contact-channel[data-channel="whatsapp"] { --contact-tone: var(--success); }
+.contact-channel[data-channel="instagram"] { --contact-tone: var(--brand-pink); }
+.contact-channel[data-channel="email"],
+.contact-channel[data-channel="linkedin"] { --contact-tone: var(--info); }
+.contact-channel-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid color-mix(in srgb, var(--contact-tone) 23%, transparent);
+  border-radius: 12px;
+  color: var(--contact-tone);
+  background: color-mix(in srgb, var(--contact-tone) 8%, transparent);
+}
+.contact-channel-copy { display: grid; gap: 2px; min-width: 0; }
+.contact-channel-label { font-size: 13px; font-weight: 650; line-height: 1.8; }
+.contact-channel-pending { color: var(--muted); font-size: 10px; line-height: 1.5; white-space: nowrap; }
+.contact-channel-detail {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+}
+.contact-channel-arrow { margin-inline-start: auto; flex-shrink: 0; color: var(--contact-tone); }
+.contact-channel:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.contact-link-list--contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.contact-link-list--contact :is(.contact-link-item--phone, .contact-link-item--email),
+.contact-link-list--contact > .contact-link-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.contact-link-list--contact :is(.contact-link-item--phone, .contact-link-item--email) .contact-channel { min-height: 70px; }
+.contact-link-list--footer { display: flex; flex-wrap: wrap; gap: 8px; }
+.contact-link-list--footer .contact-channel {
+  min-height: 44px;
+  width: auto;
+  gap: 7px;
+  padding: 7px 10px;
+  border-radius: 13px;
+}
+.contact-link-list--footer .contact-channel-icon {
+  flex-basis: auto;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.contact-link-list--footer .contact-channel-label { font-size: 11px; white-space: nowrap; }
+.site-footer .footer-top {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-areas: "brand navigation" "social navigation";
+  gap: 18px 32px;
+  align-items: start;
+}
+.site-footer .footer-top > .footer-brand { grid-area: brand; min-width: 0; }
+.site-footer .footer-top > nav { grid-area: navigation; align-self: center; justify-self: end; max-width: 100%; }
+.site-footer .footer-contact-links { grid-area: social; }
+@media (max-width: 1439px) {
+  .site-footer.site-footer--contacts { padding-bottom: max(96px, calc(env(safe-area-inset-bottom) + 80px)); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .contact-channel { transition: border-color 140ms, background-color 140ms; }
+  .contact-channel:hover { border-color: color-mix(in srgb, var(--contact-tone) 65%, transparent); background-color: var(--surface); }
+}
+@media (max-width: 767px) {
+  .site-footer .footer-top {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "brand" "social" "navigation";
+    gap: 18px;
+  }
+  .site-footer .footer-top > nav { width: 100%; justify-self: stretch; }
+}
+@media (max-width: 359px) {
+  .contact-link-list--contact { gap: 8px; }
+  .contact-link-list--contact .contact-channel { padding-inline: 10px; gap: 8px; }
+  .contact-link-list--contact .contact-channel-icon { flex-basis: 30px; width: 30px; height: 32px; border-radius: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .contact-channel { transition: none; } }
+@media (forced-colors: active) {
+  .contact-channel, .contact-channel-icon { color: LinkText; border-color: LinkText; background: Canvas; box-shadow: none; }
+  .contact-channel-detail, .contact-channel-arrow { color: LinkText; }
+}

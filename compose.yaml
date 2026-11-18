@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_ASSET_BASE_URL: ${NEXT_PUBLIC_ASSET_BASE_URL:-https://storage.c2.liara.space/toplinksho}
     image: toplinksho:latest
     container_name: toplinksho-app
     restart: unless-stopped
@@ -16,6 +18,8 @@ services:
       HOSTNAME: 0.0.0.0
       PORT: 3000
       NEXT_TELEMETRY_DISABLED: "1"
+    env_file:
+      - .env
     healthcheck:
       test:
         - CMD

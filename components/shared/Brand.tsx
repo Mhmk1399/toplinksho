@@ -1,16 +1,22 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { assetUrl } from "@/lib/assets";
 
-export function Brand() {
+export function Brand({ href = "/#top", label = "تاپ لینک شو، صفحه اصلی" }: { href?: string; label?: string } = {}) {
   return (
-    <Link href="#top" className="inline-flex shrink-0 items-center" aria-label="تاپ لینک شو، صفحه اصلی">
+    <Link
+      href={href}
+      className="brand"
+      aria-label={label}
+    >
       <Image
-        src="/web-logo2333.webp"
+        src={assetUrl("/images/logo.webp")}
         alt="تاپ لینک شو"
         width={132}
         height={71}
-        className="h-[52px] w-auto object-contain"
-        priority
+        className="brand-logo"
+        loading="eager"
+        unoptimized
       />
     </Link>
   );

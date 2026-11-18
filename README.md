@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TopLinkSho
 
-## Getting Started
+وب‌سایت فارسی و راست‌به‌چپ تاپ لینک شو با Next.js، React، Tailwind، MongoDB و پنل مدیریت.
 
-First, run the development server:
+## اجرا
 
-```bash
+Node.js نسخهٔ 22.18 یا جدیدتر لازم است. تنظیمات محیط و حساب ادمین در SETUP.md توضیح داده شده‌اند.
+
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```sh
+npm run lint
+npm run build
+npm start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ساخت پروژه، رنگ‌های تم و سرویس‌ورکر PWA را تولید می‌کند. تصاویر عمومی و تصاویر اشتراک‌گذاری از باکت خوانده می‌شوند و پوشه‌های محلی images و social برای build لازم نیستند. آیکن‌های آماده در public/icons حفظ می‌شوند؛ فقط اگر لوگو و تصویرهای منبع محلی موجود باشند، آیکن‌ها و تصاویر اشتراک‌گذاری دوباره تولید می‌شوند. ابزارهای لازم در scripts باقی مانده‌اند؛ گزارش‌ها، اسکرین‌شات‌ها و ابزارهای موقت بررسی، بخشی از نسخهٔ اجرایی نیستند.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ساختار و محتوا
 
-## Learn More
+- app: صفحات، متادیتا، مسیرهای API، مانیفست و سایت‌مپ.
+- components: کامپوننت‌های مشترک رابط، قالب خدمات، فرم‌ها و پنل ادمین.
+- lib و models: منطق برنامه، اتصال دیتابیس، ایمیل، احراز هویت و مدل‌ها.
+- content/home.fa.json: متن، متادیتا و پرسش‌های صفحهٔ اصلی.
+- content/services.fa.json و content/pages.fa.json: محتوای تمام خدمات و صفحات اصلی.
+- content/navigation.fa.json: منو و ساختار خدمات.
+- content/portfolio.fa.json: محتوای صفحهٔ فهرست نمونه‌کارها.
+- content/card-artwork.fa.json و content/visuals.fa.json: نگاشت تصویرسازی‌های محلی؛ منوی خدمات از زیرمجموعهٔ کوچک menu-artwork.generated.json استفاده می‌کند.
+- content/source: منابع مرجع با مسیر فایل و هش، برای ردیابی محتوای منتقل‌شده از chetahNova.
+- theme/theme.json: منبع رنگ‌های رابط؛ پس از تغییر، npm run theme:generate را اجرا کنید. هنگام npm run dev تغییرات تم خودکار دنبال می‌شوند.
+- lib/assets.ts: تبدیل مسیرهای منطقی images و social به نشانی عمومی باکت؛ مبنا با NEXT_PUBLIC_ASSET_BASE_URL تنظیم می‌شود.
+- public: فونت‌های محلی، آیکن‌ها و فایل‌های PWA. آیکن‌ها و فونت‌ها از همین پروژه خوانده می‌شوند؛ منابع محلی اختیاری برای بازتولید تصاویر نیز می‌توانند در images قرار بگیرند.
 
-To learn more about Next.js, take a look at the following resources:
+صفحات خدمات از قالب‌ها و داده‌های مشترک ساخته می‌شوند. متادیتا، canonical، breadcrumb و JSON-LD نیز از همین داده‌ها تولید می‌شوند. جزئیات قواعد رابط در DESIGN.md و UX-CONTRACT.md قرار دارد.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ادمین و نمونه‌کارها
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+پنل در /admin قرار دارد. درخواست‌های مشاوره، یادداشت‌ها، وضعیت پیگیری و پروژه‌ها در MongoDB ذخیره می‌شوند. اعلان ایمیلی مستقل از ثبت درخواست است. پروژه‌ها از /admin/projects مدیریت می‌شوند و نسخهٔ عمومی در /portfolio و /portfolio/[slug] نمایش داده می‌شود. فقط پروژهٔ منتشرشده در سایت دیده می‌شود؛ بایگانی، اطلاعات را نگه می‌دارد و نمایش عمومی را قطع می‌کند.
 
-## Deploy on Vercel
+گزینهٔ حذف در فهرست و صفحهٔ ویرایش پروژه با تأیید جداگانه نمایش داده می‌شود. حذف دائمی، اطلاعات پروژه و آپلودهای اختصاصی S3 یا GridFS را پاک می‌کند و تصاویر مشترک سایت را نگه می‌دارد. اگر پاک‌سازی فایل‌ها کامل نشود، پروژه از نمایش عمومی خارج می‌ماند و گزینهٔ تکمیل حذف برای تلاش دوباره در دسترس است.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+آپلودهای جدید پروژه در پوشهٔ toplinksho/projects همان باکت S3 لیارا ذخیره می‌شوند و اطلاعات رسانه در MongoDB نگهداری می‌شود. مسیر با S3_KEY_PREFIX قابل تنظیم است. فایل‌های قدیمی GridFS همچنان قابل خواندن هستند. تصاویر PNG/JPEG/WebP تا ۸ MiB و ویدیوهای MP4/WebM تا ۸۰ MiB پذیرفته می‌شوند؛ حداکثر ۳۲ رسانه برای هر پروژه. تصویر به WebP با اندازهٔ محدود تبدیل می‌شود. دریافت رسانه از مسیرهای کنترل‌شدهٔ سایت انجام می‌شود؛ فایل‌های مسیر projects باید در سیاست باکت خصوصی باشند تا پیش‌نویس‌ها عمومی نشوند. تنظیمات لازم در SETUP.md قرار دارند.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+سه پروژهٔ نمایشی آوید، نوا و دیدار قابل ویرایش در ادمین هستند. متن اولیه در content/demo-projects.fa.json و نگاشت ۹ تصویر PNG شفاف در content/project-assets.json است. تصویرهای ثبت‌شده از نشانی عمومی باکت خوانده می‌شوند و هنگام seed دوباره آپلود نمی‌شوند؛ ابزار seed برای بررسی صحت منبع اولیه به نسخهٔ محلی آن ۹ فایل نیاز دارد، ولی build و اجرای سایت به آن‌ها وابسته نیستند. نمونه‌ها ویدیو یا وب‌سایت خارجی ندارند، با برچسب نمایشی و noindex نمایش داده می‌شوند و در سایت‌مپ قرار نمی‌گیرند.
+
+```sh
+npm run projects:seed-demo -- --dry-run
+npm run projects:seed-demo
+```
+
+اجرای دوم فقط نمونه‌های ثبت‌نشده را اضافه می‌کند و داده‌ها یا ویرایش‌های موجود را بازنویسی نمی‌کند. این ابزار هنگام build یا اجرای سایت فراخوانی نمی‌شود. جدا کردن تصاویر محلی از گالری مجاز است؛ حذف فیزیکی فایل محلی از پنل انجام نمی‌شود.
+
+فایل‌های تصاویر و social در باکت عمومی با همان نام فایل و بدون زیرپوشه قرار دارند؛ برای مثال /images/cards/example.png به https://storadge.arziplus.com/toplinksho/example.png تبدیل می‌شود. تغییر تصویر، محتوای صفحه یا تم، تصویر اشتراک‌گذاری ذخیره‌شده در باکت را خودکار عوض نمی‌کند؛ نسخهٔ تازه را بسازید و با همان نام در باکت جایگزین کنید. اگر منابع محلی موجود باشند، build خروجی را در public/social می‌سازد؛ در حالت باکت‌محور این پوشه ایجاد نمی‌شود. build هیچ فایل راه‌دوری را آپلود یا حذف نمی‌کند.
+
+## کامپوننت‌های مشترک
+
+راه‌های تماس و شبکه‌های اجتماعی از lib/site.ts و فهرست مشترک lib/contact-links.ts خوانده می‌شوند. شمارهٔ واتساپ به‌صورت بین‌المللی و آدرس اینستاگرام به‌صورت URL کامل تنظیم می‌شوند. تا زمانی که آدرس اینستاگرام خالی است، گزینهٔ «اینستاگرام — به‌زودی» نمایش داده می‌شود و کلیک روی آن پیام اطلاع‌رسانی نشان می‌دهد؛ با ثبت URL معتبر، همان گزینه به لینک واقعی تبدیل می‌شود. فوتر، صفحهٔ تماس و منوی شناور از همین داده‌ها استفاده می‌کنند. منوی شناور فقط در صفحات عمومی فعال است و بازشدن بومی آن بدون جاوااسکریپت نیز کار می‌کند.
+
+Select ورودی‌های انتخابی عمومی و ادمین را مدیریت می‌کند؛ نسخهٔ بومی پیش از بارگذاری و در حالت بدون جاوااسکریپت فعال است. FAQAccordion گروه‌بندی مستقل دارد و هم‌زمان فقط یک پاسخ در هر گروه باز می‌ماند. محتوای صفحات روی سرور رندر می‌شود؛ حرکت‌ها و اسکرول نرم، حالت کاهش حرکت و دستگاه ضعیف را رعایت می‌کنند.
+
+Toaster یک‌بار در layout اصلی نصب شده است. برای پیام عملیات از toast در lib/client/toast استفاده کنید: success، error، warning و info. با id ثابت، پیام قبلی همان عملیات جایگزین می‌شود. useFeedback پیام کنار فرم و اعلان مشترک را هماهنگ می‌کند. ثبت موفق باید پس از تأیید واقعی API نمایش داده شود و خطاهای فیلدها کنار ورودی باقی بمانند.

@@ -1,0 +1,39 @@
+import Link from "next/link";
+import { Check, ArrowLeft } from "lucide-react";
+import { PublicFrame } from "@/components/content/PublicFrame";
+import { FaqBlock, LinkCards, PageCTA } from "@/components/content/ContentBlocks";
+import { Container } from "@/components/ui/Container";
+import { FeatureCard } from "@/components/ui/FeatureCard";
+import { CardGrid } from "@/components/ui/CardGrid";
+import { NarrativeCopy } from "@/components/content/NarrativeCopy";
+import { SectionNav } from "@/components/shared/SectionNav";
+import { ServiceProjects } from "@/components/portfolio/ServiceProjects";
+import { ServiceProcess } from "@/components/services/ServiceProcess";
+import { ServiceEntrance } from "@/components/services/ServiceEntrance";
+import { childrenOf, serviceGroups, type ServicePageData } from "@/lib/page-registry";
+export function ServicePage({ page }: { page: ServicePageData }) {
+ const children=childrenOf(page.path);
+ const group=serviceGroups.find(item=>item.id===page.group);
+ const siblings=childrenOf(page.parent||"/services").filter(item=>item.path!==page.path&&item.kind!=="group").slice(0,3);
+ return <PublicFrame page={{...page,eyebrow:group?.title||"راهکار متناسب با کسب‌وکار"}} serviceMotion secondary={{label:children.length?"کشف زیرخدمات":"دامنهٔ همکاری",href:children.length?"#catalog":"#overview"}}>
+  <ServiceEntrance key={page.path} />
+  <SectionNav items={[
+   {id:children.length?"catalog":"overview",label:children.length?"زیرخدمات":"معرفی راهکار"},
+   {id:"deliverables",label:"خروجی‌ها"},
+   {id:"process",label:"مراحل همکاری"},
+   ...(page.faq?.length?[{id:"faq",label:"پرسش‌ها"}]:[]),
+  ]} />
+  <section id="overview" className="home-section scroll-mt-32"><Container><div className="grid gap-7 lg:grid-cols-[1.3fr_.7fr]">
+   <div data-service-reveal><span className="eyebrow">شناخت نیاز، پیش از انتخاب راهکار</span><h2 className="home-title mb-4 font-extrabold">{page.title}؛ از نیاز تا اجرا</h2><NarrativeCopy intro={page.intro||page.description} paragraphs={page.bodyParagraphs} /></div>
+   <FeatureCard title="برای چه نیازی مناسب است؟" description={page.fit||"برای انتخاب راهکار مناسب، نیاز فعلی، امکانات ضروری و مسیر استفادهٔ مخاطب را بررسی می‌کنیم."} path={page.path} artworkKey={"fit:" + page.path} imageSizes="(max-width: 767px) calc(100vw - 90px), (max-width: 1023px) calc(100vw - 122px), (max-width: 1344px) calc(35vw - 90px), 380px" category="انتخاب راهکار" compact />
+  </div></Container></section>
+  {children.length>0 && <section id="catalog" className="home-section scroll-mt-32"><Container><div className="mb-7"><span className="eyebrow">تخصص‌ها</span><h2 className="home-title font-extrabold">مسیر متناسب با نیازتان را انتخاب کنید.</h2></div><LinkCards items={children} /></Container></section>}
+  <section id="deliverables" className="home-section scroll-mt-32 border-y border-line"><Container><div className="mb-7"><span className="eyebrow">دامنهٔ روشن</span><h2 className="home-title font-extrabold">خروجی‌های {page.title}</h2><p className="mt-3 max-w-2xl text-sm leading-8 text-muted">این موارد مبنای گفت‌وگوی اولیه هستند؛ امکانات ضروری، اتصال‌ها و معیار تحویل پیش از شروع پروژه با شما مشخص می‌شوند.</p></div><CardGrid label={"خروجی‌های "+page.title} mobileScroll>{(page.deliverables||["بررسی نیاز و اولویت‌ها","تعریف مسیر اجرا و خروجی","آزمون و راهنمای تحویل"]).map((item,index)=><FeatureCard key={item} title={item} path={page.path} artworkKey={"deliverable:" + page.path + ":" + index} category="خروجی پروژه" icon={<Check size={18} />} compact />)}</CardGrid>
+   <div className="neon-surface mt-6 p-5"><h3 className="mb-2 text-sm font-semibold">برای بررسی اولیه آماده کنید</h3><p className="text-sm leading-8 text-muted">{(page.inputs||["هدف پروژه، اطلاعات موجود و محدودیت‌های اصلی"]).join("؛ ")}.</p></div>
+  </Container></section>
+  <ServiceProcess title={"مراحل "+page.title} description={page.processDescription} steps={page.process} />
+  <FaqBlock items={page.faq||[]} title={"پرسش‌های رایج دربارهٔ "+page.title} highlight={page.title} />
+  {siblings.length>0 && <section className="home-section"><Container><div className="mb-6 flex flex-wrap items-center justify-between gap-4"><h2 className="route-card-title font-bold">راهکارهای مرتبط</h2><Link href={page.parent||"/services"} className="inline-flex min-h-11 items-center gap-2 rounded-lg text-sm text-accent">همهٔ این گروه<ArrowLeft size={16} aria-hidden="true" /></Link></div><LinkCards items={siblings} compact /></Container></section>}
+  <ServiceProjects path={page.path} title={page.title} /><PageCTA />
+ </PublicFrame>;
+}

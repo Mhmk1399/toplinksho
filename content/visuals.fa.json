@@ -1,0 +1,19 @@
+{
+  "development": {
+    "src": "/images/services/development.png",
+    "alt": "مرورگر و تلفن همراه شیشه‌ای متصل به یکدیگر؛ تصویرسازی توسعهٔ وب و اپلیکیشن"
+  },
+  "design": {
+    "src": "/images/services/design.png",
+    "alt": "لایه‌های رابط کاربری، نشانگر کروم و فرم‌های رنگی؛ تصویرسازی طراحی دیجیتال"
+  },
+  "growth": {
+    "src": "/images/services/growth.png",
+    "alt": "ذره‌بین شیشه‌ای روی پنل جست‌وجو و مسیر رشد؛ تصویرسازی سئو و بازاریابی دیجیتال"
+  },
+  "automation": {
+    "src": "/images/services/automation.png",
+    "alt": "تراشهٔ شیشه‌ای و ماژول‌های متصل؛ تصویرسازی هوش مصنوعی و اتوماسیون"
+  }
+}
+

@@ -1,0 +1,880 @@
+{
+  "sourceProject": "chetahNova",
+  "locale": "en",
+  "route": "/",
+  "extractedAt": "2026-11-12T07:13:29.247Z",
+  "extraction": "Read-only TypeScript AST; no source project code is executed.",
+  "sectionOrder": [
+    "HeroSection",
+    "AISolutions",
+    "LeadsForm",
+    "ProcessSection",
+    "FAQSection",
+    "ContactSection"
+  ],
+  "components": {
+    "page": {
+      "file": "app/page.tsx",
+      "sha256": "291f54b1d66e70eb33fabc02f932734a0a4e1b92677e7bbf610bad2817560ffa",
+      "data": {
+        "metadata": {
+          "title": "CheetahNova | Web Design, SEO, AI Tools & Cybersecurity Agency",
+          "description": "CheetahNova is a modern web design, SEO, AI automation and cybersecurity agency helping businesses build high-performance websites, generate more leads, automate growth and scale faster.",
+          "keywords": [
+            "web design and SEO agency",
+            "AI automation agency",
+            "custom AI tools",
+            "web development agency",
+            "SEO optimization services",
+            "cybersecurity solutions",
+            "custom software development",
+            "high performance websites",
+            "business growth automation",
+            "lead generation agency",
+            "technical SEO services"
+          ],
+          "authors": [
+            {
+              "name": "CheetahNova"
+            }
+          ],
+          "creator": "CheetahNova",
+          "publisher": "CheetahNova",
+          "metadataBase": {
+            "reference": "new URL(siteUrl)"
+          },
+          "alternates": {
+            "canonical": {
+              "reference": "`${siteUrl}/`"
+            }
+          },
+          "openGraph": {
+            "title": "CheetahNova | Web Design, SEO, AI Tools & Cybersecurity Agency",
+            "description": "Build faster websites, rank higher on search engines, automate business growth and protect your digital systems with CheetahNova.",
+            "url": {
+              "reference": "`${siteUrl}/`"
+            },
+            "siteName": "CheetahNova",
+            "images": [
+              {
+                "url": {
+                  "reference": "`${siteUrl}/og.png`"
+                },
+                "width": 1200,
+                "height": 630,
+                "alt": "CheetahNova web design, SEO, AI automation and cybersecurity agency"
+              }
+            ],
+            "locale": "en_US",
+            "type": "website"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "CheetahNova | Web Design, SEO, AI Tools & Cybersecurity Agency",
+            "description": "A modern digital agency for web development, SEO, AI automation, cybersecurity and custom software solutions.",
+            "images": [
+              {
+                "reference": "`${siteUrl}/og.png`"
+              }
+            ]
+          },
+          "robots": {
+            "index": true,
+            "follow": true,
+            "googleBot": {
+              "index": true,
+              "follow": true,
+              "max-image-preview": "large",
+              "max-snippet": {
+                "reference": "-1"
+              },
+              "max-video-preview": {
+                "reference": "-1"
+              }
+            }
+          }
+        },
+        "myFaqs": [
+          {
+            "id": "1",
+            "question": "What does CheetahNova do?",
+            "answer": "CheetahNova is a modern web design, SEO, AI automation, cybersecurity and custom software agency. We help businesses build high-performance websites, improve search visibility, automate workflows, generate leads and scale their digital growth.",
+            "category": "CheetahNova"
+          },
+          {
+            "id": "2",
+            "question": "Does CheetahNova work with international clients?",
+            "answer": "Yes. CheetahNova works with businesses worldwide and provides remote digital services including web development, SEO optimization, AI tools, automation systems and cybersecurity solutions.",
+            "category": "International"
+          },
+          {
+            "id": "3",
+            "question": "Can CheetahNova build custom AI tools?",
+            "answer": "Yes. CheetahNova builds custom AI tools tailored to business workflows. These tools can help automate repetitive tasks, support lead generation, improve customer journeys, organize data and make daily operations faster.",
+            "category": "AI"
+          },
+          {
+            "id": "4",
+            "question": "Does CheetahNova provide SEO services?",
+            "answer": "Yes. CheetahNova provides SEO optimization services including technical SEO, on-page SEO, website structure improvements, content planning, performance optimization and search-focused development.",
+            "category": "SEO"
+          },
+          {
+            "id": "5",
+            "question": "Can CheetahNova help improve website performance?",
+            "answer": "Yes. CheetahNova builds websites with performance, clean code, responsive structure, accessibility and SEO foundations in mind. The goal is to create websites that load fast, rank better and convert more visitors into leads.",
+            "category": "Performance"
+          },
+          {
+            "id": "6",
+            "question": "How can I contact CheetahNova?",
+            "answer": "You can contact CheetahNova by email at info@cheetahnova.com or by phone at +44 7346 323799.",
+            "category": "CheetahNova"
+          }
+        ],
+        "servicesSchema": {
+          "@type": "ItemList",
+          "@id": {
+            "reference": "`${siteUrl}/#services`"
+          },
+          "name": "CheetahNova Core Services",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "position": 1,
+              "name": "Web Development",
+              "description": "High-performance website development for businesses that need fast, scalable and conversion-focused digital platforms.",
+              "provider": {
+                "@id": {
+                  "reference": "`${siteUrl}/#organization`"
+                }
+              },
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "Service",
+              "position": 2,
+              "name": "SEO Optimization",
+              "description": "Technical SEO, on-page optimization, content structure and performance improvements to help websites rank better in search engines.",
+              "provider": {
+                "@id": {
+                  "reference": "`${siteUrl}/#organization`"
+                }
+              },
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "Service",
+              "position": 3,
+              "name": "AI Tools & Automation",
+              "description": "Custom AI tools and automation systems designed to streamline workflows, generate leads and improve business operations.",
+              "provider": {
+                "@id": {
+                  "reference": "`${siteUrl}/#organization`"
+                }
+              },
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "Service",
+              "position": 4,
+              "name": "Cybersecurity",
+              "description": "Security-focused solutions that help businesses protect websites, applications, infrastructure and digital assets.",
+              "provider": {
+                "@id": {
+                  "reference": "`${siteUrl}/#organization`"
+                }
+              },
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "Service",
+              "position": 5,
+              "name": "Custom Software Development",
+              "description": "Custom software, SaaS platforms and digital systems built around business needs, growth goals and operational workflows.",
+              "provider": {
+                "@id": {
+                  "reference": "`${siteUrl}/#organization`"
+                }
+              },
+              "areaServed": "Worldwide"
+            }
+          ]
+        }
+      },
+      "text": [],
+      "attributes": [
+        {
+          "name": "title",
+          "value": "Ready to Transform Your Business?"
+        },
+        {
+          "name": "description",
+          "value": "Share your project details and let's build something amazing together."
+        },
+        {
+          "name": "headline",
+          "value": "Got Any Questions"
+        },
+        {
+          "name": "subheadline",
+          "value": "SUPPORT"
+        },
+        {
+          "name": "description",
+          "value": "Everything you need to know before getting started."
+        },
+        {
+          "name": "contactText",
+          "value": "Can't find your answer? Reach out."
+        },
+        {
+          "name": "contactHref",
+          "value": "/contact"
+        }
+      ],
+      "propDefaults": {}
+    },
+    "hero": {
+      "file": "components/static/Home/Herosection.tsx",
+      "sha256": "0b79e57bc94723333838a8095ed973d15ff1ff95222eb3aeaba203ccb299d564",
+      "data": {
+        "defaultConfig": {
+          "headline": "AI-Powered Web Design & SEO That Turns",
+          "highlightedText": "Visitors Into Customers",
+          "subheadline": "We build high-converting websites, advanced SEO systems, and custom AI automation tools tailored to your business, so your website becomes a growth machine, not just an online brochure.",
+          "primaryCTA": {
+            "label": "Get a Free Strategy Call",
+            "href": "/contact"
+          },
+          "services": [
+            {
+              "id": "design/web-design",
+              "title": "Web Design",
+              "headline": "Custom Website Design for Any Industry",
+              "description": "We craft stunning, high-performance websites that capture your brand essence and convert visitors into loyal customers.",
+              "features": [
+                "Responsive Design",
+                "Lightning Fast",
+                "Conversion Optimized",
+                "Brand-Aligned"
+              ],
+              "image": {
+                "reference": "homeImages.webDesign"
+              },
+              "imageMobile": {
+                "reference": "homeImages.webDesignMobile"
+              },
+              "accentColor": "#F59E0B"
+            },
+            {
+              "id": "growth/seo",
+              "title": "SEO Systems",
+              "headline": "SEO That Ranks You on Google",
+              "description": "Dominate search results with our data-driven SEO strategies. We help you get found by customers actively searching for your services.",
+              "features": [
+                "Keyword Research",
+                "Technical SEO",
+                "Content Strategy",
+                "Link Building"
+              ],
+              "image": {
+                "reference": "homeImages.seo"
+              },
+              "imageMobile": {
+                "reference": "homeImages.seoMobile"
+              },
+              "accentColor": "#06B6D4"
+            },
+            {
+              "id": "development/ai-automation",
+              "title": "AI Automation",
+              "headline": "AI Automation Tools",
+              "description": "Harness the power of artificial intelligence to automate repetitive tasks, streamline operations, and scale your business efficiently.",
+              "features": [
+                "Custom AI Tools",
+                "Workflow Automation",
+                "Smart Analytics",
+                "24/7 Operation"
+              ],
+              "image": {
+                "reference": "homeImages.automation"
+              },
+              "imageMobile": {
+                "reference": "homeImages.automationMobile"
+              },
+              "accentColor": "#8B5CF6"
+            }
+          ]
+        }
+      },
+      "text": [
+        "Learn more about",
+        "0",
+        "/",
+        "Explore",
+        "Go to"
+      ],
+      "attributes": [],
+      "propDefaults": {
+        "position": "right"
+      }
+    },
+    "aiSolutions": {
+      "file": "components/static/Home/ai-solutions/AISolutions.tsx",
+      "sha256": "9a61cbe10262c29953bf6b9428b968748cab78de28a1e1e223f37197c1f89d45",
+      "data": {
+        "defaultConfig": {
+          "tag": "AI-Powered Solutions",
+          "headline": "AI Tools Built Specifically for Your Business",
+          "description": "Every business has different customers, different workflows, and different needs. That's why we don't sell generic AI solutions. We design and develop AI tools that match your exact industry and customer journey.",
+          "solutions": [
+            {
+              "id": "chatbot",
+              "number": "01",
+              "title": "AI Customer Support Agent",
+              "description": "Automated chatbot trained for your business that answers customer questions instantly and professionally.",
+              "stats": {
+                "label": "Avg Response",
+                "value": "< 2s"
+              },
+              "status": "active",
+              "gradient": "from-emerald-500 to-cyan-500",
+              "size": "large",
+              "image": {
+                "reference": "homeImages.support"
+              }
+            },
+            {
+              "id": "lead",
+              "number": "02",
+              "title": "AI Lead Qualification",
+              "description": "Filters leads automatically and identifies high-value customers before they reach your sales team.",
+              "stats": {
+                "label": "Accuracy",
+                "value": "94%"
+              },
+              "status": "processing",
+              "gradient": "from-violet-500 to-purple-500",
+              "image": {
+                "reference": "homeImages.leads"
+              }
+            },
+            {
+              "id": "booking",
+              "number": "03",
+              "title": "AI Booking Automation",
+              "description": "Turns your website into a booking machine with automated scheduling and smart reminders.",
+              "stats": {
+                "label": "Time Saved",
+                "value": "12h/wk"
+              },
+              "status": "ready",
+              "gradient": "from-amber-500 to-orange-500",
+              "image": {
+                "reference": "homeImages.booking"
+              }
+            },
+            {
+              "id": "analytics",
+              "number": "04",
+              "title": "AI Analytics Dashboard",
+              "description": "Tracks performance, customer behavior, conversions, and delivers growth insights in real-time.",
+              "stats": {
+                "label": "Data Points",
+                "value": "50+"
+              },
+              "status": "active",
+              "gradient": "from-cyan-500 to-blue-500",
+              "size": "large",
+              "image": {
+                "reference": "homeImages.analytics"
+              }
+            },
+            {
+              "id": "content",
+              "number": "05",
+              "title": "AI Content Generator",
+              "description": "Generates SEO-friendly content based on your services, location, and keyword strategy.",
+              "stats": {
+                "label": "Words/Min",
+                "value": "500+"
+              },
+              "status": "processing",
+              "gradient": "from-pink-500 to-rose-500",
+              "image": {
+                "reference": "homeImages.content"
+              }
+            },
+            {
+              "id": "sales",
+              "number": "06",
+              "title": "AI Sales Assistant",
+              "description": "Guides visitors through your services and helps convert them into paying clients automatically.",
+              "stats": {
+                "label": "Conv. Boost",
+                "value": "+35%"
+              },
+              "status": "active",
+              "gradient": "from-indigo-500 to-violet-500",
+              "image": {
+                "reference": "homeImages.sales"
+              }
+            }
+          ],
+          "cta": {
+            "label": "Request an AI Demo",
+            "href": "#contact"
+          }
+        }
+      },
+      "text": [
+        "AI Assistant",
+        "● Online",
+        "LIVE DEMO",
+        "Type your message...",
+        "Send message demo",
+        "AI"
+      ],
+      "attributes": [],
+      "propDefaults": {}
+    },
+    "consultation": {
+      "file": "components/forms/LeadsForm.tsx",
+      "sha256": "5ac054f556f35280c6e288ac4ecff62a2179f3b0f5f386397a13818c14b69f1b",
+      "data": {
+        "SERVICE_OPTIONS": [
+          {
+            "value": "Web Development",
+            "label": "Web Development"
+          },
+          {
+            "value": "App Development",
+            "label": "App Development"
+          },
+          {
+            "value": "E-Commerce",
+            "label": "E-Commerce"
+          },
+          {
+            "value": "AI Automation",
+            "label": "AI Automation"
+          },
+          {
+            "value": "Web Design",
+            "label": "Web Design"
+          },
+          {
+            "value": "UI/UX Design",
+            "label": "UI/UX Design"
+          },
+          {
+            "value": "Brand Identity",
+            "label": "Brand Identity"
+          },
+          {
+            "value": "SEO",
+            "label": "SEO"
+          },
+          {
+            "value": "Social Media",
+            "label": "Social Media"
+          },
+          {
+            "value": "Security",
+            "label": "Security"
+          },
+          {
+            "value": "Other",
+            "label": "Other"
+          }
+        ],
+        "BUSINESS_SIZE_OPTIONS": [
+          {
+            "value": "startup",
+            "label": "Startup"
+          },
+          {
+            "value": "small",
+            "label": "Small Business"
+          },
+          {
+            "value": "medium",
+            "label": "Medium Business"
+          },
+          {
+            "value": "enterprise",
+            "label": "Enterprise"
+          }
+        ]
+      },
+      "text": [
+        "Project Inquiry",
+        "Full Name *",
+        "Email Address *",
+        "Company Name",
+        "Phone Number",
+        "Service Interest",
+        "Business Size",
+        "Number of Employees",
+        "Additional Notes",
+        "By submitting this form, you agree to be contacted about your inquiry."
+      ],
+      "attributes": [
+        {
+          "name": "title",
+          "value": "Contact Information"
+        },
+        {
+          "name": "placeholder",
+          "value": "John Doe"
+        },
+        {
+          "name": "placeholder",
+          "value": "john@example.com"
+        },
+        {
+          "name": "placeholder",
+          "value": "Acme Inc"
+        },
+        {
+          "name": "placeholder",
+          "value": "+1 (555) 000-0000"
+        },
+        {
+          "name": "title",
+          "value": "Project Details"
+        },
+        {
+          "name": "placeholder",
+          "value": "Select a service"
+        },
+        {
+          "name": "placeholder",
+          "value": "Select size"
+        },
+        {
+          "name": "placeholder",
+          "value": "10"
+        },
+        {
+          "name": "placeholder",
+          "value": "Tell us about your project, goals, timeline, or any specific requirements..."
+        }
+      ],
+      "propDefaults": {
+        "className": "h-5 w-5",
+        "title": "Get Started Today",
+        "description": "Fill out the form below and we'll get back to you within 24 hours.",
+        "source": "homepage"
+      }
+    },
+    "process": {
+      "file": "components/static/Home/process-section/ProcessSection.tsx",
+      "sha256": "ef3897b5b5a90d661fc84952428fcb02b09ba8d2f247cce2626d87a8edfb5263",
+      "data": {
+        "defaultSteps": [
+          {
+            "id": "strategy",
+            "number": "01",
+            "title": "Strategy & Business Analysis",
+            "description": "We study your business model, competitors, audience behavior, and growth opportunities.",
+            "image": "https://cheetahnova.s3.eu-west-2.amazonaws.com/home/Strategy+%26+Business+Analysis.webp",
+            "color": "primary",
+            "details": [
+              "Market Research",
+              "Competitor Analysis",
+              "User Personas",
+              "Growth Roadmap"
+            ],
+            "duration": "Week 1"
+          },
+          {
+            "id": "design",
+            "number": "02",
+            "title": "Design & UX Planning",
+            "description": "We create wireframes and UI/UX layouts designed for maximum conversion and premium branding.",
+            "image": "https://cheetahnova.s3.eu-west-2.amazonaws.com/home/Design+%26+UX+Planning.webp",
+            "color": "secondary",
+            "details": [
+              "Wireframing",
+              "UI Design",
+              "Prototyping",
+              "Brand Integration"
+            ],
+            "duration": "Week 2-3"
+          },
+          {
+            "id": "development",
+            "number": "03",
+            "title": "Development + SEO Foundation",
+            "description": "We build your website with clean code, fast performance, and SEO-ready structure.",
+            "image": "https://cheetahnova.s3.eu-west-2.amazonaws.com/home/Development+%2B+SEO+Foundation.webp",
+            "color": "primary",
+            "details": [
+              "Clean Code",
+              "Performance",
+              "SEO Setup",
+              "Responsive Build"
+            ],
+            "duration": "Week 4-6"
+          },
+          {
+            "id": "ai",
+            "number": "04",
+            "title": "AI Integration & Growth System",
+            "description": "We deploy custom AI tools and automation systems tailored to your workflow.",
+            "image": "https://cheetahnova.s3.eu-west-2.amazonaws.com/home/AI+Integration+%26+Growth+System.webp",
+            "color": "accent",
+            "details": [
+              "AI Chatbots",
+              "Automation",
+              "Analytics",
+              "Support"
+            ],
+            "duration": "Week 7-8"
+          }
+        ]
+      },
+      "text": [
+        "Ready to transform your digital presence?",
+        "Free consultation • No commitment required",
+        "Our Process: From",
+        "Strategy",
+        "to",
+        "Scalable Results"
+      ],
+      "attributes": [],
+      "propDefaults": {
+        "headline": "Our Process: From Strategy to Scalable Results",
+        "subheadline": "How We Work",
+        "description": "A proven methodology that transforms your vision into a high-performing digital asset.",
+        "ctaText": "Start Your Project Today",
+        "ctaHref": "#contact"
+      }
+    },
+    "faq": {
+      "file": "components/global/FAQSection.tsx",
+      "sha256": "23e53bc39efd9d80bce98db797dc26396698273854dfc91515bc36b2b03048fa",
+      "data": {},
+      "text": [
+        "All Questions",
+        "Contact Us",
+        "No questions found matching your search.",
+        "Clear filters"
+      ],
+      "attributes": [],
+      "propDefaults": {
+        "headline": "Frequently Asked Questions",
+        "subheadline": "FAQ",
+        "description": "Find answers to common questions about our services, process, and pricing.",
+        "contactText": "Still have questions? We're here to help.",
+        "contactHref": "/contact"
+      }
+    },
+    "contact": {
+      "file": "components/static/Home/ContactSection.tsx",
+      "sha256": "187a557c9e8b7f093d69f4319349de5460a6d2542aeff825e749acd54af42003",
+      "data": {
+        "defaultContactInfo": {
+          "email": "cheetahnova.co",
+          "phone": "+44 7346323799",
+          "whatsapp": "+44 7346323799",
+          "responseTime": "Within 24 hours"
+        },
+        "defaultSocialLinks": [
+          {
+            "id": "linkedin",
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/cheetahnova/"
+          },
+          {
+            "id": "Instagram",
+            "label": "Instagram",
+            "href": "https://www.instagram.com/cheetahnova.co/"
+          },
+          {
+            "id": "whatsapp",
+            "label": "WhatsApp",
+            "href": "https://wa.me/+447346323799"
+          }
+        ],
+        "serviceOptions": [
+          {
+            "value": "web-design",
+            "label": "Web Design"
+          },
+          {
+            "value": "seo",
+            "label": "SEO"
+          },
+          {
+            "value": "ai-automation",
+            "label": "AI Automation"
+          },
+          {
+            "value": "full-package",
+            "label": "Full Package"
+          }
+        ],
+        "budgetOptions": [
+          {
+            "value": "3k-5k",
+            "label": "$3,000 – $5,000"
+          },
+          {
+            "value": "5k-10k",
+            "label": "$5,000 – $10,000"
+          },
+          {
+            "value": "10k-20k",
+            "label": "$10,000 – $20,000"
+          },
+          {
+            "value": "20k+",
+            "label": "$20,000+"
+          },
+          {
+            "value": "not-sure",
+            "label": "Not sure yet"
+          }
+        ],
+        "industryOptions": [
+          {
+            "value": "ecommerce",
+            "label": "E-commerce"
+          },
+          {
+            "value": "saas",
+            "label": "SaaS"
+          },
+          {
+            "value": "real-estate",
+            "label": "Real Estate"
+          },
+          {
+            "value": "healthcare",
+            "label": "Healthcare"
+          },
+          {
+            "value": "finance",
+            "label": "Finance"
+          },
+          {
+            "value": "education",
+            "label": "Education"
+          },
+          {
+            "value": "agency",
+            "label": "Agency"
+          },
+          {
+            "value": "startup",
+            "label": "Startup"
+          },
+          {
+            "value": "other",
+            "label": "Other"
+          }
+        ]
+      },
+      "text": [
+        "*",
+        "/",
+        "Get in touch",
+        "Contact Information",
+        "Reach out through any of these channels.",
+        "Connect with us",
+        "Available now · Typically replies within hours",
+        "Message Sent!",
+        "Thank you for reaching out. We&apos;ll get back to you within 24 hours with a detailed response.",
+        "Send Another Message",
+        "Project Inquiry",
+        "Tell us about your project",
+        "Completed",
+        "Contact Details",
+        "Business Information",
+        "Service & Budget",
+        "Project Details",
+        "Sending...",
+        "Send Request",
+        "By submitting, you agree to be contacted about your inquiry."
+      ],
+      "attributes": [
+        {
+          "name": "label",
+          "value": "Full Name"
+        },
+        {
+          "name": "placeholder",
+          "value": "John Doe"
+        },
+        {
+          "name": "label",
+          "value": "Email Address"
+        },
+        {
+          "name": "placeholder",
+          "value": "john@company.com"
+        },
+        {
+          "name": "label",
+          "value": "Business Website"
+        },
+        {
+          "name": "placeholder",
+          "value": "https://yourcompany.com (optional)"
+        },
+        {
+          "name": "label",
+          "value": "Industry"
+        },
+        {
+          "name": "placeholder",
+          "value": "Select your industry..."
+        },
+        {
+          "name": "label",
+          "value": "Service Needed"
+        },
+        {
+          "name": "placeholder",
+          "value": "Select a service..."
+        },
+        {
+          "name": "label",
+          "value": "Budget Range"
+        },
+        {
+          "name": "placeholder",
+          "value": "Select your budget..."
+        },
+        {
+          "name": "label",
+          "value": "Message"
+        },
+        {
+          "name": "placeholder",
+          "value": "Tell us about your project, goals, and any specific requirements..."
+        }
+      ],
+      "propDefaults": {
+        "placeholder": "Select an option...",
+        "type": "text",
+        "headline": "Let's Talk About Your Project",
+        "description": "Tell us about your business and what you want to build. We'll respond within 24 hours with a clear plan and pricing estimate."
+      }
+    }
+  },
+  "excludedFromHomepage": [
+    "Services (commented out)",
+    "PortfolioSection (commented out)",
+    "TestimonialsSection (commented out)"
+  ],
+  "adaptationRules": [
+    "Use TopLinkSho identity and contact information.",
+    "Localize and shorten copy without ranking guarantees.",
+    "Do not publish unverified numerical claims or delivery/response-time promises.",
+    "Reuse one real consultation form instead of duplicating contact forms."
+  ]
+}

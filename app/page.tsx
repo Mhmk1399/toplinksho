@@ -1,29 +1,23 @@
-import { Blog } from "@/components/home/Blog";
-import { CTASection } from "@/components/home/CTASection";
+import content from "@/content/home.fa.json";
+import { pageMetadata } from "@/lib/seo";
+import { PageStructuredData } from "@/components/shared/PageStructuredData";
 import { Hero } from "@/components/home/Hero";
-import { Portfolio } from "@/components/home/Portfolio";
-import { Services } from "@/components/home/Services";
-import { Statistics } from "@/components/home/Statistics";
-import { WhyUs } from "@/components/home/WhyUs";
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
-import { FloatingContact } from "@/components/shared/FloatingContact";
+import { AISolutions } from "@/components/home/AISolutions";
+import { ConsultationSection } from "@/components/shared/ConsultationSection";
+import { Process } from "@/components/home/Process";
+import { HomeFAQ } from "@/components/home/HomeFAQ";
+import { HomeContact } from "@/components/home/HomeContact";
+
+export const metadata = pageMetadata("/");
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main className="overflow-hidden">
-        <Hero />
-        <Services />
-        <WhyUs />
-        <Statistics />
-        <Portfolio />
-        <CTASection />
-        <Blog />
-      </main>
-      <Footer />
-      <FloatingContact />
-    </>
-  );
+  return <main id="main-content">
+    <PageStructuredData path="/" />
+    <Hero />
+    <AISolutions />
+    <ConsultationSection content={content.consultation} compact />
+    <Process />
+    <HomeFAQ />
+    <HomeContact />
+  </main>;
 }
